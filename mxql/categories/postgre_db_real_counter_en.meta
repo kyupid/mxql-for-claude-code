@@ -1,0 +1,178 @@
+{
+  "categoryName" : "postgre_db_real_counter",
+  "interval" : "5s",
+  "title" : "PostgresqlDatabaseRealCounter",
+  "pk" : [ "oid" ],
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "dbName",
+    "title" : "dbName",
+    "label" : "dbName"
+  }, {
+    "tagName" : "oid",
+    "title" : "Oid",
+    "label" : "oid"
+  }, {
+    "tagName" : "agentIp",
+    "title" : "agentIp",
+    "label" : "agentIp"
+  }, {
+    "tagName" : "dbVersion",
+    "title" : "dbVersion",
+    "label" : "dbVersion"
+  }, {
+    "tagName" : "oname",
+    "title" : "oname",
+    "label" : "oname"
+  }, {
+    "tagName" : "dbType",
+    "title" : "dbType",
+    "label" : "dbType"
+  }, {
+    "tagName" : "dbIsMulti",
+    "title" : "dbIsMulti",
+    "label" : "dbIsMulti"
+  } ],
+  "fields" : [ {
+    "fieldName" : "commit_count",
+    "title" : "commit_count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "temp_files",
+    "title" : "temp_files",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "lock_wait_sessions",
+    "title" : "lock_wait_sessions",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "active_sessions",
+    "title" : "active_sessions",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "conflicts",
+    "title" : "conflicts",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "tup_fetched",
+    "title" : "tup_fetched",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "vacuum_running_count",
+    "title" : "vacuum_running_count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "tup_updated",
+    "title" : "tup_updated",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "numbackends",
+    "title" : "numbackends",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "blks_read",
+    "title" : "blks_read",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "table_hit_ratio",
+    "title" : "table_hit_ratio",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "wait_sessions",
+    "title" : "wait_sessions",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "deadlock_count",
+    "title" : "deadlock_count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "blk_write_time",
+    "title" : "blk_write_time",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "index_hit_ratio",
+    "title" : "index_hit_ratio",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "check_point",
+    "title" : "check_point",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "blks_hit",
+    "title" : "blks_hit",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "connect_error",
+    "title" : "connect_error",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "tup_deleted",
+    "title" : "tup_deleted",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "blks_hit_ratio",
+    "title" : "blks_hit_ratio",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "long_running_sessions",
+    "title" : "long_running_sessions",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "dml_count",
+    "title" : "dml_count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "temp_bytes",
+    "title" : "temp_bytes",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "tup_returned",
+    "title" : "tup_returned",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "tup_inserted",
+    "title" : "tup_inserted",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "total_runtime",
+    "title" : "total_runtime",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "total_sessions",
+    "title" : "total_sessions",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "blk_read_time",
+    "title" : "blk_read_time",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  } ],
+  "platforms" : [ "POSTGRESQL" ]
+}

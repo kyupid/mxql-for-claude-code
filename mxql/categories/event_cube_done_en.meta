@@ -1,0 +1,54 @@
+{
+  "categoryName" : "event_cube_done",
+  "interval" : "5s",
+  "title" : "EventCubeDone",
+  "pk" : [ "oid" ],
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "type",
+    "title" : "Type",
+    "label" : "type"
+  }, {
+    "tagName" : "onode",
+    "title" : "Onode",
+    "label" : "onode"
+  }, {
+    "tagName" : "oid",
+    "title" : "Oid",
+    "label" : "oid"
+  }, {
+    "tagName" : "okind",
+    "title" : "Okind",
+    "label" : "okind"
+  }, {
+    "tagName" : "_no_cache_",
+    "title" : "NoCache",
+    "label" : "_no_cache_"
+  } ],
+  "fields" : [ {
+    "fieldName" : "hhmmss9",
+    "title" : "Hhmmss9",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "hhmmss",
+    "title" : "Hhmmss",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "date",
+    "title" : "Date",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "cubetime",
+    "title" : "Cubetime",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "date9",
+    "title" : "Date9",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  } ]
+}

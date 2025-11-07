@@ -1,0 +1,142 @@
+{
+  "categoryName" : "infra_disk_perf",
+  "title" : "Infra Disk Performance",
+  "interval" : [ "5s" ],
+  "pk" : [ "oid", "@id" ],
+  "language" : "JA",
+  "tags" : [ {
+    "tagName" : "oname",
+    "title" : "Oname",
+    "unit" : "string",
+    "deprecated" : false,
+    "type" : "String"
+  } ],
+  "fields" : [ {
+    "fieldName" : "writeIops",
+    "title" : "Write IOPS",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "該当物理ディスクから処理された秒当りの書き込み作業の数を表示します。",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false
+  }, {
+    "fieldName" : "write",
+    "title" : "Write Bytes",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "該当物理ディスクから秒当りに書き込まれた平均バイト数を表示します。",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "readSvcTime",
+    "title" : "Read Service Time",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "該当物理ディスクが一つのRead I/Oリクエストを処理するのにかかった時間をミリ秒単位で表示した値です。",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "totalIops",
+    "title" : "Read+Write IOPS",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "該当物理ディスクから秒当りに処理された読取り作業と書き込み作業の合計を表示します。",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false
+  }, {
+    "fieldName" : "writeSvcTime",
+    "title" : "Write Service Time",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "該当物理ディスクが一つのWrite I/Oリクエストを処理するのにかかった時間をミリ秒単位で表示した値です。",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "name",
+    "title" : "Name",
+    "unit" : "string",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "物理ディスクの名前を表示した値です。",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "fieldName" : "avgSvcTime",
+    "title" : "Average Service Time",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "HP-UX専用の指標で、ディスクに対する各転送リクエスト(探索、回転待機時間、データ転送時間を含む)を処理する平均時間をミリ秒単位で表示した値です。",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "readIops",
+    "title" : "Read IOPS",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "該当物理ディスクから処理された秒当りの読取り作業の数を表示します。",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false
+  }, {
+    "fieldName" : "avgWaitTime",
+    "title" : "Average Wait Time",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "HP-UX専用の指標で、I/O処理リクエストがディスクの待機列でアイドルとして待機した平均時間をミリ秒単位で表示した値です。",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "busy",
+    "title" : "Busy",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "該当物理ディスクが秒当りに働いた時間の比率を表示した値です。",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "read",
+    "title" : "Read Bytes",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "該当物理ディスクから秒当りに読み取られた平均バイト数を表示します。",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "total",
+    "title" : "Read+Write Bytes",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "該当物理ディスクに秒当りに読み取りと書き込まれた平均バイト数の合計を表示します。",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  } ],
+  "platforms" : [ "INFRA" ]
+}

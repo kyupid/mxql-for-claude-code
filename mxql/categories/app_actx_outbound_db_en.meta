@@ -1,0 +1,138 @@
+{
+  "categoryName" : "app_actx_outbound_db",
+  "interval" : "5s",
+  "title" : "ActiveOutboundDB",
+  "pk" : [ "oid", "dbms", "host", "path" ],
+  "description" : "Active Outbound DB Info",
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "oname",
+    "deprecated" : false
+  }, {
+    "tagName" : "okindName",
+    "deprecated" : false
+  }, {
+    "tagName" : "onodeName",
+    "deprecated" : false
+  }, {
+    "tagName" : "!rectype",
+    "deprecated" : false
+  } ],
+  "fields" : [ {
+    "fieldName" : "act8",
+    "title" : "ActiveCallOver8sec",
+    "unit" : "count",
+    "objectMerge" : "sum",
+    "timeMerge" : "sum",
+    "description" : "Number of DB outbound cases of 8 seconds or more",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "act0",
+    "title" : "ActiveCallOver0sec",
+    "unit" : "count",
+    "objectMerge" : "sum",
+    "timeMerge" : "sum",
+    "description" : "Number of DB outbound cases of 0 to 3 seconds",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "count",
+    "title" : "CallCount",
+    "unit" : "count",
+    "objectMerge" : "sum",
+    "timeMerge" : "sum",
+    "description" : "Number of DB outbound cases",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "timeSum",
+    "title" : "TotalElapsedTime",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "sum",
+    "description" : "Sum of DB outbound response times",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "dbms",
+    "title" : "DBMS Info",
+    "unit" : "string",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "fieldName" : "error",
+    "title" : "CallErrorCount",
+    "unit" : "count",
+    "objectMerge" : "sum",
+    "timeMerge" : "sum",
+    "description" : "Number of DB outbound errors",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "act3",
+    "title" : "ActiveCallOver3sec",
+    "unit" : "count",
+    "objectMerge" : "sum",
+    "timeMerge" : "sum",
+    "description" : "Number of DB outbound cases of 3 to 8 seconds",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "actx",
+    "title" : "TotalActiveCall",
+    "unit" : "count",
+    "objectMerge" : "sum",
+    "timeMerge" : "sum",
+    "description" : "act0 + act3 + act8",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "@id",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "uniq ID",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "host",
+    "title" : "Host",
+    "unit" : "string",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "fieldName" : "path",
+    "title" : "DBMS Connect URL",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  } ],
+  "platforms" : [ "JAVA" ]
+}

@@ -1,0 +1,143 @@
+{
+  "categoryName" : "infra_disk_perf",
+  "title" : "Infra Disk Performance",
+  "interval" : [ "5s" ],
+  "pk" : [ "oid", "@id" ],
+  "language" : "KO",
+  "tags" : [ {
+    "tagName" : "oname",
+    "title" : "Oname",
+    "unit" : "string",
+    "description" : "서버 이름",
+    "deprecated" : false,
+    "type" : "String"
+  } ],
+  "fields" : [ {
+    "fieldName" : "avgSvcTime",
+    "title" : "Average Service Time",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "HP-UX 전용 지표로 디스크에 대한 각 전송 요청(탐색, 회전 대기 시간 및 데이터 전송 시간 포함)을 처리하는 평균 시간을 milli second 단위로 표시한 값 입니다.",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "totalIops",
+    "title" : "Read+Write IOPS",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "해당 물리 디스크에서 초당 처리된 읽기 작업 수와 쓰기 작업 수의 합을 표시합니다.",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false
+  }, {
+    "fieldName" : "write",
+    "title" : "Write Bytes",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "해당 물리 디스크에 초당 쓰여진 평균 Bytes 수를 표시 합니다.",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "readIops",
+    "title" : "Read IOPS",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "해당 물리 디스크에서 초당 처리된 읽기 작업 수를 표시합니다.",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false
+  }, {
+    "fieldName" : "busy",
+    "title" : "Busy",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "해당 물리 디스크가 초당 일한 시간의 비율을 표시한 값입니다.",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "total",
+    "title" : "Read+Write Bytes",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "해당 물리 디스크에 초당 읽고 쓰여진 평균 Bytes 수의 합을 표시 합니다.",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "read",
+    "title" : "Read Bytes",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "해당 물리 디스크에서 초당 읽힌 평균 Bytes 수를 표시 합니다.",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "writeSvcTime",
+    "title" : "Write Service Time",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "해당 물리 디스크가 하나의 Write IO 요청을 처리 하는데 소요된 시간을 milli second 단위로 표시한 값입니다.",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "readSvcTime",
+    "title" : "Read Service Time",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "해당 물리 디스크가 하나의 Read IO 요청을 처리 하는데 소요된 시간을 milli second 단위로 표시한 값입니다.",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "writeIops",
+    "title" : "Write IOPS",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "해당 물리 디스크에서 초당 처리된 쓰기 작업 수를 표시합니다.",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false
+  }, {
+    "fieldName" : "avgWaitTime",
+    "title" : "Average Wait Time",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "HP-UX 전용 지표로 IO 처리 요청이 디스크의 대기열에서 유휴 상태로 대기한 평균 시간을 milli second 단위로 표시한 값 입니다.",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "name",
+    "title" : "Name",
+    "unit" : "string",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "물리 디스크의 이름을 표시한 값입니다.",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "String"
+  } ],
+  "platforms" : [ "INFRA" ]
+}

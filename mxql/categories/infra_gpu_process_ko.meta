@@ -1,0 +1,137 @@
+{
+  "categoryName" : "infra_gpu_process",
+  "title" : "GPU_Process",
+  "interval" : [ "10s" ],
+  "pk" : [ "oid", "@id" ],
+  "description" : "GPU를 사용중인 process 성능 지표",
+  "language" : "KO",
+  "tags" : [ {
+    "tagName" : "oname",
+    "title" : "oname",
+    "description" : "서버 이름",
+    "deprecated" : false
+  } ],
+  "fields" : [ {
+    "fieldName" : "pid",
+    "title" : "Process_PID",
+    "unit" : "string",
+    "objectMerge" : "none",
+    "timeMerge" : "none",
+    "description" : "process 의 PID 를 의미합니다. ",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "fieldName" : "mem_controller_util",
+    "title" : "Memory Controller Util (%)",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "process의 메모리 컨트롤러의 사용율(%) 을 의미합니다. (VRAM에서 데이터를 읽기/쓰기의 빈도(속도 기준) 를 의미하며 VRAM 사용량과는 다름 (VRAM이 가득 차 있어도 이 값은 낮을 수 있음))",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "index",
+    "title" : "GPU Index",
+    "unit" : "string",
+    "objectMerge" : "none",
+    "timeMerge" : "none",
+    "description" : "process 가 실행중인 GPU index 를 의미합니다. ",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "fieldName" : "enc_util",
+    "title" : "Encoder Util (%)",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "process의 엔코더(Encoder) 사용률 (%) 을 의미합니다. ( 비디오 파일을 압축하여 저장하는 과정 )",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "sm_util",
+    "title" : "SM Util (%)",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "process의 Streaming Multiprocessor(SM) 사용률 (%) 을 의미합니다. ",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "dec_util",
+    "title" : "Decoder Util (%)",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "process의 디코더(Decoder) 사용률 (%) 을 의미합니다. ( 압축된 비디오 데이터를 GPU가 재생하는 과정 )",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "process_type",
+    "title" : "Process_Type",
+    "unit" : "string",
+    "objectMerge" : "none",
+    "timeMerge" : "none",
+    "description" : "실행 중인 프로세스의 유형을 의미합니다. (프로세스 유형• C: Compute 프로세스 (CUDA 실행) • G: Graphics 프로세스 (GUI 가속))",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "fieldName" : "process_name",
+    "title" : "Process_Name",
+    "unit" : "string",
+    "objectMerge" : "none",
+    "timeMerge" : "none",
+    "description" : "GPU를 사용하는 프로세스의 이름 (예: python, cuda_program)을 의미합니다. ",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "fieldName" : "ccpm",
+    "title" : "CCPM (MiB)",
+    "unit" : "MiB",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Confidential Computing Protected Memory usage(MiB)를 의미하며 NVIDIA H100과 같은 Confidential Computing을 지원하는 최신 GPU에서 활용할 수 있습니다. ( 해당 기능을 지원하지 않는GPU에서는 이 값이 0으로 표시될 수 있습니다. )",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "uuid",
+    "title" : "UUID",
+    "unit" : "string",
+    "objectMerge" : "none",
+    "timeMerge" : "none",
+    "description" : "process 가 실행중인 GPU UUID 를 의미 합니다. ",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "fieldName" : "fb_used",
+    "title" : "FB Used (MiB)",
+    "unit" : "MiB",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "process가 사용 중인 Frame Buffer(GPU 메모리) 크기 (Bytes)를 의미합니다. ",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  } ],
+  "platforms" : [ "INFRA" ]
+}

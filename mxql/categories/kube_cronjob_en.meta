@@ -1,0 +1,106 @@
+{
+  "categoryName" : "kube_cronjob",
+  "interval" : "30s",
+  "title" : "Kubernetes Cron Job",
+  "pk" : [ "cronJobUid" ],
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "namespace",
+    "title" : "Namespace",
+    "unit" : "string",
+    "description" : "The namespace in which the CronJob is defined. (metadata.namespace)",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "cronJobUid",
+    "title" : "CronJobUid",
+    "unit" : "string",
+    "description" : "The unique identifier (UID) assigned to the CronJob by Kubernetes. (metadata.uid)",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "cronJobName",
+    "title" : "CronJobName",
+    "unit" : "string",
+    "description" : "The name of the CronJob. It uniquely identifies the CronJob within a namespace.",
+    "deprecated" : false,
+    "type" : "String"
+  } ],
+  "fields" : [ {
+    "fieldName" : "concurrencyPolicy",
+    "title" : "ConcurrencyPolicy",
+    "unit" : "string",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "The concurrency policy for Job executions (Allow, Forbid, Replace). (spec.concurrencyPolicy)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "fieldName" : "lastSuccessfulTime",
+    "title" : "LastSuccessfulTime",
+    "unit" : "string",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "The last time the CronJob completed successfully. (status.lastSuccessfulTime)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "fieldName" : "cronJobSpecSchedule",
+    "title" : "CronJobSpecSchedule",
+    "unit" : "string",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "The cron expression that defines the schedule. (spec.schedule)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "fieldName" : "startingDeadlineSeconds",
+    "title" : "StartingDeadlineSeconds",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "The deadline in seconds for starting the Job if it misses the scheduled time. (spec.startingDeadlineSeconds)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "failedJobsHistoryLimit",
+    "title" : "FailedJobsHistoryLimit",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "The number of failed Job runs to retain. (spec.failedJobsHistoryLimit)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "successfulJobsHistoryLimit",
+    "title" : "SuccessfulJobsHistoryLimit",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "The number of successful Job runs to retain. (spec.successfulJobsHistoryLimit)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "lastScheduleTime",
+    "title" : "LastScheduleTime",
+    "unit" : "string",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "The last time the CronJob was scheduled. (status.lastScheduleTime)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "String"
+  } ]
+}

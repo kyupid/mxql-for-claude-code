@@ -1,0 +1,19 @@
+{
+  "categoryName" : "aws_elasticmapreduce",
+  "interval" : "5m",
+  "title" : "aws_elasticmapreduce",
+  "pk" : [ "dimension" ],
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "oid",
+    "title" : "aws_elasticmapreduce",
+    "label" : "aws_elasticmapreduce"
+  } ],
+  "fields" : [ {
+    "fieldName" : "saveTime",
+    "title" : "saveTime",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  } ],
+  "platforms" : [ "JAVA", "PHP", "PYTHON", "NODEJS", "INFRA", "KUBERNETES", "KUBE_NS" ]
+}

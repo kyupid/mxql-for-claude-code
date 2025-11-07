@@ -1,0 +1,311 @@
+{
+  "categoryName" : "npm_process_tag_data",
+  "title" : "NpmProcessTagData",
+  "interval" : [ "60s" ],
+  "pk" : [ "local_ip", "foreign_ip", "local_port", "oid", "foreign_port" ],
+  "language" : "EN",
+  "fields" : [ {
+    "fieldName" : "protocol",
+    "title" : "Protocol",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Type of communication protocol",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "foreign_container_id",
+    "title" : "ForeignContainerId",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "ID of the container in case of local communication in the Kubernetes container",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "local_port",
+    "title" : "LocalPort",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Port number of the communication entity",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "foreign_pod_id",
+    "title" : "ForeignPodId",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "ID of the Pod in case of local communication in the Kubernetes Pod",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "pod_name",
+    "title" : "PodName",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Pod name when the communication entity is the Kubernetes environment",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "row_count",
+    "title" : "RowCount",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Number of sessions including duplicates",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "send_packet_count",
+    "title" : "SendPacketCount",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Number of transmitted packets",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "app_name",
+    "title" : "AppName",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Custom identification tag for communication entities",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "max_latency",
+    "title" : "MaxLatency",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Maximum value of the packet's round-trip delay time",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "min_jitter",
+    "title" : "MinJitter",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Minimum value in the packet's round-trip delay time variation",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "send_packet_size",
+    "title" : "SendPacketSize",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Total size of transmitted packets",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "lost_count",
+    "title" : "LostCount",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Number of lost packets",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "recv_packet_count",
+    "title" : "RecvPacketCount",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Number of received packets",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "tot_latency",
+    "title" : "TotLatency",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Sum of the packet's round-trip delay times",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "local_ip",
+    "title" : "LocalIp",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "IP address of the communication entity",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "host_tag",
+    "title" : "HostTag",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Host name of the communication subject",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "session_count_logbits",
+    "title" : "SessionCountLogbits",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Bit information for calculating unique sessions (HyperLogLog)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "avg_jitter",
+    "title" : "AvgJitter",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Average variation in the packet's round-trip delay time",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "avg_latency",
+    "title" : "AvgLatency",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Packet's average round-trip delay time",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "foreign_port",
+    "title" : "ForeignPort",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Port number of the communication target",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "session_count",
+    "title" : "SessionCount",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Number of sessions excluding duplicates",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "retransmission_count",
+    "title" : "RetransmissionCount",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Number of retransmitted packets",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "min_latency",
+    "title" : "MinLatency",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Minimum value of the packet's round-trip delay time",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "process_type",
+    "title" : "ProcessType",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Type of process for communication",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "container_name",
+    "title" : "ContainerName",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Name of the container collected in the Kubernetes environment",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "foreign_ip",
+    "title" : "ForeignIp",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "IP address of the communication target",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "recv_packet_size",
+    "title" : "RecvPacketSize",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Data size of the received packets",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "max_jitter",
+    "title" : "MaxJitter",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Maximum value in the packet's round-trip delay time variation",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "tot_jitter",
+    "title" : "TotJitter",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Sum of the packet's round-trip delay time variations",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "direction",
+    "title" : "Direction",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Connection direction of the session",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  } ],
+  "platforms" : [ "NPM" ]
+}

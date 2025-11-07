@@ -1,0 +1,81 @@
+{
+  "categoryName" : "ecs_node",
+  "title" : "EcsNode",
+  "pk" : [ "ContainerInstanceArn" ],
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "ContainerInstanceArn",
+    "title" : "ContainerInstanceArn",
+    "label" : "ContainerInstanceArn"
+  }, {
+    "tagName" : "ecs.instance-type",
+    "title" : "ecs instance-type",
+    "label" : "ecs.instance-type"
+  }, {
+    "tagName" : "Ec2InstanceId",
+    "title" : "Ec2InstanceId",
+    "label" : "Ec2InstanceId"
+  }, {
+    "tagName" : "ecs.availability-zone",
+    "title" : "ecs availability-zone",
+    "label" : "ecs.availability-zone"
+  }, {
+    "tagName" : "Version",
+    "title" : "Container Instance Version",
+    "label" : "Version"
+  }, {
+    "tagName" : "ecs.os-type",
+    "title" : "ecs os-type",
+    "label" : "ecs.os-type"
+  }, {
+    "tagName" : "DockerVersion",
+    "title" : "DockerVersion",
+    "label" : "DockerVersion"
+  }, {
+    "tagName" : "ecs.ami-id",
+    "title" : "ecs ami-id",
+    "label" : "ecs.ami-id"
+  }, {
+    "tagName" : "AgentVersion",
+    "title" : "ECS AgentVersion",
+    "label" : "AgentVersion"
+  }, {
+    "tagName" : "ecs.capability.cni-plugin-version",
+    "title" : "ecs capability cni-plugin-version",
+    "label" : "ecs.capability.cni-plugin-version"
+  }, {
+    "tagName" : "ecs.vpc-id",
+    "title" : "ecs vpc-id",
+    "label" : "ecs.vpc-id"
+  }, {
+    "tagName" : "ecs.subnet-id",
+    "title" : "ecs subnet-id",
+    "label" : "ecs.subnet-id"
+  }, {
+    "tagName" : "ecs.cpu-architecture",
+    "title" : "ecs cpu-architecture",
+    "label" : "ecs.cpu-architecture"
+  }, {
+    "tagName" : "ecs.capability.branch-cni-plugin-version",
+    "title" : "ecs capability branch-cni-plugin-version",
+    "label" : "ecs.capability.branch-cni-plugin-version"
+  }, {
+    "tagName" : "ecs.os-family",
+    "title" : "ecs os-family",
+    "label" : "ecs.os-family"
+  } ],
+  "fields" : [ {
+    "fieldName" : "PendingTasksCount",
+    "title" : "PendingTasksCount",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "RunningTasksCount",
+    "title" : "RunningTasksCount",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "Status",
+    "title" : "Status"
+  } ]
+}

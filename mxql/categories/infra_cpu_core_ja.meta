@@ -1,0 +1,137 @@
+{
+  "categoryName" : "infra_cpu_core",
+  "title" : "Infra CPU Core",
+  "interval" : [ "5s" ],
+  "pk" : [ "oid", "@id" ],
+  "language" : "JA",
+  "tags" : [ {
+    "tagName" : "oname",
+    "title" : "Oname",
+    "unit" : "string",
+    "deprecated" : false,
+    "type" : "String"
+  } ],
+  "fields" : [ {
+    "fieldName" : "total",
+    "title" : "Total",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "該当Coreがユーザーモード(User)とカーネルモード(Sys)で使用された使用率の合計を意味します。",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "sys",
+    "title" : "Sys",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "該当Coreがカーネル(Sys)で使われた使用率を意味します。",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "irq",
+    "title" : "Irq",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "該当CoreがハードウェアInterrupt requestを処理するために使われた使用率を意味します。",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "wait",
+    "title" : "Wait",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "該当CoreがI/O作業を完了するまで待たされた時間の比率を意味します。",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "softirq",
+    "title" : "Soft Irq",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "該当CoreがソフトウェアInterrupt Requestを処理するために使われた使用率を意味します。",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "steal",
+    "title" : "Steal",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "仮想化環境で、ハイパーバイザーが他のプロセスをサービスする間に該当Coreが非自発的に待機するまで消費したCPU使用率を意味します。",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "nice",
+    "title" : "Nice",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "HP-UX専用の指標で、該当Coreが優先順位を持った(niced)プロセスの処理のために使用したCPU使用率を意味します。",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "user",
+    "title" : "User",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "該当Coreがユーザーモード(User)で使われた使用率を意味します。",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "total_wait",
+    "title" : "Total Wait",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "該当Coreがユーザーモード(User)とカーネルモード(Sys)、I/O待機(wait)で使われた使用率の合計を意味します。",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "idle",
+    "title" : "Idle",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "該当Coreがアイドル状態で、何の作業も実行していない比率を意味します。",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "coreId",
+    "title" : "Core Id",
+    "unit" : "string",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "coreidを意味します。",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "String"
+  } ],
+  "platforms" : [ "INFRA" ]
+}

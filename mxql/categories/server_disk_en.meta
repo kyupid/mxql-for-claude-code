@@ -1,0 +1,258 @@
+{
+  "categoryName" : "server_disk",
+  "interval" : "5s",
+  "title" : "Server Disk",
+  "pk" : [ "mountPoint", "oid" ],
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "onodeName",
+    "title" : "OnodeName",
+    "label" : "onodeName",
+    "deprecated" : false
+  }, {
+    "tagName" : "mountPointHash",
+    "title" : "MountPointHash",
+    "label" : "mountPointHash",
+    "deprecated" : false
+  }, {
+    "tagName" : "deviceId",
+    "title" : "DeviceId",
+    "label" : "deviceId",
+    "deprecated" : false
+  }, {
+    "tagName" : "deviceIdHash",
+    "title" : "DeviceIdHash",
+    "label" : "deviceIdHash",
+    "deprecated" : false
+  }, {
+    "tagName" : "oname",
+    "title" : "Oname",
+    "label" : "oname",
+    "deprecated" : false
+  }, {
+    "tagName" : "mountPoint",
+    "title" : "MountPoint",
+    "label" : "mountPoint",
+    "deprecated" : false
+  }, {
+    "tagName" : "oid",
+    "title" : "Oid",
+    "label" : "oid",
+    "deprecated" : false
+  }, {
+    "tagName" : "os",
+    "title" : "OS",
+    "label" : "os",
+    "deprecated" : false
+  }, {
+    "tagName" : "fileSystem",
+    "title" : "FileSystem",
+    "label" : "fileSystem",
+    "deprecated" : false
+  }, {
+    "tagName" : "fileSystemHash",
+    "title" : "FileSystemHash",
+    "label" : "fileSystemHash",
+    "deprecated" : false
+  } ],
+  "fields" : [ {
+    "fieldName" : "usedPercent",
+    "title" : "UsedPercent",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "File system utilization",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "readBps",
+    "title" : "ReadBps",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Bytes read per second",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "freeSpace",
+    "title" : "FreeSpace",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "File system's free space",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "queueLength",
+    "title" : "QueueLength",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Queue length",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "readIops",
+    "title" : "ReadIops",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Number of reads per second",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "blksize",
+    "title" : "BlkSize",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Block size",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "totalSpace",
+    "title" : "TotalSpace",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Total file system size",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "usedSpaceOrder",
+    "title" : "UsedSpaceOrder",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "capacityEphemeralStorage",
+    "title" : "CapacityEphemeralStorage",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "freePercent",
+    "title" : "FreePercent",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "File system's free ratio",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "writeBps",
+    "title" : "WriteBps",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Bytes written per second",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "count",
+    "title" : "Count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "totalInode",
+    "title" : "TotalInode",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Total number of inodes",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "usedInodePercent",
+    "title" : "UsedInodePercent",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Inode utilization",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "usedInode",
+    "title" : "UsedInode",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Number of used inodes",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "usedSpace",
+    "title" : "UsedSpace",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "ioPercent",
+    "title" : "IoPercent",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "IO utilization can be measured incorrectly in some types of disks.",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "ioutilOrder",
+    "title" : "IoUtilOrder",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "writeIops",
+    "title" : "WriteIops",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Number of writes per second",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "allocatable_ephemeral_storage",
+    "title" : "AllocatableEphemeralStorage",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  } ],
+  "platforms" : [ "INFRA" ]
+}

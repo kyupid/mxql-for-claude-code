@@ -1,0 +1,19 @@
+{
+  "categoryName" : "aws_robomaker",
+  "interval" : "5m",
+  "title" : "aws_robomaker",
+  "pk" : [ "dimension" ],
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "oid",
+    "title" : "aws_robomaker",
+    "label" : "aws_robomaker"
+  } ],
+  "fields" : [ {
+    "fieldName" : "saveTime",
+    "title" : "saveTime",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  } ],
+  "platforms" : [ "JAVA", "PHP", "PYTHON", "NODEJS", "INFRA", "KUBERNETES", "KUBE_NS" ]
+}

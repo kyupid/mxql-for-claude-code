@@ -1,0 +1,22 @@
+{
+  "categoryName" : "db_mssql_filegroup",
+  "interval" : "1h",
+  "title" : "db_mssql_filegroup",
+  "pk" : [ "physical_filename", "oid" ],
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "oname",
+    "title" : "oname",
+    "deprecated" : false
+  } ],
+  "fields" : [ {
+    "fieldName" : "size",
+    "title" : "size",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  } ],
+  "platforms" : [ "MSSQL" ]
+}

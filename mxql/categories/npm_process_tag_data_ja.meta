@@ -1,0 +1,311 @@
+{
+  "categoryName" : "npm_process_tag_data",
+  "title" : "NpmProcessTagData",
+  "interval" : [ "60s" ],
+  "pk" : [ "local_ip", "foreign_ip", "local_port", "oid", "foreign_port" ],
+  "language" : "JA",
+  "fields" : [ {
+    "fieldName" : "process_type",
+    "title" : "ProcessType",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "通信を遂行するプロセス種類",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false
+  }, {
+    "fieldName" : "send_packet_count",
+    "title" : "SendPacketCount",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "送信したパケット数",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "foreign_ip",
+    "title" : "ForeignIp",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "通信対象にIPアドレス",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false
+  }, {
+    "fieldName" : "send_packet_size",
+    "title" : "SendPacketSize",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "送信したパケットの全体サイズ",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "tot_jitter",
+    "title" : "TotJitter",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "パケット往復遅延時間変動値の合計値",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "row_count",
+    "title" : "RowCount",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "重複を含むセッション数",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "retransmission_count",
+    "title" : "RetransmissionCount",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "再転送したパケット数",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "avg_jitter",
+    "title" : "AvgJitter",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "パケット往復遅延時間変動値の平均",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "min_jitter",
+    "title" : "MinJitter",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "パケット往復遅延時間変動値の最小値",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "recv_packet_count",
+    "title" : "RecvPacketCount",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "受信したパケット数",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "session_count",
+    "title" : "SessionCount",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "重複を除くセッション数",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "foreign_container_id",
+    "title" : "ForeignContainerId",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Kubernetesコンテナでローカル通信が行われる場合は該当コンテナのID",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false
+  }, {
+    "fieldName" : "host_tag",
+    "title" : "HostTag",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "通信主体のホスト名",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false
+  }, {
+    "fieldName" : "direction",
+    "title" : "Direction",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "セッションの接続方向",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false
+  }, {
+    "fieldName" : "min_latency",
+    "title" : "MinLatency",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "パケット往復遅延時間の最小値",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "app_name",
+    "title" : "AppName",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "通信主体に対するカスタム識別タグ",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false
+  }, {
+    "fieldName" : "foreign_port",
+    "title" : "ForeignPort",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "通信対象のポート番号",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false
+  }, {
+    "fieldName" : "tot_latency",
+    "title" : "TotLatency",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "パケット往復遅延時間の合計値",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "local_port",
+    "title" : "LocalPort",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "通信主体のポート番号",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false
+  }, {
+    "fieldName" : "container_name",
+    "title" : "ContainerName",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Kubernetes環境から収集されたコンテナ名",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false
+  }, {
+    "fieldName" : "local_ip",
+    "title" : "LocalIp",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "通信主体のIPアドレス",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false
+  }, {
+    "fieldName" : "protocol",
+    "title" : "Protocol",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "通信プロトコル種類",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false
+  }, {
+    "fieldName" : "foreign_pod_id",
+    "title" : "ForeignPodId",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "KubernetesのPod内でローカル通信が行われる場合は該当PodのID",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false
+  }, {
+    "fieldName" : "pod_name",
+    "title" : "PodName",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "通信主体がKubernetes環境の場合はPod名",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false
+  }, {
+    "fieldName" : "max_jitter",
+    "title" : "MaxJitter",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "パケット往復遅延時間変動値の最大値",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "max_latency",
+    "title" : "MaxLatency",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "パケット往復遅延時間の最大値",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "avg_latency",
+    "title" : "AvgLatency",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "パケット往復遅延時間の平均",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "recv_packet_size",
+    "title" : "RecvPacketSize",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "受信したパケットのデータサイズ",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "lost_count",
+    "title" : "LostCount",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "流失したパケット数",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "session_count_logbits",
+    "title" : "SessionCountLogbits",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "ユニックセッションを計算するためのビット情報(HyperLogLog)",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false
+  } ],
+  "platforms" : [ "NPM" ]
+}

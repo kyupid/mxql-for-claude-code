@@ -1,0 +1,104 @@
+{
+  "categoryName" : "infra_gpu_id",
+  "interval" : "30s",
+  "pk" : [ "oid", "@id" ],
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "oname",
+    "title" : "OName",
+    "deprecated" : false
+  } ],
+  "fields" : [ {
+    "fieldName" : "eccSbeAggregateTotal_312",
+    "title" : "ECC_SBE_Total",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "ECC SBE(Single Bit Error) 누적 합계를 의미합니다. ",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "index",
+    "title" : "GPU Index",
+    "unit" : "pct",
+    "objectMerge" : "none",
+    "timeMerge" : "none",
+    "description" : "GPU_ID/MIG_GI/MIG_CI 형식  ( ex. 1/6/0 ) | 물리: 0, 1, 2, ~",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "bar1Total_90",
+    "title" : "BAR1_Total_Memory",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "BAR1 메모리의 총량을 표시합니다. (BAR1 메모리 : GPU와 CPU 간 데이터 전송 시 사용)",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "powerUsage_155",
+    "title" : "Power_Usage",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "GPU가 현재 사용하는 전력량을 의미합니다. ",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false
+  }, {
+    "fieldName" : "@id",
+    "title" : "@id",
+    "unit" : "pct",
+    "objectMerge" : "none",
+    "timeMerge" : "none",
+    "description" : "uuid hash 값",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "gpuTemp_150",
+    "title" : "GPU_Temperature",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "GPU의 현재 온도를 표시합니다. ",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false
+  }, {
+    "fieldName" : "smClock_100",
+    "title" : "SM_Clock",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "SM(Streaming Multiprocessor)의 현재 클럭 속도를 의미합니다. ",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "memoryCopyUtil_204",
+    "title" : "Memory_Copy_Util",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "GPU의 메모리 복사 엔진(memory copy engine) 사용률을 의미합니다. GPU와 호스트 간 또는 GPU 내부에서 메모리 전송 작업이 얼마나 활발히 이루어지고 있는지를 측정한 값입니다. ( Physical GPU 만 값을 표시할 수 있으며, MIG 인스턴스는 이 값이 표시 되지 않습니다. )",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "pstate_190",
+    "title" : "Performance_State",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "현재 GPU의 Performance State(P-State)을 0~15 사이의 숫자로만 표시합니다. ( P0~P15의 값을 갖으며 P0이 가장 빠름 )",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  } ],
+  "platforms" : [ "INFRA" ]
+}

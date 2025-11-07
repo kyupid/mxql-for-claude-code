@@ -1,0 +1,6 @@
+{
+  "categoryName" : "azure_microsoft_sql_managedinstances",
+  "title" : "Azure Microsoft.Sql managedInstances",
+  "pk" : [ "dimension" ],
+  "language" : "EN"
+}

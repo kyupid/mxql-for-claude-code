@@ -1,0 +1,82 @@
+{
+  "categoryName" : "infra_disk",
+  "interval" : "2s",
+  "title" : "InfraDisk",
+  "pk" : [ "oid" ],
+  "language" : "JA",
+  "tags" : [ {
+    "tagName" : "oname",
+    "title" : "Oname",
+    "unit" : "string",
+    "deprecated" : false,
+    "type" : "String"
+  } ],
+  "fields" : [ {
+    "fieldName" : "total",
+    "title" : "Total",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "サーバーのすべての物理ディスクから読取り、書き込まれたデータ総量をバイト単位で表示します。",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "totalIops",
+    "title" : "TotalIops",
+    "unit" : "bps",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "サーバーのすべての物理ディスクから秒当りに読み取り、書き込まれた作業数を表示します。",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "read",
+    "title" : "Read",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "サーバーのすべての物理ディスクから読み取られたデータ総量をバイト単位で表示します。",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "readIops",
+    "title" : "ReadIops",
+    "unit" : "bps",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "サーバーのすべての物理ディスクから秒当りに読み取られた作業数を表示します。",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "write",
+    "title" : "Write",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "サーバーのすべての物理ディスクに書き込まれたデータ総量をバイト単位で表示します。",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "writeIops",
+    "title" : "WriteIops",
+    "unit" : "bps",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "サーバーのすべての物理ディスクから秒当りに書き込まれた作業数を表示します。",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  } ],
+  "platforms" : [ "INFRA" ]
+}

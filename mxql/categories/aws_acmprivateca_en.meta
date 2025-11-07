@@ -1,0 +1,23 @@
+{
+  "categoryName" : "aws_acmprivateca",
+  "title" : "AWS ACM Private CA",
+  "interval" : [ "5m" ],
+  "pk" : [ "dimension" ],
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "oid",
+    "title" : "aws_acmprivateca",
+    "label" : "aws_acmprivateca",
+    "deprecated" : false
+  } ],
+  "fields" : [ {
+    "fieldName" : "saveTime",
+    "title" : "saveTime",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  } ],
+  "platforms" : [ "JAVA", "NODEJS", "PYTHON", "PHP", "DOTNET", "GO", "INFRA", "CLOUDWATCH", "KUBERNETES", "KUBE_NS", "VR" ]
+}

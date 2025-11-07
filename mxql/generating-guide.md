@@ -9,8 +9,10 @@ description: Generates MXQL (Metrics Query Language) queries through conversatio
 
 This skill helps generate MXQL (Metrics Query Language) queries through a conversational, step-by-step approach. Instead of requiring users to know exact category names, field names, and syntax, this skill guides them through the query creation process by asking clarifying questions.
 
-**Current Support**: Database monitoring (15 DB products)
-**Expandable to**: Infrastructure, APM, Container, and Cloud monitoring
+**Coverage**: 631 categories across 36+ product types
+- Database (44), Application/APM (16), Infrastructure (16), Kubernetes (28)
+- Cloud: AWS (107), Azure (147), OCI (48), NCloud (11)
+- Container, RUM, URL Monitoring, and more
 
 ## When to Use This Skill
 
@@ -50,46 +52,82 @@ Intent Analysis:
 - When: Not specified (use current data)
 ```
 
-### Step 2: Clarify Product/Category
+### Step 2: Discover and Select Category
 
-If the product is not specified or ambiguous, ask the user to select:
+If the category is not specified or ambiguous, use `category_finder.py` to find relevant categories:
 
-```
-Which DB product are you monitoring?
-1. MySQL / MariaDB
-2. PostgreSQL
-3. Oracle
-4. Microsoft SQL Server
-5. MongoDB
-6. Redis
-7. Other (specify)
+**Option A: Search by keyword**
+```python
+from category_finder import CategoryFinder, format_category_list
+
+finder = CategoryFinder()
+results = finder.search("postgresql")  # or "kubernetes", "aws ec2", etc.
+print(format_category_list(results, include_details=True))
 ```
 
-Map the product to the correct category:
-- MySQL → `db_mysql_counter`
-- PostgreSQL → `db_postgresql_counter`
-- Oracle → `db_oracle_counter`
-- MSSQL → `db_mssql_counter`
-- MongoDB → `db_mongodb_counter`
-- Redis → `db_redis_counter`
+**Option B: Recommend based on user intent**
+```python
+recommendations = finder.recommend("monitor kubernetes pod CPU usage")
+# Returns relevant categories with explanations
+```
 
-For complete category mappings, refer to `db-categories.md`.
+**Present options to user using AskUserQuestion**:
+- Show 2-4 most relevant categories
+- Include category title and platforms
+- Let user select the best match
+
+**Example**:
+```
+Found these categories for "postgresql monitoring":
+1. db_postgresql_counter - General PostgreSQL metrics (5s intervals)
+2. db_postgresql_stat - Database statistics
+3. db_postgresql_table_bloating - Table bloat monitoring
+4. db_postgresql_vacuum_candidate - Vacuum candidates
+
+Which category fits your needs?
+```
+
+**Get category metadata after selection**:
+```python
+category_info = finder.get_category_info("db_postgresql_counter", language="ko")
+# Returns full metadata: tags, fields, intervals, etc.
+```
 
 ### Step 3: Select Metrics
 
-Based on the user's intent, identify relevant metrics. If uncertain, consult `metrics-guide.md` or read the category's meta file.
+Use the category metadata (from Step 2) to identify available fields:
 
-**Common metric groups**:
-- **CPU**: cpu(xos), cpu_user(xos), cpu_sys(xos), cpu_iowait(xos)
-- **Memory**: mem_total(xos), mem_used(xos), mem_free(xos), mem_pct
-- **Sessions**: active_sessions, lock_wait_sessions, total_sessions
-- **I/O**: disk_read(xos), disk_write(xos), iops
+```python
+category_info = finder.get_category_info("db_postgresql_counter")
 
-For CPU example, include:
-- `cpu(xos)` - Total CPU utilization (%)
-- `cpu_user(xos)` - User mode CPU
-- `cpu_sys(xos)` - System mode CPU
-- `cpu_iowait(xos)` - I/O wait (indicates disk bottleneck)
+# Extract available fields
+for field in category_info['fields']:
+    print(f"- {field['fieldName']}: {field.get('description', '')}")
+    print(f"  Unit: {field.get('unit', 'N/A')}, Type: {field.get('type', 'N/A')}")
+```
+
+**Match user intent to available fields**:
+- User wants "CPU usage" → Look for fields with "cpu" in name
+- User wants "memory" → Look for "mem", "memory" in name
+- User wants "sessions" → Look for "session", "connection" in name
+
+**Example for db_postgresql_counter**:
+```
+Available CPU metrics:
+- cpu(xos) - Total CPU utilization (%, Number)
+- cpu_user(xos) - User mode CPU (%, Number)
+- cpu_sys(xos) - System mode CPU (%, Number)
+- cpu_iowait(xos) - I/O wait (%, Number)
+
+Available memory metrics:
+- mem_total(xos) - Total memory (byte, Number)
+- mem_used(xos) - Used memory (byte, Number)
+- mem_pct - Memory usage percentage (pct, Number)
+```
+
+**Best practice**: Include related fields for context
+- If CPU requested → Also include mem_pct for holistic view
+- If query time requested → Include lock_wait_time for debugging
 
 ### Step 4: Define Filters and Conditions
 

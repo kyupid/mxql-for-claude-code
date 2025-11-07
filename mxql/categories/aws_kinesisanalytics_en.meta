@@ -1,0 +1,19 @@
+{
+  "categoryName" : "aws_kinesisanalytics",
+  "interval" : "5m",
+  "title" : "aws_kinesisanalytics",
+  "pk" : [ "dimension" ],
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "oid",
+    "title" : "aws_kinesisanalytics",
+    "label" : "aws_kinesisanalytics"
+  } ],
+  "fields" : [ {
+    "fieldName" : "saveTime",
+    "title" : "saveTime",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  } ],
+  "platforms" : [ "JAVA", "PHP", "PYTHON", "NODEJS", "INFRA", "KUBERNETES", "KUBE_NS" ]
+}

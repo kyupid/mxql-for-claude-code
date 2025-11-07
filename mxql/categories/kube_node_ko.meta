@@ -1,0 +1,305 @@
+{
+  "categoryName" : "kube_node",
+  "title" : "KubernetesNode",
+  "interval" : [ "5s" ],
+  "pk" : [ "onode" ],
+  "language" : "KO",
+  "tags" : [ {
+    "tagName" : "failure-domain.beta.kubernetes.io/zone",
+    "title" : "Zone",
+    "unit" : "string",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "beta.kubernetes.io/os",
+    "title" : "Beta.kubernetes.io/os",
+    "label" : "beta.kubernetes.io/os",
+    "deprecated" : false
+  }, {
+    "tagName" : "kubernetes.io/hostname",
+    "title" : "Kubernetes.io/hostname",
+    "label" : "kubernetes.io/hostname",
+    "deprecated" : false
+  }, {
+    "tagName" : "cost",
+    "title" : "Cost",
+    "deprecated" : false
+  }, {
+    "tagName" : "node-role.kubernetes.io/master",
+    "title" : "Node-role.kubernetes.io/master",
+    "label" : "node-role.kubernetes.io/master",
+    "deprecated" : false
+  }, {
+    "tagName" : "role",
+    "title" : "Role",
+    "deprecated" : false
+  }, {
+    "tagName" : "kubernetes.io/arch",
+    "title" : "Kubernetes.io/arch",
+    "label" : "kubernetes.io/arch",
+    "deprecated" : false
+  }, {
+    "tagName" : "kubeProxyVersion",
+    "title" : "KubeProxy",
+    "deprecated" : false
+  }, {
+    "tagName" : "containerRuntimeVersion",
+    "title" : "ContainerRuntime",
+    "deprecated" : false
+  }, {
+    "tagName" : "beta.kubernetes.io/arch",
+    "title" : "Beta.kubernetes.io/arch",
+    "label" : "beta.kubernetes.io/arch",
+    "deprecated" : false
+  }, {
+    "tagName" : "eks.amazonaws.com/capacityType",
+    "title" : "CapacityType",
+    "label" : "beta.kubernetes.io/arch",
+    "unit" : "string",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "onodeName",
+    "title" : "OnodeName",
+    "label" : "onodeName",
+    "deprecated" : false
+  }, {
+    "tagName" : "operatingSystem",
+    "title" : "OS",
+    "deprecated" : false
+  }, {
+    "tagName" : "oid",
+    "title" : "Oid",
+    "label" : "oname",
+    "deprecated" : false
+  }, {
+    "tagName" : "kernelVersion",
+    "title" : "Kernel",
+    "deprecated" : false
+  }, {
+    "tagName" : "osImage",
+    "title" : "Image",
+    "deprecated" : false
+  }, {
+    "tagName" : "beta.kubernetes.io/instance-type",
+    "title" : "InstanceType",
+    "unit" : "string",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "kubernetes.io/os",
+    "title" : "Kubernetes.io/os",
+    "label" : "kubernetes.io/os",
+    "deprecated" : false
+  }, {
+    "tagName" : "failure-domain.beta.kubernetes.io/region",
+    "title" : "Region",
+    "unit" : "string",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "group",
+    "title" : "Group",
+    "deprecated" : false
+  }, {
+    "tagName" : "eks.amazonaws.com/nodegroup",
+    "title" : "NodeGroup",
+    "unit" : "string",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "architecture",
+    "title" : "Architecture",
+    "deprecated" : false
+  }, {
+    "tagName" : "oname",
+    "title" : "OName",
+    "label" : "oname",
+    "deprecated" : false
+  }, {
+    "tagName" : "kubeletVersion",
+    "title" : "Kubelet",
+    "deprecated" : false
+  }, {
+    "tagName" : "onode",
+    "title" : "Onode",
+    "label" : "onodeName",
+    "deprecated" : false
+  } ],
+  "fields" : [ {
+    "fieldName" : "capacityMemory",
+    "title" : "CapacityMemory",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "capacityPods",
+    "title" : "CapacityPods",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "allocatable_memory",
+    "title" : "AllocatableMemory",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "allocatable_pods",
+    "title" : "AllocatablePods",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "age",
+    "title" : "Age",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "unschedulable",
+    "title" : "Unschedulable",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "status",
+    "title" : "Status",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "allocatable_cpu",
+    "title" : "AllocatableCpu",
+    "unit" : "millicore",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "allocatable_ephemeral_storage",
+    "title" : "AllocatableEphemeralStorage",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "limit_cpu",
+    "title" : "LimitCpu",
+    "unit" : "millicore",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "limit_memory",
+    "title" : "LimitMemory",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "request_cpu",
+    "title" : "RequestCpu",
+    "unit" : "millicore",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "MemoryPressure",
+    "title" : "MemoryPressure",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "capacityCpu",
+    "title" : "CapacityCpu",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "request_memory",
+    "title" : "RequestMemory",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "PIDPressure",
+    "title" : "PIDPressure",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "DiskPressure",
+    "title" : "DiskPressure",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "Ready",
+    "title" : "Ready",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "pods",
+    "title" : "Pods",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  } ],
+  "platforms" : [ "KUBERNETES" ]
+}

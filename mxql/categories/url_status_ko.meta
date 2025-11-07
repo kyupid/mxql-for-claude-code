@@ -1,0 +1,74 @@
+{
+  "categoryName" : "url_status",
+  "interval" : [ "1h", "5m", "1m" ],
+  "pk" : [ "_pk_" ],
+  "description" : "URL 상태 기록 (알림 및 장애 판단 기준)",
+  "language" : "KO",
+  "tags" : [ {
+    "tagName" : "request_id",
+    "description" : "모니터링 대상 URL별 ID",
+    "deprecated" : false
+  }, {
+    "tagName" : "worker_pcode",
+    "deprecated" : false
+  }, {
+    "tagName" : "_pk_",
+    "deprecated" : false
+  }, {
+    "tagName" : "region_name",
+    "description" : "데이터 수집 지역",
+    "deprecated" : false
+  } ],
+  "fields" : [ {
+    "fieldName" : "event",
+    "unit" : "state",
+    "objectMerge" : "none",
+    "timeMerge" : "none",
+    "description" : "알림 발생 여부\n(1: 발생, 0: 미발생)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "status_leve",
+    "unit" : "state",
+    "objectMerge" : "none",
+    "timeMerge" : "none",
+    "description" : "상태 레벨\n(1: 정상, 2: 비정상 징후, 3: 장애 상태)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "active",
+    "unit" : "state",
+    "objectMerge" : "none",
+    "timeMerge" : "none",
+    "description" : "활성화 여부\n(1: 활성화, 0: 비활성화)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "dismissible",
+    "unit" : "state",
+    "objectMerge" : "none",
+    "timeMerge" : "none",
+    "description" : "알림 해소 가능 여부\n(1: 가능, 0: 불가)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "msg",
+    "unit" : "string",
+    "objectMerge" : "none",
+    "timeMerge" : "none",
+    "description" : "장애 또는 상태 메시지 (알림 내용)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "String"
+  } ],
+  "platforms" : [ "URL_PRO" ]
+}

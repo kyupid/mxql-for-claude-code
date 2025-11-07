@@ -1,0 +1,117 @@
+{
+  "categoryName" : "app_actx_outbound_httpc",
+  "interval" : "5s",
+  "title" : "ActiveHttpCallOutbound",
+  "pk" : [ "oid", "host" ],
+  "description" : "액티브 아웃바운드 Http Call 정보",
+  "language" : "KO",
+  "tags" : [ {
+    "tagName" : "okindName",
+    "deprecated" : false
+  }, {
+    "tagName" : "!rectype",
+    "deprecated" : false
+  }, {
+    "tagName" : "onodeName",
+    "deprecated" : false
+  }, {
+    "tagName" : "oname",
+    "deprecated" : false
+  } ],
+  "fields" : [ {
+    "fieldName" : "count",
+    "title" : "CallCount",
+    "unit" : "count",
+    "objectMerge" : "sum",
+    "timeMerge" : "sum",
+    "description" : "Http 아웃바운드 Call 건수",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "host",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false
+  }, {
+    "fieldName" : "@id",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "uniq ID",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "timeSum",
+    "title" : "TotalElapsedTime",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "아웃바운드 응답시간의 합",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "act0",
+    "title" : "ActiveCallOver0sec",
+    "unit" : "count",
+    "objectMerge" : "sum",
+    "timeMerge" : "sum",
+    "description" : "0~3초 이하의 액티브 건수",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "error",
+    "title" : "CallErrorCount",
+    "unit" : "count",
+    "objectMerge" : "sum",
+    "timeMerge" : "sum",
+    "description" : "Http 아웃바운드 Call 에러건수",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "act8",
+    "title" : "ActiveCallOver8sec",
+    "unit" : "count",
+    "objectMerge" : "sum",
+    "timeMerge" : "sum",
+    "description" : "8초 이상의 액티브 건수",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "actx",
+    "title" : "TotalActiveCall",
+    "unit" : "count",
+    "objectMerge" : "sum",
+    "timeMerge" : "sum",
+    "description" : "액티브 전체 건수",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "act3",
+    "title" : "ActiveCallOver3sec",
+    "unit" : "count",
+    "objectMerge" : "sum",
+    "timeMerge" : "sum",
+    "description" : "3~8초 이하의 액티브 건수",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  } ],
+  "platforms" : [ "JAVA" ]
+}

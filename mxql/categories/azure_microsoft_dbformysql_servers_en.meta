@@ -1,0 +1,6 @@
+{
+  "categoryName" : "azure_microsoft_dbformysql_servers",
+  "title" : "Azure Microsoft.DBforMySQL servers",
+  "pk" : [ "dimension" ],
+  "language" : "EN"
+}

@@ -1,0 +1,120 @@
+{
+  "categoryName" : "kube_daemonset",
+  "interval" : "30s",
+  "pk" : [ "daemonSetUid" ],
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "creationTime",
+    "title" : "CreationTime",
+    "unit" : "ms",
+    "description" : "The timestamp when the DaemonSet was created. (metadata.creationTimestamp)",
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "tagName" : "namespace",
+    "title" : "Namespace",
+    "unit" : "string",
+    "description" : "The namespace where the DaemonSet is deployed. (metadata.namespace)",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "daemonSetName",
+    "title" : "DaemonSetName",
+    "unit" : "string",
+    "description" : "The name of the DaemonSet. (metadata.name)",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "age",
+    "title" : "Age",
+    "unit" : "string",
+    "description" : "The elapsed time since the DaemonSet was created.",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "daemonSetUid",
+    "title" : "DaemonSetUid",
+    "unit" : "string",
+    "description" : "The unique identifier (UID) of the DaemonSet. (metadata.uid)",
+    "deprecated" : false,
+    "type" : "String"
+  } ],
+  "fields" : [ {
+    "fieldName" : "numberAvailable",
+    "title" : "NumberAvailable",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "The number of pods available to serve requests. (status.numberAvailable)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "numberReady",
+    "title" : "NumberReady",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "The number of pods in Ready state. (status.numberReady)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "numberMisscheduled",
+    "title" : "NumberMisscheduled",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "The number of pods that are running on nodes where they are not supposed to run. (status.numberMisscheduled)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "desiredNumberScheduled",
+    "title" : "DesiredNumberScheduled",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "The desired number of pods to be scheduled by the DaemonSet. (status.desiredNumberScheduled)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "updatedNumberScheduled",
+    "title" : "UpdatedNumberScheduled",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "The number of pods updated to the DaemonSet's latest specification. (status.updatedNumberScheduled)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "currentNumberScheduled",
+    "title" : "CurrentNumberScheduled",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "The number of pods currently scheduled by the DaemonSet. (status.currentNumberScheduled)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "daemonSetSelector",
+    "title" : "Selector",
+    "unit" : "string",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "The label selector used by the DaemonSet to manage pods. (spec.selector.matchLabels)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "String"
+  } ]
+}

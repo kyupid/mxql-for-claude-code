@@ -1,0 +1,7 @@
+{
+  "categoryName" : "telegraf_vsphere_host_mem",
+  "title" : "Telegraf Vsphere Host Memory",
+  "pk" : [ "dcname", "esxhostname" ],
+  "language" : "EN",
+  "platforms" : [ "INFRA" ]
+}

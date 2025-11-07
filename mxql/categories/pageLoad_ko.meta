@@ -1,0 +1,9 @@
+{
+  "categoryName" : "pageLoad",
+  "interval" : "5s",
+  "title" : "PageLoadTitle",
+  "pk" : [ "Browser" ],
+  "description" : "없는 카테고리 생성 테스트",
+  "language" : "KO",
+  "platforms" : [ "JAVA" ]
+}

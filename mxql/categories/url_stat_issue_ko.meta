@@ -1,0 +1,44 @@
+{
+  "categoryName" : "url_stat_issue",
+  "interval" : [ "1h", "5m", "1m" ],
+  "pk" : [ "_pk_" ],
+  "description" : "이슈별 URL 상태 통계",
+  "language" : "KO",
+  "tags" : [ {
+    "tagName" : "issue_name",
+    "description" : "이슈 명칭",
+    "deprecated" : false
+  } ],
+  "fields" : [ {
+    "fieldName" : "normal_url",
+    "unit" : "count",
+    "objectMerge" : "sum",
+    "timeMerge" : "max",
+    "description" : "정상 URL 수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "error_url",
+    "unit" : "count",
+    "objectMerge" : "sum",
+    "timeMerge" : "max",
+    "description" : "에러 URL 수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "total_url",
+    "unit" : "count",
+    "objectMerge" : "sum",
+    "timeMerge" : "max",
+    "description" : "전체 URL 수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  } ],
+  "platforms" : [ "URL_PRO" ]
+}

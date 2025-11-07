@@ -1,0 +1,63 @@
+{
+  "categoryName" : "kube_pvc",
+  "interval" : "30s",
+  "pk" : [ "pvcUid" ],
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "pvcStorageClassName",
+    "title" : "PvcStorageClassName",
+    "unit" : "string",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "pvcNamespace",
+    "title" : "PvcNamespace",
+    "unit" : "string",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "pvcVolumeName",
+    "title" : "PvcVolumeName",
+    "unit" : "string",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "pvcName",
+    "title" : "PvcName",
+    "unit" : "string",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "pvcRequestedStorage",
+    "title" : "PvcRequestedStorage",
+    "unit" : "byte",
+    "deprecated" : false,
+    "type" : "Long"
+  }, {
+    "tagName" : "pvcUid",
+    "title" : "PvcUid",
+    "unit" : "string",
+    "deprecated" : false,
+    "type" : "String"
+  } ],
+  "fields" : [ {
+    "fieldName" : "pvcPhase",
+    "title" : "PvcPhase",
+    "unit" : "string",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "fieldName" : "pvcAccessModes",
+    "title" : "PvcAccessModes",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "List"
+  } ]
+}

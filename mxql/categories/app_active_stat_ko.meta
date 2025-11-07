@@ -1,0 +1,120 @@
+{
+  "categoryName" : "app_active_stat",
+  "title" : "ApplicationActiveStat",
+  "interval" : [ "1h", "5m", "5s" ],
+  "pk" : [ "oid" ],
+  "language" : "KO",
+  "tags" : [ {
+    "tagName" : "type",
+    "title" : "Type",
+    "label" : "type",
+    "deprecated" : false
+  }, {
+    "tagName" : "containerKey",
+    "title" : "ContainerKey",
+    "label" : "container",
+    "deprecated" : false
+  }, {
+    "tagName" : "alias",
+    "title" : "Alias",
+    "label" : "alias",
+    "deprecated" : false
+  }, {
+    "tagName" : "okindName",
+    "title" : "OkindName",
+    "label" : "okindName",
+    "deprecated" : false
+  }, {
+    "tagName" : "pid",
+    "title" : "Pid",
+    "label" : "pid",
+    "deprecated" : false
+  }, {
+    "tagName" : "oid",
+    "title" : "Oid",
+    "label" : "oname",
+    "deprecated" : false
+  }, {
+    "tagName" : "onode",
+    "title" : "Onode",
+    "label" : "onode",
+    "deprecated" : false
+  }, {
+    "tagName" : "container",
+    "title" : "Container",
+    "label" : "container",
+    "deprecated" : false
+  }, {
+    "tagName" : "oname",
+    "title" : "Oname",
+    "label" : "oname",
+    "deprecated" : false
+  }, {
+    "tagName" : "host_ip",
+    "title" : "HostIp",
+    "label" : "host_ip",
+    "deprecated" : false
+  }, {
+    "tagName" : "okind",
+    "title" : "Okind",
+    "label" : "okindName",
+    "deprecated" : false
+  } ],
+  "fields" : [ {
+    "fieldName" : "httpc",
+    "title" : "HttpCall",
+    "unit" : "count",
+    "objectMerge" : "sum",
+    "timeMerge" : "sum",
+    "description" : "액티브 스테이터스 - HTTPC 건수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "method",
+    "title" : "Method",
+    "unit" : "count",
+    "objectMerge" : "sum",
+    "timeMerge" : "sum",
+    "description" : "액티브 스테이터스  - Method 건수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "socket",
+    "title" : "Socket",
+    "unit" : "count",
+    "objectMerge" : "sum",
+    "timeMerge" : "sum",
+    "description" : "액티브 스테이터스 - Socket 건수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "dbc",
+    "title" : "DbConnection",
+    "unit" : "count",
+    "objectMerge" : "sum",
+    "timeMerge" : "sum",
+    "description" : "액티브 스테이터스 - DBC 건수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "sql",
+    "title" : "Sql",
+    "unit" : "count",
+    "objectMerge" : "sum",
+    "timeMerge" : "sum",
+    "description" : "액티브 스테이터스 - SQL 건수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  } ],
+  "platforms" : [ "JAVA", "PHP", "PYTHON", "NODEJS" ]
+}

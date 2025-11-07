@@ -1,0 +1,23 @@
+{
+  "categoryName" : "aws_elasticinference",
+  "interval" : "5m",
+  "title" : "AWS Elastic Inference",
+  "pk" : [ "dimension" ],
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "oid",
+    "title" : "aws_elasticinference",
+    "label" : "aws_elasticinference",
+    "deprecated" : false
+  } ],
+  "fields" : [ {
+    "fieldName" : "saveTime",
+    "title" : "saveTime",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  } ],
+  "platforms" : [ "JAVA", "PHP", "PYTHON", "NODEJS", "INFRA", "KUBERNETES", "KUBE_NS" ]
+}

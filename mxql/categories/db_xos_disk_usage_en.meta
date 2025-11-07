@@ -1,0 +1,16 @@
+{
+  "categoryName" : "db_xos_disk_usage",
+  "title" : "DB XOS Disk Usage",
+  "pk" : [ "oid", "mount_point" ],
+  "language" : "EN",
+  "fields" : [ {
+    "fieldName" : "free",
+    "title" : "free",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  } ],
+  "platforms" : [ "ORACLE" ]
+}

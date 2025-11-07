@@ -1,0 +1,49 @@
+{
+  "categoryName" : "infra_swap",
+  "interval" : "2s",
+  "title" : "Infra Swap",
+  "pk" : [ "oid" ],
+  "description" : "서버의 Swap 사용량과 관련한 지표 입니다.",
+  "language" : "KO",
+  "tags" : [ {
+    "tagName" : "oname",
+    "title" : "Oname",
+    "description" : "서버 이름",
+    "deprecated" : false
+  } ],
+  "fields" : [ {
+    "fieldName" : "pUsed",
+    "title" : "Pused",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "현재 사용 중인 Swap의 크기를 백분율로 표시합니다.",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "size",
+    "title" : "Size",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "할당된 전체 Swap의 크기를 Bytes로 표시합니다.",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "used",
+    "title" : "Used",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "현재 사용 중인 Swap의 크기를 Bytes로 표시합니다.",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  } ],
+  "platforms" : [ "INFRA" ]
+}

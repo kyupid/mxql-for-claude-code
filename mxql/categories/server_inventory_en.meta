@@ -1,0 +1,13 @@
+{
+  "categoryName" : "server_inventory",
+  "interval" : "5s",
+  "title" : "ServerInventory",
+  "pk" : [ "oid" ],
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "oid",
+    "title" : "Oid",
+    "label" : "oid"
+  } ],
+  "platforms" : [ "INFRA" ]
+}

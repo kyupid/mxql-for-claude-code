@@ -1,0 +1,148 @@
+{
+  "categoryName" : "infra_nic_perf",
+  "title" : "InfraNicPerformance",
+  "interval" : [ "5s" ],
+  "pk" : [ "oid", "@id" ],
+  "language" : "JA",
+  "tags" : [ {
+    "tagName" : "oname",
+    "title" : "Oname",
+    "unit" : "string",
+    "deprecated" : false,
+    "type" : "String"
+  } ],
+  "fields" : [ {
+    "fieldName" : "totalpps",
+    "title" : "Rx+Tx pps",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "該当NICを通じて送信(Tx)及び受信(Rx)される秒当りのパケット数(packets per second)の合計を表示した値です。",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "totalbps",
+    "title" : "Rx+Tx bps",
+    "unit" : "bps",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "該当NICを通じて送信(Tx)及び受信(Rx)される秒当りのデータ量の合計をbps(bit per second)単位で表示した値です。",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "collision",
+    "title" : "Collision",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "該当NICを通じて送信(Tx)する過程で、秒当りの平均パケット衝突が検知された回数を表示した値です。",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "txpps",
+    "title" : "Tx pps",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "該当NICを通じて送信(Tx)される秒当りのパケット数(packets per second)を表示した値です。",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "rxpps",
+    "title" : "Rx pps",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "該当NICを通じて受信(Rx)される秒当りのパケット数(packets per second)を表示した値です。",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "name",
+    "title" : "Name",
+    "unit" : "string",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "NICの名前を表示した値です。",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "fieldName" : "dropOut",
+    "title" : "Drop Out",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "該当NICを通じて送信(Tx)されたパケットの中、漏れたパケットの数を意味します。",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "dropIn",
+    "title" : "Drop In",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "該当NICを通じて受信(Rx)されたパケットの中、漏れたパケットの数を意味します。",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "rxbps",
+    "title" : "Rx bps",
+    "unit" : "bps",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "該当NICを通じて受信(Rx)される秒当りのデータ量をbps(bit per second)単位で表示した値です。",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "errIn",
+    "title" : "Error In",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "該当NICを通じて受信(Rx)されたパケットの中、エラーが発生したパケットの数を意味します。",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "errOut",
+    "title" : "Error Out",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "該当NICを通じて送信(Tx)されたパケットの中、エラーが発生したパケットの数を意味します。",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "txbps",
+    "title" : "Tx bps",
+    "unit" : "bps",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "該当NICを通じて送信(Tx)される秒当りのデータ量をbps(bit per second)単位で表示した値です。",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  } ],
+  "platforms" : [ "INFRA" ]
+}

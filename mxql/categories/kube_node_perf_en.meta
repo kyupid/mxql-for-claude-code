@@ -1,0 +1,90 @@
+{
+  "categoryName" : "kube_node_perf",
+  "interval" : "5s",
+  "title" : "KubernetesKubeNodePerformance",
+  "pk" : [ "onodeName" ],
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "onodeName",
+    "title" : "OnodeName",
+    "label" : "onodeName"
+  }, {
+    "tagName" : "agentPcode",
+    "title" : "AgentPcode",
+    "label" : "agentPcode"
+  }, {
+    "tagName" : "onode",
+    "title" : "Onode",
+    "label" : "onodeName"
+  }, {
+    "tagName" : "oid",
+    "title" : "Oid",
+    "label" : "oid"
+  }, {
+    "tagName" : "agentOid",
+    "title" : "AgentOid",
+    "label" : "agentOid"
+  } ],
+  "fields" : [ {
+    "fieldName" : "memTotal",
+    "title" : "MemTotal",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "cpuRequest",
+    "title" : "CpuRequest",
+    "unit" : "millicore",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "memoryPerLimit",
+    "title" : "MemoryPerLimit",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "memoryPerRequest",
+    "title" : "MemoryPerRequest",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "memoryRequest",
+    "title" : "MemoryRequest",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "cpuLimit",
+    "title" : "CpuLimit",
+    "unit" : "millicore",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "cpuTotal",
+    "title" : "CpuTotal",
+    "unit" : "millicore",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "memoryLimit",
+    "title" : "MemoryLimit",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "cpuPerLimit",
+    "title" : "CpuPerLimit",
+    "unit" : "millicore",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "cpuPerRequest",
+    "title" : "CpuPerRequest",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  } ],
+  "platforms" : [ "KUBERNETES" ]
+}

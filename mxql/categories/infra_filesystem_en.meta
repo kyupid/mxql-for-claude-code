@@ -1,0 +1,155 @@
+{
+  "categoryName" : "infra_filesystem",
+  "title" : "Infra FileSystem",
+  "interval" : [ "5s" ],
+  "pk" : [ "oid", "@id" ],
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "oname",
+    "title" : "Oname",
+    "unit" : "string",
+    "deprecated" : false,
+    "type" : "String"
+  } ],
+  "fields" : [ {
+    "fieldName" : "fsType",
+    "title" : "FileSystem Type",
+    "unit" : "string",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "It stores the file system type.",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "fieldName" : "write",
+    "title" : "Write Bytes",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "It displays the amount of data written to the file system in bytes.",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "mountName",
+    "title" : "Mount Name",
+    "unit" : "string",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "It displays the mount point name where the file system has been mounted (Windows displays the drive name).",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "fieldName" : "pFree",
+    "title" : "Free Percent",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "It displays the percentage of remaining free space in the file system.",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "totalSize",
+    "title" : "Total Bytes",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "It displays the total capacity of the file system in bytes.",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "pInodeUsed",
+    "title" : "I-node Used Percent",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "It displays the percentage of I-nodes used by the file system.",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "writeIops",
+    "title" : "Write IOPS",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "It displays the number of write operations per second in the file system.",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false
+  }, {
+    "fieldName" : "pUsed",
+    "title" : "Used Percent",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "It displays the percentage of space used by the file system.",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "free",
+    "title" : "Free Bytes",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "It displays the remaining free space in the file system in bytes.",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "qLength",
+    "title" : "qLength",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "It displays the average number of I/O requests waiting to be processed in the file system per second.",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "read",
+    "title" : "Read Bytes",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "It displays the amount of data read from the file system in bytes.",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "readIops",
+    "title" : "Read IOPS",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "It displays the number of read operations per second in the file system.",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false
+  }, {
+    "fieldName" : "used",
+    "title" : "Used Bytes",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "It displays the used space in the file system in bytes.",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  } ],
+  "platforms" : [ "INFRA" ]
+}

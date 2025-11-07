@@ -1,0 +1,62 @@
+{
+  "categoryName" : "kube_pod_volume_list",
+  "interval" : "1h",
+  "pk" : [ "podUid" ],
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "namespace",
+    "title" : "namespace",
+    "unit" : "string",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "podUid",
+    "title" : "podUid",
+    "unit" : "string",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "podName",
+    "title" : "podName",
+    "unit" : "string",
+    "deprecated" : false,
+    "type" : "String"
+  } ],
+  "fields" : [ {
+    "fieldName" : "volumeClaimNameList",
+    "title" : "volumeClaimNameList",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "List"
+  }, {
+    "fieldName" : "volumeNameList",
+    "title" : "volumeNameList",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "List"
+  }, {
+    "fieldName" : "volumeHostPathList",
+    "title" : "volumeHostPathList",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "List"
+  }, {
+    "fieldName" : "volumeTypeList",
+    "title" : "volumeTypeList",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "List"
+  } ]
+}

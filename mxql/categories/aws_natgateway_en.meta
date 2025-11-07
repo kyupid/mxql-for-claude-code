@@ -1,0 +1,19 @@
+{
+  "categoryName" : "aws_natgateway",
+  "interval" : "5m",
+  "title" : "aws_natgateway",
+  "pk" : [ "dimension" ],
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "oid",
+    "title" : "aws_natgateway",
+    "label" : "aws_natgateway"
+  } ],
+  "fields" : [ {
+    "fieldName" : "saveTime",
+    "title" : "saveTime",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  } ],
+  "platforms" : [ "JAVA", "PHP", "PYTHON", "NODEJS", "INFRA", "KUBERNETES", "KUBE_NS" ]
+}

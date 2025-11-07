@@ -1,0 +1,14 @@
+{
+  "categoryName" : "server_package",
+  "interval" : "5s",
+  "title" : "Server Package",
+  "pk" : [ "oid" ],
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "oid",
+    "title" : "Oid",
+    "label" : "oid",
+    "deprecated" : false
+  } ],
+  "platforms" : [ "INFRA" ]
+}

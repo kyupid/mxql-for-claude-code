@@ -1,0 +1,133 @@
+{
+  "categoryName" : "rum_page_load_ajax_each_page",
+  "title" : "RumPageLoadAjaxEachPage",
+  "pk" : [ "env", "version", "page_group" ],
+  "description" : "ページロード過程で呼び出されたAJAX応答時間と応答状態コードに関連した指標です。",
+  "language" : "JA",
+  "tags" : [ {
+    "tagName" : "env",
+    "title" : "Env",
+    "unit" : "string",
+    "description" : "WEBアプリケーションのデプロイ環境(開発、ステージング、運用など)を意味する指標です。",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "request_path",
+    "title" : "RequestPath",
+    "unit" : "string",
+    "description" : "AJAXリクエストURLのパス値",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "request_host",
+    "title" : "RequestHost",
+    "unit" : "string",
+    "description" : "AJAXリクエストURLのホスト値",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "page_group",
+    "title" : "PageGroup",
+    "unit" : "string",
+    "description" : "ページグループ\nBrowserモニタリングサービスで有意味な統計グループを持つよう、URLパス(URL Path)を正規化してページグループ名として提供します。 \nURLパス(URL Path)単位の分析に影響しないと判断される数字、日付等は'?'に置き換えます。",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "version",
+    "title" : "Version",
+    "unit" : "string",
+    "description" : "WEBアプリケーションのデプロイバージョンを意味する指標です。",
+    "deprecated" : false,
+    "type" : "String"
+  } ],
+  "fields" : [ {
+    "fieldName" : "ajax_duration",
+    "title" : "AjaxDuration",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "AJAXリクエストの平均応答時間",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "ajax_fail_count",
+    "title" : "AjaxFailCount",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "リクエストに失敗したAJAX件数",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "ajax_3xx_count",
+    "title" : "Ajax3xxCount",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "応答状態コード300以上～400未満のAJAX件数",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "ajax_5xx_count",
+    "title" : "Ajax5xxCount",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "応答状態コード500以上のAJAX件数",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "ajax_4xx_count",
+    "title" : "Ajax4xxCount",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "応答状態コード400以上～500未満のAJAX件数",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "ajax_count",
+    "title" : "AjaxCount",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "AJAX件数",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "ajax_2xx_count",
+    "title" : "Ajax2xxCount",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "応答状態コード200以上～300未満のAJAX件数",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "ajax_1xx_count",
+    "title" : "Ajax1xxCount",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "応答状態コード100以上～200未満のAJAX件数",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  } ],
+  "platforms" : [ "RUM" ]
+}

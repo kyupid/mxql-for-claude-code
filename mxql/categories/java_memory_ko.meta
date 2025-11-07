@@ -1,0 +1,149 @@
+{
+  "categoryName" : "java_memory",
+  "interval" : "5s",
+  "title" : "Java Memory",
+  "pk" : [ "oid" ],
+  "language" : "KO",
+  "tags" : [ {
+    "tagName" : "pid",
+    "title" : "PId",
+    "label" : "pid",
+    "deprecated" : false
+  }, {
+    "tagName" : "onode",
+    "title" : "Onode",
+    "label" : "onodeName",
+    "deprecated" : false
+  }, {
+    "tagName" : "oname",
+    "title" : "Oname",
+    "label" : "oname",
+    "deprecated" : false
+  }, {
+    "tagName" : "host_ip",
+    "title" : "HostIp",
+    "label" : "host_ip",
+    "deprecated" : false
+  }, {
+    "tagName" : "okind",
+    "title" : "Okind",
+    "label" : "okindName",
+    "deprecated" : false
+  }, {
+    "tagName" : "onodeName",
+    "title" : "OnodeName",
+    "label" : "onodeName",
+    "deprecated" : false
+  }, {
+    "tagName" : "oid",
+    "title" : "Oid",
+    "label" : "oname",
+    "deprecated" : false
+  }, {
+    "tagName" : "okindName",
+    "title" : "OkindName",
+    "label" : "okindName",
+    "deprecated" : false
+  } ],
+  "fields" : [ {
+    "fieldName" : "nonheap_used",
+    "title" : "nonheap_used",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Non Heap 메모리 Used 사이즈",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "heap_committed",
+    "title" : "heap_committed",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Heap 메모리 Committed 사이즈",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "nonheap_init",
+    "title" : "nonheap_init",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Non Heap 메모리 Init  사이즈",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "heap_used",
+    "title" : "heap_used",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Heap 메모리 Used 사이즈",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "heap_init",
+    "title" : "heap_init",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Heap 메모리 committed 사이즈",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "nonheap_committed",
+    "title" : "nonheap_committed",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Non Heap 메모리 committed 사이즈",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "nonheap_max",
+    "title" : "nonheap_max",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Non Heap 메모리 Max 사이즈",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "heap_max",
+    "title" : "heap_max",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Heap 메모리 Max 사이즈",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "objectPendingFinalizationCount",
+    "title" : "ObjectPendingFinalizationCount",
+    "unit" : "count",
+    "objectMerge" : "sum",
+    "timeMerge" : "sum",
+    "description" : "대기 중인 Finalization을 가지고 있는 Object의 대략적인 개수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  } ],
+  "platforms" : [ "JAVA" ]
+}

@@ -1,0 +1,80 @@
+{
+  "categoryName" : "log_counter",
+  "interval" : "5s",
+  "title" : "logCounter",
+  "pk" : [ "oid" ],
+  "description" : "LogMoniteringServiceCounter",
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "oname",
+    "title" : "Oname",
+    "label" : "oname",
+    "deprecated" : false
+  }, {
+    "tagName" : "hostName",
+    "title" : "HostName",
+    "label" : "hostName",
+    "deprecated" : false
+  }, {
+    "tagName" : "oid",
+    "title" : "Oid",
+    "label" : "oid",
+    "deprecated" : false
+  } ],
+  "fields" : [ {
+    "fieldName" : "yaml_path",
+    "title" : "Yaml Path",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "YAML configuration file path",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "process_cpu",
+    "title" : "ProcessCpu",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Number of running processes",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "process_memory",
+    "title" : "ProcessMemory",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Process memory usage",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "fb_version",
+    "title" : "Fluent-Bit Version",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Fluent-Bit Version",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "ip",
+    "title" : "Ip",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Ip Address",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "fb_path",
+    "title" : "Fluent-bit Path",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Fluent Bit installation path",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  } ],
+  "platforms" : [ "LOG" ]
+}

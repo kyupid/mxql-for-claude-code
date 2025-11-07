@@ -1,0 +1,42 @@
+{
+  "categoryName" : "visitor{h1}",
+  "interval" : "1h",
+  "title" : "Visitor",
+  "pk" : [ "oid" ],
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "oid",
+    "title" : "Oid",
+    "label" : "oid",
+    "deprecated" : false
+  }, {
+    "tagName" : "onode",
+    "title" : "Onode",
+    "label" : "onode",
+    "deprecated" : false
+  }, {
+    "tagName" : "okind",
+    "title" : "Okind",
+    "label" : "okind",
+    "deprecated" : false
+  } ],
+  "fields" : [ {
+    "fieldName" : "logbits",
+    "title" : "LogBits",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "visit_user",
+    "title" : "VisitUser",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  } ]
+}

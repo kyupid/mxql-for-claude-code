@@ -1,0 +1,84 @@
+{
+  "categoryName" : "kube_scheduler",
+  "interval" : "1m",
+  "title" : "Kube Scheduler",
+  "pk" : [ "instance" ],
+  "description" : "Matrix metrics for kube-scheduler component",
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "instance",
+    "title" : "Instance",
+    "unit" : "txt",
+    "description" : "instance where kube-scheduler is deployed",
+    "deprecated" : false,
+    "type" : "String"
+  } ],
+  "fields" : [ {
+    "fieldName" : "preemptionAttemptsTotal",
+    "title" : "PreemptionAttemptsTotal",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Total preemption attempts in the cluster till now",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "pendingPodsActive",
+    "title" : "PendingPodsActive",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "number of pods in activeQ",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "pendingPodsUnschedulable",
+    "title" : "PendingPodsUnschedulable",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "number of pods in unschedulablePods that the scheduler attempted to schedule and failed",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "pendingPodsGated",
+    "title" : "PendingPodsGated",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "number of unschedulable pods that the scheduler never attempted to schedule because they are gated",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "pendingPodsBackoff",
+    "title" : "PendingPodsBackoff",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "number of pods in backoffQ",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "preemptionVictimCount",
+    "title" : "PreemptionVictimCount",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Number of selected preemption victims",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  } ],
+  "platforms" : [ "KUBERNETES" ]
+}

@@ -1,0 +1,143 @@
+{
+  "categoryName" : "container_gpu",
+  "interval" : "5s",
+  "title" : "Container GPU",
+  "pk" : [ "uuid" ],
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "uuid",
+    "title" : "Uuid",
+    "unit" : "string",
+    "deprecated" : false,
+    "type" : "String"
+  } ],
+  "fields" : [ {
+    "fieldName" : "DCGM_FI_PROF_DRAM_ACTIVE",
+    "title" : "DCGM_FI_PROF_DRAM_ACTIVE",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "DCGM_FI_DEV_SM_CLOCK",
+    "title" : "DCGM_FI_DEV_SM_CLOCK",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "DCGM_FI_PROF_SM_ACTIVE",
+    "title" : "DCGM_FI_PROF_SM_ACTIVE",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "DCGM_FI_DEV_MEM_CLOCK",
+    "title" : "DCGM_FI_DEV_MEM_CLOCK",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "DCGM_FI_PROF_PIPE_TENSOR_ACTIVE",
+    "title" : "DCGM_FI_PROF_PIPE_TENSOR_ACTIVE",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "DCGM_FI_DEV_POWER_USAGE",
+    "title" : "DCGM_FI_DEV_POWER_USAGE",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "DCGM_FI_PROF_GR_ENGINE_ACTIVE",
+    "title" : "DCGM_FI_PROF_GR_ENGINE_ACTIVE",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "DCGM_FI_DEV_GPU_TEMP",
+    "title" : "DCGM_FI_DEV_GPU_TEMP",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "DCGM_FI_DEV_FB_USED",
+    "title" : "DCGM_FI_DEV_FB_USED",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "DCGM_FI_DEV_GPU_UTIL",
+    "title" : "DCGM_FI_DEV_GPU_UTIL",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "DCGM_FI_DEV_MEM_COPY_UTIL",
+    "title" : "DCGM_FI_DEV_MEM_COPY_UTIL",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "DCGM_FI_PROF_SM_OCCUPANCY",
+    "title" : "DCGM_FI_PROF_SM_OCCUPANCY",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "DCGM_FI_DEV_FB_USED_PERCENT",
+    "title" : "DCGM_FI_DEV_FB_USED_PERCENT",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "DCGM_FI_DEV_PSTATE",
+    "title" : "DCGM_FI_DEV_PSTATE",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  } ]
+}

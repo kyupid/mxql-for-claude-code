@@ -1,0 +1,8 @@
+{
+  "categoryName" : "my_cate",
+  "language" : "KO",
+  "tags" : [ {
+    "tagName" : "hi",
+    "description" : "hi 지표"
+  } ]
+}

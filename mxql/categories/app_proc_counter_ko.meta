@@ -1,0 +1,291 @@
+{
+  "categoryName" : "app_proc_counter",
+  "title" : "ApplicationProcessCounter",
+  "interval" : [ "1h", "5m", "5s" ],
+  "pk" : [ "oid" ],
+  "language" : "KO",
+  "tags" : [ {
+    "tagName" : "container",
+    "title" : "Container",
+    "label" : "container",
+    "deprecated" : false
+  }, {
+    "tagName" : "okind",
+    "title" : "Okind",
+    "label" : "okindName",
+    "deprecated" : false
+  }, {
+    "tagName" : "type",
+    "title" : "Type",
+    "label" : "type",
+    "deprecated" : false
+  }, {
+    "tagName" : "oname",
+    "title" : "Oname",
+    "label" : "oname",
+    "deprecated" : false
+  }, {
+    "tagName" : "oid",
+    "title" : "Oid",
+    "label" : "oname",
+    "deprecated" : false
+  }, {
+    "tagName" : "host_ip",
+    "title" : "HostIp",
+    "label" : "host_ip",
+    "deprecated" : false
+  }, {
+    "tagName" : "containerKey",
+    "title" : "ContainerKey",
+    "label" : "container",
+    "deprecated" : false
+  }, {
+    "tagName" : "okindName",
+    "title" : "OkindName",
+    "label" : "okindName",
+    "deprecated" : false
+  }, {
+    "tagName" : "pid",
+    "title" : "Pid",
+    "label" : "pid",
+    "deprecated" : false
+  }, {
+    "tagName" : "onode",
+    "title" : "Onode",
+    "label" : "onode",
+    "deprecated" : false
+  } ],
+  "fields" : [ {
+    "fieldName" : "heap_perm",
+    "title" : "HeapPermanent",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "힙 Perm 영역 크기",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "pending_finalization",
+    "title" : "PendingFinalization",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : " Finalizer 큐에서 대기 중인 객체 수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "heap_max",
+    "title" : "HeapMax",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "힙 최대 크기",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "thread_count",
+    "title" : "ThreadCount",
+    "unit" : "count",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "description" : "스레드 건수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "proc_fd",
+    "title" : "FileDescriptor",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "파일디스크립터 수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "gc_time",
+    "title" : "GCTime",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "GC 수행 시간",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "thread_daemon",
+    "title" : "ThreadDaemon",
+    "unit" : "count",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "description" : "스레드 데몬 건수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "thread_peak_count",
+    "title" : "ThreadPeakCount",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "스레드 최대 사용 건수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "heap_tot",
+    "title" : "HeapTotal",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "힙 전체 크기",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "heap_use",
+    "title" : "HeapUsed",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "힙 사용량 크기",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "gc_count",
+    "title" : "GCCount",
+    "unit" : "count",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "description" : "GC 건수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "gc_oldgen_count",
+    "title" : "GCOldgenCount",
+    "unit" : "count",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "description" : "Full GC 건수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "proc_fd_max",
+    "title" : "MaxFileDescriptor",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "최대 파일디스크립터 건수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "mem_system",
+    "title" : "SystemMemoryTotal",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "시스템 메모리 전체 크기",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "cputime",
+    "title" : "CpuTime",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "CPU 사용시간",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "threadpool_activeCount",
+    "title" : "ThreadPoolActiveCount",
+    "unit" : "count",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "description" : "스레드 풀 액티브 건수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "thread_total_started",
+    "title" : "ThreadTotalStarted",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "JVM 시작시점의 스레드 전체 건수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "threadpool_queueSize",
+    "title" : "ThreadPoolQueueSize",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "스레드 풀 큐 사이즈",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "db_num_active",
+    "title" : "DbActiveConn",
+    "unit" : "count",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "description" : "DB 커넥션 액티브 건수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "db_num_idle",
+    "title" : "DbIdleConn",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "DB 커넥션 Idle 건수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "mem_proc",
+    "title" : "ProcessMemoryUsed",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "프로세스 메모리 사용량 크기",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  } ],
+  "platforms" : [ "JAVA" ]
+}

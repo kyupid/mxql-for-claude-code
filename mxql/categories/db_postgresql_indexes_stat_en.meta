@@ -1,0 +1,76 @@
+{
+  "categoryName" : "db_postgresql_indexes_stat",
+  "title" : "db_postgresql_indexes_stat",
+  "pk" : [ "oid" ],
+  "language" : "EN",
+  "fields" : [ {
+    "fieldName" : "schemaname",
+    "title" : "Schema",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "indexname",
+    "title" : "Index",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "time",
+    "title" : "Collection Time",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "수집시간",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "tablename",
+    "title" : "Table",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "idx_scan",
+    "title" : "Index Scan Count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "인덱스 스캔 횟수 (idx_scan)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "datname",
+    "title" : "DB",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "idx_tup_fetch",
+    "title" : "Index Rows Fetched",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "인덱스를 통해 실제로 테이블에서 가져온 행 수(idx_tup_fetch)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "idx_tup_read",
+    "title" : "Index Entries Read",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "인덱스에서 읽은 엔트리 수(idx_tup_read)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  } ],
+  "platforms" : [ "POSTGRESQL" ]
+}

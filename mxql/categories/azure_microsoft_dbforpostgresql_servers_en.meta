@@ -1,0 +1,6 @@
+{
+  "categoryName" : "azure_microsoft_dbforpostgresql_servers",
+  "title" : "AzureMicrosoftDbforpostgresqlServers",
+  "pk" : [ "dimension" ],
+  "language" : "EN"
+}

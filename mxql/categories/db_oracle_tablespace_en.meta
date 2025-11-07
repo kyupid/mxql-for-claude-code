@@ -1,0 +1,34 @@
+{
+  "categoryName" : "db_oracle_tablespace",
+  "interval" : "1h",
+  "title" : "db_oracle_tablespace",
+  "pk" : [ "tablespace", "datfile", "oid" ],
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "oname",
+    "title" : "oname",
+    "deprecated" : false
+  } ],
+  "fields" : [ {
+    "fieldName" : "used",
+    "title" : "used",
+    "unit" : "MiB",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "size",
+    "title" : "size",
+    "unit" : "MiB",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  } ],
+  "platforms" : [ "ORACLE" ]
+}

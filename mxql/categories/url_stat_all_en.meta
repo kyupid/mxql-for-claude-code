@@ -1,0 +1,50 @@
+{
+  "categoryName" : "url_stat_all",
+  "interval" : [ "1h", "5m", "1m" ],
+  "pk" : [ "_pk_" ],
+  "description" : "Status overview of all URLs",
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "_name_",
+    "title" : "Type",
+    "unit" : "txt",
+    "description" : "Type",
+    "deprecated" : false,
+    "type" : "String"
+  } ],
+  "fields" : [ {
+    "fieldName" : "normal",
+    "title" : "Normal",
+    "unit" : "count",
+    "objectMerge" : "sum",
+    "timeMerge" : "max",
+    "description" : "Normal Count",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "total",
+    "title" : "Total",
+    "unit" : "count",
+    "objectMerge" : "sum",
+    "timeMerge" : "max",
+    "description" : "Total Count",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "error",
+    "title" : "Error",
+    "unit" : "count",
+    "objectMerge" : "sum",
+    "timeMerge" : "max",
+    "description" : "Error Count",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  } ],
+  "platforms" : [ "URL_PRO" ]
+}

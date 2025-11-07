@@ -1,0 +1,91 @@
+{
+  "categoryName" : "root1m_service",
+  "interval" : "5s",
+  "title" : "Root1mService",
+  "pk" : [ "oid" ],
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "ip",
+    "title" : "Ip",
+    "label" : "ip"
+  }, {
+    "tagName" : "okindName",
+    "title" : "OkindName",
+    "label" : "okindName"
+  }, {
+    "tagName" : "okind",
+    "title" : "Okind",
+    "label" : "okindName"
+  }, {
+    "tagName" : "oname",
+    "title" : "Oname",
+    "label" : "oname"
+  }, {
+    "tagName" : "container",
+    "title" : "Container",
+    "label" : "container"
+  }, {
+    "tagName" : "onodeName",
+    "title" : "OnodeName",
+    "label" : "onodeName"
+  }, {
+    "tagName" : "oid",
+    "title" : "Oid",
+    "label" : "oname"
+  }, {
+    "tagName" : "onode",
+    "title" : "Onode",
+    "label" : "onodeName"
+  } ],
+  "fields" : [ {
+    "fieldName" : "act8",
+    "title" : "Act8",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "error",
+    "title" : "Error",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "rows",
+    "title" : "Rows",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "act",
+    "title" : "Act",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "httpc_time",
+    "title" : "HttpcTime",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "elapsed",
+    "title" : "Elapsed",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "dbc_time",
+    "title" : "DbcTime",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "sql_time",
+    "title" : "SqlTime",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "count",
+    "title" : "Count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  } ],
+  "platforms" : [ "JAVA", "PHP", "NODEJS" ]
+}

@@ -1,0 +1,87 @@
+{
+  "categoryName" : "app_actx_meter",
+  "title" : "ApplicationActiveTrxMeter",
+  "interval" : [ "1h", "5m", "5s" ],
+  "pk" : [ "oid" ],
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "host_ip",
+    "title" : "HostIp",
+    "label" : "host_ip",
+    "deprecated" : false
+  }, {
+    "tagName" : "container",
+    "title" : "Container",
+    "label" : "container",
+    "deprecated" : false
+  }, {
+    "tagName" : "onode",
+    "title" : "Onode",
+    "label" : "onode",
+    "deprecated" : false
+  }, {
+    "tagName" : "alias",
+    "title" : "Alias",
+    "label" : "alias",
+    "deprecated" : false
+  }, {
+    "tagName" : "okindName",
+    "title" : "OkindName",
+    "label" : "okindName",
+    "deprecated" : false
+  }, {
+    "tagName" : "oid",
+    "title" : "Oid",
+    "label" : "oname",
+    "deprecated" : false
+  }, {
+    "tagName" : "okind",
+    "title" : "Okind",
+    "label" : "okindName",
+    "deprecated" : false
+  }, {
+    "tagName" : "oname",
+    "title" : "Oname",
+    "label" : "oname",
+    "deprecated" : false
+  }, {
+    "tagName" : "containerKey",
+    "title" : "ContainerKey",
+    "label" : "container",
+    "deprecated" : false
+  } ],
+  "fields" : [ {
+    "fieldName" : "active_httpc",
+    "title" : "ActiveHttpCall",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "data",
+    "title" : "Data",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "active_sql",
+    "title" : "ActiveSql",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "txcaller_unknown",
+    "title" : "TrxCallerUnknown",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  } ],
+  "platforms" : [ "JAVA", "PHP", "PYTHON", "NODEJS", "DOTNET" ]
+}

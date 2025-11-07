@@ -1,0 +1,120 @@
+{
+  "categoryName" : "app_active_stat",
+  "title" : "Application Active Stat",
+  "interval" : [ "1h", "5m", "5s" ],
+  "pk" : [ "oid" ],
+  "language" : "JA",
+  "tags" : [ {
+    "tagName" : "onode",
+    "title" : "Onode",
+    "label" : "onode",
+    "deprecated" : false
+  }, {
+    "tagName" : "pid",
+    "title" : "Pid",
+    "label" : "pid",
+    "deprecated" : false
+  }, {
+    "tagName" : "alias",
+    "title" : "Alias",
+    "label" : "alias",
+    "deprecated" : false
+  }, {
+    "tagName" : "okind",
+    "title" : "Okind",
+    "label" : "okindName",
+    "deprecated" : false
+  }, {
+    "tagName" : "okindName",
+    "title" : "OkindName",
+    "label" : "okindName",
+    "deprecated" : false
+  }, {
+    "tagName" : "container",
+    "title" : "Container",
+    "label" : "container",
+    "deprecated" : false
+  }, {
+    "tagName" : "oid",
+    "title" : "Oid",
+    "label" : "oname",
+    "deprecated" : false
+  }, {
+    "tagName" : "host_ip",
+    "title" : "HostIp",
+    "label" : "host_ip",
+    "deprecated" : false
+  }, {
+    "tagName" : "type",
+    "title" : "Type",
+    "label" : "type",
+    "deprecated" : false
+  }, {
+    "tagName" : "oname",
+    "title" : "Oname",
+    "label" : "oname",
+    "deprecated" : false
+  }, {
+    "tagName" : "containerKey",
+    "title" : "ContainerKey",
+    "label" : "container",
+    "deprecated" : false
+  } ],
+  "fields" : [ {
+    "fieldName" : "sql",
+    "title" : "Sql",
+    "unit" : "count",
+    "objectMerge" : "sum",
+    "timeMerge" : "sum",
+    "description" : "アクティブステータス ‐ SQL件数",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "dbc",
+    "title" : "DbConnection",
+    "unit" : "count",
+    "objectMerge" : "sum",
+    "timeMerge" : "sum",
+    "description" : "アクティブステータス ‐ DBC件数",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "httpc",
+    "title" : "HttpCall",
+    "unit" : "count",
+    "objectMerge" : "sum",
+    "timeMerge" : "sum",
+    "description" : "アクティブステータス ‐ HTTPC件数",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "method",
+    "title" : "Method",
+    "unit" : "count",
+    "objectMerge" : "sum",
+    "timeMerge" : "sum",
+    "description" : "アクティブステータス ‐ Method件数",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "socket",
+    "title" : "Socket",
+    "unit" : "count",
+    "objectMerge" : "sum",
+    "timeMerge" : "sum",
+    "description" : "アクティブステータス ‐ Socket件数",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  } ],
+  "platforms" : [ "JAVA", "PHP", "PYTHON", "NODEJS" ]
+}

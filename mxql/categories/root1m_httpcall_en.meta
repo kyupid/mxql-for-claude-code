@@ -1,0 +1,76 @@
+{
+  "categoryName" : "root1m_httpcall",
+  "interval" : "5s",
+  "title" : "Root1mHttpCall",
+  "pk" : [ "oid" ],
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "oname",
+    "title" : "Oname",
+    "label" : "oname"
+  }, {
+    "tagName" : "ip",
+    "title" : "Ip",
+    "label" : "ip"
+  }, {
+    "tagName" : "okindName",
+    "title" : "OkindName",
+    "label" : "okindName"
+  }, {
+    "tagName" : "targetHash",
+    "title" : "TargetHash",
+    "label" : "targetHash"
+  }, {
+    "tagName" : "oid",
+    "title" : "Oid",
+    "label" : "oname"
+  }, {
+    "tagName" : "okind",
+    "title" : "Okind",
+    "label" : "okindName"
+  }, {
+    "tagName" : "onodeName",
+    "title" : "OnodeName",
+    "label" : "onodeName"
+  }, {
+    "tagName" : "targetHost",
+    "title" : "TargetHost",
+    "label" : "targetHost"
+  }, {
+    "tagName" : "onode",
+    "title" : "Onode",
+    "label" : "onodeName"
+  }, {
+    "tagName" : "container",
+    "title" : "Container",
+    "label" : "container"
+  } ],
+  "fields" : [ {
+    "fieldName" : "error",
+    "title" : "Error",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "act",
+    "title" : "Act",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "count",
+    "title" : "Count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "elapsed",
+    "title" : "Elapsed",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "rows",
+    "title" : "Rows",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  } ],
+  "platforms" : [ "JAVA", "PHP" ]
+}

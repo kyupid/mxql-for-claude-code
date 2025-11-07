@@ -1,0 +1,192 @@
+{
+  "categoryName" : "infra_process_group",
+  "title" : "InfraProcessGroup",
+  "interval" : [ "5s" ],
+  "pk" : [ "oid", "@id" ],
+  "language" : "JA",
+  "tags" : [ {
+    "tagName" : "oname",
+    "title" : "Oname",
+    "unit" : "string",
+    "deprecated" : false,
+    "type" : "String"
+  } ],
+  "fields" : [ {
+    "fieldName" : "wdiskIo",
+    "title" : "WriteDiskIo",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Linux専用の指標で、プロセス(グループ)がディスクに発生させる秒当りのWrite I/Oの総量を意味します。",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "totalCharIo",
+    "title" : "Total Charater IO",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "プロセス(グループ)が秒当りに発生させるI/Oの総量を意味します。これにはディスクだけではなくバッファー、キャッシュ、ターミナル等に対するI/Oもすべて含まれます。",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "wcharIo",
+    "title" : "Write Character IO",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "プロセス(グループ)が秒当りに発生させるWrite I/Oの総量を意味します。これにはディスクだけではなくバッファー、キャッシュ、ターミナル等に対するI/Oをすべて含まれます。",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "cpu",
+    "title" : "CPU",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "プロセス(グループ)が使用したCPU使用量の比率を表示した値です。",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "workingSet",
+    "title" : "Working Set",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Windows専用の指標で、プロセス(グループ)が使用した物理メモリーのサイズを意味します。",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "threadCnt",
+    "title" : "Thread Count",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "プロセス(グループ)が持っているスレッドの数を意味します。",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "poolPaged",
+    "title" : "Pool Paged",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Windows専用の指標で、プロセス(グループ)がページングできるメモリーのサイズを意味します。",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "handleCnt",
+    "title" : "Handle Count",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Windows専用の指標で、プロセス(グループ)が持っているハンドルの数を意味します。",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "rss",
+    "title" : "Rss",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "プロセス(グループ)が実際に物理メモリーに割り当てられたサイズを意味します。この値には共有メモリーが含まれるため、共有メモリーを多く使うプロセスが多いサーバーの場合はプロセスのRSS合計値が全体メモリーのサイズを超える時もあります。",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "cmd",
+    "title" : "Cmd",
+    "unit" : "string",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "プロセスの実行コマンドのみを抽出した値を意味します。",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "fieldName" : "private",
+    "title" : "Private",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Windows専用の指標で、プロセス(グループ)が独立的に使用するメモリーのサイズを意味します。これは物理メモリーとページングファイルを含み、共有されないメモリーを表しますます。",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "rdiskIo",
+    "title" : "Read Disk IO",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Linux専用の指標で、プロセス(グループ)がディスクに発生させる秒当りのRead I/Oの総量を意味します。",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "vsz",
+    "title" : "VSZ",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "プルセス(グループ)が使用する全体仮想メモリーのサイズを意味します。",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "procCnt",
+    "title" : "Process Count",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "同一Userによって(argumentは相違しても)同じコマンドで実行されたプロセス数を意味します。",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "rcharIo",
+    "title" : "Read Character IO",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "プロセス(グループ)が秒当りに発生させるRead I/Oの総量を意味します。これにはディスクだけではなくバッファー、キャッシュ、ターミナル等に対するI/Oをすべて含まれます。",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "owner",
+    "title" : "Owner",
+    "unit" : "string",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "プロセスを実行したuserを表示した値です。",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "String"
+  } ],
+  "platforms" : [ "INFRA" ]
+}

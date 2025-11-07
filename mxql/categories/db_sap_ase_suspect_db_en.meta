@@ -1,0 +1,23 @@
+{
+  "categoryName" : "db_sap_ase_suspect_db",
+  "interval" : "1m",
+  "title" : "SAP ASE Suspect DB",
+  "pk" : [ "oid", "name" ],
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "name",
+    "title" : "name",
+    "description" : "database name",
+    "deprecated" : false
+  } ],
+  "fields" : [ {
+    "fieldName" : "status",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "if suspect db is 1, else 0",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  } ],
+  "platforms" : [ "SAP_ASE" ]
+}

@@ -1,0 +1,230 @@
+{
+  "categoryName" : "db_oracle_dma_sqlstat",
+  "pk" : [ "plan_hash_value", "sql_id", "con_id", "oid" ],
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "oname",
+    "deprecated" : false
+  }, {
+    "tagName" : "oid",
+    "deprecated" : false
+  } ],
+  "fields" : [ {
+    "fieldName" : "cpu_time",
+    "title" : "cpu time",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "group" : "stat",
+    "visible" : true,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "redo size",
+    "title" : "redo size",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "group" : "stat",
+    "visible" : true,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "sql_id",
+    "title" : "sql_id",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : true,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "elapsed_time",
+    "title" : "elapsed time",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "group" : "stat",
+    "visible" : true,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "sql_hash_value",
+    "title" : "hash_value",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : true,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "sorts (disk)",
+    "title" : "sorts (disk)",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "group" : "stat",
+    "visible" : true,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "machine",
+    "title" : "machine",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : true,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "physical reads",
+    "title" : "physical reads",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "group" : "stat",
+    "visible" : true,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "plan_hash_value",
+    "title" : "plan_hash_value",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : true,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "sorts (rows)",
+    "title" : "sorts (rows)",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "group" : "stat",
+    "visible" : true,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "elapsed_max",
+    "title" : "elapsed time (max)",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "group" : "stat",
+    "visible" : true,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "osuser",
+    "title" : "osuser",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : true,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "table scan blocks gotten",
+    "title" : "table scan blocks gotten",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "group" : "stat",
+    "visible" : true,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "con_name",
+    "title" : "db",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : true,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "@id",
+    "title" : "@id",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "elapsed_wait",
+    "title" : "wait time",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "group" : "stat",
+    "visible" : true,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "module",
+    "title" : "module",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : true,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "table fetch by rowid",
+    "title" : "table fetch by rowid",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "group" : "stat",
+    "visible" : true,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "execute_count",
+    "title" : "executions",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "group" : "stat",
+    "visible" : true,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "session logical reads",
+    "title" : "session logical reads",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "group" : "stat",
+    "visible" : true,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "table fetch continued row",
+    "title" : "table fetch continued row",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "group" : "stat",
+    "visible" : true,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "schemaname",
+    "title" : "schema",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : true,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "program",
+    "title" : "program",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : true,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "sql_query",
+    "title" : "query",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : true,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "con_id",
+    "title" : "con_id",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  } ],
+  "platforms" : [ "ORACLE_DMA" ]
+}

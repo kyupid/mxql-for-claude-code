@@ -1,0 +1,158 @@
+{
+  "categoryName" : "server_network",
+  "interval" : "5s",
+  "title" : "ServerNetwork",
+  "pk" : [ "oid", "desc" ],
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "hwAddr",
+    "title" : "HwAddr",
+    "label" : "hwAddr",
+    "deprecated" : false
+  }, {
+    "tagName" : "onodeName",
+    "title" : "OnodeName",
+    "label" : "onodeName",
+    "deprecated" : false
+  }, {
+    "tagName" : "oid",
+    "title" : "Oid",
+    "label" : "oid",
+    "deprecated" : false
+  }, {
+    "tagName" : "ip",
+    "title" : "Ip",
+    "label" : "ip",
+    "deprecated" : false
+  }, {
+    "tagName" : "descHash",
+    "title" : "DescHash",
+    "label" : "descHash",
+    "deprecated" : false
+  }, {
+    "tagName" : "desc",
+    "title" : "Desc",
+    "label" : "desc",
+    "deprecated" : false
+  }, {
+    "tagName" : "oname",
+    "title" : "Oname",
+    "label" : "oname",
+    "deprecated" : false
+  }, {
+    "tagName" : "os",
+    "title" : "OS",
+    "label" : "os",
+    "deprecated" : false
+  } ],
+  "fields" : [ {
+    "fieldName" : "errorIn",
+    "title" : "ErrorIn",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Inbound error",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "packetOut",
+    "title" : "PacketOut",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Outbound packet",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "trafficOutAcct",
+    "title" : "TrafficOutAcct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "trafficIn",
+    "title" : "TrafficIn",
+    "unit" : "bps",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Inbound traffic",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "droppedOut",
+    "title" : "DroppedOut",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Outbound drop",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "droppedIn",
+    "title" : "DroppedIn",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Inbound drop",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "trafficInAcct",
+    "title" : "TrafficInAcct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "errorOut",
+    "title" : "ErrorOut",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Outbound error",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "bandwidthOrder",
+    "title" : "BandwidthOrder",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "packetIn",
+    "title" : "PacketIn",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Inbound packet",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "count",
+    "title" : "Count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "trafficOut",
+    "title" : "TrafficOut",
+    "unit" : "bps",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Outbound traffic",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  } ],
+  "platforms" : [ "INFRA" ]
+}

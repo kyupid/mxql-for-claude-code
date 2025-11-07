@@ -1,0 +1,258 @@
+{
+  "categoryName" : "server_disk",
+  "interval" : "5s",
+  "title" : "Server Disk",
+  "pk" : [ "mountPoint", "oid" ],
+  "language" : "KO",
+  "tags" : [ {
+    "tagName" : "fileSystem",
+    "title" : "FileSystem",
+    "label" : "fileSystem",
+    "deprecated" : false
+  }, {
+    "tagName" : "oname",
+    "title" : "Oname",
+    "label" : "oname",
+    "deprecated" : false
+  }, {
+    "tagName" : "mountPoint",
+    "title" : "MountPoint",
+    "label" : "mountPoint",
+    "deprecated" : false
+  }, {
+    "tagName" : "deviceIdHash",
+    "title" : "DeviceIdHash",
+    "label" : "deviceIdHash",
+    "deprecated" : false
+  }, {
+    "tagName" : "onodeName",
+    "title" : "OnodeName",
+    "label" : "onodeName",
+    "deprecated" : false
+  }, {
+    "tagName" : "deviceId",
+    "title" : "DeviceId",
+    "label" : "deviceId",
+    "deprecated" : false
+  }, {
+    "tagName" : "fileSystemHash",
+    "title" : "FileSystemHash",
+    "label" : "fileSystemHash",
+    "deprecated" : false
+  }, {
+    "tagName" : "os",
+    "title" : "OS",
+    "label" : "os",
+    "deprecated" : false
+  }, {
+    "tagName" : "mountPointHash",
+    "title" : "MountPointHash",
+    "label" : "mountPointHash",
+    "deprecated" : false
+  }, {
+    "tagName" : "oid",
+    "title" : "Oid",
+    "label" : "oid",
+    "deprecated" : false
+  } ],
+  "fields" : [ {
+    "fieldName" : "readBps",
+    "title" : "ReadBps",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "초당 읽은 바이트 수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "capacityEphemeralStorage",
+    "title" : "CapacityEphemeralStorage",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "usedInode",
+    "title" : "UsedInode",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Inode 사용 개수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "usedInodePercent",
+    "title" : "UsedInodePercent",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Inode 사용률",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "blksize",
+    "title" : "BlkSize",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "블록 사이즈",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "ioPercent",
+    "title" : "IoPercent",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "IO 사용률 일부 디스크 유형에서는 부정확한 값이 측정될 수 있습니다.",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "writeIops",
+    "title" : "WriteIops",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "초당 쓴 수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "readIops",
+    "title" : "ReadIops",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "초당 읽은 수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "usedSpaceOrder",
+    "title" : "UsedSpaceOrder",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "usedPercent",
+    "title" : "UsedPercent",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "파일 시스템 사용률",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "ioutilOrder",
+    "title" : "IoUtilOrder",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "count",
+    "title" : "Count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "allocatable_ephemeral_storage",
+    "title" : "AllocatableEphemeralStorage",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "writeBps",
+    "title" : "WriteBps",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "초당 쓴 바이트 수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "usedSpace",
+    "title" : "UsedSpace",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "totalSpace",
+    "title" : "TotalSpace",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "파일 시스템 전체 크기",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "freeSpace",
+    "title" : "FreeSpace",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "파일 시스템 잔여량",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "totalInode",
+    "title" : "TotalInode",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Inode 전체 개수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "queueLength",
+    "title" : "QueueLength",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "큐 길이",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "freePercent",
+    "title" : "FreePercent",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "파일 시스템 잔여율",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  } ],
+  "platforms" : [ "INFRA" ]
+}

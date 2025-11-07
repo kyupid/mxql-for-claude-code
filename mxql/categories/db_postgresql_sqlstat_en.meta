@@ -1,0 +1,98 @@
+{
+  "categoryName" : "db_postgresql_sqlstat",
+  "pk" : [ "query_hash", "db", "oid" ],
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "oid",
+    "deprecated" : false
+  }, {
+    "tagName" : "oname",
+    "deprecated" : false
+  } ],
+  "fields" : [ {
+    "fieldName" : "elapsed_time",
+    "title" : "elapsed time",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "group" : "stat",
+    "visible" : true,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "elapsed_max",
+    "title" : "elapsed time (max)",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "group" : "stat",
+    "visible" : true,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "client_hostname",
+    "title" : "host",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : true,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "query_hash",
+    "title" : "query_hash",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : true,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "application_name",
+    "title" : "application",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : true,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "datname",
+    "title" : "db",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : true,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "execute_count",
+    "title" : "executions",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "group" : "stat",
+    "visible" : true,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "usename",
+    "title" : "user",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : true,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "sql",
+    "title" : "query",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "elapsed_wait",
+    "title" : "wait time",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "group" : "stat",
+    "visible" : true,
+    "unfold" : false,
+    "deprecated" : false
+  } ],
+  "platforms" : [ "POSTGRESQL" ]
+}

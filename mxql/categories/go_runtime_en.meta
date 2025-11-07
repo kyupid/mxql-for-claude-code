@@ -1,0 +1,234 @@
+{
+  "categoryName" : "go_runtime",
+  "interval" : "5s",
+  "title" : "GoRuntime",
+  "pk" : [ "oid" ],
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "oid",
+    "title" : "Oid",
+    "label" : "oid"
+  }, {
+    "tagName" : "okind",
+    "title" : "Okind",
+    "label" : "okind"
+  }, {
+    "tagName" : "instance",
+    "title" : "Instance",
+    "label" : "instance"
+  }, {
+    "tagName" : "okindname",
+    "title" : "OkindName",
+    "label" : "okindname"
+  }, {
+    "tagName" : "cmd",
+    "title" : "Cmd",
+    "label" : "cmd"
+  }, {
+    "tagName" : "onode",
+    "title" : "Onode",
+    "label" : "onode"
+  }, {
+    "tagName" : "cmdFull",
+    "title" : "CmdFull",
+    "label" : "cmdFull"
+  }, {
+    "tagName" : "onodename",
+    "title" : "Onodename",
+    "label" : "onodename"
+  }, {
+    "tagName" : "oname",
+    "title" : "Oname",
+    "label" : "oname"
+  }, {
+    "tagName" : "ip",
+    "title" : "Ip",
+    "label" : "ip"
+  }, {
+    "tagName" : "public_ip",
+    "title" : "PublicIp",
+    "label" : "public_ip"
+  }, {
+    "tagName" : "pid",
+    "title" : "Pid",
+    "label" : "pid"
+  } ],
+  "fields" : [ {
+    "fieldName" : "Mallocs",
+    "title" : "Mallocs",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "NumGoroutine",
+    "title" : "NumGoroutine",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "OtherSys",
+    "title" : "OtherSys",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "PauseTotalNs",
+    "title" : "PauseTotalNs",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "NextGC",
+    "title" : "NextGC",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "HeapObjects",
+    "title" : "HeapObjects",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "HeapAlloc",
+    "title" : "HeapAlloc",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "HeapSys",
+    "title" : "HeapSys",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "TotalAlloc",
+    "title" : "TotalAlloc",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "NumCgoCall",
+    "title" : "NumCgoCall",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "StackInuse",
+    "title" : "StackInuse",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "NumForcedGC",
+    "title" : "NumForcedGC",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "HeapIdel",
+    "title" : "HeapIdel",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "MSpanSys",
+    "title" : "MSpanSys",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "LastGC",
+    "title" : "LastGC",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "StackSys",
+    "title" : "StackSys",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "HeapInuse",
+    "title" : "HeapInuse",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "MCacheInuse",
+    "title" : "MCacheInuse",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "Frees",
+    "title" : "Frees",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "GCSys",
+    "title" : "GCSys",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "HeapReleased",
+    "title" : "HeapReleased",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "BuckHashSys",
+    "title" : "BuckHashSys",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "GcPerSecond",
+    "title" : "NumForcedGC",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "MCacheSys",
+    "title" : "MCacheSys",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "Lokups",
+    "title" : "Lokups",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "Sys",
+    "title" : "Sys",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "NumCpu",
+    "title" : "NumCpu",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "NumGC",
+    "title" : "NumGC",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "Alloc",
+    "title" : "Alloc",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "GcPausePerSecond",
+    "title" : "NumForcedGC",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "MSpanInuse",
+    "title" : "MSpanInuse",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  } ],
+  "platforms" : [ "GO" ]
+}

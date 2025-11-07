@@ -1,0 +1,106 @@
+{
+  "categoryName" : "agent_status_summary",
+  "interval" : "10s",
+  "title" : "AgentStatusSummary",
+  "pk" : [ "oid" ],
+  "language" : "KO",
+  "fields" : [ {
+    "fieldName" : "status",
+    "title" : "status",
+    "unit" : "string",
+    "objectMerge" : "none",
+    "timeMerge" : "last",
+    "description" : "에이전트의 상태값",
+    "visible" : true,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "fieldName" : "isRebooted",
+    "title" : "isRebooted",
+    "unit" : "string",
+    "objectMerge" : "none",
+    "timeMerge" : "last",
+    "description" : "서버 리부팅 여부",
+    "visible" : true,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "fieldName" : "startTime",
+    "title" : "startTime",
+    "unit" : "ms",
+    "objectMerge" : "none",
+    "timeMerge" : "last",
+    "description" : "에이전트가 기동된 시간",
+    "visible" : true,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "oid",
+    "title" : "oid",
+    "objectMerge" : "none",
+    "timeMerge" : "none",
+    "description" : "oid 값 ",
+    "visible" : true,
+    "unfold" : true,
+    "deprecated" : false
+  }, {
+    "fieldName" : "lastActTime",
+    "title" : "lastActTime",
+    "unit" : "ms",
+    "objectMerge" : "none",
+    "timeMerge" : "last",
+    "description" : "에이전트가 기동되어 있던 최종 시간",
+    "visible" : true,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "isActive",
+    "title" : "isActive",
+    "unit" : "string",
+    "objectMerge" : "none",
+    "timeMerge" : "last",
+    "description" : "에이전트 활성화 여부",
+    "visible" : true,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "fieldName" : "uptime",
+    "title" : "uptime",
+    "unit" : "ms",
+    "objectMerge" : "none",
+    "timeMerge" : "last",
+    "description" : "서버가 기동된 시간",
+    "visible" : true,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "inActTime",
+    "title" : "inActTime",
+    "unit" : "ms",
+    "objectMerge" : "none",
+    "timeMerge" : "last",
+    "description" : "에이전트가 비활성화된 시간",
+    "visible" : true,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "isRestart",
+    "title" : "isRestart",
+    "unit" : "string",
+    "objectMerge" : "none",
+    "timeMerge" : "last",
+    "description" : "에이전트 재기동 여부",
+    "visible" : true,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "String"
+  } ],
+  "platforms" : [ "INFRA", "JAVA", "NODEJS", "PYTHON", "PHP", "DOTNET", "GO", "JAVA" ]
+}

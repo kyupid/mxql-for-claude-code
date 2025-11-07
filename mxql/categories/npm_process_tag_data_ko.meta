@@ -1,0 +1,311 @@
+{
+  "categoryName" : "npm_process_tag_data",
+  "title" : "NpmProcessTagData",
+  "interval" : [ "60s" ],
+  "pk" : [ "local_ip", "foreign_ip", "local_port", "oid", "foreign_port" ],
+  "language" : "KO",
+  "fields" : [ {
+    "fieldName" : "foreign_pod_id",
+    "title" : "ForeignPodId",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "쿠버네티스 Pod 내에 로컬 통신인 경우 해당 Pod의 id",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false
+  }, {
+    "fieldName" : "recv_packet_count",
+    "title" : "RecvPacketCount",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "수신한 패킷의 개수",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "max_latency",
+    "title" : "MaxLatency",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "패킷 왕복 지연 시간의 최댓값",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "direction",
+    "title" : "Direction",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "세션의 연결 방향",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false
+  }, {
+    "fieldName" : "send_packet_size",
+    "title" : "SendPacketSize",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "송신한 패킷의 전체 크기",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "foreign_ip",
+    "title" : "ForeignIp",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "통신 대상의 IP 주소",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false
+  }, {
+    "fieldName" : "row_count",
+    "title" : "RowCount",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "중복을 포함한 세션 개수",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "lost_count",
+    "title" : "LostCount",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "손실된 패킷의 수량",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "tot_latency",
+    "title" : "TotLatency",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "패킷 왕복 지연 시간의 합산 값",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "retransmission_count",
+    "title" : "RetransmissionCount",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "재전송이 일어난 패킷 개수",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "min_jitter",
+    "title" : "MinJitter",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "패킷 왕복 지연 시간 변동 값의 최솟값",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "host_tag",
+    "title" : "HostTag",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "통신 주체의 호스트 이름",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false
+  }, {
+    "fieldName" : "protocol",
+    "title" : "Protocol",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "통신 프로토콜 종류",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false
+  }, {
+    "fieldName" : "session_count",
+    "title" : "SessionCount",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "중복을 제외한 세션 개수",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "recv_packet_size",
+    "title" : "RecvPacketSize",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "수신한 패킷의 데이터 크기",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "send_packet_count",
+    "title" : "SendPacketCount",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "송신한 패킷의 수량",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "foreign_port",
+    "title" : "ForeignPort",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "통신 대상의 포트 번호",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false
+  }, {
+    "fieldName" : "foreign_container_id",
+    "title" : "ForeignContainerId",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "쿠버네티스 컨테이너 내에 로컬 통신인 경우에 해당 컨테이너의 id",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false
+  }, {
+    "fieldName" : "max_jitter",
+    "title" : "MaxJitter",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "패킷 왕복 지연 시간 변동 값의 최댓값",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "local_ip",
+    "title" : "LocalIp",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "통신 주체의 IP 주소",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false
+  }, {
+    "fieldName" : "tot_jitter",
+    "title" : "TotJitter",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "패킷 왕복 지연 시간 변동 값의 합산 값",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "min_latency",
+    "title" : "MinLatency",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "패킷 왕복 지연 시간의 최솟값",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "local_port",
+    "title" : "LocalPort",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "통신 주체의 포트 번호",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false
+  }, {
+    "fieldName" : "container_name",
+    "title" : "ContainerName",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "쿠버네티스 환경에서 수집된 컨테이너의 이름",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false
+  }, {
+    "fieldName" : "session_count_logbits",
+    "title" : "SessionCountLogbits",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "유니크 세션 계산을 위한 bit 정보(HyperLogLog)",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false
+  }, {
+    "fieldName" : "avg_latency",
+    "title" : "AvgLatency",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "패킷 왕복 지연 시간의 평균",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "app_name",
+    "title" : "AppName",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "통신 주체에 대한 커스텀 식별 태그",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false
+  }, {
+    "fieldName" : "process_type",
+    "title" : "ProcessType",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "통신을 수행한 프로세스의 종류",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false
+  }, {
+    "fieldName" : "avg_jitter",
+    "title" : "AvgJitter",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "패킷 왕복 지연 시간 변동 값의 평균",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "pod_name",
+    "title" : "PodName",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "통신 주체가 쿠버네티스 환경인 경우 Pod 이름",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false
+  } ],
+  "platforms" : [ "NPM" ]
+}

@@ -1,0 +1,159 @@
+{
+  "categoryName" : "infra_cpu",
+  "interval" : "2s",
+  "title" : "Infra CPU",
+  "pk" : [ "oid" ],
+  "language" : "JA",
+  "tags" : [ {
+    "tagName" : "oname",
+    "title" : "Oname",
+    "unit" : "string",
+    "description" : "Server name",
+    "deprecated" : false,
+    "type" : "String"
+  } ],
+  "fields" : [ {
+    "fieldName" : "total",
+    "title" : "Total",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "全体のCPU使用率の中、ユーザーモード(User)とカーネルモード(Sys)での使用率の合計を意味します。",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "totalwithwait",
+    "title" : "TotalWithWait",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "全体のCPU使用率の中、ユーザーモード(User)、カーネルモード(Sys)、I/O待機(wait)の使用率の合計を意味します。",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "sys",
+    "title" : "System",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "全体のCPU使用率の中、カーネルモード(Sys)での使用率を意味します。",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "wait",
+    "title" : "Wait",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "全体のCPU使用率の中、CPUがI/O作業の完了を待つ間に消費した時間の比率を意味します。",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "nice",
+    "title" : "Nice",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "全体のCPU使用率の中、低い優先順位(niced)プロセスの使用率を意味します。高い優先順位及び基本優先順位のプロセスの使用率はuser(%)に表示します。",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "softirq",
+    "title" : "SoftIrq",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "ソフトウェアInterrupt Requestを処理するのに使われたCPU使用率を意味します。",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "processor_utility",
+    "title" : "ProcessorUtility",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Windows専用の指標で、システムのすべてのプロセスの総CPU使用率を意味します。(WindowsタスクマネージャーのCPU使用率)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "steal",
+    "title" : "Steal",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "仮想化環境で、ハイパーバイザーが他のプロセスをサービスする間に仮想CPUが非自発的に待機した時間の比率を意味します。",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "loadavg_15m",
+    "title" : "LoadAvg15m",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "最近15分間のシステム平均負荷を意味します。",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "user",
+    "title" : "User",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "全体のCPU使用率の中、ユーザーモード(User)での使用率を意味します。",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "loadavg_5m",
+    "title" : "LoadAvg5m",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "最近5分間のシステム平均負荷を意味します。",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "irq",
+    "title" : "Irq",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "ハードウェアInterrupt Requestを処理するのに使われたCPU使用率を意味します。",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "lCores",
+    "title" : "Logical Core",
+    "unit" : "pct#",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "OSに割り当てられたLogical Core数を意味します。",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "loadavg_1m",
+    "title" : "LoadAvg1m",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "最近1分間のシステム平均負荷を意味します。",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "idle",
+    "title" : "Idle",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "CPUがアイドル状態で、作業を実行していない時間の比率を意味します。",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  } ]
+}

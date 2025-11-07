@@ -1,0 +1,57 @@
+{
+  "categoryName" : "kube_pot_stat",
+  "interval" : "5s",
+  "title" : "KubernetesPotStat",
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "kind",
+    "title" : "Kind",
+    "label" : "kind"
+  }, {
+    "tagName" : "oid",
+    "title" : "Oid",
+    "label" : "oid"
+  } ],
+  "fields" : [ {
+    "fieldName" : "limit_memory",
+    "title" : "LimitMemory",
+    "unit" : "byte",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "waiting_container",
+    "title" : "WaitingContainer",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "request_memory",
+    "title" : "RequestMemory",
+    "unit" : "byte",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "request_cpu",
+    "title" : "RequestCpu",
+    "unit" : "millicore",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "stopped_container",
+    "title" : "StoppedContainer",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "desired_pod",
+    "title" : "DesiredPod",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "available_pod",
+    "title" : "AvailablePod",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "running_container",
+    "title" : "RunningContainer",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "limit_cpu",
+    "title" : "LimitCpu",
+    "unit" : "millicore",
+    "timeMerge" : "avg"
+  } ],
+  "platforms" : [ "KUBERNETES" ]
+}

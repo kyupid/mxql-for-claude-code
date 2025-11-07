@@ -1,0 +1,6 @@
+{
+  "categoryName" : "azure_microsoft_sql_servers_databases",
+  "title" : "AzureMicrosoftSqlServersDatabases",
+  "pk" : [ "dimension" ],
+  "language" : "EN"
+}

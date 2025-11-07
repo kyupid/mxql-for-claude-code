@@ -1,0 +1,50 @@
+{
+  "categoryName" : "url_stat_all",
+  "interval" : [ "1h", "5m", "1m" ],
+  "pk" : [ "_pk_" ],
+  "description" : "모든 URL 의 상태별 현황",
+  "language" : "KO",
+  "tags" : [ {
+    "tagName" : "_name_",
+    "title" : "분류",
+    "unit" : "txt",
+    "description" : "분류",
+    "deprecated" : false,
+    "type" : "String"
+  } ],
+  "fields" : [ {
+    "fieldName" : "error",
+    "title" : "Error",
+    "unit" : "count",
+    "objectMerge" : "sum",
+    "timeMerge" : "max",
+    "description" : "에러 개수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "total",
+    "title" : "Total",
+    "unit" : "count",
+    "objectMerge" : "sum",
+    "timeMerge" : "max",
+    "description" : "전체 개수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "normal",
+    "title" : "Normal",
+    "unit" : "count",
+    "objectMerge" : "sum",
+    "timeMerge" : "max",
+    "description" : "정상 개수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  } ],
+  "platforms" : [ "URL_PRO" ]
+}

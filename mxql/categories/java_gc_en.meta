@@ -1,0 +1,65 @@
+{
+  "categoryName" : "java_gc",
+  "interval" : "5s",
+  "title" : "JavaGC",
+  "pk" : [ "oid", "name" ],
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "onode",
+    "title" : "Onode",
+    "label" : "onode",
+    "deprecated" : false
+  }, {
+    "tagName" : "oname",
+    "title" : "Oname",
+    "label" : "oname",
+    "deprecated" : false
+  }, {
+    "tagName" : "name",
+    "title" : "Name",
+    "label" : "name",
+    "deprecated" : false
+  }, {
+    "tagName" : "okind",
+    "title" : "Okind",
+    "label" : "okind",
+    "deprecated" : false
+  }, {
+    "tagName" : "host_ip",
+    "title" : "HostIp",
+    "label" : "host_ip",
+    "deprecated" : false
+  }, {
+    "tagName" : "oid",
+    "title" : "Oid",
+    "label" : "oname",
+    "deprecated" : false
+  }, {
+    "tagName" : "pid",
+    "title" : "PId",
+    "label" : "pid",
+    "deprecated" : false
+  } ],
+  "fields" : [ {
+    "fieldName" : "CollectionTime",
+    "title" : "CollectionTime",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "CollectionCount",
+    "title" : "CollectionCount",
+    "unit" : "count",
+    "objectMerge" : "sum",
+    "timeMerge" : "sum",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  } ],
+  "platforms" : [ "JAVA" ]
+}

@@ -1,0 +1,43 @@
+{
+  "categoryName" : "project_realtime",
+  "interval" : "5s",
+  "title" : "ProjectRealtime",
+  "pk" : [ "oid" ],
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "oid",
+    "title" : "Oid",
+    "label" : "oid"
+  }, {
+    "tagName" : "_no_5m_hour_",
+    "title" : "No5mHour",
+    "label" : "_no_5m_hour_"
+  } ],
+  "fields" : [ {
+    "fieldName" : "ap_count",
+    "title" : "ApCount",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "active_tx",
+    "title" : "ActiveTrx",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "user",
+    "title" : "User",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "tps",
+    "title" : "Tps",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "active_tx_slow",
+    "title" : "ActiveTrxSlow",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  } ],
+  "platforms" : [ "JAVA" ]
+}

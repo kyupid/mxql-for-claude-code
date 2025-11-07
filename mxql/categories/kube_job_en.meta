@@ -1,0 +1,126 @@
+{
+  "categoryName" : "kube_job",
+  "interval" : "30s",
+  "pk" : [ "jobUid" ],
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "ownerUid",
+    "title" : "OwnerUid",
+    "unit" : "string",
+    "description" : "The UID of the owning resource. (metadata.ownerReferences.uid)",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "jobUid",
+    "title" : "JobUid",
+    "unit" : "string",
+    "description" : "The unique identifier (UID) assigned to the Job by Kubernetes. It remains constant throughout the lifecycle of the object. (metadata.uid)",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "jobName",
+    "title" : "JobName",
+    "unit" : "string",
+    "description" : "The name of the Job. It uniquely identifies the Job within a namespace.",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "ownerKind",
+    "title" : "OwnerKind",
+    "unit" : "string",
+    "description" : "The kind of the owning resource (e.g., CronJob). (metadata.ownerReferences.kind)",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "ownerName",
+    "title" : "OwnerName",
+    "unit" : "string",
+    "description" : "The name of the owning resource (e.g., CronJob). (metadata.ownerReferences.name)",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "namespace",
+    "title" : "Namespace",
+    "unit" : "string",
+    "description" : "The namespace in which the Job is defined. Namespaces provide logical separation of Kubernetes resources. (metadata.namespace)",
+    "deprecated" : false,
+    "type" : "String"
+  } ],
+  "fields" : [ {
+    "fieldName" : "failedPods",
+    "title" : "FailedPods",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "The number of pods failed by the Job. (status.failed)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "completionTime",
+    "title" : "CompletionTime",
+    "unit" : "string",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "The time when the Job was completed. (status.completionTime)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "fieldName" : "activeDeadlineSeconds",
+    "title" : "ActiveDeadlineSeconds",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "The duration in seconds relative to the startTime that the Job may be active before being terminated. (spec.activeDeadlineSeconds)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "parallelism",
+    "title" : "Parallelism",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "The maximum number of pods that can run concurrently. (spec.parallelism)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "completions",
+    "title" : "Completions",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "The desired number of successfully finished pods the Job should be run with. (spec.completions)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "backoffLimit",
+    "title" : "BackoffLimit",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "The number of retries before marking the Job as failed. (spec.backoffLimit)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "succeededPods",
+    "title" : "SucceededPods",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "The number of pods successfully completed by the Job. (status.succeeded)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  } ]
+}

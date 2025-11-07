@@ -1,0 +1,254 @@
+{
+  "categoryName" : "server_cpu_core",
+  "interval" : "5s",
+  "title" : "ServerCpuCore",
+  "pk" : [ "cpu", "oid" ],
+  "language" : "JA",
+  "tags" : [ {
+    "tagName" : "instance-life-cycle",
+    "title" : "InstanceLifeCycle",
+    "label" : "instance-life-cycle",
+    "deprecated" : false
+  }, {
+    "tagName" : "hostname",
+    "title" : "HostName",
+    "label" : "hostname",
+    "deprecated" : false
+  }, {
+    "tagName" : "oname",
+    "title" : "Oname",
+    "label" : "oname",
+    "deprecated" : false
+  }, {
+    "tagName" : "security-groups",
+    "title" : "SecurityGroups",
+    "label" : "security-groups",
+    "deprecated" : false
+  }, {
+    "tagName" : "public-ipv4",
+    "title" : "PublicIpv4",
+    "label" : "public-ipv4",
+    "deprecated" : false
+  }, {
+    "tagName" : "PACKAGE_APP_LIST",
+    "title" : "PackageAppList",
+    "label" : "PACKAGE_APP_LIST",
+    "deprecated" : false
+  }, {
+    "tagName" : "instance-type",
+    "title" : "InstanceType",
+    "label" : "instance-type",
+    "deprecated" : false
+  }, {
+    "tagName" : "oid",
+    "title" : "Oid",
+    "label" : "oid",
+    "deprecated" : false
+  }, {
+    "tagName" : "local-hostname",
+    "title" : "LocalHostName",
+    "label" : "local-hostname",
+    "deprecated" : false
+  }, {
+    "tagName" : "Name",
+    "title" : "Name",
+    "label" : "Name",
+    "deprecated" : false
+  }, {
+    "tagName" : "ip",
+    "title" : "Ip",
+    "label" : "ip",
+    "deprecated" : false
+  }, {
+    "tagName" : "ami-manifest-path",
+    "title" : "AmiManifestPath",
+    "label" : "ami-manifest-path",
+    "deprecated" : false
+  }, {
+    "tagName" : "public-hostname",
+    "title" : "PublicHostName",
+    "label" : "public-hostname",
+    "deprecated" : false
+  }, {
+    "tagName" : "instance-id",
+    "title" : "InstanceId",
+    "label" : "instance-id",
+    "deprecated" : false
+  }, {
+    "tagName" : "ami-id",
+    "title" : "AmiId",
+    "label" : "ami-id",
+    "deprecated" : false
+  }, {
+    "tagName" : "profile",
+    "title" : "Profile",
+    "label" : "profile",
+    "deprecated" : false
+  }, {
+    "tagName" : "InstanceId",
+    "title" : "InstanceId",
+    "label" : "InstanceId",
+    "deprecated" : false
+  }, {
+    "tagName" : "mac",
+    "title" : "Mac",
+    "label" : "mac",
+    "deprecated" : false
+  }, {
+    "tagName" : "cpu",
+    "title" : "Cpu",
+    "label" : "cpu",
+    "deprecated" : false
+  }, {
+    "tagName" : "DEPLOY-TARGET",
+    "title" : "DeployTarget",
+    "label" : "DEPLOY-TARGET",
+    "deprecated" : false
+  }, {
+    "tagName" : "reservation-id",
+    "title" : "ReservationId",
+    "label" : "reservation-id",
+    "deprecated" : false
+  }, {
+    "tagName" : "instance-action",
+    "title" : "InstanceAction",
+    "label" : "instance-action",
+    "deprecated" : false
+  }, {
+    "tagName" : "os",
+    "title" : "Os",
+    "label" : "os",
+    "deprecated" : false
+  }, {
+    "tagName" : "ami-launch-index",
+    "title" : "AmiLaunchIndex",
+    "label" : "ami-launch-index",
+    "deprecated" : false
+  } ],
+  "fields" : [ {
+    "fieldName" : "usr",
+    "title" : "Usr",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "コアuser使用率",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "sys",
+    "title" : "Sys",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "コアsys使用率",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "processorQueueLength",
+    "title" : "ProcessorQueueLength",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "コアプロセスキューサイズ",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "softirq",
+    "title" : "SoftIrq",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "コアsoftirq使用率",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "nice",
+    "title" : "Nice",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "コアnice使用率",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "load1",
+    "title" : "Load1",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "コア1分平均Load Avarage",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "iowait",
+    "title" : "IoWait",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "コアiowait比率",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "steal",
+    "title" : "Steal",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "コアsteal使用率",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "irq",
+    "title" : "Irq",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "コアirq使用率",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "load5",
+    "title" : "Load5",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "コア５分平均Load Avarage",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "load15",
+    "title" : "Load15",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "コア15分平均Load Avarage",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "idle",
+    "title" : "Idle",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "コアidle比率",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  } ],
+  "platforms" : [ "INFRA" ]
+}

@@ -1,0 +1,1197 @@
+{
+  "categoryName" : "telegraf_varnish",
+  "interval" : "10s",
+  "title" : "TelegrafVarnish",
+  "pk" : [ "oid" ],
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "oid",
+    "title" : "Oid",
+    "label" : "oid"
+  }, {
+    "tagName" : "host",
+    "label" : "host"
+  }, {
+    "tagName" : "oname",
+    "title" : "Oname",
+    "label" : "oname"
+  }, {
+    "tagName" : "section",
+    "title" : "Section",
+    "label" : "section"
+  } ],
+  "fields" : [ {
+    "fieldName" : "hcb_insert",
+    "title" : "hcb_insert",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "req1.timeout",
+    "title" : "req1.timeout",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "hcb_nolock",
+    "title" : "hcb_nolock",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "vcl.creat",
+    "title" : "vcl.creat",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "boot.default.fail",
+    "title" : "boot.default.fail",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "n_lru_limited",
+    "title" : "n_lru_limited",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "boot.default.happy",
+    "title" : "boot.default.happy",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "sc_range_short",
+    "title" : "sc_range_short",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "threads",
+    "title" : "threads",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "req1.toosmall",
+    "title" : "req1.toosmall",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "busyobj.surplus",
+    "title" : "busyobj.surplus",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "hcb.destroy",
+    "title" : "hcb.destroy",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "sess1.toosmall",
+    "title" : "sess1.toosmall",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "sess_fail_emfile",
+    "title" : "sess_fail_emfile",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "req1.frees",
+    "title" : "req1.frees",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "sess0.frees",
+    "title" : "sess0.frees",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "req1.surplus",
+    "title" : "req1.surplus",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "req0.live",
+    "title" : "req0.live",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "bans_tested",
+    "title" : "bans_tested",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "fetch_no_thread",
+    "title" : "fetch_no_thread",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "n_vcl_avail",
+    "title" : "n_vcl_avail",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "n_objectcore",
+    "title" : "n_objectcore",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "boot.default.fail_etimedout",
+    "title" : "boot.default.fail_etimedout",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "cli.locks",
+    "title" : "cli.locks",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "client_req_400",
+    "title" : "client_req_400",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "bans_deleted",
+    "title" : "bans_deleted",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "sess1.timeout",
+    "title" : "sess1.timeout",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "pipestat.locks",
+    "title" : "pipestat.locks",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "sc_tx_pipe",
+    "title" : "sc_tx_pipe",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "tcp_pool.destroy",
+    "title" : "tcp_pool.destroy",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "n_gunzip",
+    "title" : "n_gunzip",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "sess0.randry",
+    "title" : "sess0.randry",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "fetch_length",
+    "title" : "fetch_length",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "sess0.timeout",
+    "title" : "sess0.timeout",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "fetch_chunked",
+    "title" : "fetch_chunked",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "busy_killed",
+    "title" : "busy_killed",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "req0.pool",
+    "title" : "req0.pool",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "boot.default.req",
+    "title" : "boot.default.req",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "n_objecthead",
+    "title" : "n_objecthead",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "lru.locks",
+    "title" : "lru.locks",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "shm_cycles",
+    "title" : "shm_cycles",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "req1.pool",
+    "title" : "req1.pool",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "busyobj.frees",
+    "title" : "busyobj.frees",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "req1.allocs",
+    "title" : "req1.allocs",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "exp.creat",
+    "title" : "exp.creat",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "wq.creat",
+    "title" : "wq.creat",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "vcapace.destroy",
+    "title" : "vcapace.destroy",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "sess1.live",
+    "title" : "sess1.live",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "esi_errors",
+    "title" : "esi_errors",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "fetch_failed",
+    "title" : "fetch_failed",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "sess0.live",
+    "title" : "sess0.live",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "boot.default.fail_eaddrnotavail",
+    "title" : "boot.default.fail_eaddrnotavail",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "sc_overload",
+    "title" : "sc_overload",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "vcapace.creat",
+    "title" : "vcapace.creat",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "bans_obj_killed",
+    "title" : "bans_obj_killed",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "sess.destroy",
+    "title" : "sess.destroy",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "busyobj.destroy",
+    "title" : "busyobj.destroy",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "sess1.frees",
+    "title" : "sess1.frees",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "req1.randry",
+    "title" : "req1.randry",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "sess1.surplus",
+    "title" : "sess1.surplus",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "n_purges",
+    "title" : "n_purges",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "sess_readahead",
+    "title" : "sess_readahead",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "s_pipe",
+    "title" : "s_pipe",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "bans_lurker_obj_killed",
+    "title" : "bans_lurker_obj_killed",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "boot.default.helddown",
+    "title" : "boot.default.helddown",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "req0.toosmall",
+    "title" : "req0.toosmall",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "Transient.c_fail",
+    "title" : "Transient.c_fail",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "sess0.recycle",
+    "title" : "sess0.recycle",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "ban.destroy",
+    "title" : "ban.destroy",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "fetch_none",
+    "title" : "fetch_none",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "bans_persisted_bytes",
+    "title" : "bans_persisted_bytes",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "sc_rem_close",
+    "title" : "sc_rem_close",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "req0.surplus",
+    "title" : "req0.surplus",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "sess_dropped",
+    "title" : "sess_dropped",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "boot.default.conn",
+    "title" : "boot.default.conn",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "s_req_bodybytes",
+    "title" : "s_req_bodybytes",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "child_dump",
+    "title" : "child_dump",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "mempool.destroy",
+    "title" : "mempool.destroy",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "ban.locks",
+    "title" : "ban.locks",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "ws_thread_overflow",
+    "title" : "ws_thread_overflow",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "req0.allocs",
+    "title" : "req0.allocs",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "sc_rx_junk",
+    "title" : "sc_rx_junk",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "threads_failed",
+    "title" : "threads_failed",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "ban.creat",
+    "title" : "ban.creat",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "s_pipe_hdrbytes",
+    "title" : "s_pipe_hdrbytes",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "busyobj.allocs",
+    "title" : "busyobj.allocs",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "exp_mailed",
+    "title" : "exp_mailed",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "vbe.destroy",
+    "title" : "vbe.destroy",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "objhdr.destroy",
+    "title" : "objhdr.destroy",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "bans_obj",
+    "title" : "bans_obj",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "vcapace.locks",
+    "title" : "vcapace.locks",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "vcl.locks",
+    "title" : "vcl.locks",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "tcp_pool.creat",
+    "title" : "tcp_pool.creat",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "cache_hitmiss",
+    "title" : "cache_hitmiss",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "sess_fail_ebadf",
+    "title" : "sess_fail_ebadf",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "req0.sz_actual",
+    "title" : "req0.sz_actual",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "sc_pipe_overflow",
+    "title" : "sc_pipe_overflow",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "vcl_fail",
+    "title" : "vcl_fail",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "sess1.allocs",
+    "title" : "sess1.allocs",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "child_panic",
+    "title" : "child_panic",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "sess_queued",
+    "title" : "sess_queued",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "sess_conn",
+    "title" : "sess_conn",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "exp.destroy",
+    "title" : "exp.destroy",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "shm_cont",
+    "title" : "shm_cont",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "wstat.creat",
+    "title" : "wstat.creat",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "sc_tx_eof",
+    "title" : "sc_tx_eof",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "bans_persisted_fragmentation",
+    "title" : "bans_persisted_fragmentation",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "hcb.creat",
+    "title" : "hcb.creat",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "sess_fail_other",
+    "title" : "sess_fail_other",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "cache_hitpass",
+    "title" : "cache_hitpass",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "boot.default.beresp_bodybytes",
+    "title" : "boot.default.beresp_bodybytes",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "s_resp_bodybytes",
+    "title" : "s_resp_bodybytes",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "busyobj.toosmall",
+    "title" : "busyobj.toosmall",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "sma.destroy",
+    "title" : "sma.destroy",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "sess1.recycle",
+    "title" : "sess1.recycle",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "req1.sz_wanted",
+    "title" : "req1.sz_wanted",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "s0.c_fail",
+    "title" : "s0.c_fail",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "threads_destroyed",
+    "title" : "threads_destroyed",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "sc_tx_error",
+    "title" : "sc_tx_error",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "summs",
+    "title" : "summs",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "boot.default.bereq_bodybytes",
+    "title" : "boot.default.bereq_bodybytes",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "sess_herd",
+    "title" : "sess_herd",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "sess1.sz_wanted",
+    "title" : "sess1.sz_wanted",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "busyobj.recycle",
+    "title" : "busyobj.recycle",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "sess0.sz_actual",
+    "title" : "sess0.sz_actual",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "sc_rx_bad",
+    "title" : "sc_rx_bad",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "sess_fail_enomem",
+    "title" : "sess_fail_enomem",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "losthdr",
+    "title" : "losthdr",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "sess0.surplus",
+    "title" : "sess0.surplus",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "n_vampireobject",
+    "title" : "n_vampireobject",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "s0.c_bytes",
+    "title" : "s0.c_bytes",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "child_stop",
+    "title" : "child_stop",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "pipestat.destroy",
+    "title" : "pipestat.destroy",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "boot.default.fail_eacces",
+    "title" : "boot.default.fail_eacces",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "sess_closed_err",
+    "title" : "sess_closed_err",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "sess.locks",
+    "title" : "sess.locks",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "bans_lurker_tested",
+    "title" : "bans_lurker_tested",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "sess1.pool",
+    "title" : "sess1.pool",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "pipestat.creat",
+    "title" : "pipestat.creat",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "fetch_head",
+    "title" : "fetch_head",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "req0.sz_wanted",
+    "title" : "req0.sz_wanted",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "busyobj.pool",
+    "title" : "busyobj.pool",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "s_pass",
+    "title" : "s_pass",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "req0.randry",
+    "title" : "req0.randry",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "backend.destroy",
+    "title" : "backend.destroy",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "lru.creat",
+    "title" : "lru.creat",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "Transient.c_bytes",
+    "title" : "Transient.c_bytes",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "vbe.creat",
+    "title" : "vbe.creat",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "n_backend",
+    "title" : "n_backend",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "bans_lurker_contention",
+    "title" : "bans_lurker_contention",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "boot.default.busy",
+    "title" : "boot.default.busy",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "pools",
+    "title" : "pools",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "backend_recycle",
+    "title" : "backend_recycle",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "s0.g_space",
+    "title" : "s0.g_space",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "bans_tests_tested",
+    "title" : "bans_tests_tested",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "vbe.locks",
+    "title" : "vbe.locks",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "sess_fail_eintr",
+    "title" : "sess_fail_eintr",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "sc_rx_timeout",
+    "title" : "sc_rx_timeout",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "sess0.sz_wanted",
+    "title" : "sess0.sz_wanted",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "busyobj.timeout",
+    "title" : "busyobj.timeout",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "sess1.randry",
+    "title" : "sess1.randry",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "boot.default.pipe_hdrbytes",
+    "title" : "boot.default.pipe_hdrbytes",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "hcb.locks",
+    "title" : "hcb.locks",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "backend_conn",
+    "title" : "backend_conn",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "s_req_hdrbytes",
+    "title" : "s_req_hdrbytes",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "client_resp_500",
+    "title" : "client_resp_500",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "busy_sleep",
+    "title" : "busy_sleep",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "n_test_gunzip",
+    "title" : "n_test_gunzip",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "Transient.c_freed",
+    "title" : "Transient.c_freed",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "req1.live",
+    "title" : "req1.live",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "fetch_304",
+    "title" : "fetch_304",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "vxid.locks",
+    "title" : "vxid.locks",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "objhdr.locks",
+    "title" : "objhdr.locks",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "s0.g_bytes",
+    "title" : "s0.g_bytes",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "cache_hit",
+    "title" : "cache_hit",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "s_sess",
+    "title" : "s_sess",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "objhdr.creat",
+    "title" : "objhdr.creat",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "busy_wakeup",
+    "title" : "busy_wakeup",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "backend_req",
+    "title" : "backend_req",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "n_obj_purged",
+    "title" : "n_obj_purged",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "n_vcl_discard",
+    "title" : "n_vcl_discard",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "exp.locks",
+    "title" : "exp.locks",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "hcb_lock",
+    "title" : "hcb_lock",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "busyobj.sz_actual",
+    "title" : "busyobj.sz_actual",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "busyobj.creat",
+    "title" : "busyobj.creat",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "mempool.creat",
+    "title" : "mempool.creat",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "s0.c_req",
+    "title" : "s0.c_req",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "backend_reuse",
+    "title" : "backend_reuse",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "boot.default.fail_other",
+    "title" : "boot.default.fail_other",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "cli.creat",
+    "title" : "cli.creat",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "boot.default.pipe_out",
+    "title" : "boot.default.pipe_out",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "req0.recycle",
+    "title" : "req0.recycle",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "fetch_1xx",
+    "title" : "fetch_1xx",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "n_lru_nuked",
+    "title" : "n_lru_nuked",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "wq.destroy",
+    "title" : "wq.destroy",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "ws_session_overflow",
+    "title" : "ws_session_overflow",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "n_lru_moved",
+    "title" : "n_lru_moved",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "req0.timeout",
+    "title" : "req0.timeout",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "bans_added",
+    "title" : "bans_added",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "sess_closed",
+    "title" : "sess_closed",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "req1.sz_actual",
+    "title" : "req1.sz_actual",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "fetch_bad",
+    "title" : "fetch_bad",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "busyobj.live",
+    "title" : "busyobj.live",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "ws_backend_overflow",
+    "title" : "ws_backend_overflow",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "sc_req_close",
+    "title" : "sc_req_close",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "boot.default.beresp_hdrbytes",
+    "title" : "boot.default.beresp_hdrbytes",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "sess0.allocs",
+    "title" : "sess0.allocs",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "boot.default.pipe_in",
+    "title" : "boot.default.pipe_in",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "client_req_417",
+    "title" : "client_req_417",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "s_synth",
+    "title" : "s_synth",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "sc_req_http10",
+    "title" : "sc_req_http10",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "shm_writes",
+    "title" : "shm_writes",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "vmods",
+    "title" : "vmods",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "child_died",
+    "title" : "child_died",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "Transient.g_bytes",
+    "title" : "Transient.g_bytes",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "fetch_204",
+    "title" : "fetch_204",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "n_vcl",
+    "title" : "n_vcl",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "sess0.toosmall",
+    "title" : "sess0.toosmall",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "wstat.locks",
+    "title" : "wstat.locks",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "boot.default.unhealthy",
+    "title" : "boot.default.unhealthy",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "s_pipe_out",
+    "title" : "s_pipe_out",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "sc_vcl_failure",
+    "title" : "sc_vcl_failure",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "sess_fail_econnaborted",
+    "title" : "sess_fail_econnaborted",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "s0.c_freed",
+    "title" : "s0.c_freed",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "bans_completed",
+    "title" : "bans_completed",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "backend_unhealthy",
+    "title" : "backend_unhealthy",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "busyobj.sz_wanted",
+    "title" : "busyobj.sz_wanted",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "shm_records",
+    "title" : "shm_records",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "fetch_eof",
+    "title" : "fetch_eof",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "vcl.destroy",
+    "title" : "vcl.destroy",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "wstat.destroy",
+    "title" : "wstat.destroy",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "tcp_pool.locks",
+    "title" : "tcp_pool.locks",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "child_exit",
+    "title" : "child_exit",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "n_gzip",
+    "title" : "n_gzip",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "bans_req",
+    "title" : "bans_req",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "exp_received",
+    "title" : "exp_received",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "n_object",
+    "title" : "n_object",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "wq.locks",
+    "title" : "wq.locks",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "client_req",
+    "title" : "client_req",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "ws_client_overflow",
+    "title" : "ws_client_overflow",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "sess1.sz_actual",
+    "title" : "sess1.sz_actual",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "sc_resp_close",
+    "title" : "sc_resp_close",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "mempool.locks",
+    "title" : "mempool.locks",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "sess_drop",
+    "title" : "sess_drop",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "n_expired",
+    "title" : "n_expired",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "waiter.creat",
+    "title" : "waiter.creat",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "vxid.destroy",
+    "title" : "vxid.destroy",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "lru.destroy",
+    "title" : "lru.destroy",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "sma.creat",
+    "title" : "sma.creat",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "s_fetch",
+    "title" : "s_fetch",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "shm_flushes",
+    "title" : "shm_flushes",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "backend.locks",
+    "title" : "backend.locks",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "sc_req_http20",
+    "title" : "sc_req_http20",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "waiter.locks",
+    "title" : "waiter.locks",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "req0.frees",
+    "title" : "req0.frees",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "bans_lurker_obj_killed_cutoff",
+    "title" : "bans_lurker_obj_killed_cutoff",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "sess_fail",
+    "title" : "sess_fail",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "waiter.destroy",
+    "title" : "waiter.destroy",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "bans_lurker_tests_tested",
+    "title" : "bans_lurker_tests_tested",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "Transient.g_alloc",
+    "title" : "Transient.g_alloc",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "thread_queue_len",
+    "title" : "thread_queue_len",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "req1.recycle",
+    "title" : "req1.recycle",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "sc_rx_overflow",
+    "title" : "sc_rx_overflow",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "s_resp_hdrbytes",
+    "title" : "s_resp_hdrbytes",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "bans_dups",
+    "title" : "bans_dups",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "child_start",
+    "title" : "child_start",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "busyobj.randry",
+    "title" : "busyobj.randry",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "boot.default.fail_econnrefused",
+    "title" : "boot.default.fail_econnrefused",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "threads_limited",
+    "title" : "threads_limited",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "esi_req",
+    "title" : "esi_req",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "req_dropped",
+    "title" : "req_dropped",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "backend_fail",
+    "title" : "backend_fail",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "uptime",
+    "title" : "uptime",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "threads_created",
+    "title" : "threads_created",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "backend_retry",
+    "title" : "backend_retry",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "esi_warnings",
+    "title" : "esi_warnings",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "backend.creat",
+    "title" : "backend.creat",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "s_pipe_in",
+    "title" : "s_pipe_in",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "bans",
+    "title" : "bans",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "boot.default.fail_enetunreach",
+    "title" : "boot.default.fail_enetunreach",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "vxid.creat",
+    "title" : "vxid.creat",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "sma.locks",
+    "title" : "sma.locks",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "cache_miss",
+    "title" : "cache_miss",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "sc_rx_body",
+    "title" : "sc_rx_body",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "cache_hit_grace",
+    "title" : "cache_hit_grace",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "Transient.c_req",
+    "title" : "Transient.c_req",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "sess0.pool",
+    "title" : "sess0.pool",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "backend_busy",
+    "title" : "backend_busy",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "boot.default.bereq_hdrbytes",
+    "title" : "boot.default.bereq_hdrbytes",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "busyobj.locks",
+    "title" : "busyobj.locks",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "cli.destroy",
+    "title" : "cli.destroy",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "s0.g_alloc",
+    "title" : "s0.g_alloc",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "Transient.g_space",
+    "title" : "Transient.g_space",
+    "timeMerge" : "avg"
+  } ],
+  "platforms" : [ "INFRA" ]
+}

@@ -1,0 +1,221 @@
+{
+  "categoryName" : "server_process",
+  "interval" : "20s",
+  "title" : "ServerProcess",
+  "pk" : [ "oid", "hash" ],
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "oid",
+    "title" : "Oid",
+    "label" : "oname",
+    "deprecated" : false
+  }, {
+    "tagName" : "none",
+    "title" : "None",
+    "label" : "none",
+    "deprecated" : false
+  }, {
+    "tagName" : "cmd1",
+    "title" : "Cmd1",
+    "label" : "cmd1",
+    "deprecated" : false
+  }, {
+    "tagName" : "user",
+    "title" : "User",
+    "label" : "user",
+    "deprecated" : false
+  }, {
+    "tagName" : "name",
+    "title" : "Name",
+    "label" : "name",
+    "deprecated" : false
+  }, {
+    "tagName" : "hash",
+    "title" : "Hash",
+    "label" : "hash",
+    "deprecated" : false
+  }, {
+    "tagName" : "oname",
+    "title" : "Oname",
+    "label" : "oname",
+    "deprecated" : false
+  }, {
+    "tagName" : "cmd2",
+    "title" : "Cmd2",
+    "label" : "cmd1",
+    "deprecated" : false
+  } ],
+  "fields" : [ {
+    "fieldName" : "cpuAccmulated",
+    "title" : "CpuAccmulated",
+    "unit" : "pct",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "rbpsAccmulated",
+    "title" : "RbpsAccmulated",
+    "unit" : "bps",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "wbpsAccmulated",
+    "title" : "WbpsAccmulated",
+    "unit" : "bps",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "rssAccmulated",
+    "title" : "RssAccmulated",
+    "unit" : "byte",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "count",
+    "title" : "Count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Number of processes",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "rbps",
+    "title" : "Rbps",
+    "unit" : "bps",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Bytes read per second from disk",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "wiopsAccmulated",
+    "title" : "WiopsAccmulated",
+    "unit" : "bps",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "openFileDescriptors",
+    "title" : "OpenFileDescriptors",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Number of open file descriptors",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "memoryAccmulated",
+    "title" : "MemoryAccmulated",
+    "unit" : "pct",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "wiops",
+    "title" : "Wiops",
+    "unit" : "bps",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Bytes written per second to disk",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "cpuOrder",
+    "title" : "CpuOrder",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "memory",
+    "title" : "Memory",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Memory utilization",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "rss",
+    "title" : "Rss",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Memory RSS size",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "cpu",
+    "title" : "Cpu",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "CPU utilization",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "riops",
+    "title" : "Riops",
+    "unit" : "bps",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Number of cases read per second from disk",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "wbps",
+    "title" : "Wbps",
+    "unit" : "bps",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Bytes written per second to disk",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "memOrder",
+    "title" : "MemOrder",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  } ],
+  "platforms" : [ "INFRA" ]
+}

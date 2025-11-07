@@ -1,0 +1,38 @@
+{
+  "categoryName" : "server_tcpport",
+  "interval" : "20s",
+  "title" : "Server Port Check",
+  "pk" : [ "port", "ip", "oid" ],
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "port",
+    "title" : "Port",
+    "label" : "port",
+    "deprecated" : false
+  }, {
+    "tagName" : "isAlive",
+    "title" : "Alive",
+    "label" : "alive",
+    "deprecated" : false
+  }, {
+    "tagName" : "ip",
+    "title" : "IP",
+    "label" : "ip",
+    "deprecated" : false
+  }, {
+    "tagName" : "oid",
+    "title" : "Oid",
+    "label" : "oid",
+    "deprecated" : false
+  } ],
+  "fields" : [ {
+    "fieldName" : "isAlive",
+    "title" : "Alive",
+    "objectMerge" : "sum",
+    "timeMerge" : "sum",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  } ],
+  "platforms" : [ "INFRA" ]
+}

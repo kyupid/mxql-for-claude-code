@@ -1,0 +1,130 @@
+{
+  "categoryName" : "kube_pod_volume",
+  "title" : "KubePodVolume",
+  "pk" : [ "podMountPoint", "containerId" ],
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "imageId",
+    "title" : "ImageId",
+    "label" : "image"
+  }, {
+    "tagName" : "pod-template-generation",
+    "title" : "PodTemplateGeneration",
+    "label" : "podTemplateGeneration"
+  }, {
+    "tagName" : "pod-template-hash",
+    "title" : "PodTemplateHash",
+    "label" : "podTemplateHash"
+  }, {
+    "tagName" : "controller-revision-hash",
+    "title" : "ControllerRevisionHash",
+    "label" : "controllerRevisionHash"
+  }, {
+    "tagName" : "hostDevice",
+    "title" : "HostDevice",
+    "label" : "hostDevice"
+  }, {
+    "tagName" : "image",
+    "title" : "Image",
+    "label" : "image"
+  }, {
+    "tagName" : "Deployment",
+    "title" : "Deployment",
+    "label" : "Deployment"
+  }, {
+    "tagName" : "replicaSetName",
+    "title" : "ReplicaSet",
+    "label" : "replicaSetName"
+  }, {
+    "tagName" : "hostMountPath",
+    "title" : "HostMountPath",
+    "label" : "hostMountPath"
+  }, {
+    "tagName" : "hostFileSystem",
+    "title" : "HostFileSystem",
+    "label" : "hostFileSystem"
+  }, {
+    "tagName" : "namespace",
+    "title" : "Namespace",
+    "label" : "namespace"
+  }, {
+    "tagName" : "whatap_project",
+    "title" : "WhatapProject",
+    "label" : "whatapProject"
+  }, {
+    "tagName" : "podMountPoint",
+    "title" : "PodMountPoint",
+    "label" : "podMountPoint"
+  }, {
+    "tagName" : "onodeName",
+    "title" : "Node",
+    "label" : "onodeName"
+  }, {
+    "tagName" : "command",
+    "title" : "Command",
+    "label" : "command"
+  }, {
+    "tagName" : "podName",
+    "title" : "Pod",
+    "label" : "podName"
+  }, {
+    "tagName" : "name",
+    "title" : "ContainerName",
+    "label" : "name"
+  }, {
+    "tagName" : "containerId",
+    "title" : "ContainerId",
+    "label" : "name"
+  } ],
+  "fields" : [ {
+    "fieldName" : "available",
+    "title" : "Available",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Available container volume"
+  }, {
+    "fieldName" : "usedSpace",
+    "title" : "UsedSpace",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Used container volume"
+  }, {
+    "fieldName" : "capacity",
+    "title" : "Capacity",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Container volume capacity"
+  }, {
+    "fieldName" : "usedPercent",
+    "title" : "UsedPercent",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Used container volume percent"
+  }, {
+    "fieldName" : "freePercent",
+    "title" : "FreePercent",
+    "unit" : "pct#",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Free container volume percent"
+  }, {
+    "fieldName" : "availablePercent",
+    "title" : "AvailablePercent",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Available container volume percent"
+  }, {
+    "fieldName" : "free",
+    "title" : "Free",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Free container volume"
+  } ],
+  "platforms" : [ "" ]
+}

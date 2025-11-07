@@ -1,0 +1,60 @@
+{
+  "categoryName" : "rum_page_load_browser_each_page",
+  "title" : "RumPageLoadBrowserEachPage",
+  "pk" : [ "env", "version", "page_group" ],
+  "description" : "Metric related to page loads by browser",
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "env",
+    "title" : "Env",
+    "unit" : "string",
+    "description" : "Metric indicating the release environment (development, staging, operation, etc) of the web application",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "page_group",
+    "title" : "PageGroup",
+    "unit" : "string",
+    "description" : "Page group\nIn order to have a meaningful statistical group in the browser monitoring service, it provides the normalized URL path with regular expressions under the page group name.\nNumbers, dates, and such that are deemed meaningless for URL path unit analysis, are replaced with question marks (?).",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "browser_name",
+    "title" : "BrowserName",
+    "unit" : "string",
+    "description" : "Browser name\n(Chrome, Safari, etc)",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "version",
+    "title" : "Version",
+    "unit" : "string",
+    "description" : "Metric indicating the released version of the web application",
+    "deprecated" : false,
+    "type" : "String"
+  } ],
+  "fields" : [ {
+    "fieldName" : "page_load_duration",
+    "title" : "PageLoadDuration",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Average time taken for the browser to load a web page",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "page_load_count",
+    "title" : "PageLoadCount",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Number of page loads",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  } ],
+  "platforms" : [ "RUM" ]
+}

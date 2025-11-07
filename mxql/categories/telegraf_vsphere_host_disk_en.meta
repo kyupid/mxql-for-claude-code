@@ -1,0 +1,7 @@
+{
+  "categoryName" : "telegraf_vsphere_host_disk",
+  "title" : "Telegraf Vsphere Host Disk",
+  "pk" : [ "dcname", "esxhostname", "disk" ],
+  "language" : "EN",
+  "platforms" : [ "INFRA" ]
+}

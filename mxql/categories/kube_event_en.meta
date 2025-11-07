@@ -1,0 +1,109 @@
+{
+  "categoryName" : "kube_event",
+  "interval" : "5s",
+  "title" : "KubernetesEvent",
+  "pk" : [ "metadata_name", "kind", "namespace" ],
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "field_path",
+    "title" : "FieldPath",
+    "label" : "field_path"
+  }, {
+    "tagName" : "metadata_name",
+    "title" : "MetadataName",
+    "label" : "metadata_name"
+  }, {
+    "tagName" : "type",
+    "title" : "Type",
+    "label" : "type"
+  }, {
+    "tagName" : "kind",
+    "title" : "Kind",
+    "label" : "kind"
+  }, {
+    "tagName" : "oid",
+    "title" : "Oid",
+    "label" : "oid"
+  }, {
+    "tagName" : "metadata_namespace",
+    "title" : "MetadataNamespace",
+    "label" : "metadata_namespace"
+  }, {
+    "tagName" : "uid",
+    "title" : "Uid",
+    "label" : "uid"
+  }, {
+    "tagName" : "taglog",
+    "title" : "Taglog",
+    "label" : "taglog"
+  }, {
+    "tagName" : "reason",
+    "title" : "Reason",
+    "label" : "reason"
+  }, {
+    "tagName" : "name",
+    "title" : "Name",
+    "label" : "name"
+  }, {
+    "tagName" : "namespace",
+    "title" : "Namespace",
+    "label" : "namespace"
+  } ],
+  "fields" : [ {
+    "fieldName" : "message",
+    "title" : "Message",
+    "unit" : "txt",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "reporting_instance",
+    "title" : "ReportingInstance",
+    "unit" : "txt",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "metadata_creationTimestamp",
+    "title" : "MetadataCreationTimestamp",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "reporting_component",
+    "title" : "ReportingComponent",
+    "unit" : "txt",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "last_timestamp",
+    "title" : "LastTimestamp",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "series__last_observed_time",
+    "title" : "SeriesLastObservedTime",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "event_time",
+    "title" : "EventTime",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "count",
+    "title" : "Count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "first_timestamp",
+    "title" : "FirstTimestamp",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "reasonField",
+    "title" : "ReasonField",
+    "unit" : "txt",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "action",
+    "title" : "Action",
+    "unit" : "txt",
+    "timeMerge" : "avg"
+  } ],
+  "platforms" : [ "KUBERNETES" ]
+}

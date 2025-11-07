@@ -1,0 +1,6 @@
+{
+  "categoryName" : "oci_kms_keys",
+  "title" : "OciKmsKeys",
+  "pk" : [ "dimension" ],
+  "language" : "EN"
+}

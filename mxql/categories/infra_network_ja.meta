@@ -1,0 +1,82 @@
+{
+  "categoryName" : "infra_network",
+  "interval" : "2s",
+  "title" : "InfraNetwork",
+  "pk" : [ "oid" ],
+  "language" : "JA",
+  "tags" : [ {
+    "tagName" : "oname",
+    "title" : "Oname",
+    "unit" : "string",
+    "deprecated" : false,
+    "type" : "String"
+  } ],
+  "fields" : [ {
+    "fieldName" : "rxbps",
+    "title" : "RxBps",
+    "unit" : "bps",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "サーバーのすべてのNIC(Loopbackを除く)を通じて受信(Rx)されたデータ量をbps(bit per second)単位で表示します。",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "totalpps",
+    "title" : "TotalPps",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "サーバーのすべてのNIC(Loopbackを除く)を通じて受信(Rx)及び送信(Tx)されたデータの総パケット数(packets per second)を表示します。",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "txpps",
+    "title" : "TxPps",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "サーバーのすべてのNIC(Loopbackを除く)を通じて送信(Tx)されたデータの秒当りパケット数(packets per second)を表示します。",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "txbps",
+    "title" : "TxBps",
+    "unit" : "bps",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "サーバーのすべてのNIC(Loopbackを除く)を通じて送信(Tx)されたデータ量をbps(bit per second)単位で表示します。",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "rxpps",
+    "title" : "RxPps",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "サーバーのすべてのNIC(Loopbackを除く)を通じて受信(Rx)されたデータの秒当りパケット数(packets per second)を表示します。",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "totalbps",
+    "title" : "TotalBps",
+    "unit" : "bps",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "サーバーのすべてのNIC(Loopbackを除く)を通じて受信(Rx)及び送信(Tx)されたデータ総量をbps(bit per second)単位で表示します。",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  } ],
+  "platforms" : [ "INFRA" ]
+}

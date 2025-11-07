@@ -1,0 +1,28 @@
+{
+  "categoryName" : "rum_session_count",
+  "title" : "Rum Session Count",
+  "description" : "ユーザーセッション数に関連したカテゴリーです。",
+  "language" : "JA",
+  "fields" : [ {
+    "fieldName" : "sessionCount",
+    "title" : "SessionCount",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "5秒間発生したユニックセッション数です。",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "logbits",
+    "title" : "Logbits",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "ユーザーセッション数を計算するためのハッシュデータです。",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  } ],
+  "platforms" : [ "RUM" ]
+}

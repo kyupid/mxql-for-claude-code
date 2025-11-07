@@ -1,0 +1,19 @@
+{
+  "categoryName" : "aws_lookoutmetrics",
+  "interval" : "5m",
+  "title" : "aws_lookoutmetrics",
+  "pk" : [ "dimension" ],
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "oid",
+    "title" : "aws_lookoutmetrics",
+    "label" : "aws_lookoutmetrics"
+  } ],
+  "fields" : [ {
+    "fieldName" : "saveTime",
+    "title" : "saveTime",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  } ],
+  "platforms" : [ "JAVA", "PHP", "PYTHON", "NODEJS", "INFRA", "KUBERNETES", "KUBE_NS" ]
+}

@@ -1,0 +1,28 @@
+{
+  "categoryName" : "rum_session_count",
+  "title" : "RumSessionCount",
+  "description" : "사용자 세션 수 관련 카테고리입니다.",
+  "language" : "KO",
+  "fields" : [ {
+    "fieldName" : "logbits",
+    "title" : "Logbits",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "사용자 세션 수 계산을 위한 해시데이터입니다.",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "sessionCount",
+    "title" : "SessionCount",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "5초간 발생한 유니크 세션 수 입니다.",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  } ],
+  "platforms" : [ "RUM" ]
+}

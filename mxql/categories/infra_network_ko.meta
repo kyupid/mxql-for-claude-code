@@ -1,0 +1,84 @@
+{
+  "categoryName" : "infra_network",
+  "interval" : "2s",
+  "title" : "Infra Network",
+  "pk" : [ "oid" ],
+  "description" : "서버의 전체 네트워크 통신량과 관련한 지표 이며, lo(=loopback) 사용량은 제외됩니다.",
+  "language" : "KO",
+  "tags" : [ {
+    "tagName" : "oname",
+    "title" : "Oname",
+    "unit" : "string",
+    "description" : "서버 이름",
+    "deprecated" : false,
+    "type" : "String"
+  } ],
+  "fields" : [ {
+    "fieldName" : "totalbps",
+    "title" : "TotalBps",
+    "unit" : "bps",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "서버의 모든 NIC(Loopback 제외)를 통해 수신(Rx) 및 송신(Tx)된 데이터의 총량을 bps(bit per second) 단위로 표시합니다.",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "rxpps",
+    "title" : "RxPps",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "서버의 모든 NIC(Loopback 제외)를 통해 수신(Rx)된 데이터의 초당 패킷 수(packets per second)를 표시합니다.",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "txpps",
+    "title" : "TxPps",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "서버의 모든 NIC(Loopback 제외)를 통해 송신(Tx)된 데이터의 초당 패킷 수(packets per second)를 표시합니다.",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "txbps",
+    "title" : "TxBps",
+    "unit" : "bps",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "서버의 모든 NIC(Loopback 제외)를 통해 송신(Tx)된 데이터의 양을 bps(bit per second) 단위로 표시합니다.",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "totalpps",
+    "title" : "TotalPps",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "서버의 모든 NIC(Loopback 제외)를 통해 수신(Rx) 및 송신(Tx)된 데이터의 총 패킷 수(packets per second)를 표시합니다.",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "rxbps",
+    "title" : "RxBps",
+    "unit" : "bps",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "서버의 모든 NIC(Loopback 제외)를 통해 수신(Rx)된 데이터의 양을 bps(bit per second) 단위로 표시합니다.",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  } ],
+  "platforms" : [ "INFRA" ]
+}

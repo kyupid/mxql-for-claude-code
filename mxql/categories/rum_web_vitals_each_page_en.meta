@@ -1,0 +1,96 @@
+{
+  "categoryName" : "rum_web_vitals_each_page",
+  "title" : "Rum Web Vitals Each Page",
+  "pk" : [ "env", "version", "page_group" ],
+  "description" : "Metric related to the core web vital",
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "page_group",
+    "title" : "PageGroup",
+    "unit" : "string",
+    "description" : "Page group\nIn order to have a meaningful statistical group in the browser monitoring service, it provides the normalized URL path with regular expressions under the page group name.\nNumbers, dates, and such that are deemed meaningless for URL path unit analysis, are replaced with question marks (?).",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "version",
+    "title" : "Version",
+    "unit" : "string",
+    "description" : "Metric indicating the released version of the web application",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "env",
+    "title" : "Env",
+    "unit" : "string",
+    "description" : "Metric indicating the release environment (development, staging, operation, etc) of the web application",
+    "deprecated" : false,
+    "type" : "String"
+  } ],
+  "fields" : [ {
+    "fieldName" : "web_vitals_cls",
+    "title" : "WebVitalsCls",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Score indicating how often the layout changes while loading the website",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "web_vitals_lcp",
+    "title" : "WebVitalsLcp",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Average time taken to load the largest content components in the website",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "web_vitals_fid",
+    "title" : "WebVitalsFid",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Average time taken from user's input of the first input to the browser's response after loading the website",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "web_vitals_lcp_count",
+    "title" : "WebVitalsLcpCount",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Number of samples used to calculate the web_vitals_lcp",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "web_vitals_cls_count",
+    "title" : "WebVitalsClsCount",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Number of samples used to calculate the web_vitals_cls",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "web_vitals_fid_count",
+    "title" : "WebVitalsFidCount",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Number of samples used to calculate the web_vitals_fid",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  } ],
+  "platforms" : [ "RUM" ]
+}

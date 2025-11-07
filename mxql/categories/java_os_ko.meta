@@ -1,0 +1,235 @@
+{
+  "categoryName" : "java_os",
+  "interval" : "5s",
+  "title" : "JavaOS",
+  "pk" : [ "oid" ],
+  "language" : "KO",
+  "tags" : [ {
+    "tagName" : "okind",
+    "title" : "Okind",
+    "label" : "okindName",
+    "deprecated" : false
+  }, {
+    "tagName" : "onodeName",
+    "title" : "OnodeName",
+    "label" : "onodeName",
+    "deprecated" : false
+  }, {
+    "tagName" : "Arch",
+    "title" : "Arch",
+    "label" : "Arch",
+    "deprecated" : false
+  }, {
+    "tagName" : "type",
+    "title" : "Type",
+    "label" : "type",
+    "deprecated" : false
+  }, {
+    "tagName" : "oid",
+    "title" : "Oid",
+    "label" : "oname",
+    "deprecated" : false
+  }, {
+    "tagName" : "onode",
+    "title" : "Onode",
+    "label" : "onodeName",
+    "deprecated" : false
+  }, {
+    "tagName" : "pid",
+    "title" : "PId",
+    "label" : "pid",
+    "deprecated" : false
+  }, {
+    "tagName" : "Name",
+    "title" : "Name",
+    "label" : "Name",
+    "deprecated" : false
+  }, {
+    "tagName" : "Version",
+    "title" : "Version",
+    "label" : "Version",
+    "deprecated" : false
+  }, {
+    "tagName" : "okindName",
+    "title" : "OkindName",
+    "label" : "okindName",
+    "deprecated" : false
+  }, {
+    "tagName" : "host_ip",
+    "title" : "HostIp",
+    "label" : "host_ip",
+    "deprecated" : false
+  }, {
+    "tagName" : "oname",
+    "title" : "Oname",
+    "label" : "oname",
+    "deprecated" : false
+  } ],
+  "fields" : [ {
+    "fieldName" : "FreeMemorySize",
+    "title" : "FreeMemorySize",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "JVM이 사용가능한 메모리 용량",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "ProcessCpuLoad",
+    "title" : "ProcessCpuLoad",
+    "unit" : "pct",
+    "objectMerge" : "sum",
+    "timeMerge" : "sum",
+    "description" : "프로세스 CpuLoad 사용률",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "TotalSwapSpaceSize",
+    "title" : "TotalSwapSpaceSize",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "JVM에서 사용 가능한 Swap 용량",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "CommittedVirtualMemorySize",
+    "title" : "CommittedVirtualMemorySize",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Committed 가상 메모리 용량",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "FreePhysicalMemorySize",
+    "title" : "FreePhysicalMemorySize",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "가용한 물리적 메모리 용량",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "SystemLoadAverage",
+    "title" : "SystemLoadAverage",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "SystemLoad 사용률",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "TotalMemorySize",
+    "title" : "TotalMemorySize",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "JVM에서 사용 가능한 전체 메모리 용량",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "ProcessCpuTime",
+    "title" : "ProcessCpuTime",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "프로세스 CPU 시간",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "SystemCpuLoad",
+    "title" : "SystemCpuLoad",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "시스템 CpuLoad 사용률",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "AvailableProcessors",
+    "title" : "AvailableProcessors",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "JVM에서 사용 가능한 코어 개수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "CpuLoad",
+    "title" : "CpuLoad",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "JVM의 CpuLoad 사용률",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "FreeSwapSpaceSize",
+    "title" : "FreeSwapSpaceSize",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Swap 가용 용량",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "OpenFileDescriptorCount",
+    "title" : "OpenFileDescriptorCount",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "사용중인 파일 디스크립트 수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "MaxFileDescriptorCount",
+    "title" : "MaxFileDescriptorCount",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "최대 파일 디스크립트 수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "TotalPhysicalMemorySize",
+    "title" : "TotalPhysicalMemorySize",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "물리적 메모리 전체 용량",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  } ],
+  "platforms" : [ "JAVA" ]
+}

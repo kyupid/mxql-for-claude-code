@@ -1,0 +1,138 @@
+{
+  "categoryName" : "infra_cpu_core",
+  "title" : "Infra CPU Core",
+  "interval" : [ "5s" ],
+  "pk" : [ "oid", "@id" ],
+  "language" : "KO",
+  "tags" : [ {
+    "tagName" : "oname",
+    "title" : "Oname",
+    "unit" : "string",
+    "description" : "서버 이름",
+    "deprecated" : false,
+    "type" : "String"
+  } ],
+  "fields" : [ {
+    "fieldName" : "sys",
+    "title" : "Sys",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "해당 Core가 커널 모드(Sys)에서의 사용된 사용률을 의미합니다.",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "coreId",
+    "title" : "Core Id",
+    "unit" : "string",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "coreid 를 의미합니다.",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "fieldName" : "nice",
+    "title" : "Nice",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "HP-UX 전용 지표이며 해당 Core가 우선 순위를 가진(niced) 프로세스 처리를 위해서 사용한 CPU 사용율을 의미합니다.",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "total_wait",
+    "title" : "Total Wait",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "해당 Core가 사용자 모드(User)와 커널 모드(Sys), IO 대기(wait) 에서의 사용된 사용률 합계를 의미합니다.",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "softirq",
+    "title" : "Soft Irq",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "해당 Core가 소프트웨어 Interrupt request를 처리하는데 사용된 사용율을 의미합니다.",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "user",
+    "title" : "User",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "해당 Core가 사용자 모드(User)에서의 사용된 사용률을 의미합니다.",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "idle",
+    "title" : "Idle",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "해당 Core가 유휴 상태로, 아무 작업도 수행하지 않은 비율을 의미합니다.",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "steal",
+    "title" : "Steal",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "가상화 환경에서 하이퍼 바이저가 다른 프로세서를 서비스하는 동안 해당 Core가 비자발적으로 대기하는 데 소요 된 CPU 사용율을 의미합니다.",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "irq",
+    "title" : "Irq",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "해당 Core가 하드웨어 Interrupt request를 처리하는데 사용된 사용율을 의미합니다.",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "wait",
+    "title" : "Wait",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "해당 Core가 I/O 작업이 완료되기를 기다리는 데 소비한 시간 비율을 의미합니다.",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "total",
+    "title" : "Total",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "해당 Core가 사용자 모드(User)와 커널 모드(Sys)에서의 사용된 사용률 합계를 의미합니다.",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  } ],
+  "platforms" : [ "INFRA" ]
+}

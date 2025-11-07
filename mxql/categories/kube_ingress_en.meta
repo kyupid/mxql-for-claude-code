@@ -1,0 +1,102 @@
+{
+  "categoryName" : "kube_ingress",
+  "interval" : "30s",
+  "pk" : [ "ingressUid" ],
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "ingressNamespace",
+    "title" : "IngressNamespace",
+    "unit" : "string",
+    "description" : "Namespace of the Ingress resource",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "ingressClassName",
+    "title" : "IngressClassName",
+    "unit" : "string",
+    "description" : "Name of the Ingress class",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "ingressName",
+    "title" : "IngressName",
+    "unit" : "string",
+    "description" : "Name of the Ingress resource",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "creationTimeMillis",
+    "title" : "CreationTime",
+    "unit" : "ms",
+    "description" : "Creation time of the Ingress resource",
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "tagName" : "ingressUid",
+    "title" : "IngressUid",
+    "unit" : "string",
+    "description" : "Unique ID of the Ingress resource",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "ingressLoadBalancerIps",
+    "title" : "IngressLoadBalancerIps",
+    "description" : "Load balancer IPs of the Ingress",
+    "deprecated" : false
+  } ],
+  "fields" : [ {
+    "fieldName" : "path",
+    "title" : "Path",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Request path(s) under a specific host",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "host",
+    "title" : "Host",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Hostname(s) the Ingress resource listens to (* applies to all hosts)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "backendServiceName",
+    "title" : "BackendServiceName",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Name of the service receiving backend traffic",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "pathType",
+    "title" : "PathType",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Path matching method (e.g., Prefix, Exact)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "backendServicePort",
+    "title" : "BackendServicePort",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Port number of the service receiving backend traffic",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "backendServiceUid",
+    "title" : "ServiceUid",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Unique ID of the service receiving backend traffic",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  } ]
+}

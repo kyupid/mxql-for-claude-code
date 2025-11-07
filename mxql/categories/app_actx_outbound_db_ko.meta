@@ -1,0 +1,133 @@
+{
+  "categoryName" : "app_actx_outbound_db",
+  "interval" : "5s",
+  "title" : "ActiveOutboundDB",
+  "pk" : [ "oid", "dbms", "host", "path" ],
+  "description" : "액티브 DB 아웃바운드 정보보",
+  "language" : "KO",
+  "tags" : [ {
+    "tagName" : "!rectype",
+    "deprecated" : false
+  }, {
+    "tagName" : "oname",
+    "deprecated" : false
+  }, {
+    "tagName" : "okindName",
+    "deprecated" : false
+  }, {
+    "tagName" : "onodeName",
+    "deprecated" : false
+  } ],
+  "fields" : [ {
+    "fieldName" : "act8",
+    "title" : "ActiveCallOver8sec",
+    "unit" : "count",
+    "objectMerge" : "sum",
+    "timeMerge" : "sum",
+    "description" : "8초 이상 DB 아웃바운드 건수",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "dbms",
+    "title" : "DBMS Info",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "timeSum",
+    "title" : "TotalElapsedTime",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "sum",
+    "description" : "DB 아웃바운드 응답시간의 합",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "path",
+    "title" : "DBMS Connect URL",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "@id",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "uniq ID",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "error",
+    "title" : "CallErrorCount",
+    "unit" : "count",
+    "objectMerge" : "sum",
+    "timeMerge" : "sum",
+    "description" : "DB 아웃바운드 에러건수",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "actx",
+    "title" : "TotalActiveCall",
+    "unit" : "count",
+    "objectMerge" : "sum",
+    "timeMerge" : "sum",
+    "description" : "act0 + act3 + act8",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "count",
+    "title" : "CallCount",
+    "unit" : "count",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "description" : "DB 아웃바운드 건수",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "act3",
+    "title" : "ActiveCallOver3sec",
+    "unit" : "count",
+    "objectMerge" : "sum",
+    "timeMerge" : "sum",
+    "description" : "3~8초 이하 DB 아웃바운드 건수",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "act0",
+    "title" : "ActiveCallOver0sec",
+    "unit" : "count",
+    "objectMerge" : "sum",
+    "timeMerge" : "sum",
+    "description" : "0~3초 이하 DB 아웃바운드 건수",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "host",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false
+  } ],
+  "platforms" : [ "JAVA" ]
+}

@@ -1,0 +1,82 @@
+{
+  "categoryName" : "infra_network",
+  "interval" : "2s",
+  "title" : "Infra Network",
+  "pk" : [ "oid" ],
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "oname",
+    "title" : "Oname",
+    "unit" : "string",
+    "deprecated" : false,
+    "type" : "String"
+  } ],
+  "fields" : [ {
+    "fieldName" : "rxbps",
+    "title" : "RxBps",
+    "unit" : "bps",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "It displays the amount of data received (Rx) through all NICs (excluding Loopback) on the server in bits per second (bps).",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "rxpps",
+    "title" : "RxPps",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "It displays the number of packets per second received (Rx) through all NICs (excluding Loopback) on the server.",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "txpps",
+    "title" : "TxPps",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "It displays the number of packets per second (Tx) transmitted (packets per second) through all NICs (excluding Loopback) on the server.",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "txbps",
+    "title" : "TxBps",
+    "unit" : "bps",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "It displays the amount of data transmitted (Tx) through all NICs (excluding Loopback) on the server in bits per second (bps).",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "totalpps",
+    "title" : "TotalPps",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "It displays the total number of packets received (Rx) and transmitted (Tx) through all NICs (excluding Loopback) on the server.",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "totalbps",
+    "title" : "TotalBps",
+    "unit" : "bps",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "It displays the total amount of data received (Rx) and transmitted (Tx) through all NICs (excluding Loopback) on the server in bits per second (bps).",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  } ],
+  "platforms" : [ "INFRA" ]
+}

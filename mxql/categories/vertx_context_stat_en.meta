@@ -1,0 +1,75 @@
+{
+  "categoryName" : "vertx_context_stat",
+  "interval" : "5s",
+  "pk" : [ "oid", "address" ],
+  "description" : "collect Vert.x none-web transaction such as vertx-eventbus, vertx-db",
+  "language" : "EN",
+  "fields" : [ {
+    "fieldName" : "trace_error",
+    "title" : "traceError",
+    "unit" : "count",
+    "objectMerge" : "sum",
+    "timeMerge" : "sum",
+    "description" : "error count",
+    "visible" : true,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "elapsed_time_max",
+    "title" : "elapsedTimeMax",
+    "unit" : "ms",
+    "objectMerge" : "max",
+    "timeMerge" : "max",
+    "description" : "elapsed time max",
+    "visible" : true,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "elapsed_time_sum",
+    "title" : "elapsedTimeSum",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "elapsed time sum",
+    "visible" : true,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "address",
+    "title" : "address",
+    "unit" : "txt",
+    "objectMerge" : "none",
+    "timeMerge" : "none",
+    "description" : "Vert.x event address",
+    "visible" : true,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "fieldName" : "tps",
+    "title" : "tps",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "transaction per second",
+    "visible" : true,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "trace_count",
+    "title" : "traceCount",
+    "unit" : "count",
+    "objectMerge" : "sum",
+    "timeMerge" : "sum",
+    "description" : "trace count",
+    "visible" : true,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  } ],
+  "platforms" : [ "JAVA" ]
+}

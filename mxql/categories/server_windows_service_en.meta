@@ -1,0 +1,207 @@
+{
+  "categoryName" : "server_windows_service",
+  "interval" : "5s",
+  "title" : "Server Windows Service",
+  "pk" : [ "name", "oid" ],
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "whatap_home",
+    "title" : "Whatap_home",
+    "label" : "whatap_home",
+    "deprecated" : false
+  }, {
+    "tagName" : "os_name",
+    "title" : "Os_name",
+    "label" : "os_name",
+    "deprecated" : false
+  }, {
+    "tagName" : "os_arch",
+    "title" : "Os_arch",
+    "label" : "os_arch",
+    "deprecated" : false
+  }, {
+    "tagName" : "whatap_version",
+    "title" : "Whatap_version",
+    "label" : "whatap_version",
+    "deprecated" : false
+  }, {
+    "tagName" : "os_release",
+    "title" : "Os_release",
+    "label" : "os_release",
+    "deprecated" : false
+  }, {
+    "tagName" : "whatap_build",
+    "title" : "Whatap_build",
+    "label" : "whatap_build",
+    "deprecated" : false
+  }, {
+    "tagName" : "os_cpusocket",
+    "title" : "Os_cpusocket",
+    "label" : "os_cpusocket",
+    "deprecated" : false
+  }, {
+    "tagName" : "oname",
+    "title" : "Oname",
+    "label" : "oname",
+    "deprecated" : false
+  }, {
+    "tagName" : "os_cpucore",
+    "title" : "Os_cpucore",
+    "label" : "os_cpucore",
+    "deprecated" : false
+  }, {
+    "tagName" : "os_public_ip",
+    "title" : "Os_public_ip",
+    "label" : "os_public_ip",
+    "deprecated" : false
+  }, {
+    "tagName" : "whatap_product",
+    "title" : "Whatap_product",
+    "label" : "whatap_product",
+    "deprecated" : false
+  }, {
+    "tagName" : "instance",
+    "title" : "Instance",
+    "label" : "instance",
+    "deprecated" : false
+  }, {
+    "tagName" : "os_memory",
+    "title" : "Os_memory",
+    "label" : "os_memory",
+    "deprecated" : false
+  }, {
+    "tagName" : "os_ip",
+    "title" : "Os_ip",
+    "label" : "os_ip",
+    "deprecated" : false
+  }, {
+    "tagName" : "os_cpuvendor",
+    "title" : "Os_cpuvendor",
+    "label" : "os_cpuvendor",
+    "deprecated" : false
+  }, {
+    "tagName" : "oid",
+    "title" : "Oid",
+    "label" : "oid",
+    "deprecated" : false
+  }, {
+    "tagName" : "name",
+    "title" : "Name",
+    "label" : "name",
+    "deprecated" : false
+  } ],
+  "fields" : [ {
+    "fieldName" : "openFileDescriptors",
+    "title" : "openFileDescriptors",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "state",
+    "title" : "state",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "readBps",
+    "title" : "readBps",
+    "unit" : "bps",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "writeIops",
+    "title" : "writeIops",
+    "unit" : "bps",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "writeBps",
+    "title" : "writeBps",
+    "unit" : "bps",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "readIops",
+    "title" : "readIops",
+    "unit" : "bps",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "group",
+    "title" : "group",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "createTime",
+    "title" : "createTime",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "cpu",
+    "title" : "Cpu",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "memoryPercent",
+    "title" : "memoryPercent",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "memoryShared",
+    "title" : "memoryShared",
+    "unit" : "byte",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "memoryBytes",
+    "title" : "memoryBytes",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  } ],
+  "platforms" : [ "INFRA" ]
+}

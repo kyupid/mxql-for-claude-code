@@ -1,0 +1,80 @@
+{
+  "categoryName" : "livecheck_http",
+  "interval" : "5s",
+  "title" : "Live Check Http",
+  "pk" : [ "oid" ],
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "agency",
+    "title" : "Agency",
+    "label" : "agency",
+    "deprecated" : false
+  }, {
+    "tagName" : "method",
+    "title" : "Method",
+    "label" : "method",
+    "deprecated" : false
+  }, {
+    "tagName" : "oid",
+    "title" : "Oid",
+    "label" : "oid",
+    "deprecated" : false
+  }, {
+    "tagName" : "url",
+    "title" : "Url",
+    "label" : "url",
+    "deprecated" : false
+  }, {
+    "tagName" : "okind",
+    "title" : "Okind",
+    "label" : "okind",
+    "deprecated" : false
+  }, {
+    "tagName" : "id",
+    "title" : "Id",
+    "label" : "id",
+    "deprecated" : false
+  }, {
+    "tagName" : "onode",
+    "title" : "Onode",
+    "label" : "onode",
+    "deprecated" : false
+  } ],
+  "fields" : [ {
+    "fieldName" : "status",
+    "title" : "Status",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "elapsed",
+    "title" : "Elapsed",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "bodySize",
+    "title" : "BodySize",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "reason",
+    "title" : "Reason",
+    "unit" : "txt",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "String"
+  } ]
+}

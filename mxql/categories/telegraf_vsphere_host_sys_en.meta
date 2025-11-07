@@ -1,0 +1,7 @@
+{
+  "categoryName" : "telegraf_vsphere_host_sys",
+  "title" : "Telegraf Vsphere Host System",
+  "pk" : [ "dcname", "esxhostname" ],
+  "language" : "EN",
+  "platforms" : [ "INFRA" ]
+}

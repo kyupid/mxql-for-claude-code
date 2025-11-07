@@ -1,0 +1,291 @@
+{
+  "categoryName" : "app_proc_counter",
+  "title" : "ApplicationProcessCounter",
+  "interval" : [ "1h", "5m", "5s" ],
+  "pk" : [ "oid" ],
+  "language" : "JA",
+  "tags" : [ {
+    "tagName" : "oid",
+    "title" : "Oid",
+    "label" : "oname",
+    "deprecated" : false
+  }, {
+    "tagName" : "host_ip",
+    "title" : "HostIp",
+    "label" : "host_ip",
+    "deprecated" : false
+  }, {
+    "tagName" : "pid",
+    "title" : "Pid",
+    "label" : "pid",
+    "deprecated" : false
+  }, {
+    "tagName" : "container",
+    "title" : "Container",
+    "label" : "container",
+    "deprecated" : false
+  }, {
+    "tagName" : "type",
+    "title" : "Type",
+    "label" : "type",
+    "deprecated" : false
+  }, {
+    "tagName" : "onode",
+    "title" : "Onode",
+    "label" : "onode",
+    "deprecated" : false
+  }, {
+    "tagName" : "okind",
+    "title" : "Okind",
+    "label" : "okindName",
+    "deprecated" : false
+  }, {
+    "tagName" : "okindName",
+    "title" : "OkindName",
+    "label" : "okindName",
+    "deprecated" : false
+  }, {
+    "tagName" : "containerKey",
+    "title" : "ContainerKey",
+    "label" : "container",
+    "deprecated" : false
+  }, {
+    "tagName" : "oname",
+    "title" : "Oname",
+    "label" : "oname",
+    "deprecated" : false
+  } ],
+  "fields" : [ {
+    "fieldName" : "mem_system",
+    "title" : "SystemMemoryTotal",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "システムメモリ全体のサイズ",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "cputime",
+    "title" : "CpuTime",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "CPU使用時間",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "heap_max",
+    "title" : "HeapMax",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "ヒープ最大サイズ",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "proc_fd_max",
+    "title" : "MaxFileDescriptor",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "max",
+    "description" : "最大ファイルディスクリプタの件数",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "thread_peak_count",
+    "title" : "ThreadPeakCount",
+    "unit" : "count",
+    "objectMerge" : "sum",
+    "timeMerge" : "max",
+    "description" : "スレッド最大使用件数",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "proc_fd",
+    "title" : "FileDescriptor",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "max",
+    "description" : "最大ファイルディスクリプタの件数",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "db_num_active",
+    "title" : "DbActiveConn",
+    "unit" : "count",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "description" : "DBコネクションアクティブ件数",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "mem_proc",
+    "title" : "ProcessMemoryUsed",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "プロセスメモリ使用量のサイズ",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "threadpool_queueSize",
+    "title" : "ThreadPoolQueueSize",
+    "unit" : "count",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "description" : "スレッドプールキューサイズ",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "heap_tot",
+    "title" : "HeapTotal",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "ヒープ全体サイズ",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "db_num_idle",
+    "title" : "DbIdleConn",
+    "unit" : "count",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "description" : "DBコネクションアイドル件数",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "gc_oldgen_count",
+    "title" : "GCOldgenCount",
+    "unit" : "count",
+    "objectMerge" : "sum",
+    "timeMerge" : "sum",
+    "description" : "Full GC件数",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "gc_count",
+    "title" : "GCCount",
+    "unit" : "count",
+    "objectMerge" : "sum",
+    "timeMerge" : "sum",
+    "description" : "GC件数",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "thread_count",
+    "title" : "ThreadCount",
+    "unit" : "count",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "description" : "スレッド件数",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "pending_finalization",
+    "title" : "PendingFinalization",
+    "unit" : "count",
+    "objectMerge" : "sum",
+    "timeMerge" : "sum",
+    "description" : "Finalizerキューで待機中のオブジェクト数",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "thread_daemon",
+    "title" : "ThreadDaemon",
+    "unit" : "count",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "description" : "スレッドデーモン件数",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "threadpool_activeCount",
+    "title" : "ThreadPoolActiveCount",
+    "unit" : "count",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "description" : "スレッドプールアクティブ件数",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "gc_time",
+    "title" : "GCTime",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "GC遂行時間",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "heap_perm",
+    "title" : "HeapPermanent",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "ヒープPerm領域サイズ",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "heap_use",
+    "title" : "HeapUsed",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "ヒープ使用量のサイズ",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "thread_total_started",
+    "title" : "ThreadTotalStarted",
+    "unit" : "count",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "description" : "JVM開始時点のスレッド全体件数",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  } ],
+  "platforms" : [ "JAVA" ]
+}

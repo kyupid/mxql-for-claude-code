@@ -1,0 +1,61 @@
+{
+  "categoryName" : "dotnet_perf_win_web_service",
+  "interval" : "5s",
+  "title" : "DotnetPerformanceWindowsWebService",
+  "pk" : [ "oid" ],
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "okindname",
+    "title" : "OkindName",
+    "label" : "okindname"
+  }, {
+    "tagName" : "onode",
+    "title" : "Onode",
+    "label" : "onode"
+  }, {
+    "tagName" : "oname",
+    "title" : "Oname",
+    "label" : "oname"
+  }, {
+    "tagName" : "onodename",
+    "title" : "Onodename",
+    "label" : "onodename"
+  }, {
+    "tagName" : "ip",
+    "title" : "Ip",
+    "label" : "ip"
+  }, {
+    "tagName" : "okind",
+    "title" : "Okind",
+    "label" : "okind"
+  }, {
+    "tagName" : "public_ip",
+    "title" : "PublicIp",
+    "label" : "public_ip"
+  }, {
+    "tagName" : "oid",
+    "title" : "Oid",
+    "label" : "oid"
+  }, {
+    "tagName" : "instance",
+    "title" : "Instance",
+    "label" : "instance"
+  } ],
+  "fields" : [ {
+    "fieldName" : "Errors_Total_persec",
+    "title" : "ErrorsTotal",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "Pipeline_Instance_Count",
+    "title" : "PipelineInstanceCount",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "Requests_persec",
+    "title" : "Requests",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  } ],
+  "platforms" : [ "DOTNET" ]
+}

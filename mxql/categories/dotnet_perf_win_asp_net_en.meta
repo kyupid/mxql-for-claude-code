@@ -1,0 +1,61 @@
+{
+  "categoryName" : "dotnet_perf_win_asp_net",
+  "interval" : "5s",
+  "title" : "DotnetPerformanceWindowsAspNet",
+  "pk" : [ "oid" ],
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "okind",
+    "title" : "Okind",
+    "label" : "okindName"
+  }, {
+    "tagName" : "onode",
+    "title" : "Onode",
+    "label" : "onode"
+  }, {
+    "tagName" : "ip",
+    "title" : "Ip",
+    "label" : "ip"
+  }, {
+    "tagName" : "onodename",
+    "title" : "OnodeName",
+    "label" : "onodename"
+  }, {
+    "tagName" : "oid",
+    "title" : "Oid",
+    "label" : "oname"
+  }, {
+    "tagName" : "instance",
+    "title" : "Instance",
+    "label" : "instance"
+  }, {
+    "tagName" : "oname",
+    "title" : "Oname",
+    "label" : "oname"
+  }, {
+    "tagName" : "public_ip",
+    "title" : "PublicIp",
+    "label" : "public_ip"
+  }, {
+    "tagName" : "okindname",
+    "title" : "OkindName",
+    "label" : "okindname"
+  } ],
+  "fields" : [ {
+    "fieldName" : "Requests_Queued",
+    "title" : "RequestsQueued",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "Worker_Process_Restarts",
+    "title" : "WorkerProcessRestarts",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "Requests_Rejected",
+    "title" : "RequestsRejected",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  } ],
+  "platforms" : [ "DOTNET" ]
+}

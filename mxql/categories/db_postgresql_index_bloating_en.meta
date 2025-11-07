@@ -1,0 +1,106 @@
+{
+  "categoryName" : "db_postgresql_index_bloating",
+  "title" : "db_postgresql_index_bloating",
+  "pk" : [ "oid" ],
+  "language" : "EN",
+  "fields" : [ {
+    "fieldName" : "bloat_ratio",
+    "title" : "Bloat Ratio",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "낭비 공간이 차지하는 비율.(bloat_size/index_size × 100)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "schemaname",
+    "title" : "Schema",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "time",
+    "title" : "Collection Time",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "수집시간",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "indexname",
+    "title" : "Index",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "index_scans",
+    "title" : "Index Scan Count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "인덱스 스캔 횟수 (idx_scan)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "bloat_size",
+    "title" : "Bloat Size",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "실제 데이터 외에 낭비되고 있는 공간",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "tablename",
+    "title" : "Table",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "index_size",
+    "title" : "Index Size",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "해당 인덱스가 실제로 차지하는 디스크 공간 크기",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "datname",
+    "title" : "DB",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "table_size",
+    "title" : "Table Size",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "해당 테이블이 실제로 차지하는 디스크 공간 크기",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  } ],
+  "platforms" : [ "POSTGRESQL" ]
+}

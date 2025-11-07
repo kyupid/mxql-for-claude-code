@@ -1,0 +1,76 @@
+{
+  "categoryName" : "dotnet_perf_win_asp_net_apps",
+  "interval" : "5s",
+  "title" : "DotnetPerformanceWindowsAspNetApps",
+  "pk" : [ "oid" ],
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "oname",
+    "title" : "Oname",
+    "label" : "oname"
+  }, {
+    "tagName" : "onodename",
+    "title" : "Onodename",
+    "label" : "onodename"
+  }, {
+    "tagName" : "okindname",
+    "title" : "OkindName",
+    "label" : "okindname"
+  }, {
+    "tagName" : "okind",
+    "title" : "Okind",
+    "label" : "okind"
+  }, {
+    "tagName" : "onode",
+    "title" : "Onode",
+    "label" : "onode"
+  }, {
+    "tagName" : "public_ip",
+    "title" : "PublicIp",
+    "label" : "public_ip"
+  }, {
+    "tagName" : "instance",
+    "title" : "Instance",
+    "label" : "instance"
+  }, {
+    "tagName" : "ip",
+    "title" : "Ip",
+    "label" : "ip"
+  }, {
+    "tagName" : "oid",
+    "title" : "Oid",
+    "label" : "oid"
+  } ],
+  "fields" : [ {
+    "fieldName" : "Bytes_Sent_persec",
+    "title" : "BytesSent",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "ISAPI_Extension_Requests_persec",
+    "title" : "ISAPIExtensionRequests",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "Current_Connections",
+    "title" : "CurrentConnections",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "Files_Sent_persec",
+    "title" : "FilesSent",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "Files_Received_persec",
+    "title" : "FilesReceived",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "Bytes_Received_persec",
+    "title" : "BytesReceived",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  } ],
+  "platforms" : [ "DOTNET" ]
+}

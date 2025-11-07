@@ -1,0 +1,22 @@
+{
+  "categoryName" : "db_altibase_tablespace",
+  "interval" : "1h",
+  "title" : "db_altibase_tablespace",
+  "pk" : [ "tbs_name", "datfile", "oid" ],
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "oname",
+    "title" : "oname",
+    "deprecated" : false
+  } ],
+  "fields" : [ {
+    "fieldName" : "usage",
+    "title" : "usage",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  } ],
+  "platforms" : [ "ALTIBASE" ]
+}

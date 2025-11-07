@@ -1,0 +1,28 @@
+{
+  "categoryName" : "rum_session_count",
+  "title" : "Rum Session Count",
+  "description" : "Category related to the number of user sessions",
+  "language" : "EN",
+  "fields" : [ {
+    "fieldName" : "logbits",
+    "title" : "Logbits",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "It is the hash data for calculating the number of user sessions.",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "sessionCount",
+    "title" : "SessionCount",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Number of unique sessions occurred for 5 seconds",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  } ],
+  "platforms" : [ "RUM" ]
+}

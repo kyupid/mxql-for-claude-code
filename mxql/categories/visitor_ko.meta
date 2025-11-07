@@ -1,0 +1,44 @@
+{
+  "categoryName" : "visitor",
+  "interval" : "1h",
+  "title" : "Visitor",
+  "pk" : [ "oid" ],
+  "language" : "KO",
+  "tags" : [ {
+    "tagName" : "okind",
+    "title" : "Okind",
+    "label" : "okind",
+    "deprecated" : false
+  }, {
+    "tagName" : "oid",
+    "title" : "Oid",
+    "label" : "oid",
+    "deprecated" : false
+  }, {
+    "tagName" : "onode",
+    "title" : "Onode",
+    "label" : "onode",
+    "deprecated" : false
+  } ],
+  "fields" : [ {
+    "fieldName" : "visit_user",
+    "title" : "VisitUser",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "방문자수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "logbits",
+    "title" : "LogBits",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "방문자수(Uniq)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  } ]
+}

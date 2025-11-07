@@ -1,0 +1,113 @@
+{
+  "categoryName" : "server_pc_tcpv4",
+  "interval" : "10s",
+  "title" : "server_pc_tcpv4",
+  "pk" : [ "oname" ],
+  "description" : "서버 모니터링 윈도우 버전 netstat",
+  "language" : "KO",
+  "tags" : [ {
+    "tagName" : "name",
+    "deprecated" : false
+  }, {
+    "tagName" : "oname",
+    "deprecated" : false
+  }, {
+    "tagName" : "os_cpusocket",
+    "deprecated" : false
+  }, {
+    "tagName" : "oa_arch",
+    "deprecated" : false
+  }, {
+    "tagName" : "os_cpuvendor",
+    "deprecated" : false
+  }, {
+    "tagName" : "os_cpucore",
+    "deprecated" : false
+  }, {
+    "tagName" : "os_ip",
+    "deprecated" : false
+  } ],
+  "fields" : [ {
+    "fieldName" : "connections_established",
+    "title" : "Connections Established",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Connections Established",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "segments_received_per_sec",
+    "title" : "Segments Received Per Sec",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Segments Received Per Sec",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "segments_per_sec",
+    "title" : "Segments Per Sec",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Segments Per Sec",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "segments_sent_per_sec",
+    "title" : "Segments Sent Per Sec",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Segments Sent Per Sec",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "connection_failures",
+    "title" : "Connection Failures",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Connection Failures",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "segments_retransmitted_per_sec",
+    "title" : "Segments Retransmitted Per Sec",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Segments Retransmitted Per Sec",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "connections_reset",
+    "title" : "Connections Reset",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Connections Reset",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "connections_active",
+    "title" : "Connections Active",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Connections Active",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "connections_passive",
+    "title" : "Connections Passive",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Connections Passive",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  } ],
+  "platforms" : [ "INFRA" ]
+}

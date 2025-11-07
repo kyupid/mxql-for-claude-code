@@ -1,0 +1,103 @@
+{
+  "categoryName" : "ContainerInstanceArn",
+  "title" : "ContainerInstanceArn",
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "AgentVersion",
+    "title" : "ECS AgentVersion",
+    "label" : "AgentVersion",
+    "deprecated" : false
+  }, {
+    "tagName" : "ecs.instance-type",
+    "title" : "ecs instance-type",
+    "label" : "ecs.instance-type",
+    "deprecated" : false
+  }, {
+    "tagName" : "Version",
+    "title" : "Container Instance Version",
+    "label" : "Version",
+    "deprecated" : false
+  }, {
+    "tagName" : "DockerVersion",
+    "title" : "DockerVersion",
+    "label" : "DockerVersion",
+    "deprecated" : false
+  }, {
+    "tagName" : "ecs.capability.cni-plugin-version",
+    "title" : "ecs capability cni-plugin-version",
+    "label" : "ecs.capability.cni-plugin-version",
+    "deprecated" : false
+  }, {
+    "tagName" : "ecs.subnet-id",
+    "title" : "ecs subnet-id",
+    "label" : "ecs.subnet-id",
+    "deprecated" : false
+  }, {
+    "tagName" : "ecs.availability-zone",
+    "title" : "ecs availability-zone",
+    "label" : "ecs.availability-zone",
+    "deprecated" : false
+  }, {
+    "tagName" : "Ec2InstanceId",
+    "title" : "Ec2InstanceId",
+    "label" : "Ec2InstanceId",
+    "deprecated" : false
+  }, {
+    "tagName" : "ContainerInstanceArn",
+    "title" : "ContainerInstanceArn",
+    "label" : "ContainerInstanceArn",
+    "deprecated" : false
+  }, {
+    "tagName" : "ecs.cpu-architecture",
+    "title" : "ecs cpu-architecture",
+    "label" : "ecs.cpu-architecture",
+    "deprecated" : false
+  }, {
+    "tagName" : "ecs.ami-id",
+    "title" : "ecs ami-id",
+    "label" : "ecs.ami-id",
+    "deprecated" : false
+  }, {
+    "tagName" : "ecs.os-type",
+    "title" : "ecs os-type",
+    "label" : "ecs.os-type",
+    "deprecated" : false
+  }, {
+    "tagName" : "ecs.vpc-id",
+    "title" : "ecs vpc-id",
+    "label" : "ecs.vpc-id",
+    "deprecated" : false
+  }, {
+    "tagName" : "ecs.capability.branch-cni-plugin-version",
+    "title" : "ecs capability branch-cni-plugin-version",
+    "label" : "ecs.capability.branch-cni-plugin-version",
+    "deprecated" : false
+  }, {
+    "tagName" : "ecs.os-family",
+    "title" : "ecs os-family",
+    "label" : "ecs.os-family",
+    "deprecated" : false
+  } ],
+  "fields" : [ {
+    "fieldName" : "Status",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "PendingTasksCount",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "RunningTasksCount",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  } ]
+}

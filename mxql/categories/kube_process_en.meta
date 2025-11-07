@@ -1,0 +1,145 @@
+{
+  "categoryName" : "kube_process",
+  "interval" : "5s",
+  "pk" : [ "pid", "onodeName", "createTime" ],
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "createTime",
+    "title" : "CreateTime",
+    "unit" : "sec",
+    "description" : "Process creationTime",
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "tagName" : "ppid",
+    "title" : "Ppid",
+    "unit" : "string",
+    "description" : "Parent process ID",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "pid",
+    "title" : "Pid",
+    "unit" : "string",
+    "description" : "Process ID",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "uid",
+    "title" : "User",
+    "unit" : "string",
+    "description" : "User ID (uid)",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "cmd2",
+    "title" : "Cmdline",
+    "unit" : "string",
+    "description" : "Command line (entire command and arguments)",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "cmd1",
+    "title" : "Name",
+    "unit" : "string",
+    "description" : "Command name",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "onodeName",
+    "title" : "NodeIp",
+    "unit" : "string",
+    "description" : "Node name of the process",
+    "deprecated" : false,
+    "type" : "String"
+  } ],
+  "fields" : [ {
+    "fieldName" : "sharedMemory",
+    "title" : "SharedMemorySizeBytes",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Shared memory size",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "threads",
+    "title" : "Threads",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Number of threads created by the process",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "memory",
+    "title" : "MemoryUsedPercent",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Memory usage percentage",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "openFileDescriptors",
+    "title" : "OpenFileDescriptors",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Number of open file descriptors",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "rss",
+    "title" : "RssUsedBytes",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Resident set size (RSS) memory usage",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "state",
+    "title" : "State",
+    "unit" : "state",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Process state",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "cpu",
+    "title" : "CpuUsedPercent",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "CPU usage percentage",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "vmSize",
+    "title" : "VmSizeBytes",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Virtual memory size",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  } ]
+}

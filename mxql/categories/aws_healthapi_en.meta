@@ -1,0 +1,18 @@
+{
+  "categoryName" : "aws_healthapi",
+  "interval" : "5m",
+  "title" : "aws_healthapi",
+  "pk" : [ "arn" ],
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "oid",
+    "title" : "oid",
+    "label" : "oid"
+  } ],
+  "fields" : [ {
+    "fieldName" : "start",
+    "title" : "start",
+    "timeMerge" : "avg"
+  } ],
+  "platforms" : [ "JAVA", "PHP", "PYTHON", "NODEJS", "INFRA", "KUBERNETES", "KUBE_NS" ]
+}

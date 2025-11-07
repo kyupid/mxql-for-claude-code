@@ -1,0 +1,98 @@
+{
+  "categoryName" : "kube_statefulset",
+  "interval" : "30s",
+  "pk" : [ "statefulSetUid" ],
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "age",
+    "title" : "Age",
+    "unit" : "string",
+    "description" : "The elapsed time since the StatefulSet was created.",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "statefulSetUid",
+    "title" : "StatefulSetUid",
+    "unit" : "string",
+    "description" : "The unique identifier (UID) of the StatefulSet. (metadata.uid)",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "creationTime",
+    "title" : "CreationTime",
+    "unit" : "ms",
+    "description" : "The timestamp when the StatefulSet was created. (metadata.creationTimestamp)",
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "tagName" : "statefulSetName",
+    "title" : "StatefulSetName",
+    "unit" : "string",
+    "description" : "The name of the StatefulSet. (metadata.name)",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "namespace",
+    "title" : "Namespace",
+    "unit" : "string",
+    "description" : "The namespace where the StatefulSet is deployed. (metadata.namespace)",
+    "deprecated" : false,
+    "type" : "String"
+  } ],
+  "fields" : [ {
+    "fieldName" : "replicas",
+    "title" : "DesiredReplicas",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "The desired number of pods defined in the StatefulSet. (spec.replicas)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "statefulSetSelector",
+    "title" : "Selector",
+    "unit" : "string",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "The label selector used by the StatefulSet to manage its pods. (spec.selector.matchLabels)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "fieldName" : "currentReplicas",
+    "title" : "CurrentReplicas",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "The number of pods currently created by the StatefulSet. (status.currentReplicas)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "updatedReplicas",
+    "title" : "UpdatedReplicas",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "The number of pods updated to match the StatefulSet's current specification. (status.updatedReplicas)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "readyReplicas",
+    "title" : "ReadyReplicas",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "The number of pods in Ready state. (status.readyReplicas)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  } ]
+}

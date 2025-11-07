@@ -1,0 +1,156 @@
+{
+  "categoryName" : "infra_filesystem",
+  "title" : "Infra FileSystem",
+  "interval" : [ "5s" ],
+  "pk" : [ "oid", "@id" ],
+  "language" : "KO",
+  "tags" : [ {
+    "tagName" : "oname",
+    "title" : "Oname",
+    "unit" : "string",
+    "description" : "서버 이름",
+    "deprecated" : false,
+    "type" : "String"
+  } ],
+  "fields" : [ {
+    "fieldName" : "writeIops",
+    "title" : "Write IOPS",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "해당 파일시스템의 초당 쓰기 작업수를 표시합니다.",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false
+  }, {
+    "fieldName" : "mountName",
+    "title" : "Mount Name",
+    "unit" : "string",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "파일시스템이 마운트된 마운트포인트 이름을 표시합니다. \n(windows는 드라이브 이름을 표시 합니다.)",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "fieldName" : "qLength",
+    "title" : "qLength",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "해당 파일시스템에서 처리 대기 중인 I/O 요청의 초당 평균 수를 나타냅니다.",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "totalSize",
+    "title" : "Total Bytes",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "해당 파일시스템의 총 용량을 Byte 단위로 표시합니다.",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "fsType",
+    "title" : "FileSystem Type",
+    "unit" : "string",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "파일시스템 type 에 대한 정보를 저장하고 있습니다.",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "fieldName" : "pInodeUsed",
+    "title" : "I-node Used Percent",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "해당 파일시스템에서 사용된 I-node의 백분율을 표시합니다.",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "pFree",
+    "title" : "Free Percent",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "해당 파일시스템에서 사용 가능한 남은 용량의 백분율을 표시합니다.",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "pUsed",
+    "title" : "Used Percent",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "해당 파일시스템에서 사용된 용량의 백분율을 표시합니다.",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "write",
+    "title" : "Write Bytes",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "해당 파일시스템에 쓰여진 데이터의 양을 Byte 단위로 표시합니다.",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "used",
+    "title" : "Used Bytes",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "해당 파일시스템에서 사용된 용량을 Byte 단위로 표시합니다.",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "read",
+    "title" : "Read Bytes",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "해당 파일시스템에서 읽은 데이터의 양을 Byte 단위로 표시합니다.",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "readIops",
+    "title" : "Read IOPS",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "해당 파일시스템의 초당 읽기 작업수를 표시합니다.",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false
+  }, {
+    "fieldName" : "free",
+    "title" : "Free Bytes",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "해당 파일시스템에서 사용 가능한 남은 용량을 Byte 단위로 표시합니다.",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  } ],
+  "platforms" : [ "INFRA" ]
+}

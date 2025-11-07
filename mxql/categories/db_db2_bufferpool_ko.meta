@@ -1,0 +1,421 @@
+{
+  "categoryName" : "db_db2_bufferpool",
+  "pk" : [ "oid", "bp_name" ],
+  "language" : "KO",
+  "fields" : [ {
+    "fieldName" : "total_hit_ratio",
+    "title" : "total_hit_ratio",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "전체 버퍼풀 히트율 (논리 읽기 대비 물리 읽기 비율)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "pool_temp_data_l_reads",
+    "title" : "pool_temp_data_l_reads",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "버퍼풀에서 임시 데이터(Temp Data) 페이지를 논리적으로 읽은 횟수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "pool_data_l_reads",
+    "title" : "pool_data_l_reads",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "버퍼풀에서 데이터 페이지를 읽은 횟수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "pool_index_l_reads",
+    "title" : "pool_index_l_reads",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "버퍼풀에서 인덱스 페이지를 읽은 횟수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "gbp_index_hit_ratio",
+    "title" : "gbp_index_hit_ratio",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "GBP에서 인덱스 페이지 Hit 비율",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "temp_data_hit_ratio",
+    "title" : "temp_data_hit_ratio",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "임시 데이터 페이지의 버퍼풀 히트율",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "async_reads_ratio",
+    "title" : "async_reads_ratio",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "비동기(prefetch) 읽기 요청 중 실제 Hit된 비율",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "physical_reads",
+    "title" : "physical_reads",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "디스크에서 실제 읽은 총 페이지 수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "pool_data_gbp_p_reads",
+    "title" : "pool_data_gbp_p_reads",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "그룹 버퍼풀(GBP)에서 데이터 페이지(Data Pages) 를 물리적으로 읽은 횟수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "logical_reads",
+    "title" : "logical_reads",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "버퍼풀에서 논리적으로 읽은 총 페이지 수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "pool_data_gbp_l_reads",
+    "title" : "pool_data_gbp_l_reads",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "그룹 버퍼풀(GBP)에서 데이터 페이지(Data Pages) 를 논리적으로 읽은 횟수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "vectored_ios",
+    "title" : "vectored_ios",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Vectored IO 실행 횟수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "pool_read_time",
+    "title" : "pool_read_time",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "버퍼풀에서 페이지 읽기에 걸린 시간",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "index_hit_ratio",
+    "title" : "index_hit_ratio",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "인덱스 페이지의 버퍼풀 히트율",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "pool_data_p_reads",
+    "title" : "pool_data_p_reads",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "디스크에서 데이터 페이지를 읽은 횟수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "pool_async_data_lbp_pages_found",
+    "title" : "pool_async_data_lbp_pages_found",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Prefetch(비동기)로 로컬 버퍼풀에서 데이터 페이지 찾은 횟수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "pool_index_gbp_l_reads",
+    "title" : "pool_index_gbp_l_reads",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "그룹 버퍼풀(GBP)에서 인덱스 페이지(Index Pages) 를 논리적으로 읽은 횟수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "pool_data_lbp_pages_found",
+    "title" : "pool_data_lbp_pages_found",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "로컬 버퍼풀에서 데이터 페이지를 찾은 횟수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "direct_write_time",
+    "title" : "direct_write_time",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Direct Write에 걸린 시간",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "asynch_gbp_l_reads",
+    "title" : "asynch_gbp_l_reads",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "GBP에서 Prefetch로 읽은 논리적 페이지 수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "direct_reads",
+    "title" : "direct_reads",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "버퍼풀을 거치지 않고 디스크에서 직접 읽은 횟수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "pool_no_victim_buffer",
+    "title" : "pool_no_victim_buffer",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Victim 버퍼가 없어 페이지 교체 실패한 횟수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "pool_temp_index_l_reads",
+    "title" : "pool_temp_index_l_reads",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "버퍼풀에서 임시 인덱스(Temp Index) 페이지를 논리적으로 읽은 횟수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "pool_async_index_lbp_pages_found",
+    "title" : "pool_async_index_lbp_pages_found",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Prefetch(비동기)로 로컬 버퍼풀에서 인덱스 페이지 찾은 횟수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "pool_temp_data_p_reads",
+    "title" : "pool_temp_data_p_reads",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "디스크에서 임시 데이터(Temp Data) 페이지를 실제로 읽은 횟수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "pool_write_time",
+    "title" : "pool_write_time",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "버퍼풀 쓰기에 걸린 시간",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "gbp_physical_reads",
+    "title" : "gbp_physical_reads",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "GBP에서 물리적 읽기(디스크 I/O) 횟수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "pages_from_block_ios",
+    "title" : "pages_from_block_ios",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Vectored IO로 읽은 페이지 수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "pool_index_p_reads",
+    "title" : "pool_index_p_reads",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "디스크에서 인덱스 페이지를 읽은 횟수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "unread_prefetch_pages",
+    "title" : "unread_prefetch_pages",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Prefetch 되었지만 읽히지 않은 페이지 수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "gbp_logical_reads",
+    "title" : "gbp_logical_reads",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "GBP에서 논리적 읽기(버퍼풀 Hit) 횟수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "pool_index_gbp_p_reads",
+    "title" : "pool_index_gbp_p_reads",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "그룹 버퍼풀(GBP)에서 인덱스 페이지(Index Pages) 를 물리적으로 읽은 횟수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "temp_index_hit_ratio",
+    "title" : "temp_index_hit_ratio",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "임시 인덱스 페이지 히트 비율",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "pool_temp_index_p_reads",
+    "title" : "pool_temp_index_p_reads",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "디스크에서 임시 인덱스(Temp Index) 페이지를 실제로 읽은 횟수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "temp_total_hit_ratio",
+    "title" : "temp_total_hit_ratio",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "임시 데이터 + 임시 인덱스 페이지에서 논리적 읽기 대비 물리적 읽기 비율",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "data_hit_ratio",
+    "title" : "data_hit_ratio",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "데이터 페이지의 버퍼풀 히트율",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "pool_index_lbp_pages_found",
+    "title" : "pool_index_lbp_pages_found",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "로컬 버퍼풀에서 인덱스 페이지를 찾은 횟수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "gbp_data_hit_ratio",
+    "title" : "gbp_data_hit_ratio",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "GBP에서 데이터 페이지 Hit 비율",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "pool_data_writes",
+    "title" : "pool_data_writes",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "데이터 페이지를 버퍼풀에서 디스크로 기록한 횟수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "pool_index_writes",
+    "title" : "pool_index_writes",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "인덱스 페이지를 버퍼풀에서 디스크로 기록한 횟수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "direct_writes",
+    "title" : "direct_writes",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "버퍼풀을 거치지 않고 디스크에 직접 기록한 횟수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "asynch_gbp_p_reads",
+    "title" : "asynch_gbp_p_reads",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "GBP에서 Prefetch로 읽은 물리적 페이지 수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "prefetch_waits",
+    "title" : "prefetch_waits",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Prefetch 실행 시 대기 발생 횟수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "direct_read_time",
+    "title" : "direct_read_time",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Direct Read에 걸린 시간",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "gbp_total_hit_ratio",
+    "title" : "gbp_total_hit_ratio",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "그룹 버퍼풀(GPFS/CF)에서 페이지가 Hit된 비율",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "prefetch_wait_time",
+    "title" : "prefetch_wait_time",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Prefetch 대기 시간",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  } ],
+  "platforms" : [ "DB2" ]
+}

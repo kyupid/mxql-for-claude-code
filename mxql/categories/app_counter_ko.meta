@@ -1,0 +1,368 @@
+{
+  "categoryName" : "app_counter",
+  "title" : "Application Service Counter",
+  "interval" : [ "1h", "5m", "5s" ],
+  "pk" : [ "oid" ],
+  "language" : "KO",
+  "tags" : [ {
+    "tagName" : "type",
+    "title" : "Type",
+    "label" : "type",
+    "description" : "플랫폼 유형 (애플리케이션 개발 언어)",
+    "deprecated" : false
+  }, {
+    "tagName" : "onode",
+    "title" : "노드명",
+    "label" : "onodeName",
+    "description" : "whatap.onode로 분류된 그룹 ID",
+    "deprecated" : false
+  }, {
+    "tagName" : "okind",
+    "title" : "Okind",
+    "label" : "okindName",
+    "description" : "whatap.okind로 분류된 그룹 ID",
+    "deprecated" : false
+  }, {
+    "tagName" : "pid",
+    "title" : "Pid",
+    "label" : "pid",
+    "description" : "프로세스 ID",
+    "deprecated" : false
+  }, {
+    "tagName" : "okindName",
+    "title" : "OkindName",
+    "label" : "okindName",
+    "description" : "whatap.okind로 분류된 그룹 이름",
+    "deprecated" : false
+  }, {
+    "tagName" : "oname",
+    "title" : "Oname",
+    "label" : "oname",
+    "description" : "에이전트 이름",
+    "deprecated" : false
+  }, {
+    "tagName" : "onodeName",
+    "title" : "OnodeName",
+    "label" : "onodeName",
+    "description" : "whatap.onode로 분류된 그룹 이름",
+    "deprecated" : false
+  }, {
+    "tagName" : "oid",
+    "title" : "Oid",
+    "label" : "oname",
+    "description" : "에이전트 ID",
+    "deprecated" : false
+  }, {
+    "tagName" : "host_ip",
+    "title" : "HostIp",
+    "label" : "host_ip",
+    "description" : "호스트 IP 주소",
+    "deprecated" : false
+  }, {
+    "tagName" : "containerKey",
+    "title" : "ContainerKey",
+    "label" : "container",
+    "description" : "컨테이너 키 값",
+    "deprecated" : false
+  }, {
+    "tagName" : "container",
+    "title" : "컨테이너",
+    "label" : "container",
+    "description" : "컨테이너 이름",
+    "deprecated" : false
+  } ],
+  "fields" : [ {
+    "fieldName" : "active_tx_0",
+    "title" : "ActiveTrxOver0sec",
+    "unit" : "count",
+    "objectMerge" : "sum",
+    "timeMerge" : "sum",
+    "description" : "엑티브 트랜잭션 3초 이내 건수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "httpc_count",
+    "title" : "HttpCallCount",
+    "unit" : "count",
+    "objectMerge" : "sum",
+    "timeMerge" : "sum",
+    "description" : "HTTP 호출 건수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "active_tx_count",
+    "title" : "ActiveTrxCount",
+    "unit" : "count",
+    "objectMerge" : "sum",
+    "timeMerge" : "sum",
+    "description" : "액티브 트랜잭션 건수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "apdex_total",
+    "title" : "ApdexTotal",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "sum",
+    "description" : "APDEX 전체 건수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "sql_fetch_count",
+    "title" : "SqlFetchCount",
+    "unit" : "count",
+    "objectMerge" : "sum",
+    "timeMerge" : "sum",
+    "description" : "SQL 패치 건수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "tx_error",
+    "title" : "TrxError",
+    "unit" : "count",
+    "objectMerge" : "sum",
+    "timeMerge" : "sum",
+    "description" : "트랜잭션 에러 건수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "sql_time",
+    "title" : "SqlTime",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "SQL 수행 시간",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "active_tx_8",
+    "title" : "ActiveTrxOver8sec",
+    "unit" : "count",
+    "objectMerge" : "sum",
+    "timeMerge" : "sum",
+    "description" : "액티브 트랜잭션 8초 이상 건수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "sql_error",
+    "title" : "SqlError",
+    "unit" : "count",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "description" : "SQL 에러건수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "tx_dbc_time",
+    "title" : "TrxDbConnectTime",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "트랜잭션별 DB Connection 평균 응답시간",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "apdex_satisfied",
+    "title" : "ApdexSatisfied",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "sum",
+    "description" : "APDEX 만족 건수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "tps",
+    "title" : "TPS",
+    "unit" : "count",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "description" : "초당 처리 건수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "resp_time",
+    "title" : "ResponseTime",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "평균 응답시간",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "tx_sql_time",
+    "title" : "TrxSqlTime",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "트랜잭션별 SQL 평균 응답시간",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "tx_time",
+    "title" : "TrxTime",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "트랜잭션별 평균 응답시간",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "sql_count",
+    "title" : "SqlCount",
+    "unit" : "count",
+    "objectMerge" : "sum",
+    "timeMerge" : "sum",
+    "description" : "SQL 건수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "tx_count",
+    "title" : "TrxCount",
+    "unit" : "count",
+    "objectMerge" : "sum",
+    "timeMerge" : "sum",
+    "description" : "트랜잭션 건수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "sql_fetch_time",
+    "title" : "SqlFetchTime",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "SQL 패치 응답시간",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "apdex_tolerated",
+    "title" : "ApdexTolerated",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "sum",
+    "description" : "APDEX 불만 건수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "active_tx_3",
+    "title" : "ActiveTrxOver3sec",
+    "unit" : "count",
+    "objectMerge" : "sum",
+    "timeMerge" : "sum",
+    "description" : "액티브 트래잭션 3초~8초이하 건수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "httpc_time",
+    "title" : "HttpCallTime",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "HTTP 호출 응답시간",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "tx_httpc_time",
+    "title" : "TrxHttpCallTime",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "트랜잭션별 HTTP 호출  평균 응답시간",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "metering",
+    "title" : "Metering",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "arrival_rate",
+    "title" : "ArrivalPerSec",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "호출대비 종료된 트랜잭션의 비율",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "_clock_delta_",
+    "title" : "ClockDelta",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "httpc_error",
+    "title" : "HttpCallError",
+    "unit" : "count",
+    "objectMerge" : "sum",
+    "timeMerge" : "sum",
+    "description" : "HTTP 호출 에러 건수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "pack_dropped",
+    "title" : "PackDropped",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  } ],
+  "platforms" : [ "JAVA", "PHP", "PYTHON", "NODEJS", "DOTNET" ]
+}

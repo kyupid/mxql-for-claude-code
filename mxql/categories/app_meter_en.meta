@@ -1,0 +1,162 @@
+{
+  "categoryName" : "app_meter",
+  "interval" : "5s",
+  "title" : "ApplicationMeter",
+  "pk" : [ "oid" ],
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "host_ip",
+    "title" : "HostIp",
+    "label" : "host_ip"
+  }, {
+    "tagName" : "oid",
+    "title" : "Oid",
+    "label" : "oname"
+  }, {
+    "tagName" : "containerKey",
+    "title" : "ContainerKey",
+    "label" : "container"
+  }, {
+    "tagName" : "pid",
+    "title" : "Pid",
+    "label" : "pid"
+  }, {
+    "tagName" : "type",
+    "title" : "Type",
+    "label" : "type"
+  }, {
+    "tagName" : "container",
+    "title" : "Container",
+    "label" : "container"
+  }, {
+    "tagName" : "okind",
+    "title" : "Okind",
+    "label" : "okindName"
+  }, {
+    "tagName" : "oname",
+    "title" : "Oname",
+    "label" : "oname"
+  }, {
+    "tagName" : "onode",
+    "title" : "Onode",
+    "label" : "onode"
+  }, {
+    "tagName" : "okindName",
+    "title" : "OkindName",
+    "label" : "okindName"
+  } ],
+  "fields" : [ {
+    "fieldName" : "httpc_count",
+    "title" : "HttpcCount",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "tx_httpc_time",
+    "title" : "TrxHttpcTime",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "apdex_satisfied",
+    "title" : "ApdexSatisfied",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "active_tx_3",
+    "title" : "ActiveTrxOver3sec",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "active_tx_count",
+    "title" : "ActiveTrxCount",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "active_tx_8",
+    "title" : "ActiveTrxOver8sec",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "tps",
+    "title" : "Tps",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "apdex_total",
+    "title" : "ApdexTotal",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "tx_count",
+    "title" : "TrxCount",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "active_tx_0",
+    "title" : "ActiveTrxOver0sec",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "sql_fetch_count",
+    "title" : "SqlFetchCount",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "apdex_tolerated",
+    "title" : "ApdexTolerated",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "tx_time",
+    "title" : "TrxTime",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "httpc_time",
+    "title" : "HttpcTime",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "tx_dbc_time",
+    "title" : "TrxDbcTime",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "tx_error",
+    "title" : "TrxError",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "sql_fetch_time",
+    "title" : "SqlFetchTime",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "sql_time",
+    "title" : "SqlTime",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "arrival_rate",
+    "title" : "ArrivalRate",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "tx_sql_time",
+    "title" : "TrxSqlTime",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "httpc_error",
+    "title" : "HttpcError",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  } ],
+  "platforms" : [ "JAVA" ]
+}

@@ -1,0 +1,92 @@
+{
+  "categoryName" : "kube_container_volume_list{h1}",
+  "interval" : "1h",
+  "pk" : [ "containerId" ],
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "containerId",
+    "title" : "containerId",
+    "unit" : "string",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "podUid",
+    "title" : "podUid",
+    "unit" : "string",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "podName",
+    "title" : "podName",
+    "unit" : "string",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "namespace",
+    "title" : "namespace",
+    "unit" : "string",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "containerName",
+    "title" : "containerName",
+    "unit" : "string",
+    "deprecated" : false,
+    "type" : "String"
+  } ],
+  "fields" : [ {
+    "fieldName" : "volumeMountNameList",
+    "title" : "volumeMountNameList",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "List"
+  }, {
+    "fieldName" : "volumeMountPathList",
+    "title" : "volumeMountPathList",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "List"
+  }, {
+    "fieldName" : "volumeMountSubPathList",
+    "title" : "volumeMountSubPathList",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "List"
+  }, {
+    "fieldName" : "volumeMountIsReadOnly",
+    "title" : "volumeMountIsReadOnly",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "List"
+  }, {
+    "fieldName" : "volumeMountTypeList",
+    "title" : "volumeMountTypeList",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "List"
+  }, {
+    "fieldName" : "volumeMountClaimNameList",
+    "title" : "volumeMountClaimNameList",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "List"
+  } ]
+}

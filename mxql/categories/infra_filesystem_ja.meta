@@ -1,0 +1,155 @@
+{
+  "categoryName" : "infra_filesystem",
+  "title" : "Infra FileSystem",
+  "interval" : [ "5s" ],
+  "pk" : [ "oid", "@id" ],
+  "language" : "JA",
+  "tags" : [ {
+    "tagName" : "oname",
+    "title" : "Oname",
+    "unit" : "string",
+    "deprecated" : false,
+    "type" : "String"
+  } ],
+  "fields" : [ {
+    "fieldName" : "mountName",
+    "title" : "Mount Name",
+    "unit" : "string",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "ファイルシステムがマウントされたマウントポイント名を表示します(Windowsではドライブ名を表示します)。",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "fieldName" : "pUsed",
+    "title" : "Used Percent",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "該当ファイルシステムから使われた容量を％で表示します。",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "qLength",
+    "title" : "qLength",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "該当ファイルシステムから処理を待っているI/Oリクエストの秒当り平均数を表します。",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "pInodeUsed",
+    "title" : "I-node Used Percent",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "該当ファイルシステムから使われたi-nodeを％で表示します。",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "fsType",
+    "title" : "FileSystem Type",
+    "unit" : "string",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "ファイルシステムのタイプに対する情報を保存しています。",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "fieldName" : "used",
+    "title" : "Used Bytes",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "該当ファイルシステムから使われた容量をバイト単位で表示します。",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "free",
+    "title" : "Free Bytes",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "該当ファイシステムから使用できる残り容量をバイト単位で表示します。",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "pFree",
+    "title" : "Free Percent",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "該当ファイルシステムから使用できる残り容量を％で表示します。",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "write",
+    "title" : "Write Bytes",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "該当ファイルシステムに書き込まれたデータ量をバイト単位で表示します。",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "writeIops",
+    "title" : "Write IOPS",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "該当ファイルシステムの秒当りの書き込み作業数を表示します。",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false
+  }, {
+    "fieldName" : "read",
+    "title" : "Read Bytes",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "該当ファイルシステムから読み取られたデータ量をバイト単位で表示します。",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "totalSize",
+    "title" : "Total Bytes",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "該当ファイルシステムの総容量をバイト単位で表示します。",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "readIops",
+    "title" : "Read IOPS",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "該当ファイルシステムの秒当りの読取り作業数を表示します。",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false
+  } ],
+  "platforms" : [ "INFRA" ]
+}

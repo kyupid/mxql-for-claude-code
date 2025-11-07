@@ -1,0 +1,647 @@
+{
+  "categoryName" : "kube_pod",
+  "interval" : "5s",
+  "title" : "Pod",
+  "pk" : [ "namespace", "podName" ],
+  "language" : "JA",
+  "tags" : [ {
+    "tagName" : "DaemonSet",
+    "title" : "DaemonSet",
+    "deprecated" : false
+  }, {
+    "tagName" : "containerIdsCount",
+    "title" : "ContainerCount",
+    "deprecated" : false
+  }, {
+    "tagName" : "ownerName",
+    "title" : "OwnerName",
+    "deprecated" : false
+  }, {
+    "tagName" : "microOidsCount",
+    "title" : "ApplicationCount",
+    "deprecated" : false
+  }, {
+    "tagName" : "namespace",
+    "title" : "Namespace",
+    "label" : "namespace",
+    "deprecated" : false
+  }, {
+    "tagName" : "replicaSetHash",
+    "title" : "ReplicaSetHash",
+    "deprecated" : false
+  }, {
+    "tagName" : "startTime",
+    "title" : "StartTime",
+    "unit" : "ms",
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "tagName" : "oname",
+    "title" : "Agent",
+    "label" : "oname",
+    "deprecated" : false
+  }, {
+    "tagName" : "name",
+    "title" : "PodNameAlias",
+    "label" : "name",
+    "deprecated" : false
+  }, {
+    "tagName" : "onode",
+    "title" : "Node",
+    "label" : "onodeName",
+    "deprecated" : false
+  }, {
+    "tagName" : "oid",
+    "title" : "Oid",
+    "label" : "oname",
+    "deprecated" : false
+  }, {
+    "tagName" : "onamesCount",
+    "title" : "Agent",
+    "deprecated" : false
+  }, {
+    "tagName" : "microOid",
+    "title" : "MicroOid",
+    "deprecated" : false
+  }, {
+    "tagName" : "onames",
+    "title" : "ApplicationNames",
+    "deprecated" : false
+  }, {
+    "tagName" : "ownerKind",
+    "title" : "OwnerKind",
+    "deprecated" : false
+  }, {
+    "tagName" : "microOids",
+    "title" : "ApplicationIds",
+    "deprecated" : false
+  }, {
+    "tagName" : "agentPcode",
+    "title" : "AgentPcode",
+    "deprecated" : false
+  }, {
+    "tagName" : "replicaSetName",
+    "title" : "ReplicaSet",
+    "deprecated" : false
+  }, {
+    "tagName" : "ReplicationController",
+    "description" : "name of ReplicationController",
+    "deprecated" : false
+  }, {
+    "tagName" : "agentOid",
+    "title" : "AgentOid",
+    "deprecated" : false
+  }, {
+    "tagName" : "replicasetName",
+    "title" : "ReplicaSet",
+    "label" : "replicasetName",
+    "deprecated" : false
+  }, {
+    "tagName" : "podIp",
+    "title" : "PodIp",
+    "deprecated" : false
+  }, {
+    "tagName" : "podName",
+    "title" : "Pod",
+    "label" : "podName",
+    "deprecated" : false
+  }, {
+    "tagName" : "Deployment",
+    "title" : "Deployment",
+    "label" : "Deployment",
+    "deprecated" : false
+  }, {
+    "tagName" : "onodeName",
+    "title" : "Node",
+    "deprecated" : false
+  }, {
+    "tagName" : "podUid",
+    "title" : "PodUid",
+    "deprecated" : false
+  }, {
+    "tagName" : "whatap_project",
+    "title" : "WhatapProject",
+    "deprecated" : false
+  }, {
+    "tagName" : "ownerUid",
+    "title" : "OwnerUid",
+    "deprecated" : false
+  } ],
+  "fields" : [ {
+    "fieldName" : "blkio_riops",
+    "title" : "IoReadIops",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "mem_totalcache",
+    "title" : "MemTotCache",
+    "unit" : "byte",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "network_riops",
+    "title" : "NetRxIops",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "network_rerror",
+    "title" : "NetRxError",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "cpu_user",
+    "title" : "CpuUserByNode",
+    "unit" : "pct#",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "cpu_total_milli",
+    "title" : "CpuTotUsage",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "age",
+    "title" : "Age",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "memory_limit",
+    "title" : "MemLimit",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "cpu_per_limit",
+    "title" : "CpuByLimit",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Pod内部コンテナのCPU limit対比の使用率合計",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "blkio_wbps",
+    "title" : "IoWriteBytes",
+    "unit" : "byte",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "network_wbps",
+    "title" : "NetTxBytes",
+    "unit" : "byte",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "network_rdropped",
+    "title" : "NetRxDropped",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "phase",
+    "title" : "PodPhase",
+    "unit" : "state",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "network_werror",
+    "title" : "NetTxError",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "con_mem_alloc_fail_total_count",
+    "title" : "ConMemAllocFailTotalCount",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "kube_display_status",
+    "title" : "KubeDisplayStatus",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "ConditionContainersReadyReason",
+    "title" : "ConditionContainersReadyReason",
+    "unit" : "string",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "fieldName" : "event_con_state_detail",
+    "title" : "EventConStateDetail",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "con_cpu_limit_total",
+    "title" : "CpuLimit",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "memory_request",
+    "title" : "MemRequest",
+    "unit" : "byte",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "mem_usage",
+    "title" : "MemUsage",
+    "unit" : "byte",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "RestartCount",
+    "title" : "ConRestartCnt",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "memory_per_request",
+    "title" : "MemByRequest",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "network_wdropped",
+    "title" : "NetTxDropped",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "con_ready_cnt",
+    "title" : "ConReadyCnt",
+    "unit" : "count",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "memory_per_limit",
+    "title" : "MemByLimit",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "mem_working_set",
+    "title" : "MemWs",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "cpu_sys",
+    "title" : "CpuSysByNode",
+    "unit" : "pct#",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Pod内部コンテナのカーネルモードCPU使用率合計",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "con_state_detail",
+    "title" : "ConRuntimeStateDetail",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "reason",
+    "title" : "Reason",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "message",
+    "title" : "Message",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "blkio_rbps",
+    "title" : "IoReadBytes",
+    "unit" : "byte",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "cpu_throttledperiods",
+    "title" : "CpuThrottledCnt",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "mem_totalrss",
+    "title" : "MemTotRss",
+    "unit" : "byte",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "con_state",
+    "title" : "ConRuntimeState",
+    "unit" : "state",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "ConditionContainersReadyMessage",
+    "title" : "ConditionContainersReadyMessage",
+    "unit" : "txt",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "fieldName" : "network_wiops",
+    "title" : "NetTxIops",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "ConditionReadyReason",
+    "title" : "ConditionReadyReason",
+    "unit" : "string",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "fieldName" : "cpu_total_millis",
+    "title" : "CpuTotUsage",
+    "unit" : "millicore",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "description" : "Pod内部コンテナのCPU使用量合計",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "network_rbps",
+    "title" : "NetRxBytes",
+    "unit" : "byte",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "event_con_state",
+    "title" : "EventConState",
+    "unit" : "state",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "cpu_quota_percent",
+    "title" : "CpuLimitByNode",
+    "unit" : "pct#",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "ConditionPodReadyToStartContainersStatus",
+    "title" : "ConditionPodReadyToStartContainersStatus",
+    "unit" : "string",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "fieldName" : "blkio_wiops",
+    "title" : "IoWriteIops",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "cpu_per_request",
+    "title" : "CpuByRequest",
+    "unit" : "pct#",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Pod内部コンテナのCPUリクエスト対比の使用率合計",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "cpu_request",
+    "title" : "CpuRequest",
+    "unit" : "millicore",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "ConditionPodReadyToStartContainersReason",
+    "title" : "ConditionPodReadyToStartContainersReason",
+    "unit" : "string",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "fieldName" : "ConditionReadyMessage",
+    "title" : "ConditionReadyMessage",
+    "unit" : "txt",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "fieldName" : "mem_request",
+    "title" : "MemRequest",
+    "unit" : "byte",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "cpu_total",
+    "title" : "CpuByNode",
+    "unit" : "pct#",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Pod内部コンテナのCPU使用率合計",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "mem_totalunevictable",
+    "title" : "MemTotUnevictable",
+    "unit" : "byte",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "ConditionContainersReadyStatus",
+    "title" : "ConditionContainersReadyStatus",
+    "unit" : "string",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "fieldName" : "mem_totalpgfault",
+    "title" : "MemTotPageFaultCnt",
+    "unit" : "count",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "cpu_throttledtime",
+    "title" : "CpuThrottledTime",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "ConditionReadyStatus",
+    "title" : "ConditionReadyStatus",
+    "unit" : "string",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "String"
+  } ],
+  "platforms" : [ "KUBERNETES" ]
+}

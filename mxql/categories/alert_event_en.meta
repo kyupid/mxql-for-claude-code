@@ -1,0 +1,64 @@
+{
+  "categoryName" : "alert_event",
+  "interval" : "5s",
+  "title" : "AlertEvent",
+  "pk" : [ "oid" ],
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "okind",
+    "title" : "Okind",
+    "label" : "okind"
+  }, {
+    "tagName" : "onode",
+    "title" : "Onode",
+    "label" : "onode"
+  }, {
+    "tagName" : "ip",
+    "title" : "Ip",
+    "label" : "ip"
+  }, {
+    "tagName" : "okindName",
+    "title" : "OkindName",
+    "label" : "okindName"
+  }, {
+    "tagName" : "oname",
+    "title" : "Oname",
+    "label" : "oname"
+  }, {
+    "tagName" : "title",
+    "title" : "Title",
+    "label" : "title"
+  }, {
+    "tagName" : "onodeName",
+    "title" : "OnodeName",
+    "label" : "onodeName"
+  }, {
+    "tagName" : "oid",
+    "title" : "Oid",
+    "label" : "oid"
+  }, {
+    "tagName" : "p_category",
+    "title" : "PCategory",
+    "label" : "p_category"
+  }, {
+    "tagName" : "level",
+    "title" : "Level",
+    "label" : "level"
+  }, {
+    "tagName" : "otype",
+    "title" : "Otype",
+    "label" : "otype"
+  } ],
+  "fields" : [ {
+    "fieldName" : "message",
+    "title" : "message",
+    "unit" : "txt"
+  }, {
+    "fieldName" : "p_time",
+    "title" : "PTime"
+  }, {
+    "fieldName" : "tag_alert_id",
+    "title" : "TagAlertId",
+    "unit" : "txt"
+  } ]
+}

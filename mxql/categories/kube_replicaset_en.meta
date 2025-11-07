@@ -1,0 +1,109 @@
+{
+  "categoryName" : "kube_replicaset",
+  "interval" : "30s",
+  "title" : "Kubernetes ReplicaSet",
+  "pk" : [ "replicaSetUid" ],
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "namespace",
+    "title" : "Namespace",
+    "unit" : "string",
+    "description" : "The namespace where the ReplicaSet is deployed. (metadata.namespace)",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "ownerName",
+    "title" : "OwnerName",
+    "unit" : "string",
+    "description" : "The name of the owning resource. (metadata.ownerReferences.name)",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "age",
+    "title" : "Age",
+    "unit" : "string",
+    "description" : "The elapsed time since the ReplicaSet was created.",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "replicaSetUid",
+    "title" : "ReplicaSetUid",
+    "unit" : "string",
+    "description" : "The unique identifier (UID) of the ReplicaSet. (metadata.uid)",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "replicaSetName",
+    "title" : "ReplicaSetName",
+    "unit" : "string",
+    "description" : "The name of the ReplicaSet. (metadata.name)",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "creationTime",
+    "title" : "CreationTime",
+    "unit" : "ms",
+    "description" : "The timestamp when the ReplicaSet was created. (metadata.creationTimestamp)",
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "tagName" : "ownerKind",
+    "title" : "OwnerKind",
+    "unit" : "string",
+    "description" : "The kind of the owning resource, typically 'Deployment'. (metadata.ownerReferences.kind)",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "ownerUid",
+    "title" : "OwnerUid",
+    "unit" : "string",
+    "description" : "The UID of the owning resource. (metadata.ownerReferences.uid)",
+    "deprecated" : false,
+    "type" : "String"
+  } ],
+  "fields" : [ {
+    "fieldName" : "replicaSetReplicas",
+    "title" : "DesiredReplicas",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "The desired number of pods defined in the ReplicaSet. (spec.replicas)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "replicaSetReadyReplicas",
+    "title" : "ReadyReplicas",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "The number of pods in Ready state. (status.readyReplicas)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "replicaSetAvailableReplicas",
+    "title" : "AvailableReplicas",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "The number of pods available to serve requests. (status.availableReplicas)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "replicaSetSelector",
+    "title" : "Selector",
+    "unit" : "string",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "The label selector used to manage pods. (spec.selector.matchLabels)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "String"
+  } ]
+}

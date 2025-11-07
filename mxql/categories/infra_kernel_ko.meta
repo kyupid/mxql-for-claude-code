@@ -1,0 +1,117 @@
+{
+  "categoryName" : "infra_kernel",
+  "interval" : "2s",
+  "title" : "Infra Kernel",
+  "pk" : [ "oid" ],
+  "description" : "서버의 system, kernel 사용량와 관련한 지표 입니다.",
+  "language" : "KO",
+  "tags" : [ {
+    "tagName" : "oname",
+    "title" : "Oname",
+    "unit" : "string",
+    "description" : "서버 이름",
+    "deprecated" : false,
+    "type" : "String"
+  } ],
+  "fields" : [ {
+    "fieldName" : "ctxswitch",
+    "title" : "ContextSwitch",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "초당 프로세스 간의 컨텍스트 전환 발생 횟수를 의미합니다.",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "interrupt",
+    "title" : "Interrupt",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "초당 CPU가 하드웨어 인터럽트를 처리한 횟수를 의미합니다.",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "fork",
+    "title" : "Fork",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "초당 평균 fork 발생 횟수를 의미합니다. (fork: 기존 프로세스를 복제하여 새로운 프로세스를 생성하는 시스템 호출)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "blockq",
+    "title" : "BlockQueue",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "I/O, 페이징 등을 위해 대기열에 있는 프로세스(또는 Thread)의 수를 의미합니다.",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "exec",
+    "title" : "Exec",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "초당 평균 exec 호출 횟수를 의미합니다. (exec: 현재 프로세스를 새로운 프로그램으로 대체하는 시스템 호출)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "pendingq",
+    "title" : "PendingQueue",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "AIX 전용 지표로, raw device의 I/O에 대한 응답 메시지를 기다리는 Thread의 수를 의미합니다.",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "runq",
+    "title" : "RunQueue",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "실행 준비가 되어 있지만 아직 CPU를 할당받지 못한 프로세스(또는 Thread)의 수를 의미합니다.",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "waitq",
+    "title" : "WaitQueue",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Swap out되었지만 일시적으로 대기(Sleep) 상태인 프로세스(또는 Thread)의 수를 의미합니다.",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "syscall",
+    "title" : "SysCall",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "초당 커널이 시스템 호출을 처리한 횟수를 의미합니다.",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  } ],
+  "platforms" : [ "INFRA" ]
+}

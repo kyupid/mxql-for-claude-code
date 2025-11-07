@@ -1,0 +1,22 @@
+{
+  "categoryName" : "db_mssql_active_session",
+  "interval" : "5s",
+  "title" : "db_mssql_active_session",
+  "pk" : [ "oid", "id" ],
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "oname",
+    "title" : "oname",
+    "deprecated" : false
+  } ],
+  "fields" : [ {
+    "fieldName" : "application",
+    "title" : "application",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  } ],
+  "platforms" : [ "MSSQL" ]
+}

@@ -1,0 +1,44 @@
+{
+  "categoryName" : "app_proc_php_counter",
+  "interval" : "5s",
+  "title" : "ApplicationProcessPhpCounter",
+  "pk" : [ "oid" ],
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "okind",
+    "title" : "Okind",
+    "label" : "okind"
+  }, {
+    "tagName" : "oname",
+    "title" : "Oname",
+    "label" : "oname"
+  }, {
+    "tagName" : "oid",
+    "title" : "Oid",
+    "label" : "oname"
+  }, {
+    "tagName" : "onode",
+    "title" : "Onode",
+    "label" : "onode"
+  }, {
+    "tagName" : "host_ip",
+    "title" : "HostIp",
+    "label" : "host_ip"
+  }, {
+    "tagName" : "type",
+    "title" : "Type",
+    "label" : "type"
+  } ],
+  "fields" : [ {
+    "fieldName" : "mem_system",
+    "title" : "MemSystem",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "mem_proc",
+    "title" : "MemProc",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  } ],
+  "platforms" : [ "PHP" ]
+}

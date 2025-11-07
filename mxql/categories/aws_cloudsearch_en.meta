@@ -1,0 +1,19 @@
+{
+  "categoryName" : "aws_cloudsearch",
+  "interval" : "5m",
+  "title" : "aws_cloudsearch",
+  "pk" : [ "dimension" ],
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "oid",
+    "title" : "aws_cloudsearch",
+    "label" : "aws_cloudsearch"
+  } ],
+  "fields" : [ {
+    "fieldName" : "saveTime",
+    "title" : "saveTime",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  } ],
+  "platforms" : [ "JAVA", "PHP", "PYTHON", "NODEJS", "INFRA", "KUBERNETES", "KUBE_NS" ]
+}

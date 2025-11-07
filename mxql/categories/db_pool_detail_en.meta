@@ -1,0 +1,62 @@
+{
+  "categoryName" : "db_pool_detail",
+  "interval" : "5s",
+  "title" : "DB Pool Detail",
+  "pk" : [ "oid", "class", "pool" ],
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "pool",
+    "title" : "Pool",
+    "label" : "pool",
+    "deprecated" : false
+  }, {
+    "tagName" : "class",
+    "title" : "Class",
+    "label" : "class",
+    "deprecated" : false
+  }, {
+    "tagName" : "oname",
+    "title" : "Oname",
+    "label" : "oname",
+    "deprecated" : false
+  }, {
+    "tagName" : "oid",
+    "title" : "Oid",
+    "label" : "oname",
+    "deprecated" : false
+  }, {
+    "tagName" : "okind",
+    "title" : "Okind",
+    "label" : "okind",
+    "deprecated" : false
+  }, {
+    "tagName" : "onode",
+    "title" : "Onode",
+    "label" : "onode",
+    "deprecated" : false
+  } ],
+  "fields" : [ {
+    "fieldName" : "idle",
+    "title" : "DbIdleConn",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Number of idle database connections",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "act",
+    "title" : "DbActiveConn",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Number of active database connections",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  } ],
+  "platforms" : [ "JAVA" ]
+}

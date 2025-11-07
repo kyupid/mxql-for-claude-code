@@ -1,0 +1,117 @@
+{
+  "categoryName" : "app_actx_outbound_httpc",
+  "interval" : "5s",
+  "title" : "ActiveHttpCallOutbound",
+  "pk" : [ "oid", "host" ],
+  "description" : "Active Outbound Call Info",
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "oname",
+    "deprecated" : false
+  }, {
+    "tagName" : "okindName",
+    "deprecated" : false
+  }, {
+    "tagName" : "onodeName",
+    "deprecated" : false
+  }, {
+    "tagName" : "!rectype",
+    "deprecated" : false
+  } ],
+  "fields" : [ {
+    "fieldName" : "error",
+    "title" : "CallErrorCount",
+    "unit" : "count",
+    "objectMerge" : "sum",
+    "timeMerge" : "sum",
+    "description" : "Outbound Call Error Count",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "host",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false
+  }, {
+    "fieldName" : "actx",
+    "title" : "TotalActiveCall",
+    "unit" : "count",
+    "objectMerge" : "sum",
+    "timeMerge" : "sum",
+    "description" : "act0 + act3 + act8",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "act0",
+    "title" : "ActiveCallOver0sec",
+    "unit" : "count",
+    "objectMerge" : "sum",
+    "timeMerge" : "sum",
+    "description" : "Number of transactions in the section between 0 seconds and 3 seconds",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "act8",
+    "title" : "ActiveCallOver8sec",
+    "unit" : "count",
+    "objectMerge" : "sum",
+    "timeMerge" : "sum",
+    "description" : "Number of transactions in the section over 8 seconds",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "count",
+    "title" : "CallCount",
+    "unit" : "count",
+    "objectMerge" : "sum",
+    "timeMerge" : "sum",
+    "description" : "Outbound Call Count",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "@id",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "uniq ID",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "act3",
+    "title" : "ActiveCallOver3sec",
+    "unit" : "count",
+    "objectMerge" : "sum",
+    "timeMerge" : "sum",
+    "description" : "Number of transactions in the section between 3 seconds and 8 seconds",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "timeSum",
+    "title" : "TotalElapsedTime",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "sum",
+    "description" : "Sum of outbound call elapsed time",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  } ],
+  "platforms" : [ "JAVA" ]
+}

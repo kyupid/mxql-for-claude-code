@@ -1,0 +1,21 @@
+{
+  "categoryName" : "db_cubrid_active_session",
+  "interval" : "5s",
+  "pk" : [ "oid", "pid" ],
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "oname",
+    "title" : "oname",
+    "deprecated" : false
+  } ],
+  "fields" : [ {
+    "fieldName" : "user",
+    "title" : "user",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  } ],
+  "platforms" : [ "CUBRID" ]
+}

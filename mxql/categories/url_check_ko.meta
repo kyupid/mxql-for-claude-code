@@ -1,0 +1,174 @@
+{
+  "categoryName" : "url_check",
+  "interval" : [ "1h", "5m", "1m" ],
+  "pk" : [ "_pk_" ],
+  "description" : "URL 상태 체크 결과",
+  "language" : "KO",
+  "tags" : [ {
+    "tagName" : "request_id",
+    "description" : "모니터링 대상 URL별 ID",
+    "deprecated" : false
+  }, {
+    "tagName" : "region_name",
+    "description" : "데이터 수집 지역",
+    "deprecated" : false
+  }, {
+    "tagName" : "worker_pcode",
+    "deprecated" : false
+  }, {
+    "tagName" : "_pk_",
+    "deprecated" : false
+  } ],
+  "fields" : [ {
+    "fieldName" : "5xx",
+    "unit" : "state",
+    "objectMerge" : "none",
+    "timeMerge" : "none",
+    "description" : "HTTP 500대 오류 여부 (1: 있음, 0: 없음)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "location",
+    "unit" : "string",
+    "objectMerge" : "none",
+    "timeMerge" : "none",
+    "description" : "최종 연결된 URL",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "fieldName" : "end_location_changed",
+    "unit" : "state",
+    "objectMerge" : "none",
+    "timeMerge" : "none",
+    "description" : "최종 URL 리디렉션 여부 (1: 변경됨, 0: 동일)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "version",
+    "unit" : "string",
+    "objectMerge" : "none",
+    "timeMerge" : "none",
+    "description" : "응답 데이터 버전 정보",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "fieldName" : "server",
+    "unit" : "string",
+    "objectMerge" : "none",
+    "timeMerge" : "none",
+    "description" : "응답 서버 정보",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "fieldName" : "title_changed",
+    "unit" : "state",
+    "objectMerge" : "none",
+    "timeMerge" : "none",
+    "description" : "타이틀 변경 여부 (1: 변경됨, 0: 변경되지 않음)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "domSize",
+    "unit" : "count",
+    "objectMerge" : "none",
+    "timeMerge" : "avg",
+    "description" : "HTML DOM 요소 개수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "body_size",
+    "unit" : "byte",
+    "objectMerge" : "none",
+    "timeMerge" : "avg",
+    "description" : "응답 바디 크기 (Byte 단위)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "active",
+    "unit" : "state",
+    "objectMerge" : "none",
+    "timeMerge" : "none",
+    "description" : "URL 활성화 여부 (1: 활성, 0: 비활성)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "reason",
+    "unit" : "string",
+    "objectMerge" : "none",
+    "timeMerge" : "none",
+    "description" : "에러 메시지 또는 \"OK\"",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "fieldName" : "4xx",
+    "unit" : "state",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "HTTP 400대 오류 여부 (1: 있음, 0: 없음)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "2xx",
+    "unit" : "state",
+    "objectMerge" : "none",
+    "timeMerge" : "none",
+    "description" : "HTTP 200대 응답 여부 (1: 성공, 0: 실패)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "title",
+    "unit" : "string",
+    "objectMerge" : "none",
+    "timeMerge" : "none",
+    "description" : "HTML 타이틀",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "fieldName" : "status",
+    "unit" : "string",
+    "objectMerge" : "none",
+    "timeMerge" : "none",
+    "description" : "HTTP 응답 코드",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "fieldName" : "elapsed",
+    "unit" : "ms",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "description" : "응답 소요 시간 (ms)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  } ],
+  "platforms" : [ "URLCHECK", "URL_PRO" ]
+}

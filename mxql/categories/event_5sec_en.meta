@@ -1,0 +1,34 @@
+{
+  "categoryName" : "event_5sec",
+  "interval" : "5s",
+  "title" : "Event5sec",
+  "pk" : [ "oid" ],
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "onode",
+    "title" : "Onode",
+    "label" : "onode"
+  }, {
+    "tagName" : "oid",
+    "title" : "Oid",
+    "label" : "oid"
+  }, {
+    "tagName" : "type",
+    "title" : "Type",
+    "label" : "type"
+  }, {
+    "tagName" : "okind",
+    "title" : "Okind",
+    "label" : "okind"
+  }, {
+    "tagName" : "_no_cache_",
+    "title" : "NoCache",
+    "label" : "_no_cache_"
+  } ],
+  "fields" : [ {
+    "fieldName" : "curtime",
+    "title" : "CurTime",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  } ]
+}

@@ -1,0 +1,115 @@
+{
+  "categoryName" : "infra_kernel",
+  "interval" : "2s",
+  "title" : "InfraKernel",
+  "pk" : [ "oid" ],
+  "language" : "JA",
+  "tags" : [ {
+    "tagName" : "oname",
+    "title" : "Oname",
+    "unit" : "string",
+    "deprecated" : false,
+    "type" : "String"
+  } ],
+  "fields" : [ {
+    "fieldName" : "blockq",
+    "title" : "BlockQueue",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "I/O、ページング等のために待機列にあるプロセス(またはスレッド)数を意味します。",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "pendingq",
+    "title" : "PendingQueue",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "AIX専用の指標で、raw deviceのI/Oに対する応答メッセージを待っているスレッド数を意味します。",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "fork",
+    "title" : "Fork",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "秒当りの平均fork発生回数を意味します。(fork：既存プロセスを複製して新しいプロセスを生成するシステム呼び出し)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "runq",
+    "title" : "RunQueue",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "実行準備はできているが、まだCPUが割り当てられずのプロセス(またはスレッド)数を意味します。",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "exec",
+    "title" : "Exec",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "秒当りの平均exec呼び出し回数を意味します。(exec：現在のプロセスを新しいプロセスで置き換えるシステム呼び出し)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "interrupt",
+    "title" : "Interrupt",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "CPUがハードウェアinterruptを処理した秒当りの回数を意味します。",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "syscall",
+    "title" : "SysCall",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "カーネルがシステム呼び出しを処理した秒当りの回数を意味します。",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "ctxswitch",
+    "title" : "ContextSwitch",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "プロセス間のコンテキスト転換発生の秒当りの回数を意味します。",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "waitq",
+    "title" : "WaitQueue",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Swap outされているが、一時的に待機(Sleep)状態のプロセス(またはスレッド)数を意味します。",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  } ],
+  "platforms" : [ "INFRA" ]
+}

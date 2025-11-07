@@ -1,0 +1,202 @@
+{
+  "categoryName" : "rum_resource_each_page",
+  "title" : "RumResourceEachPage",
+  "pk" : [ "env", "version", "page_group" ],
+  "description" : "Metric related to resource response times called from web pages",
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "page_group",
+    "title" : "PageGroup",
+    "unit" : "string",
+    "description" : "Page group\nIn order to have a meaningful statistical group in the browser monitoring service, it provides the normalized URL path with regular expressions under the page group name.\nNumbers, dates, and such that are deemed meaningless for URL path unit analysis, are replaced with question marks (?).",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "env",
+    "title" : "Env",
+    "unit" : "string",
+    "description" : "Metric indicating the release environment (development, staging, operation, etc) of the web application",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "version",
+    "title" : "Version",
+    "unit" : "string",
+    "description" : "Metric indicating the released version of the web application",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "request_host",
+    "title" : "RequestHost",
+    "unit" : "string",
+    "description" : "AJAX request URL's host value",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "is3rdParty",
+    "title" : "Is3rdParty",
+    "unit" : "string",
+    "description" : "Whether the resource is called by a third party",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "request_path",
+    "title" : "RequestPath",
+    "unit" : "string",
+    "description" : "AJAX request URL's path value",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "type",
+    "title" : "Type",
+    "unit" : "string",
+    "description" : "Resource type",
+    "deprecated" : false,
+    "type" : "String"
+  } ],
+  "fields" : [ {
+    "fieldName" : "resource_ssl_time",
+    "title" : "ResourceSslTime",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Average time taken for the browser to complete the TCP handshake process when fetching resources",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "resource_dns_count",
+    "title" : "ResourceDnsCount",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "It is the number of samples used to calculate the resource_dns_time.",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "resource_connection_count",
+    "title" : "ResourceConnectionCount",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "It is the number of samples used to calculate the resource_connection_time.",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "resource_ssl_count",
+    "title" : "ResourceSslCount",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "It is the number of samples used to calculate the resource_ssl_time.",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "resource_connection_time",
+    "title" : "ResourceConnectionTime",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Average time taken for the browser to connect the server via the network",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "resource_ttfb_count",
+    "title" : "ResourceTtfbCount",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "It is the number of samples used to calculate the resource_ttfb_time.",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "resource_ttfb_time",
+    "title" : "ResourceTtfbTime",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Average time taken for the browser to load resources after sending a request via the network until the first byte is received from the server",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "resource_download_time",
+    "title" : "ResourceDownloadTime",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Average time taken for the browser to download resources from the server",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "resource_size",
+    "title" : "ResourceSize",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Resource size",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "resource_duration",
+    "title" : "ResourceDuration",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Average time taken for the browser to fully load resources",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "resource_count",
+    "title" : "ResourceCount",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Number of resources",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "resource_dns_time",
+    "title" : "ResourceDnsTime",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Average time taken for the browser to load a website domain while loading resources",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "resource_download_count",
+    "title" : "ResourceDownloadCount",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "It is the number of samples used to calculate the resource_download_time.",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  } ],
+  "platforms" : [ "RUM" ]
+}

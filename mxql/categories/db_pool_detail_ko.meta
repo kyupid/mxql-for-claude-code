@@ -1,0 +1,62 @@
+{
+  "categoryName" : "db_pool_detail",
+  "interval" : "5s",
+  "title" : "DBPoolDetail",
+  "pk" : [ "oid", "class", "pool" ],
+  "language" : "KO",
+  "tags" : [ {
+    "tagName" : "onode",
+    "title" : "Onode",
+    "label" : "onode",
+    "deprecated" : false
+  }, {
+    "tagName" : "oname",
+    "title" : "Oname",
+    "label" : "oname",
+    "deprecated" : false
+  }, {
+    "tagName" : "class",
+    "title" : "Class",
+    "label" : "class",
+    "deprecated" : false
+  }, {
+    "tagName" : "oid",
+    "title" : "Oid",
+    "label" : "oname",
+    "deprecated" : false
+  }, {
+    "tagName" : "okind",
+    "title" : "Okind",
+    "label" : "okind",
+    "deprecated" : false
+  }, {
+    "tagName" : "pool",
+    "title" : "Pool",
+    "label" : "pool",
+    "deprecated" : false
+  } ],
+  "fields" : [ {
+    "fieldName" : "act",
+    "title" : "DbActiveConn",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "DB ConnectionPool Active수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "idle",
+    "title" : "DbIdleConn",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "DB ConnectionPool Idle수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  } ],
+  "platforms" : [ "JAVA" ]
+}

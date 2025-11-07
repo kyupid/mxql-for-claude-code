@@ -1,0 +1,190 @@
+{
+  "categoryName" : "telegraf_interface",
+  "interval" : "10s",
+  "title" : "TelegrafInterface",
+  "pk" : [ "host", "agent_host", "ifDescr" ],
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "aggr",
+    "title" : "Aggr",
+    "label" : "aggr"
+  }, {
+    "tagName" : "oname",
+    "title" : "Oname",
+    "label" : "oname"
+  }, {
+    "tagName" : "agent_host",
+    "title" : "AgentHost",
+    "label" : "agent_host"
+  }, {
+    "tagName" : "source",
+    "title" : "Source",
+    "label" : "source"
+  }, {
+    "tagName" : "ifDescr",
+    "title" : "IfDescr",
+    "label" : "ifDescr"
+  }, {
+    "tagName" : "host",
+    "title" : "Host",
+    "label" : "host"
+  } ],
+  "fields" : [ {
+    "fieldName" : "ifOutMulticastPkts",
+    "title" : "ifOutMulticastPkts",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "ifHighSpeed",
+    "title" : "ifHighSpeed",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "ifOutBroadcastPkts",
+    "title" : "ifOutBroadcastPkts",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "ifPromiscuousMode",
+    "title" : "ifPromiscuousMode",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "ifOutBroadcastPkts_rate",
+    "title" : "ifOutBroadcastPkts_rate",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "ifInBroadcastPkts_rate",
+    "title" : "ifInBroadcastPkts_rate",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "ifAlias",
+    "title" : "ifAlias",
+    "unit" : "txt",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "ifHCInBroadcastPkts",
+    "title" : "ifHCInBroadcastPkts",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "ifHCOutBroadcastPkts_rate",
+    "title" : "ifHCOutBroadcastPkts_rate",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "ifOutMulticastPkts_rate",
+    "title" : "ifOutMulticastPkts_rate",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "ifInBroadcastPkts",
+    "title" : "ifInBroadcastPkts",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "ifCounterDiscontinuityTime",
+    "title" : "ifCounterDiscontinuityTime",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "ifHCInBroadcastPkts_rate",
+    "title" : "ifHCInBroadcastPkts_rate",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "ifHCInOctets",
+    "title" : "ifHCInOctets",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "ifHCInMulticastPkts",
+    "title" : "ifHCInMulticastPkts",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "ifHCInUcastPkts_rate",
+    "title" : "ifHCInUcastPkts_rate",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "ifHCOutUcastPkts_rate",
+    "title" : "ifHCOutUcastPkts_rate",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "ifHCOutUcastPkts",
+    "title" : "ifHCOutUcastPkts",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "ifInMulticastPkts",
+    "title" : "ifInMulticastPkts",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "ifHCInMulticastPkts_rate",
+    "title" : "ifHCInMulticastPkts_rate",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "ifHCOutOctets_rate",
+    "title" : "ifHCOutOctets_rate",
+    "unit" : "bps",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "ifLinkUpDownTrapEnable",
+    "title" : "ifLinkUpDownTrapEnable",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "ifOperStatus",
+    "title" : "ifOperStatus",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "ifHCOutMulticastPkts_rate",
+    "title" : "ifHCOutMulticastPkts_rate",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "ifHCInUcastPkts",
+    "title" : "ifHCInUcastPkts",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "ifHCOutBroadcastPkts",
+    "title" : "ifHCOutBroadcastPkts",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "ifName",
+    "title" : "ifName",
+    "unit" : "txt",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "ifHCInOctets_rate",
+    "title" : "ifHCInOctets_rate",
+    "unit" : "bps",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "ifHCOutOctets",
+    "title" : "ifHCOutOctets",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "ifConnectorPresent",
+    "title" : "ifConnectorPresent",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "ifHCOutMulticastPkts",
+    "title" : "ifHCOutMulticastPkts",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "ifInMulticastPkts_rate",
+    "title" : "ifInMulticastPkts_rate",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  } ],
+  "platforms" : [ "INFRA" ]
+}

@@ -1,0 +1,80 @@
+{
+  "categoryName" : "log_counter",
+  "interval" : "5s",
+  "title" : "logCounter",
+  "pk" : [ "oid" ],
+  "description" : "ログモニタリングのサービスカウンター",
+  "language" : "JA",
+  "tags" : [ {
+    "tagName" : "hostName",
+    "title" : "HostName",
+    "label" : "hostName",
+    "deprecated" : false
+  }, {
+    "tagName" : "oname",
+    "title" : "Oname",
+    "label" : "oname",
+    "deprecated" : false
+  }, {
+    "tagName" : "oid",
+    "title" : "Oid",
+    "label" : "oid",
+    "deprecated" : false
+  } ],
+  "fields" : [ {
+    "fieldName" : "fb_version",
+    "title" : "Fluent-Bit Version",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Fluent-Bit 버전",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "ip",
+    "title" : "Ip",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "IP 주소",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "fb_path",
+    "title" : "Fluent-bit Path",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Fluent Bit 설치 경로",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "process_cpu",
+    "title" : "ProcessCpu",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "실행 중인 프로세스 수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "process_memory",
+    "title" : "ProcessMemory",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "프로세스 메모리 사용량",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "yaml_path",
+    "title" : "Yaml Path",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "YAML 설정 파일 경로",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  } ],
+  "platforms" : [ "LOG" ]
+}

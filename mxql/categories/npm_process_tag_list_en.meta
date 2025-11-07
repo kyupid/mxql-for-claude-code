@@ -1,0 +1,89 @@
+{
+  "categoryName" : "npm_process_tag_list",
+  "title" : "NpmProcessTagList",
+  "interval" : [ "60s" ],
+  "pk" : [ "foreign_ip", "oid", "foreign_port" ],
+  "language" : "EN",
+  "fields" : [ {
+    "fieldName" : "local_inbound_check",
+    "title" : "LocalInboundCheck",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "foreign_pod_name",
+    "title" : "ForeignPodName",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "foreign_process_type",
+    "title" : "ForeignProcessType",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "foreign_host_tag",
+    "title" : "ForeignHostTag",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "foreign_port",
+    "title" : "ForeignPort",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "foreign_container_name",
+    "title" : "ForeignContainerName",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "foreign_container_id",
+    "title" : "ForeignContainerId",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "foreign_pod_id",
+    "title" : "ForeignPodId",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "foreign_app_name",
+    "title" : "ForeignAppName",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "foreign_ip",
+    "title" : "ForeignIp",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  } ],
+  "platforms" : [ "NPM" ]
+}

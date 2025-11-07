@@ -1,0 +1,192 @@
+{
+  "categoryName" : "infra_process_group",
+  "title" : "Infra Process Group",
+  "interval" : [ "5s" ],
+  "pk" : [ "oid", "@id" ],
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "oname",
+    "title" : "Oname",
+    "unit" : "string",
+    "deprecated" : false,
+    "type" : "String"
+  } ],
+  "fields" : [ {
+    "fieldName" : "wdiskIo",
+    "title" : "WriteDiskIo",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "It is a Linux-only metric displaying the total amount of write IOs that the process (group) generates in disks per second.",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "totalCharIo",
+    "title" : "TotalCharIo",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "It is the total amount of IOs that the process (group) generates per second. It includes IOs for buffers, caches, and terminals as well as disks.",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "owner",
+    "title" : "Owner",
+    "unit" : "string",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "It is the value displaying the user who executed the process.",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "fieldName" : "vsz",
+    "title" : "Vsz",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "It indicates the size of the total virtual memory used by the process (group).",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "cmd",
+    "title" : "Cmd",
+    "unit" : "string",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "It indicates the extracted value that contains only the execution command of the process.",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "fieldName" : "threadCnt",
+    "title" : "ThreadCount",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "It indicates the number of threads that the process (group) has.",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "handleCnt",
+    "title" : "HandleCount",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "It is a Windows-only metric displaying the number of handles that the process (group) has.",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "private",
+    "title" : "Private",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "It is a Windows-only metric displaying the amount of memory used independently by the process (group). It includes physical memory and paging files, displaying non-shared memory.",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "procCnt",
+    "title" : "ProcessCount",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "It indicates the number of processes executed using the same command by the same user (the arguments may differ).",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "wcharIo",
+    "title" : "WriteCharIo",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "It is the total amount of write IOs that the process (group) generates per second. It includes IOs in disks as well as buffers, caches, and terminals. ",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "rcharIo",
+    "title" : "ReadCharIo",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "It is the total amount of read IOs that the process (group) generates per second. It includes IOs for buffers, caches, and terminals as well as disks.",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "rdiskIo",
+    "title" : "ReadDiskIo",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "It is a Linux-only metric displaying the total amount of read IOs that the process (group) generates in disks per second.",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "workingSet",
+    "title" : "WorkingSet",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "It is a Windows-only metric displaying the size of the physical memory used by the process (group).",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "cpu",
+    "title" : "Cpu",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "It is the value displaying the ratio of CPU used by the process (group).",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "rss",
+    "title" : "Rss",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "It indicates the size of the physical memory allocated to the process (group).\nThis value includes shared memory. In case of a server with lots of processes that use shared memory a lot, the sum of the RSS's for processes may exceed the total memory size.",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "poolPaged",
+    "title" : "PoolPaged",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "It is a Windows-only metric displaying the amount of pageable memory for the process (group).",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false,
+    "type" : "Number"
+  } ],
+  "platforms" : [ "INFRA" ]
+}

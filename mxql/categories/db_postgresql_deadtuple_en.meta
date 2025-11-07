@@ -1,0 +1,103 @@
+{
+  "categoryName" : "db_postgresql_deadtuple",
+  "title" : "db_postgresql_deadtuple",
+  "pk" : [ "oid" ],
+  "language" : "EN",
+  "fields" : [ {
+    "fieldName" : "dead_tuple_ratio",
+    "title" : "Dead Tuple Ratio (%)",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "전체 row 대비 dead tuple 비율(%)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "total_tuple",
+    "title" : "Total Tuples",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "dead + live tuple 합계 (전체 row 수)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "time",
+    "title" : "Collection Time",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "수집시간",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "datname",
+    "title" : "DB",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "schemaname",
+    "title" : "Schema",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "live_tuple",
+    "title" : "Live Tuples",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "현재 유효한 row 수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "dead_tuple",
+    "title" : "Dead Tuples",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "테이블에 남아 있는 dead tuple(삭제/업데이트로 무효화된 행) 수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "live_tuple_ratio",
+    "title" : "Live Tuple Ratio (%)",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "전체 row 대비 live tuple 비율(%)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "tablename",
+    "title" : "Table",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "total_relation_size",
+    "title" : "Total Relation Size",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "테이블이 차지하는 전체 디스크 크기 (데이터 + 인덱스 + TOAST 포함)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  } ],
+  "platforms" : [ "POSTGRESQL" ]
+}

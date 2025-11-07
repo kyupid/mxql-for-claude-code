@@ -1,0 +1,84 @@
+{
+  "categoryName" : "rum_error_total_each_page",
+  "title" : "Rum Error Total Each Page",
+  "pk" : [ "env", "version", "page_group" ],
+  "description" : "ブラウザから発生したエラーと関連した指標です。",
+  "language" : "JA",
+  "tags" : [ {
+    "tagName" : "browser",
+    "title" : "Browser",
+    "unit" : "string",
+    "description" : "ブラウザ種類\n(Chrome、Safari等)",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "version",
+    "title" : "Version",
+    "unit" : "string",
+    "description" : "WEBアプリケーションのデプロイバージョンを意味する指標です。",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "env",
+    "title" : "Env",
+    "unit" : "string",
+    "description" : "WEBアプリケーションのデプロイ環境(開発、ステージング、運用など)を意味する指標です。",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "error_type",
+    "title" : "ErrorType",
+    "unit" : "string",
+    "description" : "エラータイプ\n(onError、fetchError、xhrError、consoleError)",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "page_group",
+    "title" : "PageGroup",
+    "unit" : "string",
+    "description" : "ページグループ\nBrowserモニタリングサービスで有意味な統計グループを持つよう、URLパス(URL Path)を正規化してページグループ名として提供します。 \nURLパス(URL Path)単位の分析に影響しないと判断される数字、日付等は'?'に置き換えます。",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "error_message",
+    "title" : "ErrorMessage",
+    "unit" : "string",
+    "description" : "エラーメッセージ",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "browser_ver",
+    "title" : "BrowserVersion",
+    "unit" : "string",
+    "description" : "ブラウザバージョン",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "os",
+    "title" : "Os",
+    "unit" : "string",
+    "description" : "OS種類\n(macOS、Windows、Linux等)",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "device",
+    "title" : "Device",
+    "unit" : "string",
+    "description" : "デバイス種類\n(デスクトップ、タブレット、モバイル、ボット)",
+    "deprecated" : false,
+    "type" : "String"
+  } ],
+  "fields" : [ {
+    "fieldName" : "error_count",
+    "title" : "ErrorCount",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "エラー発生件数",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  } ],
+  "platforms" : [ "RUM" ]
+}

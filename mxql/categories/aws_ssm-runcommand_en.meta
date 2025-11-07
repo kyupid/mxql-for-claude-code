@@ -1,0 +1,19 @@
+{
+  "categoryName" : "aws_ssm-runcommand",
+  "interval" : "5m",
+  "title" : "aws_ssm-runcommand",
+  "pk" : [ "dimension" ],
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "oid",
+    "title" : "aws_ssm-runcommand",
+    "label" : "aws_ssm-runcommand"
+  } ],
+  "fields" : [ {
+    "fieldName" : "saveTime",
+    "title" : "saveTime",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  } ],
+  "platforms" : [ "JAVA", "PHP", "PYTHON", "NODEJS", "INFRA", "KUBERNETES", "KUBE_NS" ]
+}

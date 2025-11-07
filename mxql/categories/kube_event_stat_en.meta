@@ -1,0 +1,59 @@
+{
+  "categoryName" : "kube_event_stat",
+  "interval" : "5s",
+  "title" : "Kubernetes Event Stat",
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "namespace",
+    "title" : "Namespace",
+    "label" : "namespace",
+    "deprecated" : false
+  }, {
+    "tagName" : "oid",
+    "title" : "Oid",
+    "label" : "oid",
+    "deprecated" : false
+  } ],
+  "fields" : [ {
+    "fieldName" : "Killing",
+    "title" : "Killing",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "Pulling",
+    "title" : "Pulling",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "Unhealthy",
+    "title" : "Unhealthy",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "Pulled",
+    "title" : "Pulled",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "BackOff",
+    "title" : "BackOff",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  } ],
+  "platforms" : [ "KUBERNETES" ]
+}

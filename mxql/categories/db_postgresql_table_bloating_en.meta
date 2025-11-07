@@ -1,0 +1,86 @@
+{
+  "categoryName" : "db_postgresql_table_bloating",
+  "title" : "db_postgresql_table_bloating",
+  "pk" : [ "oid" ],
+  "language" : "EN",
+  "fields" : [ {
+    "fieldName" : "datname",
+    "title" : "DB",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "schemaname",
+    "title" : "Schema",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "tablename",
+    "title" : "Table",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "est_rows",
+    "title" : "Est. Rows",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "live tuple 수(통계수집 시점의 값)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "table_size",
+    "title" : "Table Size",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "해당 테이블이 실제로 차지하는 디스크 공간 크기",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "time",
+    "title" : "Collection Time",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "수집시간",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "bloat_ratio",
+    "title" : "Bloat Ratio",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "낭비 공간이 차지하는 비율.(bloat_size/table_size × 100)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "bloat_size",
+    "title" : "Bloat Size",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "실제 데이터 외에 낭비되고 있는 공간",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  } ],
+  "platforms" : [ "POSTGRESQL" ]
+}

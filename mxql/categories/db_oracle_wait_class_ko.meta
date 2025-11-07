@@ -1,0 +1,117 @@
+{
+  "categoryName" : "db_oracle_wait_class",
+  "interval" : "1m",
+  "title" : "db_oracle_wait_class",
+  "pk" : [ "con_id", "oid" ],
+  "language" : "KO",
+  "tags" : [ {
+    "tagName" : "oname",
+    "title" : "oname",
+    "deprecated" : false
+  }, {
+    "tagName" : "con_id",
+    "title" : "con_id",
+    "deprecated" : false
+  } ],
+  "fields" : [ {
+    "fieldName" : "Other",
+    "title" : "Other",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "기타 카테고리에 속하는 대기 이벤트 입니다. 특정 이벤트 분석 후 조치합니다.",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "Concurrency",
+    "title" : "Concurrency",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "여러 세션 간 리소스 경합 대기 시 발생합니다. 라이브러리 캐시 튜닝, 인덱스 최적화가 필요합니다.",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "Network",
+    "title" : "Network",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "네트워크 통신 관련 대기 시 발생합니다. 패킷 크기 조정, 네트워크 상태 점검이 필요합니다.",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "Idle",
+    "title" : "Idle",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "세션이 작업을 기다리는 상태로 정상적인 대기 입니다.",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "Commit",
+    "title" : "Commit",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "트랜잭션 COMMIT 시 redo log 동기화 대기 이벤트 입니다. 로그 파일 크기 조정, redo log 성능 최적화를 검토합니다.",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "User I/O",
+    "title" : "User I/O",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "SQL 실행 중 디스크에서 데이터 읽기/쓰기 대기 시 발생합니다. SQL 튜닝, 인덱스 최적화, I/O 분산을 검토합니다.",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "Scheduler",
+    "title" : "Scheduler",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "작업 스케줄러 관련 대기 시 발생합니다. 백그라운드 작업 조정을 검토합니다.",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "Configuration",
+    "title" : "Configuration",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "잘못된 설정으로 인한 대기 시 발생합니다. 파라미터 값 조정 (log file switch 등)을 검토합니다.",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "System I/O",
+    "title" : "System I/O",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "데이터베이스 내부의 시스템 I/O 대기 이벤트 입니다. 로그 파일 및 제어 파일 디스크 성능 개선이 필요합니다",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "Cluster",
+    "title" : "Cluster",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "RAC 환경에서 노드 간 데이터 공유 대기 이벤트 입니다. gc 관련 대기 튜닝, 캐시 크기 조정 등을 검토합니다.",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "Application",
+    "title" : "Application",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "애플리케이션에서 발생하는 락 경합 대기 이벤트입니다. 적절한 인덱스 활용 등으로 트랜잭션 시간 단축이 필요합니다.",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  } ],
+  "platforms" : [ "ORACLE" ]
+}

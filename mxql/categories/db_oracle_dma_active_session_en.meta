@@ -1,0 +1,22 @@
+{
+  "categoryName" : "db_oracle_dma_active_session",
+  "interval" : "5s",
+  "title" : "db_oracle_dma_active_session",
+  "pk" : [ "serial#", "oid", "sid" ],
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "oname",
+    "title" : "oname",
+    "deprecated" : false
+  } ],
+  "fields" : [ {
+    "fieldName" : "application_name",
+    "title" : "application_name",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  } ],
+  "platforms" : [ "ORACLE_DMA" ]
+}

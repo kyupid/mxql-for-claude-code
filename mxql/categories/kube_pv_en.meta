@@ -1,0 +1,116 @@
+{
+  "categoryName" : "kube_pv",
+  "interval" : "30s",
+  "pk" : [ "pvUid" ],
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "pvVolumeMode",
+    "title" : "PvVolumeMode",
+    "unit" : "string",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "pvUid",
+    "title" : "PvUid",
+    "unit" : "string",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "pvName",
+    "title" : "PvName",
+    "unit" : "string",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "pvStorageClassName",
+    "title" : "PvStorageClassName",
+    "unit" : "string",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "pvCapacity",
+    "title" : "PvCapacity",
+    "unit" : "byte",
+    "deprecated" : false,
+    "type" : "Long"
+  }, {
+    "tagName" : "pvReclaimPolicy",
+    "title" : "PvReclaimPolicy",
+    "unit" : "string",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "path",
+    "title" : "Path",
+    "unit" : "string",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "pvType",
+    "title" : "PvType",
+    "unit" : "string",
+    "deprecated" : false,
+    "type" : "String"
+  } ],
+  "fields" : [ {
+    "fieldName" : "pvReason",
+    "title" : "PvReason",
+    "unit" : "string",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "fieldName" : "pvPhase",
+    "title" : "PvPhase",
+    "unit" : "string",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "fieldName" : "pvMessage",
+    "title" : "PvMessage",
+    "unit" : "string",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "fieldName" : "pvRefClaimNamespace",
+    "title" : "PvRefClaimNamespace",
+    "unit" : "string",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "fieldName" : "pvRefClaimUid",
+    "title" : "PvRefClaimUid",
+    "unit" : "string",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "fieldName" : "pvRefClaimName",
+    "title" : "PvRefClaimName",
+    "unit" : "string",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "String"
+  } ]
+}

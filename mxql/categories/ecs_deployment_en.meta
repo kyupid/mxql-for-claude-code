@@ -1,0 +1,47 @@
+{
+  "categoryName" : "ecs_deployment",
+  "title" : "EcsDeployment",
+  "pk" : [ "ServiceArn" ],
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "ServiceArn",
+    "title" : "ServiceArn",
+    "label" : "ServiceArn"
+  }, {
+    "tagName" : "TaskDefinition",
+    "title" : "TaskDefinition",
+    "label" : "TaskDefinition"
+  }, {
+    "tagName" : "ServiceName",
+    "title" : "ServiceName",
+    "label" : "ServiceName"
+  }, {
+    "tagName" : "PlatformVersion",
+    "title" : "PlatformVersion",
+    "label" : "PlatformVersion"
+  }, {
+    "tagName" : "Id",
+    "title" : "DeploymentId",
+    "label" : "Id"
+  }, {
+    "tagName" : "LaunchType",
+    "title" : "LaunchType",
+    "label" : "LaunchType"
+  } ],
+  "fields" : [ {
+    "fieldName" : "PendingCount",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "Status"
+  }, {
+    "fieldName" : "RunningCount",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "DesiredCount",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg"
+  } ],
+  "platforms" : [ "" ]
+}

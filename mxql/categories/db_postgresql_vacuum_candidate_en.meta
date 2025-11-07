@@ -1,0 +1,100 @@
+{
+  "categoryName" : "db_postgresql_vacuum_candidate",
+  "title" : "db_postgresql_vacuum_candidate",
+  "pk" : [ "schemaname", "datname", "oid", "tablename" ],
+  "language" : "EN",
+  "fields" : [ {
+    "fieldName" : "schemaname",
+    "title" : "Schema",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "xid_age",
+    "title" : "Transaction Age",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "트랜잭션 나이",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "autovacuum_vacuum_tuples",
+    "title" : "Tuples Vacuumed by Autovacuum",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "autovacuum이 처리한 튜플(row) 수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "per_to_wraparound",
+    "title" : "% to Wraparound",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "wraparound까지 얼마나 남았는지 비율",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "table_size",
+    "title" : "Table Size",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "테이블이 차지하는 실제 디스크 크기",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "datname",
+    "title" : "DB",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "dead_tuples",
+    "title" : "Dead Tuples",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "현재 테이블에 남아 있는 dead tuple 수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "time",
+    "title" : "Collection Time",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "수집시간",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "tablename",
+    "title" : "Table",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "autovacuum_freeze_max_age",
+    "title" : "Autovacuum Freeze Max Age",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "autovacuum이 반드시 실행되어야 하는 age 임계값",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  } ],
+  "platforms" : [ "POSTGRESQL" ]
+}

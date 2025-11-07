@@ -1,0 +1,234 @@
+{
+  "categoryName" : "db_postgresql_tables_stat",
+  "title" : "db_postgresql_tables_stat",
+  "pk" : [ "oid" ],
+  "language" : "EN",
+  "fields" : [ {
+    "fieldName" : "autoanalyze_count",
+    "title" : "Auto Analyze Count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "자동 Analyze 실행 횟수(autoanalyze_count)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "n_tup_upd",
+    "title" : "Updated Tuples",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "업데이트된 행 수(n_tup_upd)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "n_mod_since_analyze",
+    "title" : "Rows Modified Since Analyze",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Analyze 이후 수정된 행 수(n_mod_since_analyze)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "n_live_tup",
+    "title" : "Live Tuples",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "현재 유효 행 수(n_live_tup)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "last_analyze",
+    "title" : "Last Analyze Time",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "마지막 수동 Analyze 시각(last_analyze)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "idx_scan",
+    "title" : "Index Scan Count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "인덱스 스캔 횟수 (idx_scan)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "autovacuum_count",
+    "title" : "Autovacuum Count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "자동 Vacuum 실행 횟수(autovacuum_count)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "seq_scan",
+    "title" : "Full Scan Count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "테이블 풀 스캔 횟수 (seq_scan)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "tablename",
+    "title" : "Table",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "datname",
+    "title" : "DB",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "n_tup_hot_upd",
+    "title" : "HOT Updated Tuples",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "HOT 업데이트된 행 수(n_tup_hot_upd)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "idx_tup_fetch",
+    "title" : "Index Scan Tuples",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "인덱스를 통해 실제 읽은 튜플 수 (idx_tup_fetch)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "last_autoanalyze",
+    "title" : "Last Autoanalyze Time",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "마지막 자동 Analyze 시각(last_autoanalyze)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "vacuum_count",
+    "title" : "Vacuum Count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "수동 Vacuum 실행 횟수(vacuum_count)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "last_autovacuum",
+    "title" : "Last Autovacuum Time",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "마지막 자동 Vacuum 시각(last_autovacuum)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "seq_tup_read",
+    "title" : "Full Scan Tuples",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "테이블 풀스캔으로 읽은 튜플 수 (seq_tup_read)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "last_vacuum",
+    "title" : "Last Vacuum Time",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "마지막 수동 Vacuum 시각(last_vacuum)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "n_tup_del",
+    "title" : "Deleted Tuples",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "삭제된 행 수(n_tup_del)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "schemaname",
+    "title" : "Schema",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "n_dead_tup",
+    "title" : "Dead Tuples",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "죽은(청소대상) 튜플 수(n_dead_tup)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "time",
+    "title" : "Collection Time",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "수집시간",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "n_tup_ins",
+    "title" : "Inserted Tuples",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "삽입된 행 수(n_tup_ins)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "analyze_count",
+    "title" : "Analyze Count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "수동 Analyze 실행 횟수(analyze_count)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "scan_ratio",
+    "title" : "Full Scan Ratio(%)",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "풀스캔 비율 (scan_ratio)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "scan_count",
+    "title" : "Access Count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "테이블 접근 수 (scan_count)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  } ],
+  "platforms" : [ "POSTGRESQL" ]
+}

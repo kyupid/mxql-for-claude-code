@@ -1,0 +1,202 @@
+{
+  "categoryName" : "rum_resource_each_page",
+  "title" : "RumResourceEachPage",
+  "pk" : [ "env", "version", "page_group" ],
+  "description" : "WEBページから呼び出されたリソースの応答時間に関連した指標です。",
+  "language" : "JA",
+  "tags" : [ {
+    "tagName" : "env",
+    "title" : "Env",
+    "unit" : "string",
+    "description" : "WEBアプリケーションのデプロイ環境(開発、ステージング、運用など)を意味する指標です。",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "version",
+    "title" : "Version",
+    "unit" : "string",
+    "description" : "WEBアプリケーションのデプロイバージョンを意味する指標です。",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "request_host",
+    "title" : "RequestHost",
+    "unit" : "string",
+    "description" : "AJAXリクエストURLのホスト値",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "type",
+    "title" : "Type",
+    "unit" : "string",
+    "description" : "リソースタイプ",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "request_path",
+    "title" : "RequestPath",
+    "unit" : "string",
+    "description" : "AJAXリクエストURLのパス値",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "page_group",
+    "title" : "PageGroup",
+    "unit" : "string",
+    "description" : "ページグループ\nBrowserモニタリングサービスで有意味な統計グループを持つよう、URLパス(URL Path)を正規化してページグループ名として提供します。 \nURLパス(URL Path)単位の分析に影響しないと判断される数字、日付等は'?'に置き換えます。",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "is3rdParty",
+    "title" : "Is3rdParty",
+    "unit" : "string",
+    "description" : "サードパーティーから呼び出されたリソースの有無",
+    "deprecated" : false,
+    "type" : "String"
+  } ],
+  "fields" : [ {
+    "fieldName" : "resource_ttfb_time",
+    "title" : "ResourceTtfbTime",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "ブラウザがWEBページを読み込みながら、ネットワークリクエストを送ってから最初バイトが受信されるまで所要した平均時間",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "resource_download_time",
+    "title" : "ResourceDownloadTime",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "ブラウザがサーバーからリソースをダウンロードするまでに所要した平均時間",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "resource_connection_time",
+    "title" : "ResourceConnectionTime",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "ブラウザがサーバーとネットワーク接続する過程で所要した平均時間",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "resource_download_count",
+    "title" : "ResourceDownloadCount",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "resource_download_timeを計算するために使用した標本の数です。",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "resource_dns_count",
+    "title" : "ResourceDnsCount",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "resource_dns_timeを計算するために使用した標本の数です。",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "resource_ssl_time",
+    "title" : "ResourceSslTime",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "ブラウザがWEBページを読み込みながら、TCPハンドシェイク過程で所要した平均時間",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "resource_ttfb_count",
+    "title" : "ResourceTtfbCount",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "resource_ttfb_timeを計算するために使用した標本の数です。",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "resource_connection_count",
+    "title" : "ResourceConnectionCount",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "resource_connection_timeを計算するために使用した標本の数です。",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "resource_ssl_count",
+    "title" : "ResourceSslCount",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "resource_ssl_timeを計算するために使用した標本の数です。",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "resource_duration",
+    "title" : "ResourceDuration",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "ブラウザがリソースを完全に読み込むまでに所要した平均時間",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "resource_size",
+    "title" : "ResourceSize",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "リソースサイズ",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "resource_count",
+    "title" : "ResourceCount",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "リソース件数",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "resource_dns_time",
+    "title" : "ResourceDnsTime",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "ブラウザがWEBページを読み込みながら、WEBサイトドメインを照会するのに所要した平均時間",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  } ],
+  "platforms" : [ "RUM" ]
+}

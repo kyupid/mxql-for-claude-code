@@ -14,11 +14,15 @@ This skill provides a complete toolkit for working with MXQL (Metrics Query Lang
 3. **✅ Automated Validation**: Python-based syntax validator (no Java required)
 4. **🧪 Test Query Generation**: Create testable queries with ADDROW sample data
 
-**Supported Domains**:
-- Database monitoring (MySQL, PostgreSQL, Oracle, MongoDB, Redis, etc.)
-- Infrastructure monitoring
-- APM (Application Performance Monitoring)
-- Container and Cloud monitoring
+**Supported Products** (631 categories across 36+ product types):
+- **Database** (44 categories): MySQL, PostgreSQL, Oracle, MongoDB, Redis, DB2, Tibero, etc.
+- **Application/APM** (16 categories): Java, Python, Node.js, .NET, PHP, Go, etc.
+- **Infrastructure** (16 categories): Server, CPU, Memory, Disk, Network, Process
+- **Kubernetes** (28 categories): Pod, Deployment, Node, Service, CronJob, etc.
+- **Cloud** (270+ categories): AWS (107), Azure (147), OCI (48), NCloud (11)
+- **Container**: Docker, ECS (4 categories)
+- **Real User Monitoring** (13 categories): Browser, Page Load, Visitor
+- **Others**: URL Monitoring, Log, Telegraf, Event
 
 ## When to Use This Skill
 
@@ -212,7 +216,28 @@ Step 2: Provide corrected query
 Step 3: Generate test version of corrected query
 ```
 
-### Workflow 3: Test Query Generation Only
+### Workflow 3: Category Recommendation
+
+```
+User: "Create MXQL query to monitor pod CPU usage"
+
+Claude: [Activates mxql skill - Generation mode with category discovery]
+
+Step 1: User intent lacks specific category
+- Use category_finder.py to search/recommend categories
+
+Step 2: Present options using AskUserQuestion
+Options:
+1. kube_pod - General pod metrics
+2. kube_pod_stat - Detailed pod statistics
+3. server_cpu_core - Server-level CPU metrics
+
+Step 3: User selects "kube_pod_stat"
+
+Step 4: Load category metadata and generate query with appropriate fields
+```
+
+### Workflow 4: Test Query Generation Only
 
 ```
 User: "Generate test query for this MXQL"
@@ -243,15 +268,65 @@ For detailed documentation:
 
 - **`mxql_validator.py`** - Automated syntax validator
 - **`test_query_generator.py`** - Test query generator
+- **`category_finder.py`** - Category search and recommendation engine
+
+### 5. Category Discovery & Recommendation 🔎
+
+**Category Finder** (`category_finder.py`): Intelligent category search and recommendation.
+
+**Features**:
+- Search 631 categories by keyword
+- Recommend categories based on user intent
+- Browse categories by product type
+- Get detailed category metadata (tags, fields, platforms)
+- Multi-language support (English, Korean, Japanese)
+
+**Usage**:
+```python
+from category_finder import CategoryFinder, format_category_list
+
+finder = CategoryFinder()
+
+# Search by keyword
+results = finder.search("postgresql")
+print(format_category_list(results))
+
+# Recommend based on intent
+recommendations = finder.recommend("monitor kubernetes pod CPU usage")
+
+# Get category details
+info = finder.get_category_info("db_postgresql_counter", language="ko")
+
+# List all product types
+products = finder.list_all_products()
+```
+
+**Command-line usage**:
+```bash
+# Search categories
+python category_finder.py search postgresql
+
+# Get recommendations
+python category_finder.py recommend "monitor kubernetes pod CPU usage"
+
+# List product types
+python category_finder.py products
+
+# Get category info
+python category_finder.py info db_postgresql_counter
+```
 
 ## Best Practices
 
 ### When Generating Queries
-1. Always clarify ambiguous requirements
-2. Suggest relevant fields based on intent
-3. Include explanatory comments in generated queries
-4. Offer test query version
+1. **If category is unclear**: Use category_finder.py to recommend categories
+   - Ask user to select from recommendations if multiple options exist
+   - Use AskUserQuestion tool to present category choices
+2. Always clarify ambiguous requirements
+3. Suggest relevant fields based on intent (use category metadata)
+4. Include explanatory comments in generated queries
 5. Validate generated query before providing
+6. Offer test query version
 
 ### When Analyzing Queries
 1. Run automated validation first

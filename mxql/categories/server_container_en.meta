@@ -1,0 +1,240 @@
+{
+  "categoryName" : "server_container",
+  "interval" : "5s",
+  "title" : "ServerContainer",
+  "pk" : [ "oid", "containerId" ],
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "image",
+    "title" : "Image",
+    "label" : "image"
+  }, {
+    "tagName" : "containerId",
+    "title" : "ContainerId",
+    "label" : "ContainerId"
+  }, {
+    "tagName" : "oid",
+    "title" : "Oid",
+    "label" : "oname"
+  }, {
+    "tagName" : "state",
+    "title" : "State",
+    "label" : "state"
+  }, {
+    "tagName" : "labels",
+    "title" : "Labels",
+    "label" : "labels"
+  }, {
+    "tagName" : "name",
+    "title" : "Name",
+    "label" : "name"
+  }, {
+    "tagName" : "status",
+    "title" : "Status",
+    "label" : "status"
+  }, {
+    "tagName" : "oname",
+    "title" : "Oname",
+    "label" : "oname"
+  } ],
+  "fields" : [ {
+    "fieldName" : "mem_maxusage",
+    "title" : "MemMaxusage",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "mem_working_set",
+    "title" : "MemWorkingSet",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "mem_totalunevictable",
+    "title" : "MemTotalunevictable",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "cpu_quota",
+    "title" : "CpuQuota",
+    "unit" : "millicore",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "cpu_sys",
+    "title" : "CpuSys",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "network_rerror",
+    "title" : "NetworkRerror",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "blkio_rbps",
+    "title" : "BlkioRbps",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "network_wbps",
+    "title" : "NetworkWbps",
+    "unit" : "bps",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "mem_working_set_percent",
+    "title" : "MemWorkingSetPercent",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "cpu_user",
+    "title" : "CpuUser",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "network_wdropped",
+    "title" : "NetworkWdropped",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "network_riops",
+    "title" : "NetworkRiops",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "cpu_throttledtime",
+    "title" : "CpuThrottledtime",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "network_werror",
+    "title" : "NetworkWerror",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "cpu_per_core",
+    "title" : "CpuPerCore",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "mem_totalcache",
+    "title" : "MemTotalcache",
+    "unit" : "byte",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "blkio_wiops",
+    "title" : "BlkioWiops",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "network_wiops",
+    "title" : "NetworkWiops",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "mem_total_inactive_file",
+    "title" : "MemTotalInactiveFile",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "mem_totalpgfault",
+    "title" : "MemTotalpgfault",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "blkio_riops",
+    "title" : "BlkioRiops",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "mem_percent",
+    "title" : "MemPercent",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "restart_count",
+    "title" : "RestartCounts",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "mem_usage",
+    "title" : "MemUsage",
+    "unit" : "byte",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "mem_total_active_file",
+    "title" : "MemTotalActiveFile",
+    "unit" : "byte",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "cpu_per_quota",
+    "title" : "CpuPerQuota",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "cpu_total",
+    "title" : "CpuTotal",
+    "unit" : "pct",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "mem_totalrss",
+    "title" : "MemTotalrss",
+    "unit" : "byte",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "mem_failcnt",
+    "title" : "MemFailcnt",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "network_rdropped",
+    "title" : "NetworkRdropped",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "mem_limit",
+    "title" : "mem_limit",
+    "unit" : "byte",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "mem_totalrss_huge",
+    "title" : "MemTotalrssHuge",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "cpu_throttledperiods",
+    "title" : "CpuThrottledperiods",
+    "unit" : "pct",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "network_rbps",
+    "title" : "NetworkRbps",
+    "unit" : "bps",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "blkio_wbps",
+    "title" : "BlkioWbps",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  } ],
+  "platforms" : [ "INFRA" ]
+}

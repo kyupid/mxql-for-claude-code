@@ -1,0 +1,818 @@
+{
+  "categoryName" : "container",
+  "interval" : "5s",
+  "title" : "Container",
+  "pk" : [ "containerKey" ],
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "container_ports",
+    "title" : "ContainerPorts",
+    "deprecated" : false
+  }, {
+    "tagName" : "oid",
+    "title" : "Oid",
+    "label" : "oname",
+    "deprecated" : false
+  }, {
+    "tagName" : "namespaceHash",
+    "title" : "NamespaceHash",
+    "label" : "namespace",
+    "deprecated" : false
+  }, {
+    "tagName" : "pod-template-generation",
+    "title" : "PodTemplateGeneration",
+    "deprecated" : false
+  }, {
+    "tagName" : "podHash",
+    "title" : "PodHash",
+    "label" : "podName",
+    "deprecated" : false
+  }, {
+    "tagName" : "container_host_ports",
+    "title" : "ContainerPortHostPorts",
+    "deprecated" : false
+  }, {
+    "tagName" : "microOname",
+    "title" : "ApplicationName",
+    "deprecated" : false
+  }, {
+    "tagName" : "oname",
+    "title" : "Agent",
+    "label" : "oname",
+    "deprecated" : false
+  }, {
+    "tagName" : "okind",
+    "title" : "Okind",
+    "label" : "okindName",
+    "deprecated" : false
+  }, {
+    "tagName" : "okindName",
+    "title" : "OkindName",
+    "label" : "okindName",
+    "deprecated" : false
+  }, {
+    "tagName" : "tier",
+    "title" : "Tier",
+    "label" : "tier",
+    "deprecated" : false
+  }, {
+    "tagName" : "whatap_project",
+    "title" : "WhatapProject",
+    "deprecated" : false
+  }, {
+    "tagName" : "ReplicationController",
+    "description" : "name of ReplicationController",
+    "deprecated" : false
+  }, {
+    "tagName" : "image",
+    "title" : "Image",
+    "label" : "image",
+    "deprecated" : false
+  }, {
+    "tagName" : "Deployment",
+    "title" : "Deployment",
+    "label" : "Deployment",
+    "deprecated" : false
+  }, {
+    "tagName" : "microOid",
+    "title" : "ApplicationId",
+    "deprecated" : false
+  }, {
+    "tagName" : "podName",
+    "title" : "Pod",
+    "label" : "podName",
+    "deprecated" : false
+  }, {
+    "tagName" : "agentOid",
+    "title" : "AgentOid",
+    "deprecated" : false
+  }, {
+    "tagName" : "containerId",
+    "title" : "ContainerId",
+    "label" : "name",
+    "deprecated" : false
+  }, {
+    "tagName" : "onode",
+    "title" : "NodeID",
+    "label" : "onodeName",
+    "deprecated" : false
+  }, {
+    "tagName" : "container_port_protocols",
+    "title" : "ContainerPortProtocols",
+    "deprecated" : false
+  }, {
+    "tagName" : "onodeName",
+    "title" : "Node",
+    "label" : "onodeName",
+    "deprecated" : false
+  }, {
+    "tagName" : "command",
+    "title" : "Command",
+    "deprecated" : false
+  }, {
+    "tagName" : "containerKey",
+    "title" : "ContainerKey",
+    "label" : "name",
+    "deprecated" : false
+  }, {
+    "tagName" : "replicaSetHash",
+    "title" : "ReplicaSetHash",
+    "label" : "replicaSetName",
+    "deprecated" : false
+  }, {
+    "tagName" : "pod-template-hash",
+    "title" : "PodTemplateHash",
+    "deprecated" : false
+  }, {
+    "tagName" : "namespace",
+    "title" : "Namespace",
+    "label" : "namespace",
+    "deprecated" : false
+  }, {
+    "tagName" : "container_host_ips",
+    "title" : "ContainerPortHostIPs",
+    "deprecated" : false
+  }, {
+    "tagName" : "controller-revision-hash",
+    "title" : "ControllerRevisionHash",
+    "deprecated" : false
+  }, {
+    "tagName" : "k8s-app",
+    "title" : "K8sApp",
+    "label" : "k8s-app",
+    "deprecated" : false
+  }, {
+    "tagName" : "name",
+    "title" : "ContainerName",
+    "label" : "name",
+    "deprecated" : false
+  }, {
+    "tagName" : "podUid",
+    "title" : "PodUid",
+    "deprecated" : false
+  }, {
+    "tagName" : "imageHash",
+    "title" : "ImageHash",
+    "label" : "image",
+    "deprecated" : false
+  }, {
+    "tagName" : "component",
+    "title" : "Component",
+    "label" : "component",
+    "deprecated" : false
+  }, {
+    "tagName" : "replicaSetName",
+    "title" : "ReplicaSet",
+    "label" : "replicaSetName",
+    "deprecated" : false
+  }, {
+    "tagName" : "container_port_names",
+    "title" : "ContainerPortNames",
+    "deprecated" : false
+  }, {
+    "tagName" : "app",
+    "title" : "App",
+    "label" : "app",
+    "deprecated" : false
+  }, {
+    "tagName" : "created",
+    "title" : "Created",
+    "deprecated" : false
+  }, {
+    "tagName" : "imageId",
+    "title" : "ImageId",
+    "label" : "image",
+    "deprecated" : false
+  }, {
+    "tagName" : "agentPcode",
+    "title" : "AgentPcode",
+    "deprecated" : false
+  } ],
+  "fields" : [ {
+    "fieldName" : "network_rdropped",
+    "title" : "NetRxDropped",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "description" : "Number of dropped packets received via the container network",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "node_cpu",
+    "title" : "NodeCpu",
+    "unit" : "pct#",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "CPU utilization of the node where the container is running",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "cpu_user_milli",
+    "title" : "CpuUserUsage",
+    "unit" : "millicore",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "description" : "CPU usage in user mode",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "ephemeral_storage_limit_contained",
+    "title" : "EphemeralStorageLimitContained",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "state",
+    "title" : "ConRuntimeState",
+    "unit" : "state",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "description" : "Container Runtime State",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "network_wiops",
+    "title" : "NetTxIops",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "description" : "Transmission IOPS (input/output operations) via the container network",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "mem_max_usage",
+    "title" : "MemMaxUsage",
+    "unit" : "byte",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "description" : "Container Memory Max Usage (byte)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "ephemeral_storage_limit",
+    "title" : "EphemeralStorageLimit",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "network_wdropped",
+    "title" : "NetTxDropped",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "description" : "Number of dropped packets transmitted via the container network",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "mem_maxusage",
+    "title" : "MemMaxUsage",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Maximum memory used in the container",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "blkio_wbps",
+    "title" : "IoWriteBytes",
+    "unit" : "byte",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "description" : "Container Block I/O Write Byte",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "mem_totalrss",
+    "title" : "MemTotRss",
+    "unit" : "byte",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "description" : "Memory of the Resident Set Size (RSS) being used by the container",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "network_wbps",
+    "title" : "NetTxBytes",
+    "unit" : "byte",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "description" : "Transmission data size via the container network",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "cpu_quota_percent",
+    "title" : "CpuLimitByNode",
+    "unit" : "pct#",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Container's CPU limit allocation against the node's CPU capacity",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "mem_inactivefile",
+    "title" : "MemInactiveFile",
+    "unit" : "byte",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "description" : "Size of unused file cache in the container",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "memory_limit_contained",
+    "title" : "MemoryLimitContained",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "memory_request_contained",
+    "title" : "MemoryRequestContained",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "blkio_wiops",
+    "title" : "IoWriteIops",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "description" : "Container Block I/O Write IOPS",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "kube_last_con_state",
+    "title" : "KubeLastConState",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "ephemeral_storage_request_contained",
+    "title" : "EphemeralStorageRequestContained",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "network_werror",
+    "title" : "NetTxError",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "description" : "Number of transmission errors via the container network",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "cpu_user",
+    "title" : "CpuUserByNode",
+    "unit" : "pct#",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "CPU utilization in user mode",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "cpu_throttledtime",
+    "title" : "CpuThrottledTime",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "description" : "Container CPU Throttling Time",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "mem_usage",
+    "title" : "MemUsage",
+    "unit" : "byte",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "description" : "Current memory usage in the container",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "kube_last_con_finished",
+    "title" : "KubeLastConFinished",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "ephemeral_storage_request",
+    "title" : "EphemeralStorageRequest",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "kube_con_state_reason",
+    "title" : "KubeConStateReason",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "mem_per_request",
+    "title" : "MemByRequest",
+    "unit" : "pct#",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Utilization against the container's memory requests",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "mem_working_set_percent",
+    "title" : "MemWsByLimit",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Rate of  mem_working_set against the total memory of node",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "cpu_throttledperiods",
+    "title" : "CpuThrottledCnt",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "description" : "Container CPU Throttling Count",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "cpu_quota",
+    "title" : "CpuLimit",
+    "unit" : "millicore",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "description" : "Container's CPU limit",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "restart_count",
+    "title" : "ConRestartCnt",
+    "unit" : "count",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "description" : "Container Restart Count",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "network_rerror",
+    "title" : "NetRxError",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "description" : "Number of reception errors via the container network",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "blkio_rbps",
+    "title" : "IoReadBytes",
+    "unit" : "byte",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "description" : "Container Block I/O Read Byte",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "kube_last_con_started",
+    "title" : "KubeLastConStarted",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "mem_totalcache",
+    "title" : "Mem Total Cache",
+    "unit" : "byte",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "description" : "Total cached memory in the container",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "mem_totalrss_percent",
+    "title" : "MemTotRssByLimit",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Container Memory Total RSS by Limit (%)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "mem_working_set",
+    "title" : "MemWs",
+    "unit" : "byte",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "description" : "Memory being used by container the (excluding cache)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "cpu_limit_contained",
+    "title" : "CpuLimitContained",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "cpu_sys_milli",
+    "title" : "CpuSysUsage",
+    "unit" : "millicore",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "description" : "CPU usage in kernel mode",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "mem_totalpgfault",
+    "title" : "MemTotPageFaultCnt",
+    "unit" : "count",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "description" : "Total number of page faults in the container",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "node_mem",
+    "title" : "NodeMem",
+    "unit" : "pct#",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Memory utilization of the node where the container is running",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "mem_limit",
+    "title" : "MemLimit",
+    "unit" : "byte",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "description" : "Container's memory limit",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "kube_con_state",
+    "title" : "KubeConState",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Kubernetes Container Current State",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "cpu_total_milli",
+    "title" : "CpuTotUsage",
+    "unit" : "millicore",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "description" : "Container's CPU usage",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : true,
+    "type" : "Number"
+  }, {
+    "fieldName" : "cpu_per_request",
+    "title" : "CpuByRequest",
+    "unit" : "pct#",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Utilization against the container's CPU requests",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "network_rbps",
+    "title" : "NetRxBytes",
+    "unit" : "byte",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "description" : "Sum of read bytes per second for the container's all block devices",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "cpu_total",
+    "title" : "CpuByNode",
+    "unit" : "pct#",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Container's CPU utilization against the node CPU usage",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "ready",
+    "title" : "ConReadyCnt",
+    "unit" : "count",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "description" : "Container Ready Count",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "mem_totalunevictable",
+    "title" : "MemTotUnevictable",
+    "unit" : "byte",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "description" : "Container Memory Total Unevictable (byte)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "mem_total_cache",
+    "title" : "MemTotCache",
+    "unit" : "byte",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "description" : "Container Memory Total Cache (byte)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "network_riops",
+    "title" : "NetRxIops",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "description" : "Reception IOPS (number of input/output operations) via the container network",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "cpu_request",
+    "title" : "CpuRequest",
+    "unit" : "millicore",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "description" : "Container's CPU requests",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "cpu_per_quota",
+    "title" : "CpuByLimit",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Utilization against the container's CPU limit",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "cpu_sys",
+    "title" : "CpuSysByNode",
+    "unit" : "pct#",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "CPU utilization in kernel mode",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "blkio_riops",
+    "title" : "IoReadIops",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "description" : "Container Block I/O Read IOPS",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "mem_percent",
+    "title" : "MemByLimit",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Container's memory utilization against the node's memory",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "mem_failcnt",
+    "title" : "MemFailCnt",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "description" : "Number of failed memory allocations in the container",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "cpu_request_contained",
+    "title" : "CpuRequestContained",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "mem_request",
+    "title" : "MemRequest",
+    "unit" : "byte",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "description" : "Memory requests in the container",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "kube_last_con_state_reason",
+    "title" : "KubeLastConStateReason",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "status",
+    "title" : "ConStatus",
+    "unit" : "txt",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Container Current Status",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "String"
+  } ],
+  "platforms" : [ "KUBERNETES" ]
+}

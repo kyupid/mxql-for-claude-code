@@ -1,0 +1,7 @@
+{
+  "categoryName" : "telegraf_vsphere_host_storageAdapter",
+  "title" : "Telegraf Vsphere Host Storage Adapter",
+  "pk" : [ "dcname", "esxhostname" ],
+  "language" : "EN",
+  "platforms" : [ "INFRA" ]
+}

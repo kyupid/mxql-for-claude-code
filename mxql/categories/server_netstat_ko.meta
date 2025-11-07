@@ -1,0 +1,193 @@
+{
+  "categoryName" : "server_netstat",
+  "interval" : "5s",
+  "title" : "ServerNetstat",
+  "pk" : [ "oid" ],
+  "language" : "KO",
+  "tags" : [ {
+    "tagName" : "whatap_version",
+    "title" : "WhatapVersion",
+    "label" : "whatap_version",
+    "deprecated" : false
+  }, {
+    "tagName" : "os_name",
+    "title" : "OsName",
+    "label" : "os_name",
+    "deprecated" : false
+  }, {
+    "tagName" : "os_arch",
+    "title" : "OsArch",
+    "label" : "os_arch",
+    "deprecated" : false
+  }, {
+    "tagName" : "os_cpusocket",
+    "title" : "OsCpuSocket",
+    "label" : "os_cpusocket",
+    "deprecated" : false
+  }, {
+    "tagName" : "oid",
+    "title" : "Oid",
+    "label" : "oid",
+    "deprecated" : false
+  }, {
+    "tagName" : "os_ip",
+    "title" : "OsIp",
+    "label" : "os_ip",
+    "deprecated" : false
+  }, {
+    "tagName" : "os_cpuvendor",
+    "title" : "OsCpuVendor",
+    "label" : "os_cpuvendor",
+    "deprecated" : false
+  }, {
+    "tagName" : "os_cpucore",
+    "title" : "OsCpuCore",
+    "label" : "os_cpucore",
+    "deprecated" : false
+  }, {
+    "tagName" : "os_memory",
+    "title" : "OsMemory",
+    "label" : "os_memory",
+    "deprecated" : false
+  }, {
+    "tagName" : "os_release",
+    "title" : "OsRelease",
+    "label" : "os_release",
+    "deprecated" : false
+  }, {
+    "tagName" : "os_public_ip",
+    "title" : "OsPublicIp",
+    "label" : "os_public_ip",
+    "deprecated" : false
+  }, {
+    "tagName" : "whatap_product",
+    "title" : "WhatapProduct",
+    "label" : "whatap_product",
+    "deprecated" : false
+  }, {
+    "tagName" : "whatap_home",
+    "title" : "WhatapHome",
+    "label" : "whatap_home",
+    "deprecated" : false
+  }, {
+    "tagName" : "whatap_build",
+    "title" : "WhatapBuild",
+    "label" : "whatap_build",
+    "deprecated" : false
+  }, {
+    "tagName" : "oname",
+    "title" : "Oname",
+    "label" : "oname",
+    "deprecated" : false
+  } ],
+  "fields" : [ {
+    "fieldName" : "netstat_Unknown",
+    "title" : "NetstatUnknown",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Unknown 상태 소켓 수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "netstat_Listen",
+    "title" : "NetstatListen",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "LISTEN 상태 소켓 수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "netstat_Fin_Wait2",
+    "title" : "NetstatFinWait2",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "FIN_WAIT2 상태 소켓 수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "netstat_Last_Ack",
+    "title" : "NetstatLastAck",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "LASK_ACK 상태 소켓 수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "netstat_Syn_Recv",
+    "title" : "NetstatSynRecv",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "SYN_RECV 상태 소켓 수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "Server_Filedescriptors",
+    "title" : "ServerFileDescriptors",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "OS file descriptor 개수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "netstat_Close_Wait",
+    "title" : "NetstatCloseWait",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "CLOSE_WAIT 상태 소켓 수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "netstat_Closing",
+    "title" : "NetstatClosing",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "CLOSING 상태 소켓 수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "netstat_Fin_Wait1",
+    "title" : "NetstatFinWait1",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "FIN_WAIT1 상태 소켓 수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "netstat_Syn_Sent",
+    "title" : "NetstatSynSent",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "SYN_SENT 상태 소켓 수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "netstat_Time_Wait",
+    "title" : "NetstatTimeWait",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "TIME_WAIT 상태 소켓 수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "netstat_Established",
+    "title" : "NetstatEstablished",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Established 상태 소켓 수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  } ],
+  "platforms" : [ "INFRA" ]
+}

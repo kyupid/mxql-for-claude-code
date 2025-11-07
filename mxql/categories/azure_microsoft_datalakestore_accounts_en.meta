@@ -1,0 +1,6 @@
+{
+  "categoryName" : "azure_microsoft_datalakestore_accounts",
+  "title" : "AzureMicrosoftDatalakestoreAccounts",
+  "pk" : [ "dimension" ],
+  "language" : "EN"
+}

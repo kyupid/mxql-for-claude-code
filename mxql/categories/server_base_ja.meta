@@ -1,0 +1,581 @@
+{
+  "categoryName" : "server_base",
+  "title" : "ServerBase",
+  "interval" : [ "1h", "5m", "5s" ],
+  "pk" : [ "oid" ],
+  "language" : "JA",
+  "tags" : [ {
+    "tagName" : "host_ip",
+    "title" : "HostIp",
+    "label" : "host_ip",
+    "deprecated" : false
+  }, {
+    "tagName" : "os",
+    "title" : "Os",
+    "label" : "os",
+    "deprecated" : false
+  }, {
+    "tagName" : "okindName",
+    "title" : "OkindName",
+    "label" : "OkindName",
+    "deprecated" : false
+  }, {
+    "tagName" : "local-ipv4",
+    "title" : "LocalIpv4",
+    "label" : "local-ipv4",
+    "deprecated" : false
+  }, {
+    "tagName" : "hostname",
+    "title" : "HostName",
+    "label" : "hostname",
+    "deprecated" : false
+  }, {
+    "tagName" : "security-groups",
+    "title" : "SecurityGroups",
+    "label" : "security-groups",
+    "deprecated" : false
+  }, {
+    "tagName" : "local-hostname",
+    "title" : "LocalHostName",
+    "label" : "local-hostname",
+    "deprecated" : false
+  }, {
+    "tagName" : "reservation-id",
+    "title" : "ReservationId",
+    "label" : "reservation-id",
+    "deprecated" : false
+  }, {
+    "tagName" : "onodeName",
+    "title" : "OnodeName",
+    "label" : "onodeName",
+    "deprecated" : false
+  }, {
+    "tagName" : "profile",
+    "title" : "Profile",
+    "label" : "profile",
+    "deprecated" : false
+  }, {
+    "tagName" : "ami-launch-index",
+    "title" : "AmiLaunchIndex",
+    "label" : "ami-launch-index",
+    "deprecated" : false
+  }, {
+    "tagName" : "ipv6",
+    "title" : "Ipv6",
+    "label" : "ipv6",
+    "deprecated" : false
+  }, {
+    "tagName" : "DEPLOY-TARGET",
+    "title" : "DeployTarget",
+    "label" : "DEPLOY-TARGET",
+    "deprecated" : false
+  }, {
+    "tagName" : "oid",
+    "title" : "Oid",
+    "label" : "oname",
+    "deprecated" : false
+  }, {
+    "tagName" : "ami-manifest-path",
+    "title" : "AmiManifestPath",
+    "label" : "ami-manifest-path",
+    "deprecated" : false
+  }, {
+    "tagName" : "PACKAGE-APP-LIST",
+    "title" : "PackageAppList",
+    "label" : "PACKAGE-APP-LIST",
+    "deprecated" : false
+  }, {
+    "tagName" : "public-ipv4",
+    "title" : "PublicIpv4",
+    "label" : "public-ipv4",
+    "deprecated" : false
+  }, {
+    "tagName" : "instance-type",
+    "title" : "InstanceType",
+    "label" : "instance-type",
+    "deprecated" : false
+  }, {
+    "tagName" : "mac",
+    "title" : "Mac",
+    "label" : "mac",
+    "deprecated" : false
+  }, {
+    "tagName" : "public-hostname",
+    "title" : "PublicHostName",
+    "label" : "public-hostname",
+    "deprecated" : false
+  }, {
+    "tagName" : "instance-id",
+    "title" : "InstanceId",
+    "label" : "instance-id",
+    "deprecated" : false
+  }, {
+    "tagName" : "system",
+    "title" : "System",
+    "label" : "system",
+    "deprecated" : false
+  }, {
+    "tagName" : "ami-id",
+    "title" : "AmiId",
+    "label" : "ami-id",
+    "deprecated" : false
+  }, {
+    "tagName" : "cpu_cores",
+    "title" : "CpuCores",
+    "label" : "cpu_cores",
+    "deprecated" : false
+  }, {
+    "tagName" : "oname",
+    "title" : "Oname",
+    "label" : "oname",
+    "deprecated" : false
+  }, {
+    "tagName" : "Name",
+    "title" : "Name",
+    "label" : "Name",
+    "deprecated" : false
+  }, {
+    "tagName" : "InstanceId",
+    "title" : "InstanceId",
+    "label" : "InstanceId",
+    "deprecated" : false
+  }, {
+    "tagName" : "instance-life-cycle",
+    "title" : "InstanceLifeCycle",
+    "label" : "instance-life-cycle",
+    "deprecated" : false
+  }, {
+    "tagName" : "instance-action",
+    "title" : "InstanceAction",
+    "label" : "instance-action",
+    "deprecated" : false
+  } ],
+  "fields" : [ {
+    "fieldName" : "cpu_c1",
+    "title" : "CpuC1",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "CPU c1 state使用率",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "memory_total",
+    "title" : "MemoryTotal",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "メモリー全体サイズ",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "uptime",
+    "title" : "Uptime",
+    "unit" : "sec",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "ブート後のサーバー稼働時間(TimeStamp)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "cpu",
+    "title" : "Cpu",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "CPU全体使用率",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "memory_sunreclaim",
+    "title" : "MemorySlabUnreclaimable",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "メモリーslab claimableサイズ",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "epochtime",
+    "title" : "EpochTime",
+    "unit" : "sec",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "メトリクスが収集された時間のepoch time",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "memory_used",
+    "title" : "MemoryUsed",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "メモリー使用量",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "cpu_nice",
+    "title" : "CpuNice",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "低い優先順位を持つプロセスが使用したCPU時間",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "cpu_interrupt",
+    "title" : "CpuInterrupt",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "CPU interrupt",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "memory_pageFaults",
+    "title" : "MemoryPageFaults",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "メモリーpage fault回数",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "memory_swapused",
+    "title" : "MemorySwapUsed",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "スワップ使用量",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "cpu_c2",
+    "title" : "CpuC2",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "CPU c2 state使用率",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "processorQueueLength",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "プロセスキューサイズ",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "memory_free",
+    "title" : "MemoryFree",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "メモリーfreeサイズ",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "cpu_load_per_core",
+    "title" : "CpuLoadPerCore",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "コア当りの平均load値",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "cpu_iowait",
+    "title" : "CpuIOWait",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "CPU iowait比率",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "memory_slab",
+    "title" : "MemorySlab",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "メモリーslabサイズ",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "cpu_softirq",
+    "title" : "CpuSoftIrq",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "CPU softirq使用率",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "memory_available",
+    "title" : "MemoryAvailable",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "メモリーavailableサイズ",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "cpu_load1",
+    "title" : "CpuLoad1",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "1分平均のLoad Average",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "memory_swappused",
+    "title" : "MemorySwapUsedPct",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "スワップ使用率",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "cpu_sys",
+    "title" : "CpuSys",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "CPU system使用率",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "memory_pused",
+    "title" : "MemoryUsedPct",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "メモリー使用率",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "cpu_procs_blocked",
+    "title" : "CpuProcessBlocked",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "プロセスblocked状態の件数",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "cpu_load15",
+    "title" : "CpuLoad15",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "15分平均のLoad Averageos process fork呼出し",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "cpu_irq",
+    "title" : "CpuIrq",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "CPU IRQ使用率",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "cpu_dpc",
+    "title" : "CpuDpc",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "CPU DPC時間の比率",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "cpu_steal",
+    "title" : "CpuSteal",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "CPU steal使用率",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "cpu_new_procs_forked",
+    "title" : "CpuNewProcessForked",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "os process fork呼出し",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "cpu_idle",
+    "title" : "CpuIdle",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "CPU idle比率",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "cpu_ctxt",
+    "title" : "CpuContextSwitching",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "context switching使用率",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "memory_swaptotal",
+    "title" : "MemorySwapTotal",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "スワップ全体サイズ",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "memory_pavailable",
+    "title" : "MemoryAvailablePct",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "メモリーavailable使用率",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "cpu_usr",
+    "title" : "CpuUsr",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "CPU user使用率",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "cpu_load5",
+    "title" : "CpuLoad5",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "5分平均のLoad Average",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "memory_shared",
+    "title" : "MemoryShared",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "メモリーsharedサイズ",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "cpu_procs_running",
+    "title" : "CpuProcessRunning",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "プロセスRunning状態の件数",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "memory_sreclaimable",
+    "title" : "MemorySlabReclaimable",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "メモリーslab reclaimableサイズ",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "memory_cached",
+    "title" : "MemoryCached",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "メモリーcachedサイズ",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "memory_buffers",
+    "title" : "MemoryBuffers",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "メモリーbuffersサイズ",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "cpu_c3",
+    "title" : "CpuC3",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "CPU c3 state使用率",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  } ],
+  "platforms" : [ "INFRA" ]
+}

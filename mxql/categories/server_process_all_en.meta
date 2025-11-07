@@ -1,0 +1,106 @@
+{
+  "categoryName" : "server_process_all",
+  "interval" : "5s",
+  "title" : "ServerProcessAll",
+  "pk" : [ "cmd2", "cmd1", "pid", "oid" ],
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "cmd1",
+    "title" : "Cmd1",
+    "label" : "cmd1"
+  }, {
+    "tagName" : "oid",
+    "title" : "Oid",
+    "label" : "oname"
+  }, {
+    "tagName" : "ppid",
+    "title" : "Ppid",
+    "label" : "ppid"
+  }, {
+    "tagName" : "user",
+    "title" : "User",
+    "label" : "user"
+  }, {
+    "tagName" : "cmd2",
+    "title" : "Cmd2",
+    "label" : "cmd1"
+  }, {
+    "tagName" : "pid",
+    "title" : "Pid",
+    "label" : "pid"
+  }, {
+    "tagName" : "oname",
+    "title" : "Oname",
+    "label" : "oname"
+  } ],
+  "fields" : [ {
+    "fieldName" : "writeBps",
+    "title" : "writeBps",
+    "unit" : "bps",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "readBps",
+    "title" : "readBps",
+    "unit" : "bps",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "openFileDescriptors",
+    "title" : "openFileDescriptors",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "memoryShared",
+    "title" : "memoryShared",
+    "unit" : "byte",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "group",
+    "title" : "group",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "cpu",
+    "title" : "Cpu",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "memoryPercent",
+    "title" : "memoryPercent",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "state",
+    "title" : "state",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "writeIops",
+    "title" : "writeIops",
+    "unit" : "bps",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "createTime",
+    "title" : "createTime",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "memoryBytes",
+    "title" : "memoryBytes",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "readIops",
+    "title" : "readIops",
+    "unit" : "bps",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  } ],
+  "platforms" : [ "INFRA" ]
+}

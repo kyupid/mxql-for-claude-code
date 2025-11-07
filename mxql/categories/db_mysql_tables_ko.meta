@@ -1,0 +1,45 @@
+{
+  "categoryName" : "db_mysql_tables",
+  "interval" : "1d",
+  "title" : "MySQL Tables",
+  "pk" : [ "schemaname", "oid", "table" ],
+  "description" : "MySQL 테이블 정보",
+  "language" : "KO",
+  "tags" : [ {
+    "tagName" : "oname",
+    "deprecated" : false
+  }, {
+    "tagName" : "schemaname",
+    "deprecated" : false
+  } ],
+  "fields" : [ {
+    "fieldName" : "rows",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "file_size",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "index",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "data",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  } ],
+  "platforms" : [ "MYSQL" ]
+}

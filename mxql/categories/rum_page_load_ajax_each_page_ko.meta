@@ -1,0 +1,133 @@
+{
+  "categoryName" : "rum_page_load_ajax_each_page",
+  "title" : "RumPageLoadAjaxEachPage",
+  "pk" : [ "env", "version", "page_group" ],
+  "description" : "페이지 로드 과정에서 호출된 AJAX 응답 시간과 응답 상태 코드와 관련한 지표입니다.",
+  "language" : "KO",
+  "tags" : [ {
+    "tagName" : "version",
+    "title" : "Version",
+    "unit" : "string",
+    "description" : "웹 애플리케이션의 배포 버전을 의미하는 지표",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "env",
+    "title" : "Env",
+    "unit" : "string",
+    "description" : "웹 애플리케이션의 배포 환경(개발, 스테이징, 운영 등)을 의미하는 지표",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "request_path",
+    "title" : "RequestPath",
+    "unit" : "string",
+    "description" : "AJAX 요청 URL의 path 값",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "request_host",
+    "title" : "RequestHost",
+    "unit" : "string",
+    "description" : "AJAX 요청 URL의 host 값",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "page_group",
+    "title" : "PageGroup",
+    "unit" : "string",
+    "description" : "페이지 그룹\n브라우저 모니터링 서비스에서 의미있는 통계 그룹을 가지기 위해 URL 경로(URL Path)를 정규 표현식을 통해 정규화하여 페이지 그룹이라는 이름으로 제공합니다. \nURL 경로(URL Path) 단위 분석에 의미가 없다고 판단한 숫자, 날짜 등을 물음표(?)로 치환해 제공합니다.",
+    "deprecated" : false,
+    "type" : "String"
+  } ],
+  "fields" : [ {
+    "fieldName" : "ajax_4xx_count",
+    "title" : "Ajax4xxCount",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "응답 상태코드 400 이상 500 미만의 AJAX 건수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "ajax_3xx_count",
+    "title" : "Ajax3xxCount",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "응답 상태코드 300 이상 400 미만의 AJAX 건수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "ajax_5xx_count",
+    "title" : "Ajax5xxCount",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "응답 상태코드 500 이상 AJAX 건수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "ajax_2xx_count",
+    "title" : "Ajax2xxCount",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "응답 상태코드 200 이상 300 미만의 AJAX 건수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "ajax_1xx_count",
+    "title" : "Ajax1xxCount",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "응답 상태코드 100 이상 200 미만의 AJAX 건수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "ajax_count",
+    "title" : "AjaxCount",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "AJAX 건수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "ajax_duration",
+    "title" : "AjaxDuration",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "AJAX 요청 평균 응답 시간",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "ajax_fail_count",
+    "title" : "AjaxFailCount",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "요청 실패한 AJAX 건수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  } ],
+  "platforms" : [ "RUM" ]
+}

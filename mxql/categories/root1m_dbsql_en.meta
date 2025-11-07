@@ -1,0 +1,76 @@
+{
+  "categoryName" : "root1m_dbsql",
+  "interval" : "5s",
+  "title" : "Root1mDbSql",
+  "pk" : [ "oid" ],
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "oname",
+    "title" : "Oname",
+    "label" : "oname"
+  }, {
+    "tagName" : "container",
+    "title" : "Container",
+    "label" : "container"
+  }, {
+    "tagName" : "ip",
+    "title" : "Ip",
+    "label" : "ip"
+  }, {
+    "tagName" : "onodeName",
+    "title" : "OnodeName",
+    "label" : "onodeName"
+  }, {
+    "tagName" : "okind",
+    "title" : "Okind",
+    "label" : "okindName"
+  }, {
+    "tagName" : "okindName",
+    "title" : "OkindName",
+    "label" : "okindName"
+  }, {
+    "tagName" : "onode",
+    "title" : "Onode",
+    "label" : "onodeName"
+  }, {
+    "tagName" : "dbHash",
+    "title" : "DbHash",
+    "label" : "dbHash"
+  }, {
+    "tagName" : "dbUrl",
+    "title" : "DbUrl",
+    "label" : "dbUrl"
+  }, {
+    "tagName" : "oid",
+    "title" : "Oid",
+    "label" : "oname"
+  } ],
+  "fields" : [ {
+    "fieldName" : "rows",
+    "title" : "Rows",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "count",
+    "title" : "Count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "act",
+    "title" : "Act",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "error",
+    "title" : "Error",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "elapsed",
+    "title" : "Elapsed",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  } ],
+  "platforms" : [ "JAVA", "PHP" ]
+}

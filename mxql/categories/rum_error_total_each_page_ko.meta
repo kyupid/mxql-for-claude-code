@@ -1,0 +1,84 @@
+{
+  "categoryName" : "rum_error_total_each_page",
+  "title" : "RumErrorTotalEachPage",
+  "pk" : [ "env", "version", "page_group" ],
+  "description" : "브라우저에서 발생하는 에러와 관련한 지표입니다.",
+  "language" : "KO",
+  "tags" : [ {
+    "tagName" : "error_message",
+    "title" : "ErrorMessage",
+    "unit" : "string",
+    "description" : "에러 메시지",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "browser",
+    "title" : "Browser",
+    "unit" : "string",
+    "description" : "브라우저 이름\n(Chrome, Safari 등)",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "os",
+    "title" : "Os",
+    "unit" : "string",
+    "description" : "운영체제 이름\n(macOS, windows, linux 등)",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "env",
+    "title" : "Env",
+    "unit" : "string",
+    "description" : "웹 애플리케이션의 배포 환경(개발, 스테이징, 운영 등)을 의미하는 지표",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "error_type",
+    "title" : "ErrorType",
+    "unit" : "string",
+    "description" : "에러 종류\n(onError, fetchError, xhrError, consoleError)",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "page_group",
+    "title" : "PageGroup",
+    "unit" : "string",
+    "description" : "페이지 그룹\n브라우저 모니터링 서비스에서 의미있는 통계 그룹을 가지기 위해 URL 경로(URL Path)를 정규 표현식을 통해 정규화하여 페이지 그룹이라는 이름으로 제공합니다. \nURL 경로(URL Path) 단위 분석에 의미가 없다고 판단한 숫자, 날짜 등을 물음표(?)로 치환해 제공합니다.",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "version",
+    "title" : "Version",
+    "unit" : "string",
+    "description" : "웹 애플리케이션의 배포 버전을 의미하는 지표",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "browser_ver",
+    "title" : "BrowserVersion",
+    "unit" : "string",
+    "description" : "브라우저 버전",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "device",
+    "title" : "Device",
+    "unit" : "string",
+    "description" : "디바이스 이름\n(데스크톱, 테블릿, 모바일, 봇)",
+    "deprecated" : false,
+    "type" : "String"
+  } ],
+  "fields" : [ {
+    "fieldName" : "error_count",
+    "title" : "ErrorCount",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "에러 발생 건수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  } ],
+  "platforms" : [ "RUM" ]
+}

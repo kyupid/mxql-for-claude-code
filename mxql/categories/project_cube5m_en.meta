@@ -1,0 +1,48 @@
+{
+  "categoryName" : "project_cube5m",
+  "interval" : "5m",
+  "title" : "ProjectCube5m",
+  "pk" : [ "oid" ],
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "_no_5m_hour_",
+    "title" : "_no_5m_hour_",
+    "label" : "_no_5m_hour_"
+  }, {
+    "tagName" : "oid",
+    "title" : "Oid",
+    "label" : "oid"
+  } ],
+  "fields" : [ {
+    "fieldName" : "visit5m",
+    "title" : "Visit5m",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "tps",
+    "title" : "Tps",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "ap_count",
+    "title" : "ApCount",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "app_count",
+    "title" : "AppCount",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "active_tx_max",
+    "title" : "ActiveTrxMax",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "active_tx",
+    "title" : "ActiveTrx",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  } ],
+  "platforms" : [ "JAVA" ]
+}

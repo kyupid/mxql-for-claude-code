@@ -1,0 +1,117 @@
+{
+  "categoryName" : "db_oracle_wait_class",
+  "interval" : "1m",
+  "title" : "db_oracle_wait_class",
+  "pk" : [ "con_id", "oid" ],
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "oname",
+    "title" : "oname",
+    "deprecated" : false
+  }, {
+    "tagName" : "con_id",
+    "title" : "con_id",
+    "deprecated" : false
+  } ],
+  "fields" : [ {
+    "fieldName" : "Idle",
+    "title" : "Idle",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "This is a normal wait state where a session is waiting for a task.",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "Application",
+    "title" : "Application",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "This is a wait event caused by lock contention in the application. Reducing transaction time by utilizing appropriate indexes is necessary.",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "User I/O",
+    "title" : "User I/O",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "This occurs when reading or writing data from the disk during SQL execution. Consider SQL tuning, index optimization, and I/O distribution.",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "Concurrency",
+    "title" : "Concurrency",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "This occurs when there is resource contention between multiple sessions. Library cache tuning and index optimization are required.",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "Configuration",
+    "title" : "Configuration",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "This occurs due to incorrect configurations. Consider adjusting parameter values (e.g., log file switch).",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "Network",
+    "title" : "Network",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "This occurs during network communication waits. Packet size adjustments and network status checks are necessary.",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "System I/O",
+    "title" : "System I/O",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "This is a system I/O wait event within the database. Improving the performance of log files and control file disks is required.",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "Scheduler",
+    "title" : "Scheduler",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "This occurs due to wait events related to the job scheduler. Consider adjusting background job scheduling.",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "Cluster",
+    "title" : "Cluster",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "This is a wait event for data sharing between nodes in an RAC environment. Consider tuning gc-related waits and adjusting cache size.",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "Other",
+    "title" : "Other",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "This is a wait event that falls into other categories. Analyze the specific event and take appropriate action.",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "Commit",
+    "title" : "Commit",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "This is a wait event for redo log synchronization during a transaction COMMIT. Consider adjusting the log file size and optimizing redo log performance.",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  } ],
+  "platforms" : [ "ORACLE" ]
+}

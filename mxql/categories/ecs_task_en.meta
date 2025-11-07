@@ -1,0 +1,288 @@
+{
+  "categoryName" : "ecs_task",
+  "title" : "EcsTask",
+  "pk" : [ "dimension" ],
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "image",
+    "title" : "image",
+    "label" : "image"
+  }, {
+    "tagName" : "TaskARN",
+    "title" : "TaskARN",
+    "label" : "TaskARN"
+  }, {
+    "tagName" : "dimension",
+    "title" : "dimension",
+    "label" : "dimension"
+  }, {
+    "tagName" : "mtype",
+    "title" : "mtype",
+    "label" : "mtype"
+  }, {
+    "tagName" : "created",
+    "title" : "created",
+    "label" : "created"
+  }, {
+    "tagName" : "Cluster",
+    "title" : "Cluster",
+    "label" : "Cluster"
+  }, {
+    "tagName" : "agentPcode",
+    "title" : "agentPcode",
+    "label" : "agentPcode"
+  }, {
+    "tagName" : "TaskFamily",
+    "title" : "TaskFamily",
+    "label" : "TaskFamily"
+  }, {
+    "tagName" : "KnownStatus",
+    "title" : "KnownStatus",
+    "label" : "KnownStatus"
+  }, {
+    "tagName" : "imageHash",
+    "title" : "imageHash",
+    "label" : "imageHash"
+  }, {
+    "tagName" : "name",
+    "title" : "name",
+    "label" : "name"
+  }, {
+    "tagName" : "TaskRevision",
+    "title" : "TaskRevision",
+    "label" : "TaskRevision"
+  }, {
+    "tagName" : "imageId",
+    "title" : "imageId",
+    "label" : "imageId"
+  }, {
+    "tagName" : "AvailabilityZone",
+    "title" : "AvailabilityZone",
+    "label" : "AvailabilityZone"
+  }, {
+    "tagName" : "containerId",
+    "title" : "containerId",
+    "label" : "containerId"
+  }, {
+    "tagName" : "agentOid",
+    "title" : "agentOid",
+    "label" : "agentOid"
+  }, {
+    "tagName" : "containerKey",
+    "title" : "containerKey",
+    "label" : "containerKey"
+  } ],
+  "fields" : [ {
+    "fieldName" : "blkio_wiops",
+    "title" : "BlkioWiops",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "network_wbps",
+    "title" : "NetworkWbps",
+    "unit" : "bps",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "mem_failcnt",
+    "title" : "MemFailcnt",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "cpu_sys_millis",
+    "title" : "CpuSysMillis",
+    "unit" : "millicore",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "mem_inactivefile",
+    "title" : "MemInactivefile",
+    "unit" : "byte",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "node_mem",
+    "title" : "NodeMem"
+  }, {
+    "fieldName" : "cpu_throttledperiods",
+    "title" : "CpuThrottledperiods",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "network_rdropped",
+    "title" : "NetworkRdropped",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "mem_workingset",
+    "title" : "MemWorkingset",
+    "unit" : "byte",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "mem_totalcache",
+    "title" : "MemTotalcache",
+    "unit" : "byte",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "mem_totalrss",
+    "title" : "MemTotalrss",
+    "unit" : "byte",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "cpu_total",
+    "title" : "CpuTotal",
+    "unit" : "pct",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "mem_totalpgfault",
+    "title" : "MemTotalpgfault",
+    "unit" : "byte",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "cpu_sys",
+    "title" : "CpuSys",
+    "unit" : "pct",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "blkio_wbps",
+    "title" : "BlkioWbps",
+    "unit" : "bps",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "network_riops",
+    "title" : "NetworkRiops",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "network_rbps",
+    "title" : "NetworkRbps",
+    "unit" : "bps",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "cpu_throttledtime",
+    "title" : "CpuThrottledtime",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "cpu_user_millis",
+    "title" : " CpuUserMillis",
+    "unit" : "millicore",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "mem_totalrss_percent",
+    "title" : "MemTotalrssPercent",
+    "unit" : "byte",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "network_wdropped",
+    "title" : "NetworkWdropped",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "network_wiops",
+    "title" : "NetworkWiops",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "mem_percent",
+    "title" : "MemPercent",
+    "unit" : "pct",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "mem_limit",
+    "title" : "MemLimit",
+    "unit" : "byte",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "mem_maxusage",
+    "title" : "MemMaxusage",
+    "unit" : "byte",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "cpu_quota",
+    "title" : "CpuQuota",
+    "unit" : "millicore",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "cpu_user",
+    "title" : "CpuUser",
+    "unit" : "pct",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "cpu_per_quota",
+    "title" : "CpuPerQuota",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "cpu_quota_percent",
+    "title" : "CpuQuotaPercent",
+    "unit" : "pct",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "mem_totalunevictable",
+    "title" : "MemTotalunevictable",
+    "unit" : "byte",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "network_werror",
+    "title" : "NetworkWerror",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "node_cpu",
+    "title" : "NodeCpu"
+  }, {
+    "fieldName" : "blkio_riops",
+    "title" : "BlkioRiops",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "blkio_rbps",
+    "title" : "BlkioRbps",
+    "unit" : "bps",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "mem_usage",
+    "title" : "MemUsage",
+    "unit" : "byte",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "TaskKnownStatus",
+    "title" : "TaskKnownStatus"
+  }, {
+    "fieldName" : "network_rerror",
+    "title" : "NetworkRerror",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "TaskDesiredStatus",
+    "title" : "TaskDesiredStatus"
+  }, {
+    "fieldName" : "cpu_total_millis",
+    "title" : "CpuTotalMillis",
+    "unit" : "millicore",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg"
+  } ],
+  "platforms" : [ "" ]
+}

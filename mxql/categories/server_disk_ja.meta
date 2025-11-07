@@ -1,0 +1,258 @@
+{
+  "categoryName" : "server_disk",
+  "interval" : "5s",
+  "title" : "Server Disk",
+  "pk" : [ "mountPoint", "oid" ],
+  "language" : "JA",
+  "tags" : [ {
+    "tagName" : "deviceIdHash",
+    "title" : "DeviceIdHash",
+    "label" : "deviceIdHash",
+    "deprecated" : false
+  }, {
+    "tagName" : "fileSystemHash",
+    "title" : "FileSystemHash",
+    "label" : "fileSystemHash",
+    "deprecated" : false
+  }, {
+    "tagName" : "fileSystem",
+    "title" : "FileSystem",
+    "label" : "fileSystem",
+    "deprecated" : false
+  }, {
+    "tagName" : "mountPoint",
+    "title" : "MountPoint",
+    "label" : "mountPoint",
+    "deprecated" : false
+  }, {
+    "tagName" : "mountPointHash",
+    "title" : "MountPointHash",
+    "label" : "mountPointHash",
+    "deprecated" : false
+  }, {
+    "tagName" : "os",
+    "title" : "OS",
+    "label" : "os",
+    "deprecated" : false
+  }, {
+    "tagName" : "oname",
+    "title" : "Oname",
+    "label" : "oname",
+    "deprecated" : false
+  }, {
+    "tagName" : "oid",
+    "title" : "Oid",
+    "label" : "oid",
+    "deprecated" : false
+  }, {
+    "tagName" : "deviceId",
+    "title" : "DeviceId",
+    "label" : "deviceId",
+    "deprecated" : false
+  }, {
+    "tagName" : "onodeName",
+    "title" : "OnodeName",
+    "label" : "onodeName",
+    "deprecated" : false
+  } ],
+  "fields" : [ {
+    "fieldName" : "freeSpace",
+    "title" : "FreeSpace",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "ファイルシステム残り量",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "totalSpace",
+    "title" : "TotalSpace",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "ファイルシステム全体サイズ",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "usedSpaceOrder",
+    "title" : "UsedSpaceOrder",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "capacityEphemeralStorage",
+    "title" : "CapacityEphemeralStorage",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "queueLength",
+    "title" : "QueueLength",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "キューサイズ",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "freePercent",
+    "title" : "FreePercent",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "ファイルシステム残り率",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "ioutilOrder",
+    "title" : "IoUtilOrder",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "usedInodePercent",
+    "title" : "UsedInodePercent",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "inode使用率",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "allocatable_ephemeral_storage",
+    "title" : "AllocatableEphemeralStorage",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "writeIops",
+    "title" : "WriteIops",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "秒当りの書き込み数",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "usedPercent",
+    "title" : "UsedPercent",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "ファイルシステム使用率",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "count",
+    "title" : "Count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "writeBps",
+    "title" : "WriteBps",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "秒当りの書き込みバイト数",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "usedInode",
+    "title" : "UsedInode",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "inode使用個数",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "usedSpace",
+    "title" : "UsedSpace",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "totalInode",
+    "title" : "TotalInode",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "inode全体個数",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "readIops",
+    "title" : "ReadIops",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "秒当りの読取り数",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "blksize",
+    "title" : "BlkSize",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "ブロックサイズ",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "readBps",
+    "title" : "ReadBps",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "秒当りの読取りバイト数",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "ioPercent",
+    "title" : "IoPercent",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "I/O使用率(一部ディスク類型では正しくないネガ測定されることがあります。)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  } ],
+  "platforms" : [ "INFRA" ]
+}

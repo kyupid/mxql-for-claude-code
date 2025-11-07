@@ -1,0 +1,53 @@
+{
+  "categoryName" : "server_webcheck",
+  "interval" : "20s",
+  "title" : "server_webcheck",
+  "pk" : [ "oid", "url" ],
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "whatap_product"
+  }, {
+    "tagName" : "whatap_version"
+  }, {
+    "tagName" : "onodeName"
+  }, {
+    "tagName" : "url"
+  }, {
+    "tagName" : "os_public_ip"
+  }, {
+    "tagName" : "os_arch"
+  }, {
+    "tagName" : "whatap_home"
+  }, {
+    "tagName" : "os_ip"
+  }, {
+    "tagName" : "os_cpuvendor"
+  }, {
+    "tagName" : "os_name"
+  }, {
+    "tagName" : "os_cpucore"
+  }, {
+    "tagName" : "oname"
+  }, {
+    "tagName" : "whatap_build"
+  }, {
+    "tagName" : "os_cpusocket"
+  }, {
+    "tagName" : "os_release"
+  }, {
+    "tagName" : "instance"
+  }, {
+    "tagName" : "okindName"
+  } ],
+  "fields" : [ {
+    "fieldName" : "webcheck.ping.status_code",
+    "title" : "webcheck.ping.status_code"
+  }, {
+    "fieldName" : "webcheck.ping.response_time",
+    "title" : "webcheck.ping.response_time"
+  }, {
+    "fieldName" : "webcheck.ping.online",
+    "title" : "webcheck.ping.online"
+  } ],
+  "platforms" : [ "INFRA" ]
+}

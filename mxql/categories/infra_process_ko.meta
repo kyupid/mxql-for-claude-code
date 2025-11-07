@@ -1,0 +1,55 @@
+{
+  "categoryName" : "infra_process",
+  "title" : "Infra Process",
+  "interval" : [ "5s" ],
+  "pk" : [ "oid" ],
+  "description" : "서버에서 기동중인, 전체 프로세스, 쓰레드, 핸들 수, defunct 프로세스의 수를 표시 합니다.",
+  "language" : "KO",
+  "tags" : [ {
+    "tagName" : "oname",
+    "title" : "Oname",
+    "deprecated" : false
+  } ],
+  "fields" : [ {
+    "fieldName" : "defunctTotal",
+    "title" : "Total Defunct Process",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "handleTotal",
+    "title" : "Total Handle",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "threadTotal",
+    "title" : "Total Thread",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "procTotal",
+    "title" : "Total Process",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  } ],
+  "platforms" : [ "INFRA" ]
+}

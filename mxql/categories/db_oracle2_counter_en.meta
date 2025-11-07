@@ -1,0 +1,207 @@
+{
+  "categoryName" : "db_oracle2_counter",
+  "title" : "db_oracle2_counter",
+  "pk" : [ "dbIsMulti", "dbName", "oid" ],
+  "language" : "EN",
+  "fields" : [ {
+    "fieldName" : "mem_swapfree(xos)",
+    "title" : "mem_swapfree(xos)",
+    "group" : "xos",
+    "visible" : true
+  }, {
+    "fieldName" : "rollback_changes_-_undo_records_applied",
+    "title" : "rollback changes - undo records applied",
+    "group" : "Throughput",
+    "visible" : true
+  }, {
+    "fieldName" : "net_recvs(xos)",
+    "title" : "net_recvs(xos)",
+    "group" : "xos",
+    "visible" : true
+  }, {
+    "fieldName" : "CPU_used_by_this_session",
+    "title" : "CPU used by this session",
+    "group" : "Performance",
+    "visible" : true
+  }, {
+    "fieldName" : "mem_swaptotal(xos)",
+    "title" : "mem_swaptotal(xos)",
+    "group" : "xos",
+    "visible" : true
+  }, {
+    "fieldName" : "mem_free(xos)",
+    "title" : "mem_free(xos)",
+    "group" : "xos",
+    "visible" : true
+  }, {
+    "fieldName" : "net_recvbytes(xos)",
+    "title" : "net_recvbytes(xos)",
+    "group" : "xos",
+    "visible" : true
+  }, {
+    "fieldName" : "execute_count",
+    "title" : "execute count",
+    "group" : "Performance",
+    "visible" : true
+  }, {
+    "fieldName" : "mem_total(xos)",
+    "title" : "mem_total(xos)",
+    "group" : "xos",
+    "visible" : true
+  }, {
+    "fieldName" : "session_logical_reads",
+    "title" : "session logical reads",
+    "group" : "Throughput",
+    "visible" : true
+  }, {
+    "fieldName" : "mem_used(xos)",
+    "title" : "mem_used(xos)",
+    "group" : "xos",
+    "visible" : true
+  }, {
+    "fieldName" : "disk_reads(xos)",
+    "title" : "disk_reads(xos)",
+    "group" : "xos",
+    "visible" : true
+  }, {
+    "fieldName" : "cpu_iowait(xos)",
+    "title" : "cpu_iowait(xos)",
+    "unit" : "pct",
+    "group" : "xos",
+    "visible" : true
+  }, {
+    "fieldName" : "DB_time",
+    "title" : "DB time",
+    "group" : "Performance",
+    "visible" : true
+  }, {
+    "fieldName" : "lock_wait_sessions",
+    "title" : "lock_wait_sessions",
+    "group" : "Performance",
+    "visible" : true
+  }, {
+    "fieldName" : "transaction_tables_consistent_reads_-_undo_records_applied",
+    "title" : "transaction tables consistent reads - undo records applied",
+    "group" : "Throughput",
+    "visible" : true
+  }, {
+    "fieldName" : "cpu_sys(xos)",
+    "title" : "cpu_sys(xos)",
+    "unit" : "pct",
+    "group" : "xos",
+    "visible" : true
+  }, {
+    "fieldName" : "logons_current",
+    "title" : "logons current",
+    "group" : "Performance",
+    "visible" : true
+  }, {
+    "fieldName" : "physical_writes",
+    "title" : "physical writes",
+    "group" : "Throughput",
+    "visible" : true
+  }, {
+    "fieldName" : "mem_avail(xos)",
+    "title" : "mem_avail(xos)",
+    "group" : "xos",
+    "visible" : true
+  }, {
+    "fieldName" : "cpu_idle(xos)",
+    "title" : "cpu_idle(xos)",
+    "unit" : "pct",
+    "group" : "xos",
+    "visible" : true
+  }, {
+    "fieldName" : "disk_writes(xos)",
+    "title" : "disk_writes(xos)",
+    "group" : "xos",
+    "visible" : true
+  }, {
+    "fieldName" : "sorts_(memory)",
+    "title" : "sorts (memory)",
+    "group" : "Throughput",
+    "visible" : true
+  }, {
+    "fieldName" : "physical_reads",
+    "title" : "physical reads",
+    "group" : "Throughput",
+    "visible" : true
+  }, {
+    "fieldName" : "enqueue_waits",
+    "title" : "enqueue waits",
+    "group" : "Performance",
+    "visible" : true
+  }, {
+    "fieldName" : "opened_cursors_current",
+    "title" : "opened cursors current",
+    "group" : "Throughput",
+    "visible" : true
+  }, {
+    "fieldName" : "active_sessions",
+    "title" : "active_sessions",
+    "group" : "Performance",
+    "visible" : true
+  }, {
+    "fieldName" : "pq_sessions",
+    "title" : "pq_sessions",
+    "group" : "Throughput",
+    "visible" : true
+  }, {
+    "fieldName" : "data_blocks_consistent_reads_-_undo_records_applied",
+    "title" : "data blocks consistent reads - undo records applied",
+    "group" : "Performance",
+    "visible" : true
+  }, {
+    "fieldName" : "parse_count_(hard)",
+    "title" : "parse count (hard)",
+    "group" : "Throughput",
+    "visible" : true
+  }, {
+    "fieldName" : "parse_count_(total)",
+    "title" : "parse count (total)",
+    "group" : "Throughput",
+    "visible" : true
+  }, {
+    "fieldName" : "db_block_changes",
+    "title" : "db block changes",
+    "group" : "Performance",
+    "visible" : true
+  }, {
+    "fieldName" : "user_commits",
+    "title" : "user commits",
+    "group" : "Throughput",
+    "visible" : true
+  }, {
+    "fieldName" : "cpu_user(xos)",
+    "title" : "cpu_user(xos)",
+    "unit" : "pct",
+    "group" : "xos",
+    "visible" : true
+  }, {
+    "fieldName" : "mem_buffcache(xos)",
+    "title" : "mem_buffcache(xos)",
+    "group" : "xos",
+    "visible" : true
+  }, {
+    "fieldName" : "net_sendbytes(xos)",
+    "title" : "net_sendbytes(xos)",
+    "group" : "xos",
+    "visible" : true
+  }, {
+    "fieldName" : "total_sessions",
+    "title" : "total_sessions",
+    "group" : "Throughput",
+    "visible" : true
+  }, {
+    "fieldName" : "cpu_core",
+    "title" : "cpu_core",
+    "group" : "Performance",
+    "visible" : true
+  }, {
+    "fieldName" : "net_sends(xos)",
+    "title" : "net_sends(xos)",
+    "group" : "xos",
+    "visible" : true
+  } ],
+  "platforms" : [ "" ]
+}

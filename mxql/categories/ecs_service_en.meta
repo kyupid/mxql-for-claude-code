@@ -1,0 +1,66 @@
+{
+  "categoryName" : "ecs_service",
+  "title" : "EcsService",
+  "pk" : [ "ServiceArn" ],
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "SchedulingStrategy",
+    "title" : "SchedulingStrategy",
+    "label" : "SchedulingStrategy"
+  }, {
+    "tagName" : "PropagateTags",
+    "title" : "PropagateTags",
+    "label" : "PropagateTags"
+  }, {
+    "tagName" : "ClusterArn",
+    "title" : "ClusterArn",
+    "label" : "ClusterArn"
+  }, {
+    "tagName" : "ServiceArn",
+    "title" : "ServiceArn",
+    "label" : "ServiceArn"
+  }, {
+    "tagName" : "HealthCheckGracePeriodSeconds",
+    "title" : "HealthCheckGracePeriodSeconds",
+    "label" : "HealthCheckGracePeriodSeconds"
+  }, {
+    "tagName" : "CreatedBy",
+    "title" : "CreatedBy",
+    "label" : "CreatedBy"
+  }, {
+    "tagName" : "LaunchType",
+    "title" : "LaunchType",
+    "label" : "LaunchType"
+  }, {
+    "tagName" : "RoleArn",
+    "title" : "RoleArn",
+    "label" : "RoleArn"
+  }, {
+    "tagName" : "PlatformVersion",
+    "title" : "PlatformVersion",
+    "label" : "PlatformVersion"
+  }, {
+    "tagName" : "TaskDefinition",
+    "title" : "TaskDefinition",
+    "label" : "TaskDefinition"
+  }, {
+    "tagName" : "ServiceName",
+    "title" : "ServiceName",
+    "label" : "ServiceName"
+  } ],
+  "fields" : [ {
+    "fieldName" : "PendingCount",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "DesiredCount",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "RunningCount",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "Status"
+  } ]
+}

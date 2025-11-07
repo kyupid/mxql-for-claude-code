@@ -1,0 +1,95 @@
+{
+  "categoryName" : "rum_web_vitals_each_page",
+  "title" : "Rum Web Vitals Each Page",
+  "pk" : [ "env", "version", "page_group" ],
+  "description" : "コアウェブバイタルに関連した指標です。",
+  "language" : "JA",
+  "tags" : [ {
+    "tagName" : "version",
+    "title" : "Version",
+    "unit" : "string",
+    "description" : "WEBアプリケーションのデプロイバージョンを意味する指標です。",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "page_group",
+    "title" : "PageGroup",
+    "unit" : "string",
+    "description" : "ページグループ\nBrowserモニタリングサービスで有意味な統計グループを持つよう、URLパス(URL Path)を正規化してページグループ名として提供します。 \nURLパス(URL Path)単位の分析に影響しないと判断される数字、日付等は'?'に置き換えます。",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "env",
+    "title" : "Env",
+    "unit" : "string",
+    "description" : "WEBアプリケーションのデプロイ環境(開発、ステージング、運用など)を意味する指標です。",
+    "deprecated" : false,
+    "type" : "String"
+  } ],
+  "fields" : [ {
+    "fieldName" : "web_vitals_lcp",
+    "title" : "WebVitalsLcp",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "WEBサイトから最も大きいサイズのコンテンツ要素がロードされる平均時間",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "web_vitals_fid_count",
+    "title" : "WebVitalsFidCount",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "web_vitals_fidを計算するために使用した標本の数です。",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "web_vitals_cls",
+    "title" : "WebVitalsCls",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "WEBサイトがロードされる間、レイアウトがどれ程頻繁に変更されるかを表すポイント",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "web_vitals_lcp_count",
+    "title" : "WebVitalsLcpCount",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "web_vitals_lcpを計算するために使用した標本の数です。",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "web_vitals_cls_count",
+    "title" : "WebVitalsClsCount",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "web_vitals_clsを計算するために使用した標本の数です。",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "web_vitals_fid",
+    "title" : "WebVitalsFid",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "WEBサイトがロードされて、ユーザーが最初の入力をしてからブラウザが反応するまでの平均時間",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  } ],
+  "platforms" : [ "RUM" ]
+}

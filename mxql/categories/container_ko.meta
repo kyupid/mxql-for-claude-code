@@ -1,0 +1,823 @@
+{
+  "categoryName" : "container",
+  "interval" : "5s",
+  "title" : "Container",
+  "pk" : [ "containerKey" ],
+  "language" : "KO",
+  "tags" : [ {
+    "tagName" : "whatap_project",
+    "title" : "WhatapProject",
+    "deprecated" : false
+  }, {
+    "tagName" : "podHash",
+    "title" : "PodHash",
+    "label" : "podName",
+    "deprecated" : false
+  }, {
+    "tagName" : "okind",
+    "title" : "Okind",
+    "label" : "okindName",
+    "deprecated" : false
+  }, {
+    "tagName" : "controller-revision-hash",
+    "title" : "ControllerRevisionHash",
+    "deprecated" : false
+  }, {
+    "tagName" : "container_host_ports",
+    "title" : "ContainerPortHostPorts",
+    "deprecated" : false
+  }, {
+    "tagName" : "namespace",
+    "title" : "Namespace",
+    "label" : "namespace",
+    "deprecated" : false
+  }, {
+    "tagName" : "oid",
+    "title" : "Oid",
+    "label" : "oname",
+    "deprecated" : false
+  }, {
+    "tagName" : "container_port_names",
+    "title" : "ContainerPortNames",
+    "deprecated" : false
+  }, {
+    "tagName" : "oname",
+    "title" : "Agent",
+    "label" : "oname",
+    "deprecated" : false
+  }, {
+    "tagName" : "containerId",
+    "title" : "ContainerId",
+    "label" : "name",
+    "deprecated" : false
+  }, {
+    "tagName" : "onode",
+    "title" : "NodeID",
+    "label" : "onodeName",
+    "deprecated" : false
+  }, {
+    "tagName" : "namespaceHash",
+    "title" : "NamespaceHash",
+    "label" : "namespace",
+    "deprecated" : false
+  }, {
+    "tagName" : "replicaSetName",
+    "title" : "ReplicaSet",
+    "label" : "replicaSetName",
+    "deprecated" : false
+  }, {
+    "tagName" : "container_port_protocols",
+    "title" : "ContainerPortProtocols",
+    "deprecated" : false
+  }, {
+    "tagName" : "okindName",
+    "title" : "OkindName",
+    "label" : "okindName",
+    "deprecated" : false
+  }, {
+    "tagName" : "microOname",
+    "title" : "ApplicationName",
+    "deprecated" : false
+  }, {
+    "tagName" : "ReplicationController",
+    "description" : "name of ReplicationController",
+    "deprecated" : false
+  }, {
+    "tagName" : "imageId",
+    "title" : "ImageId",
+    "label" : "image",
+    "deprecated" : false
+  }, {
+    "tagName" : "component",
+    "title" : "Component",
+    "label" : "component",
+    "deprecated" : false
+  }, {
+    "tagName" : "onodeName",
+    "title" : "Node",
+    "label" : "onodeName",
+    "deprecated" : false
+  }, {
+    "tagName" : "microOid",
+    "title" : "ApplicationId",
+    "deprecated" : false
+  }, {
+    "tagName" : "podName",
+    "title" : "Pod",
+    "label" : "podName",
+    "deprecated" : false
+  }, {
+    "tagName" : "agentOid",
+    "title" : "AgentOid",
+    "deprecated" : false
+  }, {
+    "tagName" : "imageHash",
+    "title" : "ImageHash",
+    "label" : "image",
+    "deprecated" : false
+  }, {
+    "tagName" : "podUid",
+    "title" : "PodUid",
+    "deprecated" : false
+  }, {
+    "tagName" : "command",
+    "title" : "Command",
+    "deprecated" : false
+  }, {
+    "tagName" : "image",
+    "title" : "Image",
+    "label" : "image",
+    "deprecated" : false
+  }, {
+    "tagName" : "app",
+    "title" : "App",
+    "label" : "app",
+    "deprecated" : false
+  }, {
+    "tagName" : "pod-template-generation",
+    "title" : "PodTemplateGeneration",
+    "deprecated" : false
+  }, {
+    "tagName" : "tier",
+    "title" : "Tier",
+    "label" : "tier",
+    "deprecated" : false
+  }, {
+    "tagName" : "Deployment",
+    "title" : "Deployment",
+    "label" : "Deployment",
+    "deprecated" : false
+  }, {
+    "tagName" : "name",
+    "title" : "ContainerName",
+    "label" : "name",
+    "deprecated" : false
+  }, {
+    "tagName" : "pod-template-hash",
+    "title" : "PodTemplateHash",
+    "deprecated" : false
+  }, {
+    "tagName" : "created",
+    "title" : "Created",
+    "deprecated" : false
+  }, {
+    "tagName" : "k8s-app",
+    "title" : "K8sApp",
+    "label" : "k8s-app",
+    "deprecated" : false
+  }, {
+    "tagName" : "containerKey",
+    "title" : "ContainerKey",
+    "label" : "name",
+    "deprecated" : false
+  }, {
+    "tagName" : "agentPcode",
+    "title" : "AgentPcode",
+    "deprecated" : false
+  }, {
+    "tagName" : "replicaSetHash",
+    "title" : "ReplicaSetHash",
+    "label" : "replicaSetName",
+    "deprecated" : false
+  }, {
+    "tagName" : "container_ports",
+    "title" : "ContainerPorts",
+    "deprecated" : false
+  }, {
+    "tagName" : "container_host_ips",
+    "title" : "ContainerPortHostIPs",
+    "deprecated" : false
+  } ],
+  "fields" : [ {
+    "fieldName" : "status",
+    "title" : "ConStatus",
+    "unit" : "txt",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Container Current Status",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "fieldName" : "network_rerror",
+    "title" : "NetRxError",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "description" : "컨테이너 네트워크 수신 오류 건수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "mem_request",
+    "title" : "MemRequest",
+    "unit" : "byte",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "description" : "컨테이너에 MEMORY request",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "cpu_quota_percent",
+    "title" : "CpuLimitByNode",
+    "unit" : "pct#",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "노드 CPU capacity 대비 컨테이너 CPU limit 할당된 비율",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "kube_last_con_state",
+    "title" : "KubeLastConState",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "mem_limit",
+    "title" : "MemLimit",
+    "unit" : "byte",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "description" : "컨테이너 MEMORY limit",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "cpu_request",
+    "title" : "CpuRequest",
+    "unit" : "millicore",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "description" : "컨테이너 CPU request",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "cpu_total_milli",
+    "title" : "CpuTotUsage",
+    "unit" : "millicore",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "description" : "컨테이너 CPU 사용량",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : true,
+    "type" : "Number"
+  }, {
+    "fieldName" : "network_rdropped",
+    "title" : "NetRxDropped",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "description" : "컨테이너 네트워크 수신 드롭된 패킷 건수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "node_cpu",
+    "title" : "NodeCpu",
+    "unit" : "pct#",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "컨테이너가 실행 중인 노드의 CPU 사용률",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "ready",
+    "title" : "ConReadyCnt",
+    "unit" : "count",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "description" : "Container Ready Count",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "restart_count",
+    "title" : "ConRestartCnt",
+    "unit" : "count",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "description" : "Container Restart Count",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "cpu_per_request",
+    "title" : "CpuByRequest",
+    "unit" : "pct#",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "컨테이너 CPU request 대비 사용률",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "cpu_total",
+    "title" : "CpuByNode",
+    "unit" : "pct#",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "노드 CPU 사용량 대비 컨테이너 CPU 사용률",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "mem_percent",
+    "title" : "MemByLimit",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "노드 MEMORY 대비 컨테이너의 MEMORY 사용률",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "cpu_request_contained",
+    "title" : "CpuRequestContained",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "network_rbps",
+    "title" : "NetRxBytes",
+    "unit" : "byte",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "description" : "컨테이너 전체 블럭 디바이스의 초당 읽기 바이트 합",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "cpu_quota",
+    "title" : "CpuLimit",
+    "unit" : "millicore",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "description" : "컨테이너 CPU limit",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "kube_con_state",
+    "title" : "KubeConState",
+    "unit" : "state",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "컨테이너 현재 상태",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "memory_limit_contained",
+    "title" : "MemoryLimitContained",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "cpu_per_quota",
+    "title" : "CpuByLimit",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "컨테이너 CPU limit 대비 사용률",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "network_riops",
+    "title" : "NetRxIops",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "description" : "컨테이너 네트워크 수신 IOPS (입출력 작업 수)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "cpu_user_milli",
+    "title" : "CpuUserUsage",
+    "unit" : "millicore",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "description" : "사용자모드 CPU 사용량",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "network_wiops",
+    "title" : "NetTxIops",
+    "unit" : "bps",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "description" : "컨테이너 네트워크 송신 IOPS (입출력 작업 수)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "network_wdropped",
+    "title" : "NetTxDropped",
+    "unit" : "count",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "description" : "컨테이너 네트워크 송신 드롭된 패킷 건수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "cpu_sys",
+    "title" : "CpuSysByNode",
+    "unit" : "pct#",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "커널모드 CPU 사용률",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "cpu_sys_milli",
+    "title" : "CpuSysUsage",
+    "unit" : "millicore",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "description" : "커널모드 CPU 사용량",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "network_wbps",
+    "title" : "NetTxBytes",
+    "unit" : "bps",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "description" : "컨테이너 네트워크 송신 데이터 크기",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "blkio_wiops",
+    "title" : "IoWriteIops",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "description" : "Container Block I/O Write IOPS",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "mem_totalrss_percent",
+    "title" : "MemTotRssByLimit",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Container Memory Total RSS by Limit (%)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "kube_last_con_started",
+    "title" : "KubeLastConStarted",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "cpu_user",
+    "title" : "CpuUserByNode",
+    "unit" : "pct#",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "사용자모드 CPU 사용률",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "blkio_riops",
+    "title" : "IoReadIops",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "description" : "Container Block I/O Read IOPS",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "mem_working_set",
+    "title" : "MemWs",
+    "unit" : "byte",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "description" : "컨테이너가 실제로 사용 중인 MEMORY (캐시 제외)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "kube_last_con_finished",
+    "title" : "KubeLastConFinished",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "ephemeral_storage_limit",
+    "title" : "EphemeralStorageLimit",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "mem_max_usage",
+    "title" : "MemMaxUsage",
+    "unit" : "byte",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "description" : "Container Memory Max Usage (byte)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "mem_totalrss",
+    "title" : "MemTotRss",
+    "unit" : "byte",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "description" : "컨테이너에서 사용 중인 Resident Set Size(RSS) 메모리 양",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "cpu_throttledperiods",
+    "title" : "CpuThrottledCnt",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "description" : "Container CPU Throttling Count",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "mem_working_set_percent",
+    "title" : "MemWsByLimit",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "mem_working_set 이 노드 전체 메모리 대비 차지하는 비율",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "memory_request_contained",
+    "title" : "MemoryRequestContained",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "node_mem",
+    "title" : "NodeMem",
+    "unit" : "pct#",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "컨테이너가 실행 중인 노드의 메모리 사용률",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "blkio_wbps",
+    "title" : "IoWriteBytes",
+    "unit" : "byte",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "description" : "Container Block I/O Write Byte",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "cpu_limit_contained",
+    "title" : "CpuLimitContained",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "mem_per_request",
+    "title" : "MemByRequest",
+    "unit" : "pct#",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "컨테이너의 MEMORY request 대비 사용률",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "mem_inactivefile",
+    "title" : "MemInactiveFile",
+    "unit" : "byte",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "description" : "컨테이너의 사용되지 않는 파일 캐시 크기",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "ephemeral_storage_request_contained",
+    "title" : "EphemeralStorageRequestContained",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "ephemeral_storage_limit_contained",
+    "title" : "EphemeralStorageLimitContained",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "mem_maxusage",
+    "title" : "MemMaxUsage",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "컨테이너에서 사용된 최대 메모리 양",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "mem_totalpgfault",
+    "title" : "MemTotPageFaultCnt",
+    "unit" : "count",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "description" : "컨테이너에서 발생한 전체 페이지 폴트(page fault) 횟수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "kube_con_state_reason",
+    "title" : "KubeConStateReason",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "mem_failcnt",
+    "title" : "MemFailCnt",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "description" : "컨테이너에서 MEMORY 할당이 실패한 횟수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "mem_usage",
+    "title" : "MemUsage",
+    "unit" : "byte",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "description" : "컨테이너의 현재 MEMORY 사용량",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "blkio_rbps",
+    "title" : "IoReadBytes",
+    "unit" : "byte",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "description" : "Container Block I/O Read Byte",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "mem_total_cache",
+    "title" : "MemTotCache",
+    "unit" : "byte",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "description" : "Container Memory Total Cache (byte)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "kube_last_con_state_reason",
+    "title" : "KubeLastConStateReason",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "mem_totalunevictable",
+    "title" : "MemTotUnevictable",
+    "unit" : "byte",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "description" : "Container Memory Total Unevictable (byte)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "ephemeral_storage_request",
+    "title" : "EphemeralStorageRequest",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "network_werror",
+    "title" : "NetTxError",
+    "unit" : "count",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "description" : "컨테이너 네트워크 송신 오류 건수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "state",
+    "title" : "ConRuntimeState",
+    "unit" : "state",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "description" : "컨테이너 런타임 상태",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "cpu_throttledtime",
+    "title" : "CpuThrottledTime",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "description" : "Container CPU Throttling Time",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "mem_totalcache",
+    "title" : "Mem Total Cache",
+    "unit" : "byte",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "description" : "컨테이너의 캐시된 MEMORY 총량",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  } ],
+  "platforms" : [ "KUBERNETES" ]
+}

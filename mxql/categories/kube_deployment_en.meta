@@ -1,0 +1,118 @@
+{
+  "categoryName" : "kube_deployment",
+  "interval" : "30s",
+  "pk" : [ "deployUid" ],
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "deployUid",
+    "title" : "DeployUid",
+    "unit" : "string",
+    "description" : "The unique identifier (UID) assigned to the Deployment by Kubernetes. It remains constant throughout the lifecycle of the object. (metadata.uid)",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "namespace",
+    "title" : "Namespace",
+    "unit" : "string",
+    "description" : "The namespace in which the Deployment is defined. Namespaces provide logical separation of Kubernetes resources. (metadata.namespace)",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "deployName",
+    "title" : "DeployName",
+    "unit" : "string",
+    "description" : "The name of the Deployment. It uniquely identifies the Deployment within a namespace.",
+    "deprecated" : false,
+    "type" : "String"
+  } ],
+  "fields" : [ {
+    "fieldName" : "deployUpdatedReplicas",
+    "title" : "DeployUpdatedReplicas",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "The number of pods that have been updated to match the Deployment’s current pod template (e.g., new image version). (status.updatedReplicas)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "deployReadyReplicas",
+    "title" : "DeployReadyReplicas",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "The number of pods that have passed the readiness checks and are ready to handle traffic. (status.readyReplicas)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "deployStrategy",
+    "title" : "DeployStrategy",
+    "unit" : "string",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "The update strategy defined for the Deployment, such as RollingUpdate or Recreate. (spec.strategy.type)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "fieldName" : "deployAvailableReplicas",
+    "title" : "DeployAvailableReplicas",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "The number of replicas that are available to serve requests. These are pods that are running and ready. (status.availableReplicas)\n",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "deployTotalReplicas",
+    "title" : "DeployTotalReplicas",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "The desired total number of pod replicas defined in the Deployment. (spec.replicas)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "deployCreationTime",
+    "title" : "DeployCreationTime",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "The timestamp when the Deployment was created. (metadata.creationTimestamp)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "deployUnavailableReplicas",
+    "title" : "DeployUnavailableReplicas",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "The number of replicas that are not yet available. These pods may be starting up or failing to become ready. (status.unavailableReplicas)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "deploySelector",
+    "title" : "DeploySelector",
+    "unit" : "string",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "The label selector used by the Deployment to manage its pods. (spec.selector.matchLabels)",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "String"
+  } ],
+  "platforms" : [ "KUBERNETES" ]
+}

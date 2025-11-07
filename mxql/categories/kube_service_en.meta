@@ -1,0 +1,93 @@
+{
+  "categoryName" : "kube_service",
+  "interval" : "5s",
+  "pk" : [ "serviceUid" ],
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "serviceUid",
+    "title" : "ServiceUid",
+    "unit" : "string",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "serviceType",
+    "title" : "ServiceType",
+    "unit" : "string",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "creationTimeMillis",
+    "title" : "CreationTime",
+    "unit" : "ms",
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "tagName" : "clusterIP",
+    "title" : "ClusterIP",
+    "unit" : "string",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "namespace",
+    "title" : "Namespace",
+    "unit" : "string",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "selector",
+    "title" : "Selector",
+    "unit" : "string",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "serviceName",
+    "title" : "ServiceName",
+    "unit" : "string",
+    "deprecated" : false,
+    "type" : "String"
+  } ],
+  "fields" : [ {
+    "fieldName" : "portName",
+    "title" : "PortName",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false
+  }, {
+    "fieldName" : "externalIP",
+    "title" : "ExternalIP",
+    "unit" : "string",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "fieldName" : "servicePort",
+    "title" : "ServicePort",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false
+  }, {
+    "fieldName" : "nodePort",
+    "title" : "NodePort",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false
+  }, {
+    "fieldName" : "targetPort",
+    "title" : "TargetPort",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false
+  } ],
+  "platforms" : [ "KUBERNETES", "KUBE_NS" ]
+}

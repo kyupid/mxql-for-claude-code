@@ -1,0 +1,202 @@
+{
+  "categoryName" : "rum_resource_each_page",
+  "title" : "Rum Resource Each Page",
+  "pk" : [ "env", "version", "page_group" ],
+  "description" : "웹 페이지에서 호출되는 리소스의 응답 시간과 관련한 지표입니다.",
+  "language" : "KO",
+  "tags" : [ {
+    "tagName" : "type",
+    "title" : "Type",
+    "unit" : "string",
+    "description" : "리소스 타입",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "env",
+    "title" : "Env",
+    "unit" : "string",
+    "description" : "웹 애플리케이션의 배포 환경(개발, 스테이징, 운영 등)을 의미하는 지표",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "request_path",
+    "title" : "RequestPath",
+    "unit" : "string",
+    "description" : "AJAX 요청 URL의 path 값",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "page_group",
+    "title" : "PageGroup",
+    "unit" : "string",
+    "description" : "페이지 그룹\n브라우저 모니터링 서비스에서 의미있는 통계 그룹을 가지기 위해 URL 경로(URL Path)를 정규 표현식을 통해 정규화하여 페이지 그룹이라는 이름으로 제공합니다. \nURL 경로(URL Path) 단위 분석에 의미가 없다고 판단한 숫자, 날짜 등을 물음표(?)로 치환해 제공합니다.",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "is3rdParty",
+    "title" : "Is3rdParty",
+    "unit" : "string",
+    "description" : "서드파티에서 호출된 리소스 여부",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "version",
+    "title" : "Version",
+    "unit" : "string",
+    "description" : "웹 애플리케이션의 배포 버전을 의미하는 지표",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "request_host",
+    "title" : "RequestHost",
+    "unit" : "string",
+    "description" : "AJAX 요청 URL의 host 값",
+    "deprecated" : false,
+    "type" : "String"
+  } ],
+  "fields" : [ {
+    "fieldName" : "resource_duration",
+    "title" : "ResourceDuration",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "브라우저가 리소스를 완전히 불러오는데 소요한 평균 시간",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "resource_ttfb_time",
+    "title" : "ResourceTtfbTime",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "브라우저가 리소스를 불러오면서 네트워크 요청을 보낸 후 서버로부터 첫 번째 바이트가 수신될 때까지 소요된 평균 시간",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "resource_size",
+    "title" : "ResourceSize",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "리소스 크기",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "resource_download_count",
+    "title" : "ResourceDownloadCount",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "resource_download_time을 계산하기 위해 사용된 표본의 수입니다.",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "resource_count",
+    "title" : "ResourceCount",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "리소스 건수",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "resource_ssl_time",
+    "title" : "ResourceSslTime",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "브라우저가 리소스를 불러올 때 TCP 헨드쉐이크 과정에서 소요한 평균 시간",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "resource_ttfb_count",
+    "title" : "ResourceTtfbCount",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "resource_ttfb_time을 계산하기 위해 사용된 표본의 수입니다.",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "resource_ssl_count",
+    "title" : "ResourceSslCount",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "resource_ssl_time을 계산하기 위해 사용된 표본의 수입니다.",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "resource_dns_count",
+    "title" : "ResourceDnsCount",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "resource_dns_time을 계산하기 위해 사용된 표본의 수입니다.",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "resource_dns_time",
+    "title" : "ResourceDnsTime",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "브라우저가 리소스를 불러오면서 웹사이트 도메인을 조회하는데 소요한 평균 시간",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "resource_connection_count",
+    "title" : "ResourceConnectionCount",
+    "unit" : "count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "resource_connection_time을 계산하기 위해 사용된 표본의 수입니다.",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "resource_connection_time",
+    "title" : "ResourceConnectionTime",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "브라우저가 서버와의 네트워크 연결 과정에 소요한 평균 시간",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "resource_download_time",
+    "title" : "ResourceDownloadTime",
+    "unit" : "ms",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "브라우저가 서버로부터 리소스를 다운로드하는데 소요한 평균 시간",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  } ],
+  "platforms" : [ "RUM" ]
+}

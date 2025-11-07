@@ -1,0 +1,159 @@
+{
+  "categoryName" : "infra_cpu",
+  "interval" : "2s",
+  "title" : "Infra CPU",
+  "pk" : [ "oid" ],
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "oname",
+    "title" : "Oname",
+    "unit" : "string",
+    "description" : "Server name",
+    "deprecated" : false,
+    "type" : "String"
+  } ],
+  "fields" : [ {
+    "fieldName" : "sys",
+    "title" : "System",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "It indicates the utilization out of the total CPU utilization in kernel mode (Sys).",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "idle",
+    "title" : "Idle",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "It indicates the ratio of time that the CPU is idle and not performing any task.",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "nice",
+    "title" : "Nice",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "It indicates the utilization of low priority (niced) processes out of the total CPU utilization. The utilization of high and basic priority processes appear in user (percent).",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "loadavg_5m",
+    "title" : "LoadAvg5m",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "It indicates the average load of the system for the last 5 minutes.",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "wait",
+    "title" : "Wait",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "It indicates the time ratio spent waiting for I/O operations to complete out of the total CPU utilization.",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "totalwithwait",
+    "title" : "TotalWithWait",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "It indicates the sum of utilization in user mode, kernel mode (Sys), and I/O wait out of the total CPU utilization.",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "loadavg_15m",
+    "title" : "LoadAvg15m",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "It indicates the average load of the system for the last 15 minutes.",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "lCores",
+    "title" : "Logical Core",
+    "unit" : "pct#",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "It indicates the number of logical cores allocated to the OS.",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "softirq",
+    "title" : "SoftIrq",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "It indicates the CPU utilization used to process software interrupt requests.",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "loadavg_1m",
+    "title" : "LoadAvg1m",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "It indicates the average load of the system for the last minute.",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "steal",
+    "title" : "Steal",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "In a virtualized environment, it indicates the ratio of time that the virtual CPU waits involuntarily while the hypervisor is servicing other processes.",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "user",
+    "title" : "User",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "It indicates the utilization out of total CPU utilization in user mode.",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "processor_utility",
+    "title" : "ProcessorUtility",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "It is a Windows-only metric that indicates the total CPU usage utilization for all processors in the system (Windows Task Manager's CPU utilization).",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "irq",
+    "title" : "Irq",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "It indicates the CPU utilization used to process hardware interrupt requests.",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "total",
+    "title" : "Total",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "It indicates the sum of the utilization out of the total CPU utilization in user and kernel (Sys) modes.",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  } ]
+}

@@ -1,0 +1,6 @@
+{
+  "categoryName" : "azure_microsoft_documentdb_databaseaccounts",
+  "title" : "Azure Microsoft.DocumentDB databaseAccounts",
+  "pk" : [ "dimension" ],
+  "language" : "EN"
+}

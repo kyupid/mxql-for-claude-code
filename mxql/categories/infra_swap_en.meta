@@ -1,0 +1,48 @@
+{
+  "categoryName" : "infra_swap",
+  "interval" : "2s",
+  "title" : "InfraSwap",
+  "pk" : [ "oid" ],
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "oname",
+    "title" : "Oname",
+    "description" : "Server name",
+    "deprecated" : false
+  } ],
+  "fields" : [ {
+    "fieldName" : "size",
+    "title" : "Size",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "It displays the size of the total swap allocated in bytes.",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "used",
+    "title" : "Used",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "It displays the current swap size in bytes.",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "pUsed",
+    "title" : "Pused",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "It displays the current swap size in percentage.",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  } ],
+  "platforms" : [ "INFRA" ]
+}

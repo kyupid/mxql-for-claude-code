@@ -1,0 +1,22 @@
+{
+  "categoryName" : "db_postgresql_active_session",
+  "interval" : "5s",
+  "title" : "PostgreSQL Active Session",
+  "pk" : [ "pid", "oid" ],
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "oname",
+    "title" : "oname",
+    "deprecated" : false
+  } ],
+  "fields" : [ {
+    "fieldName" : "application_name",
+    "title" : "application_name",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  } ],
+  "platforms" : [ "POSTGRESQL" ]
+}

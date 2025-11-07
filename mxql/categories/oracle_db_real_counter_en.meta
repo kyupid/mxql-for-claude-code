@@ -1,0 +1,238 @@
+{
+  "categoryName" : "oracle_db_real_counter",
+  "interval" : "5s",
+  "title" : "OracleDatabaseRealCounter",
+  "pk" : [ "oid" ],
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "oname",
+    "title" : "oname",
+    "label" : "oname"
+  }, {
+    "tagName" : "dbType",
+    "title" : "dbType",
+    "label" : "dbType"
+  }, {
+    "tagName" : "dbIsMulti",
+    "title" : "dbIsMulti",
+    "label" : "dbIsMulti"
+  }, {
+    "tagName" : "agentIp",
+    "title" : "agentIp",
+    "label" : "agentIp"
+  }, {
+    "tagName" : "dbName",
+    "title" : "dbName",
+    "label" : "dbName"
+  }, {
+    "tagName" : "dbVersion",
+    "title" : "dbVersion",
+    "label" : "dbVersion"
+  }, {
+    "tagName" : "oid",
+    "title" : "Oid",
+    "label" : "oid"
+  } ],
+  "fields" : [ {
+    "fieldName" : "session_logical_reads",
+    "title" : "session_logical_reads",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "db_file_sequential_read_total_waits",
+    "title" : "db_file_sequential_read_total_waits",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "db_file_scattered_read_time_waited",
+    "title" : "db_file_scattered_read_time_waited",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "execute_count",
+    "title" : "execute_count",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "physical_writes",
+    "title" : "physical_writes",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "db_file_sequential_read_total_timeouts",
+    "title" : "db_file_sequential_read_total_timeouts",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "DB_time",
+    "title" : "DB_time",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "iowait_cpu",
+    "title" : "iowait_cpu",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "total_elapse_time",
+    "title" : "total_elapse_time",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "lock_wait_sessions",
+    "title" : "lock_wait_sessions",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "opened_cursors_current",
+    "title" : "opened_cursors_current",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "cpu",
+    "title" : "cpu",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "db_block_changes",
+    "title" : "db_block_changes",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "db_file_scattered_read_total_waits",
+    "title" : "db_file_scattered_read_total_waits",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "enq:_TX_-_row_lock_contention_total_waits",
+    "title" : "enq:_TX_-_row_lock_contention_total_waits",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "logons_current",
+    "title" : "logons_current",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "enq:_TX_-_row_lock_contention_time_waited",
+    "title" : "enq:_TX_-_row_lock_contention_time_waited",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "user_cpu",
+    "title" : "user_cpu",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "active_sessions",
+    "title" : "active_sessions",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "parse_count_(total)",
+    "title" : "parse_count_(total)",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "sorts_(memory)",
+    "title" : "sorts_(memory)",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "txn_sessions",
+    "title" : "txn_sessions",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "rollback_changes_-_undo_records_applied",
+    "title" : "rollback_changes_-_undo_records_applied",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "enqueue_waits",
+    "title" : "enqueue_waits",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "sys_cpu",
+    "title" : "sys_cpu",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "enq:_TX_-_row_lock_contention_total_timeouts",
+    "title" : "enq:_TX_-_row_lock_contention_total_timeouts",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "data_blocks_consistent_reads_-_undo_records_applied",
+    "title" : "data_blocks_consistent_reads_-_undo_records_applied",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "total_sessions",
+    "title" : "total_sessions",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "parse_count_(hard)",
+    "title" : "parse_count_(hard)",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "CPU_used_by_this_session",
+    "title" : "CPU_used_by_this_session",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "user_commits",
+    "title" : "user_commits",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "pq_sessions",
+    "title" : "pq_sessions",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "wait_sessions",
+    "title" : "wait_sessions",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "physical_reads",
+    "title" : "physical_reads",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "db_file_sequential_read_time_waited",
+    "title" : "db_file_sequential_read_time_waited",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "memory",
+    "title" : "memory",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "db_file_scattered_read_total_timeouts",
+    "title" : "db_file_scattered_read_total_timeouts",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "long_running_sessions",
+    "title" : "long_running_sessions",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "transaction_tables_consistent_reads_-_undo_records_applied",
+    "title" : "transaction_tables_consistent_reads_-_undo_records_applied",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  }, {
+    "fieldName" : "connect_error",
+    "title" : "connect_error",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg"
+  } ],
+  "platforms" : [ "ORACLE" ]
+}

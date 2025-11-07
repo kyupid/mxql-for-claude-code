@@ -1,0 +1,254 @@
+{
+  "categoryName" : "server_cpu_core",
+  "interval" : "5s",
+  "title" : "ServerCpuCore",
+  "pk" : [ "cpu", "oid" ],
+  "language" : "KO",
+  "tags" : [ {
+    "tagName" : "ami-id",
+    "title" : "AmiId",
+    "label" : "ami-id",
+    "deprecated" : false
+  }, {
+    "tagName" : "oid",
+    "title" : "Oid",
+    "label" : "oid",
+    "deprecated" : false
+  }, {
+    "tagName" : "instance-type",
+    "title" : "InstanceType",
+    "label" : "instance-type",
+    "deprecated" : false
+  }, {
+    "tagName" : "InstanceId",
+    "title" : "InstanceId",
+    "label" : "InstanceId",
+    "deprecated" : false
+  }, {
+    "tagName" : "mac",
+    "title" : "Mac",
+    "label" : "mac",
+    "deprecated" : false
+  }, {
+    "tagName" : "public-hostname",
+    "title" : "PublicHostName",
+    "label" : "public-hostname",
+    "deprecated" : false
+  }, {
+    "tagName" : "instance-action",
+    "title" : "InstanceAction",
+    "label" : "instance-action",
+    "deprecated" : false
+  }, {
+    "tagName" : "cpu",
+    "title" : "Cpu",
+    "label" : "cpu",
+    "deprecated" : false
+  }, {
+    "tagName" : "instance-life-cycle",
+    "title" : "InstanceLifeCycle",
+    "label" : "instance-life-cycle",
+    "deprecated" : false
+  }, {
+    "tagName" : "hostname",
+    "title" : "HostName",
+    "label" : "hostname",
+    "deprecated" : false
+  }, {
+    "tagName" : "ip",
+    "title" : "Ip",
+    "label" : "ip",
+    "deprecated" : false
+  }, {
+    "tagName" : "local-hostname",
+    "title" : "LocalHostName",
+    "label" : "local-hostname",
+    "deprecated" : false
+  }, {
+    "tagName" : "ami-launch-index",
+    "title" : "AmiLaunchIndex",
+    "label" : "ami-launch-index",
+    "deprecated" : false
+  }, {
+    "tagName" : "Name",
+    "title" : "Name",
+    "label" : "Name",
+    "deprecated" : false
+  }, {
+    "tagName" : "reservation-id",
+    "title" : "ReservationId",
+    "label" : "reservation-id",
+    "deprecated" : false
+  }, {
+    "tagName" : "DEPLOY-TARGET",
+    "title" : "DeployTarget",
+    "label" : "DEPLOY-TARGET",
+    "deprecated" : false
+  }, {
+    "tagName" : "instance-id",
+    "title" : "InstanceId",
+    "label" : "instance-id",
+    "deprecated" : false
+  }, {
+    "tagName" : "os",
+    "title" : "Os",
+    "label" : "os",
+    "deprecated" : false
+  }, {
+    "tagName" : "security-groups",
+    "title" : "SecurityGroups",
+    "label" : "security-groups",
+    "deprecated" : false
+  }, {
+    "tagName" : "PACKAGE_APP_LIST",
+    "title" : "PackageAppList",
+    "label" : "PACKAGE_APP_LIST",
+    "deprecated" : false
+  }, {
+    "tagName" : "ami-manifest-path",
+    "title" : "AmiManifestPath",
+    "label" : "ami-manifest-path",
+    "deprecated" : false
+  }, {
+    "tagName" : "public-ipv4",
+    "title" : "PublicIpv4",
+    "label" : "public-ipv4",
+    "deprecated" : false
+  }, {
+    "tagName" : "oname",
+    "title" : "Oname",
+    "label" : "oname",
+    "deprecated" : false
+  }, {
+    "tagName" : "profile",
+    "title" : "Profile",
+    "label" : "profile",
+    "deprecated" : false
+  } ],
+  "fields" : [ {
+    "fieldName" : "steal",
+    "title" : "Steal",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "코어 steal 사용률",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "usr",
+    "title" : "Usr",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "코어 usr 사용률",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "sys",
+    "title" : "Sys",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "코어 sys 사용률",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "processorQueueLength",
+    "title" : "ProcessorQueueLength",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "코어 프로세스 큐 길이",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "load1",
+    "title" : "Load1",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "코어 1분 평균 Load Average",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "irq",
+    "title" : "Irq",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "코어 irq 사용률",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "iowait",
+    "title" : "IoWait",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "코어 iowait 비율",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "idle",
+    "title" : "Idle",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "코어 idle 비율",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "nice",
+    "title" : "Nice",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "코어 nice 사용률",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "softirq",
+    "title" : "SoftIrq",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "코어 softirq 사용률",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "load5",
+    "title" : "Load5",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "코어 5분 평균 Load Average",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "load15",
+    "title" : "Load15",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "코어 15분 평균 Load Average",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  } ],
+  "platforms" : [ "INFRA" ]
+}

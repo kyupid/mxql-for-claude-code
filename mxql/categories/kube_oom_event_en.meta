@@ -1,0 +1,57 @@
+{
+  "categoryName" : "kube_oom_event",
+  "title" : "kubeOomEvent",
+  "pk" : [ "podname", "namespace" ],
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "containerid",
+    "title" : "Containerid",
+    "deprecated" : false
+  }, {
+    "tagName" : "podName",
+    "title" : "podName",
+    "label" : "podName",
+    "unit" : "string",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "containerName",
+    "title" : "containerName",
+    "label" : "containerName",
+    "unit" : "string",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "namespace",
+    "title" : "namespace",
+    "label" : "namespace",
+    "unit" : "string",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "podUid",
+    "title" : "PodUid",
+    "deprecated" : false
+  } ],
+  "fields" : [ {
+    "fieldName" : "isOn",
+    "title" : "isOn",
+    "unit" : "state",
+    "objectMerge" : "last",
+    "timeMerge" : "last",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "name",
+    "title" : "name",
+    "unit" : "string",
+    "objectMerge" : "none",
+    "timeMerge" : "last",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "String"
+  } ]
+}

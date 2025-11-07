@@ -1,0 +1,6 @@
+{
+  "categoryName" : "azure_microsoft_kusto_clusters",
+  "title" : "AzureMicrosoftKustoClusters",
+  "pk" : [ "dimension" ],
+  "language" : "EN"
+}

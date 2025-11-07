@@ -1,0 +1,84 @@
+{
+  "categoryName" : "infra_disk",
+  "interval" : "2s",
+  "title" : "Infra Disk",
+  "pk" : [ "oid" ],
+  "description" : "서버의 물리디스크 전체의 사용량과 관련한 지표 입니다.",
+  "language" : "KO",
+  "tags" : [ {
+    "tagName" : "oname",
+    "title" : "Oname",
+    "unit" : "string",
+    "description" : "서버 이름",
+    "deprecated" : false,
+    "type" : "String"
+  } ],
+  "fields" : [ {
+    "fieldName" : "writeIops",
+    "title" : "WriteIops",
+    "unit" : "bps",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "서버의 모든 물리 디스크에서 초당 처리된 쓰기 작업 수를 표시합니다.",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "readIops",
+    "title" : "ReadIops",
+    "unit" : "bps",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "서버의 모든 물리 디스크에서 초당 처리된 읽기 작업 수를 표시합니다.",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "write",
+    "title" : "Write",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "서버의 모든 물리 디스크에 기록된 데이터의 총량을 Bytes 단위로 표시합니다.",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "total",
+    "title" : "Total",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "서버의 모든 물리 디스크에서 읽고 쓰인 데이터의 총량을 Bytes 단위로 표시합니다.",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "totalIops",
+    "title" : "TotalIops",
+    "unit" : "bps",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "서버의 모든 물리 디스크에서 초당 처리된 읽기 및 쓰기 작업 수를 표시합니다.",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "read",
+    "title" : "Read",
+    "unit" : "byte",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "서버의 모든 물리 디스크에서 읽힌 데이터의 총량을 Bytes 단위로 표시합니다.",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  } ],
+  "platforms" : [ "INFRA" ]
+}

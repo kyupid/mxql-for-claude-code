@@ -1,0 +1,117 @@
+{
+  "categoryName" : "app_context_stat",
+  "title" : "Application Context Stat",
+  "pk" : [ "path" ],
+  "language" : "KO",
+  "tags" : [ {
+    "tagName" : "onodeName",
+    "title" : "onodeName",
+    "label" : "onodeName",
+    "deprecated" : false
+  }, {
+    "tagName" : "okindName",
+    "title" : "okindName",
+    "label" : "okindName",
+    "deprecated" : false
+  }, {
+    "tagName" : "oname",
+    "title" : "oname",
+    "label" : "oname",
+    "deprecated" : false
+  }, {
+    "tagName" : "!rectype",
+    "title" : "!rectype",
+    "label" : "!rectype",
+    "deprecated" : false
+  }, {
+    "tagName" : "parser",
+    "title" : "parser",
+    "label" : "parser",
+    "deprecated" : false
+  } ],
+  "fields" : [ {
+    "fieldName" : "active_tx_0",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "visible" : true,
+    "unfold" : true,
+    "deprecated" : false
+  }, {
+    "fieldName" : "@id",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : false,
+    "unfold" : true,
+    "deprecated" : false
+  }, {
+    "fieldName" : "tx_satisfied",
+    "objectMerge" : "sum",
+    "timeMerge" : "sum",
+    "visible" : true,
+    "unfold" : true,
+    "deprecated" : false
+  }, {
+    "fieldName" : "active_tx_3",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "visible" : true,
+    "unfold" : true,
+    "deprecated" : false
+  }, {
+    "fieldName" : "active_tx_count",
+    "objectMerge" : "sum",
+    "timeMerge" : "sum",
+    "visible" : true,
+    "unfold" : true,
+    "deprecated" : false
+  }, {
+    "fieldName" : "active_tx_8",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "visible" : true,
+    "unfold" : true,
+    "deprecated" : false
+  }, {
+    "fieldName" : "tx_tolerated",
+    "objectMerge" : "sum",
+    "timeMerge" : "sum",
+    "visible" : true,
+    "unfold" : true,
+    "deprecated" : false
+  }, {
+    "fieldName" : "tx_time_sum",
+    "objectMerge" : "sum",
+    "timeMerge" : "sum",
+    "visible" : true,
+    "unfold" : true,
+    "deprecated" : false
+  }, {
+    "fieldName" : "tps",
+    "objectMerge" : "sum",
+    "timeMerge" : "avg",
+    "visible" : true,
+    "unfold" : true,
+    "deprecated" : false
+  }, {
+    "fieldName" : "tx_error",
+    "objectMerge" : "sum",
+    "timeMerge" : "sum",
+    "visible" : true,
+    "unfold" : true,
+    "deprecated" : false
+  }, {
+    "fieldName" : "path",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "visible" : true,
+    "unfold" : true,
+    "deprecated" : false
+  }, {
+    "fieldName" : "tx_count",
+    "objectMerge" : "sum",
+    "timeMerge" : "sum",
+    "visible" : true,
+    "unfold" : true,
+    "deprecated" : false
+  } ]
+}

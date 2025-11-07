@@ -1,0 +1,31 @@
+{
+  "categoryName" : "container_foreign_project_mapping",
+  "interval" : "5s",
+  "title" : "ContainerForeignProjectMapping",
+  "pk" : [ "containerId" ],
+  "description" : "Category for linking with projects outside the Kubernetes project",
+  "language" : "EN",
+  "tags" : [ {
+    "tagName" : "whatapForeignPcode",
+    "title" : "WhatapForeignPcode",
+    "unit" : "txt",
+    "description" : "external project pcode",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "whatapForeignPlatform",
+    "title" : "WhatapForeignPlatform",
+    "unit" : "txt",
+    "description" : "external project platform",
+    "deprecated" : false,
+    "type" : "String"
+  }, {
+    "tagName" : "containerId",
+    "title" : "ContainerId",
+    "unit" : "txt",
+    "description" : "containerId that exists in the cluster",
+    "deprecated" : false,
+    "type" : "String"
+  } ],
+  "platforms" : [ "KUBERNETES", "KUBE_NS" ]
+}

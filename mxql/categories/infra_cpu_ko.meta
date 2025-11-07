@@ -1,0 +1,160 @@
+{
+  "categoryName" : "infra_cpu",
+  "interval" : "2s",
+  "title" : "Infra CPU",
+  "pk" : [ "oid" ],
+  "description" : "서버의 CPU사용량과 관련한 지표 입니다.",
+  "language" : "KO",
+  "tags" : [ {
+    "tagName" : "oname",
+    "title" : "Oname",
+    "unit" : "string",
+    "description" : "서버 이름",
+    "deprecated" : false,
+    "type" : "String"
+  } ],
+  "fields" : [ {
+    "fieldName" : "user",
+    "title" : "User",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "전체 CPU 사용률 중 사용자 모드(User)에서의 사용률을 의미합니다.",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "processor_utility",
+    "title" : "ProcessorUtility",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "Windows 전용 지표로, 시스템의 모든 프로세서의 총 CPU 사용률을 의미합니다 (Windows 작업 관리자 CPU 사용률).",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "nice",
+    "title" : "Nice",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "전체 CPU 사용률 중 낮은 우선 순위(niced) 프로세스의 사용률을 의미합니다. 높은 우선순위 및 기본 우선순위 프로세스 사용률은 user(퍼센트)에 표시됩니다.",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "loadavg_5m",
+    "title" : "LoadAvg5m",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "최근 5분 동안의 시스템 평균 부하를 의미합니다.",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "wait",
+    "title" : "Wait",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "전체 CPU 사용률 중 CPU가 I/O 작업 완료를 기다리는 데 소비한 시간 비율을 의미합니다.",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "sys",
+    "title" : "System",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "전체 CPU 사용률 중 커널 모드(Sys)에서의 사용률을 의미합니다.",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "irq",
+    "title" : "Irq",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "하드웨어 Interrupt Request를 처리하는 데 사용된 CPU 사용률을 의미합니다.",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "idle",
+    "title" : "Idle",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "CPU가 유휴 상태로, 작업을 수행하지 않은 시간 비율을 의미합니다.",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "totalwithwait",
+    "title" : "TotalWithWait",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "전체 CPU 사용률 중 사용자 모드(User), 커널 모드(Sys), I/O 대기(wait)의 사용률 합계를 의미합니다.",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "loadavg_15m",
+    "title" : "LoadAvg15m",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "최근 15분 동안의 시스템 평균 부하를 의미합니다.",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "softirq",
+    "title" : "SoftIrq",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "소프트웨어 Interrupt Request를 처리하는 데 사용된 CPU 사용률을 의미합니다.",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "lCores",
+    "title" : "Logical Core",
+    "unit" : "pct#",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "OS에 할당된 Logical Core 수를 의미합니다.",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "loadavg_1m",
+    "title" : "LoadAvg1m",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "최근 1분 동안의 시스템 평균 부하를 의미합니다.",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  }, {
+    "fieldName" : "total",
+    "title" : "Total",
+    "unit" : "pct",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "전체 CPU 사용률 중 사용자 모드(User)와 커널 모드(Sys)에서의 사용률 합계를 의미합니다.",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false,
+    "type" : "Number"
+  }, {
+    "fieldName" : "steal",
+    "title" : "Steal",
+    "objectMerge" : "avg",
+    "timeMerge" : "avg",
+    "description" : "가상화 환경에서 하이퍼바이저가 다른 프로세스를 서비스하는 동안 가상 CPU가 비자발적으로 대기하는 시간 비율을 의미합니다.",
+    "visible" : false,
+    "unfold" : false,
+    "deprecated" : false
+  } ]
+}
