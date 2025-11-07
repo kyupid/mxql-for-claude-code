@@ -1,53 +1,69 @@
 #!/bin/bash
 
+# MXQL Skill for Claude Code - Installation Script
+# This script installs the skill to your personal Claude skills directory
+
 set -e
 
-# Colors for output
-GREEN='\033[0;32m'
-YELLOW='\033[1;33m'
-NC='\033[0m' # No Color
-
-echo -e "${GREEN}Installing MXQL skill for Claude Code...${NC}"
-
-# Get the script directory (where this install.sh is located)
-SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-MXQL_DIR="$SCRIPT_DIR/mxql"
 SKILLS_DIR="$HOME/.claude/skills"
-TARGET_DIR="$SKILLS_DIR/mxql"
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-# Check if mxql directory exists
-if [ ! -d "$MXQL_DIR" ]; then
-    echo -e "${YELLOW}❌ Error: mxql directory not found in $SCRIPT_DIR${NC}"
-    exit 1
-fi
+echo "🎯 MXQL Skill for Claude Code - Installer"
+echo "=============================================="
+echo ""
 
-# Check if .claude/skills directory exists
+# Create skills directory if it doesn't exist
 if [ ! -d "$SKILLS_DIR" ]; then
-    echo -e "${YELLOW}Creating $SKILLS_DIR directory...${NC}"
+    echo "📁 Creating Claude skills directory at $SKILLS_DIR"
     mkdir -p "$SKILLS_DIR"
-fi
-
-# Remove existing mxql directory or symlink
-if [ -e "$TARGET_DIR" ]; then
-    echo -e "${YELLOW}Removing existing $TARGET_DIR...${NC}"
-    rm -rf "$TARGET_DIR"
-fi
-
-# Create symlink
-echo -e "${GREEN}Creating symlink: $TARGET_DIR -> $MXQL_DIR${NC}"
-ln -s "$MXQL_DIR" "$TARGET_DIR"
-
-# Verify installation
-if [ -L "$TARGET_DIR" ] && [ -e "$TARGET_DIR" ]; then
-    echo -e "${GREEN}✅ Installation successful!${NC}"
-    echo ""
-    echo "MXQL skill is now available in Claude Code."
-    echo ""
-    echo "Try asking:"
-    echo "  - \"MySQL CPU 사용량 조회하는 MXQL 만들어줘\""
-    echo "  - \"Analyze this MXQL query\""
-    echo "  - \"Generate test query with sample data\""
 else
-    echo -e "${YELLOW}❌ Installation failed. Please check permissions.${NC}"
-    exit 1
+    echo "✓ Claude skills directory exists"
 fi
+
+echo ""
+echo "📦 Installing skill..."
+echo ""
+
+# Install mxql skill
+if [ -d "$SKILLS_DIR/mxql" ]; then
+    echo "⚠️  mxql skill already exists"
+    read -p "   Overwrite? (y/n) " -n 1 -r
+    echo
+    if [[ $REPLY =~ ^[Yy]$ ]]; then
+        rm -rf "$SKILLS_DIR/mxql"
+        ln -s "$SCRIPT_DIR/mxql" "$SKILLS_DIR/mxql"
+        echo "   ✓ Updated mxql skill"
+    else
+        echo "   ⏭️  Skipped mxql skill"
+    fi
+else
+    ln -s "$SCRIPT_DIR/mxql" "$SKILLS_DIR/mxql"
+    echo "✓ Installed mxql skill"
+fi
+
+echo ""
+echo "=============================================="
+echo "✅ Installation complete!"
+echo ""
+echo "Skill installed to: $SKILLS_DIR"
+echo ""
+echo "📚 Available skill:"
+echo "  - mxql: 🌟 Complete MXQL toolkit (generate + analyze + test)"
+echo ""
+echo "🚀 Usage:"
+echo "  Open Claude Code and start using the skill!"
+echo ""
+echo "  🔧 Query Generation:"
+echo "    'MySQL CPU 사용량 조회하는 MXQL 만들어줘'"
+echo "    'Create MXQL for PostgreSQL high memory instances'"
+echo ""
+echo "  🔍 Query Analysis:"
+echo "    'Analyze this MXQL query'"
+echo "    '내 쿼리 최적화해줘'"
+echo ""
+echo "  🧪 Testing:"
+echo "    'Generate test query with sample data'"
+echo "    '이 쿼리 테스트할 수 있게 만들어줘'"
+echo ""
+echo "📖 See README.md for more information"
+echo ""
