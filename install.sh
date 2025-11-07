@@ -11,8 +11,15 @@ echo -e "${GREEN}Installing MXQL skill for Claude Code...${NC}"
 
 # Get the script directory (where this install.sh is located)
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+MXQL_DIR="$SCRIPT_DIR/mxql"
 SKILLS_DIR="$HOME/.claude/skills"
 TARGET_DIR="$SKILLS_DIR/mxql"
+
+# Check if mxql directory exists
+if [ ! -d "$MXQL_DIR" ]; then
+    echo -e "${YELLOW}❌ Error: mxql directory not found in $SCRIPT_DIR${NC}"
+    exit 1
+fi
 
 # Check if .claude/skills directory exists
 if [ ! -d "$SKILLS_DIR" ]; then
@@ -27,8 +34,8 @@ if [ -e "$TARGET_DIR" ]; then
 fi
 
 # Create symlink
-echo -e "${GREEN}Creating symlink: $TARGET_DIR -> $SCRIPT_DIR${NC}"
-ln -s "$SCRIPT_DIR" "$TARGET_DIR"
+echo -e "${GREEN}Creating symlink: $TARGET_DIR -> $MXQL_DIR${NC}"
+ln -s "$MXQL_DIR" "$TARGET_DIR"
 
 # Verify installation
 if [ -L "$TARGET_DIR" ] && [ -e "$TARGET_DIR" ]; then
