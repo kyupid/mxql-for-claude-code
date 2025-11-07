@@ -192,6 +192,81 @@ UPDATE {key: "tx_count", value: "sum"}
 
 ---
 
+### Issue 7.5: Wrong GROUP Syntax (Using key/value instead of pk)
+
+**Error**:
+```mxql
+CATEGORY app_counter
+TAGLOAD
+SELECT [service, tx_count]
+GROUP {key: "service", value: "sum"}  ← WRONG SYNTAX!
+UPDATE {key: "tx_count", value: "sum"}
+```
+
+**Problem**: GROUP does not use `key` and `value` parameters. This is a confusion with SQL's GROUP BY or with UPDATE syntax.
+
+**Symptoms**:
+- Parse error or unexpected behavior
+- GROUP command ignored or fails
+- "Invalid parameter 'key'" error
+- May work in some cases but produces wrong results
+
+**Solution**:
+```mxql
+CATEGORY app_counter
+TAGLOAD
+SELECT [service, tx_count]
+GROUP {pk: "service"}  ← Use 'pk' not 'key'!
+UPDATE {key: "tx_count", value: "sum"}  ← UPDATE uses key-value
+```
+
+**GROUP vs UPDATE - Critical Difference**:
+
+**GROUP** (grouping configuration) uses special keywords:
+- `pk` - Primary key(s) to group by
+- `timeunit` - Time-based grouping ("5s", "1m", "5m", "1h", "1d")
+- `first` - Fields to keep first value
+- `last` - Fields to keep last value
+- `listup` - List unique values
+- `merge` - Merge metric values
+- `quantile` - Calculate quantiles
+- `rank` - Percentile ranks
+- `rows` - Max rows per group
+
+**UPDATE** (aggregation function) uses key-value pairs:
+- `key` - Field name to aggregate (optional)
+- `value` - Aggregation function ("sum", "avg", "max", "min", "count", "first", "last")
+
+**Examples**:
+```mxql
+# ✅ CORRECT patterns
+GROUP {pk: "service"}
+GROUP {pk: ["service", "host"]}
+GROUP {timeunit: "5m"}
+GROUP {timeunit: "5m", pk: "service"}
+GROUP {pk: "service", first: ["status"], last: ["update_time"]}
+
+# ✅ CORRECT UPDATE (after GROUP)
+UPDATE {key: "cpu", value: "avg"}
+UPDATE {key: "count", value: "sum"}
+UPDATE {value: "sum"}  # Apply to all numeric fields
+
+# ❌ WRONG patterns (DO NOT USE)
+GROUP {key: "service", value: "sum"}
+GROUP {key: ["field"], value: ["avg"]}
+```
+
+**Why this mistake happens**:
+- Confusion with SQL's `GROUP BY field`
+- Confusion with UPDATE syntax
+- Expecting uniform key-value pattern across all commands
+
+**How to remember**:
+- GROUP = Configuration (use special keywords: `pk`, `timeunit`, etc.)
+- UPDATE = Action (use key-value: `key`, `value`)
+
+---
+
 ### Issue 8: Missing Data Loader
 
 **Error**:

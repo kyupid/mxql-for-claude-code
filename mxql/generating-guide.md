@@ -312,6 +312,73 @@ To keep this skill token-efficient, detailed information is in separate files:
 6. **Need exact field list?** → Read category meta file at:
    `/Users/kyw/git/claude-workspace/repos/whatap/collector-server/whatap.server.meta/TagCount_meta_file/db_{product}_counter_en.meta`
 
+## CRITICAL: GROUP vs UPDATE Syntax
+
+**This is a common mistake - read carefully!**
+
+### GROUP Syntax (Grouping/Aggregation Configuration)
+
+GROUP uses special keywords, NOT key-value pairs:
+
+```mxql
+# ✅ CORRECT GROUP syntax
+GROUP {pk: "service"}                    # Group by single field
+GROUP {pk: ["service", "host"]}          # Group by multiple fields
+GROUP {timeunit: "5m"}                   # Time-based grouping
+GROUP {timeunit: "5m", pk: "service"}    # Both time and field grouping
+
+# GROUP special keywords:
+# - pk: Primary key(s) to group by
+# - timeunit: Time unit for aggregation ("5s", "1m", "5m", "1h", "1d")
+# - first: Fields to keep first value
+# - last: Fields to keep last value
+# - listup: Fields to list unique values
+# - merge: Field to merge metric values
+# - quantile: Field for quantile calculation
+# - rank: Percentile ranks (e.g., [0.5, 0.95, 0.99])
+# - rows: Max rows per group
+```
+
+### UPDATE Syntax (Aggregation Function)
+
+UPDATE uses key-value pairs:
+
+```mxql
+# ✅ CORRECT UPDATE syntax (must come AFTER GROUP)
+UPDATE {key: "cpu", value: "avg"}
+UPDATE {key: "count", value: "sum"}
+UPDATE {value: "sum"}  # Apply to all numeric fields (key is optional)
+```
+
+### ❌ COMMON MISTAKE - DO NOT DO THIS:
+
+```mxql
+# ❌ WRONG - This is NOT valid MXQL!
+GROUP {key: "service", value: "sum"}
+GROUP {key: ["field1"], value: ["sum"]}
+
+# This confusion comes from SQL's GROUP BY or other languages
+# MXQL uses different syntax!
+```
+
+### Correct Pattern for Aggregation:
+
+```mxql
+# Example: Sum transaction count by service
+CATEGORY app_counter
+TAGLOAD
+SELECT [service, tx_count]
+GROUP {pk: "service"}              # ✅ Use pk, not key
+UPDATE {key: "tx_count", value: "sum"}  # ✅ UPDATE comes after GROUP
+
+# Example: Average CPU over time
+CATEGORY db_mysql_counter
+TAGLOAD
+SELECT [time, cpu]
+GROUP {timeunit: "5m"}             # ✅ Time-based grouping
+UPDATE {key: "cpu", value: "avg"}  # ✅ Then aggregate
+```
+
 ## Best Practices
 
 ### Do:
@@ -321,6 +388,8 @@ To keep this skill token-efficient, detailed information is in separate files:
 - ✅ Use appropriate timeunit for GROUP (5m for real-time, 1h for trends)
 - ✅ Explain metrics and their units to users
 - ✅ Validate queries before returning
+- ✅ Use `pk` keyword in GROUP, not `key`
+- ✅ Always use GROUP before UPDATE
 
 ### Don't:
 - ❌ Use LIMIT without ORDER (results are arbitrary)
@@ -328,6 +397,8 @@ To keep this skill token-efficient, detailed information is in separate files:
 - ❌ Select unnecessary fields (wastes resources)
 - ❌ Forget to quote string values in JSON
 - ❌ Assume field names without checking meta
+- ❌ Use `GROUP {key: ..., value: ...}` - this is WRONG syntax!
+- ❌ Confuse GROUP (grouping config) with UPDATE (aggregation function)
 
 ## Troubleshooting
 

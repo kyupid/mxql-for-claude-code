@@ -316,6 +316,40 @@ python category_finder.py products
 python category_finder.py info db_postgresql_counter
 ```
 
+## ⚠️ CRITICAL: GROUP vs UPDATE Syntax
+
+**READ THIS CAREFULLY - This is the most common mistake!**
+
+### GROUP Syntax (Grouping Configuration)
+```mxql
+# ✅ CORRECT - Use special keywords: pk, timeunit, merge, etc.
+GROUP {pk: "service"}                    # Group by field
+GROUP {pk: ["service", "host"]}          # Group by multiple fields
+GROUP {timeunit: "5m"}                   # Time-based grouping
+GROUP {timeunit: "5m", pk: "service"}    # Both time and field
+GROUP {pk: "service", first: ["status"], last: ["update_time"]}
+```
+
+### UPDATE Syntax (Aggregation Function)
+```mxql
+# ✅ CORRECT - Use key-value pairs (must come AFTER GROUP)
+UPDATE {key: "cpu", value: "avg"}
+UPDATE {key: "count", value: "sum"}
+UPDATE {value: "sum"}  # key is optional - applies to all numeric fields
+```
+
+### ❌ WRONG - Never Do This:
+```mxql
+# ❌ This is NOT valid MXQL syntax!
+GROUP {key: "service", value: "sum"}       # WRONG!
+GROUP {key: ["field"], value: ["avg"]}     # WRONG!
+
+# This mistake comes from confusing MXQL with SQL's GROUP BY
+```
+
+### Reference
+See **generating-guide.md** for detailed GROUP/UPDATE syntax and examples.
+
 ## Best Practices
 
 ### When Generating Queries
@@ -327,6 +361,8 @@ python category_finder.py info db_postgresql_counter
 4. Include explanatory comments in generated queries
 5. Validate generated query before providing
 6. Offer test query version
+7. **ALWAYS use `pk` in GROUP, never `key`**
+8. **ALWAYS put GROUP before UPDATE**
 
 ### When Analyzing Queries
 1. Run automated validation first

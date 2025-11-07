@@ -206,6 +206,9 @@ class MXQLValidator:
         # Check SUB/END pairing
         self._check_sub_end_pairing()
 
+        # Check GROUP syntax (key/value vs pk)
+        self._check_group_syntax()
+
     def _check_required_commands(self):
         """Check if required commands are present"""
         command_names = [cmd[1] for cmd in self.commands]
@@ -317,6 +320,28 @@ class MXQLValidator:
                     message="SELECT [*] includes all fields - may impact performance",
                     suggestion="Select only needed fields explicitly"
                 ))
+
+    def _check_group_syntax(self):
+        """Check for incorrect GROUP syntax (using key/value instead of pk)"""
+        import re
+        for line_num, cmd_name, full_line in self.commands:
+            if cmd_name == 'GROUP':
+                # Check if GROUP uses 'key' parameter (should use 'pk' instead)
+                if re.search(r'\bkey\s*:', full_line):
+                    self.issues.append(ValidationIssue(
+                        severity=Severity.CRITICAL,
+                        line=line_num,
+                        message="GROUP uses 'key' parameter - should use 'pk' instead",
+                        suggestion="Use GROUP {pk: \"field\"} or GROUP {timeunit: \"5m\", pk: \"field\"}"
+                    ))
+                # Check if GROUP uses 'value' parameter (wrong - this is for UPDATE)
+                if re.search(r'\bvalue\s*:', full_line):
+                    self.issues.append(ValidationIssue(
+                        severity=Severity.CRITICAL,
+                        line=line_num,
+                        message="GROUP uses 'value' parameter - this is UPDATE syntax, not GROUP",
+                        suggestion="GROUP uses special keywords (pk, timeunit, first, last, merge, etc.), not key-value pairs"
+                    ))
 
     def _check_limit_without_order(self):
         """Check if LIMIT is used without ORDER"""
