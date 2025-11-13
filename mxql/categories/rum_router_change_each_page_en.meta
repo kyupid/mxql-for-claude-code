@@ -1,60 +1,78 @@
 {
-  "categoryName" : "rum_router_change_each_page",
-  "title" : "RumRouterChangeEachPage",
-  "pk" : [ "env", "version", "page_group" ],
-  "description" : "Metric related to events that occur when switching pages in the single-page applications",
-  "language" : "EN",
-  "tags" : [ {
-    "tagName" : "page_group",
-    "title" : "PageGroup",
-    "unit" : "string",
-    "description" : "Page group\nIn order to have a meaningful statistical group in the browser monitoring service, it provides the normalized URL path with regular expressions under the page group name.\nNumbers, dates, and such that are deemed meaningless for URL path unit analysis, are replaced with question marks (?).",
-    "deprecated" : false,
-    "type" : "String"
-  }, {
-    "tagName" : "version",
-    "title" : "Version",
-    "unit" : "string",
-    "description" : "Metric indicating the released version of the web application",
-    "deprecated" : false,
-    "type" : "String"
-  }, {
-    "tagName" : "completed_loading",
-    "title" : "CompletedLoading",
-    "unit" : "string",
-    "description" : "Whether the transition is complete, false if the page transition is not complete and you are switching to another page",
-    "deprecated" : false,
-    "type" : "String"
-  }, {
-    "tagName" : "env",
-    "title" : "Env",
-    "unit" : "string",
-    "description" : "Metric indicating the release environment (development, staging, operation, etc) of the web application",
-    "deprecated" : false,
-    "type" : "String"
-  } ],
-  "fields" : [ {
-    "fieldName" : "router_change_time",
-    "title" : "RouterChangeTime",
-    "unit" : "ms",
-    "objectMerge" : "avg",
-    "timeMerge" : "avg",
-    "description" : "Average time taken to completely switch pages",
-    "visible" : false,
-    "unfold" : false,
-    "deprecated" : false,
-    "type" : "Number"
-  }, {
-    "fieldName" : "router_change_count",
-    "title" : "RouterChangeCount",
-    "unit" : "count",
-    "objectMerge" : "avg",
-    "timeMerge" : "avg",
-    "description" : "Number of SPA page transitions",
-    "visible" : false,
-    "unfold" : false,
-    "deprecated" : false,
-    "type" : "Number"
-  } ],
-  "platforms" : [ "RUM" ]
+  "categoryName": "rum_router_change_each_page",
+  "title": "RumRouterChangeEachPage",
+  "pk": [
+    "env",
+    "version",
+    "page_group"
+  ],
+  "description": "Metric related to events that occur when switching pages in the single-page applications",
+  "language": "EN",
+  "tags": [
+    {
+      "tagName": "page_group",
+      "title": "PageGroup",
+      "unit": "string",
+      "description": "Page group\nIn order to have a meaningful statistical group in the browser monitoring service, it provides the normalized URL path with regular expressions under the page group name.\nNumbers, dates, and such that are deemed meaningless for URL path unit analysis, are replaced with question marks (?).",
+      "deprecated": false,
+      "type": "String"
+    },
+    {
+      "tagName": "version",
+      "title": "Version",
+      "unit": "string",
+      "description": "Metric indicating the released version of the web application",
+      "deprecated": false,
+      "type": "String"
+    },
+    {
+      "tagName": "completed_loading",
+      "title": "CompletedLoading",
+      "unit": "string",
+      "description": "Whether the transition is complete, false if the page transition is not complete and you are switching to another page",
+      "deprecated": false,
+      "type": "String"
+    },
+    {
+      "tagName": "env",
+      "title": "Env",
+      "unit": "string",
+      "description": "Metric indicating the release environment (development, staging, operation, etc) of the web application",
+      "deprecated": false,
+      "type": "String"
+    }
+  ],
+  "fields": [
+    {
+      "fieldName": "router_change_time",
+      "title": "RouterChangeTime",
+      "unit": "ms",
+      "objectMerge": "avg",
+      "timeMerge": "avg",
+      "description": "Average time taken to completely switch pages",
+      "visible": false,
+      "unfold": false,
+      "deprecated": false,
+      "type": "Number"
+    },
+    {
+      "fieldName": "router_change_count",
+      "title": "RouterChangeCount",
+      "unit": "count",
+      "objectMerge": "avg",
+      "timeMerge": "avg",
+      "description": "Number of SPA page transitions",
+      "visible": false,
+      "unfold": false,
+      "deprecated": false,
+      "type": "Number"
+    }
+  ],
+  "platforms": [
+    "RUM"
+  ],
+  "productTypes": [
+    "BROWSER",
+    "MOBILE"
+  ]
 }

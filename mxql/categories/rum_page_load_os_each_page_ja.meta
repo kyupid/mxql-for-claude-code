@@ -1,60 +1,78 @@
 {
-  "categoryName" : "rum_page_load_os_each_page",
-  "title" : "RumPageLoadOsEachPage",
-  "pk" : [ "env", "version", "page_group" ],
-  "description" : "OS別のページロードに関連した指標です。",
-  "language" : "JA",
-  "tags" : [ {
-    "tagName" : "version",
-    "title" : "Version",
-    "unit" : "string",
-    "description" : "WEBアプリケーションのデプロイバージョンを意味する指標です。",
-    "deprecated" : false,
-    "type" : "String"
-  }, {
-    "tagName" : "env",
-    "title" : "Env",
-    "unit" : "string",
-    "description" : "WEBアプリケーションのデプロイ環境(開発、ステージング、運用など)を意味する指標です。",
-    "deprecated" : false,
-    "type" : "String"
-  }, {
-    "tagName" : "os_name",
-    "title" : "OsName",
-    "unit" : "string",
-    "description" : "OS種類\n(macOS、Windows、Linux等)",
-    "deprecated" : false,
-    "type" : "String"
-  }, {
-    "tagName" : "page_group",
-    "title" : "PageGroup",
-    "unit" : "string",
-    "description" : "ページグループ\nBrowserモニタリングサービスで有意味な統計グループを持つよう、URLパス(URL Path)を正規化してページグループ名として提供します。 \nURLパス(URL Path)単位の分析に影響しないと判断される数字、日付等は'?'に置き換えます。",
-    "deprecated" : false,
-    "type" : "String"
-  } ],
-  "fields" : [ {
-    "fieldName" : "page_load_count",
-    "title" : "PageLoadCount",
-    "unit" : "count",
-    "objectMerge" : "avg",
-    "timeMerge" : "avg",
-    "description" : "ページロード数",
-    "visible" : false,
-    "unfold" : false,
-    "deprecated" : false,
-    "type" : "Number"
-  }, {
-    "fieldName" : "page_load_duration",
-    "title" : "PageLoadDuration",
-    "unit" : "ms",
-    "objectMerge" : "avg",
-    "timeMerge" : "avg",
-    "description" : "ブラウザがWEBページを完全に読み込むまで所要した平均時間",
-    "visible" : false,
-    "unfold" : false,
-    "deprecated" : false,
-    "type" : "Number"
-  } ],
-  "platforms" : [ "RUM" ]
+  "categoryName": "rum_page_load_os_each_page",
+  "title": "RumPageLoadOsEachPage",
+  "pk": [
+    "env",
+    "version",
+    "page_group"
+  ],
+  "description": "OS別のページロードに関連した指標です。",
+  "language": "JA",
+  "tags": [
+    {
+      "tagName": "version",
+      "title": "Version",
+      "unit": "string",
+      "description": "WEBアプリケーションのデプロイバージョンを意味する指標です。",
+      "deprecated": false,
+      "type": "String"
+    },
+    {
+      "tagName": "env",
+      "title": "Env",
+      "unit": "string",
+      "description": "WEBアプリケーションのデプロイ環境(開発、ステージング、運用など)を意味する指標です。",
+      "deprecated": false,
+      "type": "String"
+    },
+    {
+      "tagName": "os_name",
+      "title": "OsName",
+      "unit": "string",
+      "description": "OS種類\n(macOS、Windows、Linux等)",
+      "deprecated": false,
+      "type": "String"
+    },
+    {
+      "tagName": "page_group",
+      "title": "PageGroup",
+      "unit": "string",
+      "description": "ページグループ\nBrowserモニタリングサービスで有意味な統計グループを持つよう、URLパス(URL Path)を正規化してページグループ名として提供します。 \nURLパス(URL Path)単位の分析に影響しないと判断される数字、日付等は'?'に置き換えます。",
+      "deprecated": false,
+      "type": "String"
+    }
+  ],
+  "fields": [
+    {
+      "fieldName": "page_load_count",
+      "title": "PageLoadCount",
+      "unit": "count",
+      "objectMerge": "avg",
+      "timeMerge": "avg",
+      "description": "ページロード数",
+      "visible": false,
+      "unfold": false,
+      "deprecated": false,
+      "type": "Number"
+    },
+    {
+      "fieldName": "page_load_duration",
+      "title": "PageLoadDuration",
+      "unit": "ms",
+      "objectMerge": "avg",
+      "timeMerge": "avg",
+      "description": "ブラウザがWEBページを完全に読み込むまで所要した平均時間",
+      "visible": false,
+      "unfold": false,
+      "deprecated": false,
+      "type": "Number"
+    }
+  ],
+  "platforms": [
+    "RUM"
+  ],
+  "productTypes": [
+    "BROWSER",
+    "MOBILE"
+  ]
 }

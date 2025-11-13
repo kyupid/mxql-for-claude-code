@@ -88,6 +88,7 @@ class CategoryFinder:
                         "interval": data.get("interval", ""),
                         "pk": data.get("pk", []),
                         "platforms": data.get("platforms", []),
+                        "productTypes": data.get("productTypes", []),
                         "languages": {},
                         "tags": [],
                         "fields": []
@@ -153,13 +154,14 @@ class CategoryFinder:
 
         return list(keywords)
 
-    def search(self, query: str, limit: int = 10) -> List[Dict]:
+    def search(self, query: str, limit: int = 10, product_type: Optional[str] = None) -> List[Dict]:
         """
         Search for categories matching the query.
 
         Args:
             query: Search query (e.g., "postgresql", "cpu", "kubernetes")
             limit: Maximum number of results to return
+            product_type: Optional filter by product type (e.g., "BROWSER", "MOBILE")
 
         Returns:
             List of matching categories with relevance scores
@@ -185,15 +187,26 @@ class CategoryFinder:
 
         # Format results
         formatted = []
-        for cat_name, score in sorted_results[:limit]:
+        for cat_name, score in sorted_results:
             cat_info = self.index["categories"].get(cat_name, {})
+
+            # Filter by product type if specified
+            if product_type:
+                product_types = cat_info.get("productTypes", [])
+                if product_types and product_type.upper() not in product_types:
+                    continue
+
             formatted.append({
                 "categoryName": cat_name,
                 "title": cat_info.get("title", ""),
                 "platforms": cat_info.get("platforms", []),
+                "productTypes": cat_info.get("productTypes", []),
                 "relevance": score,
                 "languages": list(cat_info.get("languages", {}).keys())
             })
+
+            if len(formatted) >= limit:
+                break
 
         return formatted
 
@@ -243,13 +256,14 @@ class CategoryFinder:
         """Get a list of all product types."""
         return sorted(self.index.get("products", {}).keys())
 
-    def recommend(self, intent: str, context: Optional[Dict] = None) -> List[Dict]:
+    def recommend(self, intent: str, context: Optional[Dict] = None, product_type: Optional[str] = None) -> List[Dict]:
         """
         Recommend categories based on user intent and context.
 
         Args:
             intent: User's intent (e.g., "monitor CPU usage", "track database queries")
             context: Optional context with keys like 'product', 'metric_type', etc.
+            product_type: Optional filter by product type (e.g., "BROWSER", "MOBILE")
 
         Returns:
             List of recommended categories with explanations
@@ -267,7 +281,7 @@ class CategoryFinder:
             'kube': ['kubernetes', 'k8s', 'pod', 'container', 'deployment'],
             'aws': ['aws', 'amazon', 'ec2', 's3', 'rds', 'lambda'],
             'azure': ['azure', 'microsoft'],
-            'rum': ['browser', 'frontend', 'rum', 'pageload']
+            'rum': ['browser', 'frontend', 'rum', 'pageload', 'mobile', 'webapp', 'user']
         }
 
         # Find matching product types
@@ -278,7 +292,7 @@ class CategoryFinder:
 
         # If no specific product found, search broadly
         if not matched_products:
-            return self.search(intent, limit=5)
+            return self.search(intent, limit=5, product_type=product_type)
 
         # Get categories for matched products
         for product in matched_products:
@@ -288,10 +302,18 @@ class CategoryFinder:
             for cat in categories:
                 if any(word in cat.lower() for word in intent_lower.split()):
                     cat_info = self.index["categories"].get(cat, {})
+
+                    # Filter by product type if specified
+                    if product_type:
+                        product_types = cat_info.get("productTypes", [])
+                        if product_types and product_type.upper() not in product_types:
+                            continue
+
                     recommendations.append({
                         "categoryName": cat,
                         "title": cat_info.get("title", ""),
                         "platforms": cat_info.get("platforms", []),
+                        "productTypes": cat_info.get("productTypes", []),
                         "reason": f"Matches {product} monitoring for: {intent}",
                         "languages": list(cat_info.get("languages", {}).keys())
                     })
@@ -309,12 +331,16 @@ def format_category_list(categories: List[Dict], include_details: bool = False) 
         name = cat.get("categoryName", "")
         title = cat.get("title", "")
         platforms = cat.get("platforms", [])
+        product_types = cat.get("productTypes", [])
 
         line = f"{i}. **{name}**"
         if title:
             line += f" - {title}"
-        if platforms and include_details:
-            line += f" (Platforms: {', '.join(platforms)})"
+        if include_details:
+            if platforms:
+                line += f" (Platforms: {', '.join(platforms)})"
+            if product_types:
+                line += f" (Product Types: {', '.join(product_types)})"
 
         output.append(line)
 

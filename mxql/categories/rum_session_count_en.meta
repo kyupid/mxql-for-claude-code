@@ -24,5 +24,6 @@
     "deprecated" : false,
     "type" : "Number"
   } ],
-  "platforms" : [ "RUM" ]
+  "platforms" : [ "RUM" ],
+  "productTypes" : [ "BROWSER", "MOBILE" ]
 }
