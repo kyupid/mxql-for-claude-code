@@ -1,54 +1,72 @@
 {
-  "categoryName" : "rum_page_load_device_each_page",
-  "title" : "RumPageLoadDeviceEachPage",
-  "pk" : [ "env", "version", "page_group" ],
-  "description" : "디바이스별 페이지 로드와 관련한 지표입니다.",
-  "language" : "KO",
-  "tags" : [ {
-    "tagName" : "env",
-    "unit" : "string",
-    "description" : "웹 애플리케이션의 배포 환경(개발, 스테이징, 운영 등)을 의미하는 지표",
-    "deprecated" : false,
-    "type" : "String"
-  }, {
-    "tagName" : "version",
-    "unit" : "string",
-    "description" : "웹 애플리케이션의 배포 버전을 의미하는 지표",
-    "deprecated" : false,
-    "type" : "String"
-  }, {
-    "tagName" : "device_name",
-    "unit" : "string",
-    "description" : "디바이스 이름\n(데스크톱, 테블릿, 모바일, 봇)",
-    "deprecated" : false,
-    "type" : "String"
-  }, {
-    "tagName" : "page_group",
-    "unit" : "string",
-    "description" : "페이지 그룹\n브라우저 모니터링 서비스에서 의미있는 통계 그룹을 가지기 위해 URL 경로(URL Path)를 정규 표현식을 통해 정규화하여 페이지 그룹이라는 이름으로 제공합니다. \nURL 경로(URL Path) 단위 분석에 의미가 없다고 판단한 숫자, 날짜 등을 물음표(?)로 치환해 제공합니다.",
-    "deprecated" : false,
-    "type" : "String"
-  } ],
-  "fields" : [ {
-    "fieldName" : "page_load_duration",
-    "unit" : "ms",
-    "objectMerge" : "avg",
-    "timeMerge" : "avg",
-    "description" : "브라우저가 웹 페이지를 완전히 불러오는데 소요한 평균 시간",
-    "visible" : false,
-    "unfold" : false,
-    "deprecated" : false,
-    "type" : "Number"
-  }, {
-    "fieldName" : "page_load_count",
-    "unit" : "count",
-    "objectMerge" : "avg",
-    "timeMerge" : "avg",
-    "description" : "페이지 로드 수",
-    "visible" : false,
-    "unfold" : false,
-    "deprecated" : false,
-    "type" : "Number"
-  } ],
-  "platforms" : [ "RUM" ]
+  "categoryName": "rum_page_load_device_each_page",
+  "title": "RumPageLoadDeviceEachPage",
+  "pk": [
+    "env",
+    "version",
+    "page_group"
+  ],
+  "description": "디바이스별 페이지 로드와 관련한 지표입니다.",
+  "language": "KO",
+  "tags": [
+    {
+      "tagName": "env",
+      "unit": "string",
+      "description": "웹 애플리케이션의 배포 환경(개발, 스테이징, 운영 등)을 의미하는 지표",
+      "deprecated": false,
+      "type": "String"
+    },
+    {
+      "tagName": "version",
+      "unit": "string",
+      "description": "웹 애플리케이션의 배포 버전을 의미하는 지표",
+      "deprecated": false,
+      "type": "String"
+    },
+    {
+      "tagName": "device_name",
+      "unit": "string",
+      "description": "디바이스 이름\n(데스크톱, 테블릿, 모바일, 봇)",
+      "deprecated": false,
+      "type": "String"
+    },
+    {
+      "tagName": "page_group",
+      "unit": "string",
+      "description": "페이지 그룹\n브라우저 모니터링 서비스에서 의미있는 통계 그룹을 가지기 위해 URL 경로(URL Path)를 정규 표현식을 통해 정규화하여 페이지 그룹이라는 이름으로 제공합니다. \nURL 경로(URL Path) 단위 분석에 의미가 없다고 판단한 숫자, 날짜 등을 물음표(?)로 치환해 제공합니다.",
+      "deprecated": false,
+      "type": "String"
+    }
+  ],
+  "fields": [
+    {
+      "fieldName": "page_load_duration",
+      "unit": "ms",
+      "objectMerge": "avg",
+      "timeMerge": "avg",
+      "description": "브라우저가 웹 페이지를 완전히 불러오는데 소요한 평균 시간",
+      "visible": false,
+      "unfold": false,
+      "deprecated": false,
+      "type": "Number"
+    },
+    {
+      "fieldName": "page_load_count",
+      "unit": "count",
+      "objectMerge": "avg",
+      "timeMerge": "avg",
+      "description": "페이지 로드 수",
+      "visible": false,
+      "unfold": false,
+      "deprecated": false,
+      "type": "Number"
+    }
+  ],
+  "platforms": [
+    "RUM"
+  ],
+  "productTypes": [
+    "BROWSER",
+    "MOBILE"
+  ]
 }

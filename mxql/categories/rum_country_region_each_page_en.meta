@@ -1,319 +1,361 @@
 {
-  "categoryName" : "rum_country_region_each_page",
-  "title" : "Rum Country Region Each Page",
-  "pk" : [ "env", "version", "page_group" ],
-  "language" : "EN",
-  "tags" : [ {
-    "tagName" : "region",
-    "title" : "Region",
-    "unit" : "string",
-    "description" : "Region name (metropolitan city, province)",
-    "deprecated" : false,
-    "type" : "String"
-  }, {
-    "tagName" : "env",
-    "title" : "Env",
-    "unit" : "string",
-    "description" : "Metric indicating the release environment (development, staging, operation, etc) of the web application",
-    "deprecated" : false,
-    "type" : "String"
-  }, {
-    "tagName" : "page_group",
-    "title" : "PageGroup",
-    "unit" : "string",
-    "description" : "Page group\nIn order to have a meaningful statistical group in the browser monitoring service, it provides the normalized URL path with regular expressions under the page group name.\nNumbers, dates, and such that are deemed meaningless for URL path unit analysis, are replaced with question marks (?).",
-    "deprecated" : false,
-    "type" : "String"
-  }, {
-    "tagName" : "version",
-    "title" : "Version",
-    "unit" : "string",
-    "description" : "Metric indicating the released version of the web application",
-    "deprecated" : false,
-    "type" : "String"
-  }, {
-    "tagName" : "country",
-    "title" : "Country",
-    "unit" : "string",
-    "description" : "Country code",
-    "deprecated" : false,
-    "type" : "String"
-  } ],
-  "fields" : [ {
-    "fieldName" : "page_load_frontend_time",
-    "title" : "PageLoadFrontendTime",
-    "unit" : "ms",
-    "objectMerge" : "avg",
-    "timeMerge" : "avg",
-    "description" : "Average processing time in the frontend during page loading\n(time from domInteractive to loadEventEnd)",
-    "visible" : false,
-    "unfold" : false,
-    "deprecated" : false,
-    "type" : "Number"
-  }, {
-    "fieldName" : "page_load_redirect_time",
-    "title" : "PageLoadRedirectTime",
-    "unit" : "ms",
-    "objectMerge" : "avg",
-    "timeMerge" : "avg",
-    "description" : "Average time for redirections when the browser loads a web page\n(time from redirectStart to redirectEnd)",
-    "visible" : false,
-    "unfold" : false,
-    "deprecated" : false,
-    "type" : "Number"
-  }, {
-    "fieldName" : "page_load_download_time",
-    "title" : "PageLoadDownloadTime",
-    "unit" : "ms",
-    "objectMerge" : "avg",
-    "timeMerge" : "avg",
-    "description" : "Average time taken for the browser to download resources from the server while loading a web page (time from responseStart to responseEnd)",
-    "visible" : false,
-    "unfold" : false,
-    "deprecated" : false,
-    "type" : "Number"
-  }, {
-    "fieldName" : "page_load_cache_time",
-    "title" : "PageLoadCacheTime",
-    "unit" : "ms",
-    "objectMerge" : "avg",
-    "timeMerge" : "avg",
-    "description" : "Average time taken for the browser to fetch cached resources while loading a web page\n(time from fetchStart to domainLookupStart)",
-    "visible" : false,
-    "unfold" : false,
-    "deprecated" : false,
-    "type" : "Number"
-  }, {
-    "fieldName" : "page_load_domcontentloaded_count",
-    "title" : "PageLoadDomContentLoadedCount",
-    "unit" : "count",
-    "objectMerge" : "avg",
-    "timeMerge" : "avg",
-    "description" : "It is the number of samples used to calculate the page_load_domcontentloaded_time.",
-    "visible" : false,
-    "unfold" : false,
-    "deprecated" : false,
-    "type" : "Number"
-  }, {
-    "fieldName" : "page_load_domload_count",
-    "title" : "PageLoadDomLoadCount",
-    "unit" : "count",
-    "objectMerge" : "avg",
-    "timeMerge" : "avg",
-    "description" : "It is the number of samples used to calculate the page_load_domload_time.",
-    "visible" : false,
-    "unfold" : false,
-    "deprecated" : false,
-    "type" : "Number"
-  }, {
-    "fieldName" : "page_load_firstbyte_count",
-    "title" : "PageLoadFirstbyteCount",
-    "unit" : "count",
-    "objectMerge" : "avg",
-    "timeMerge" : "avg",
-    "description" : "It is the number of samples used to calculate the page_load_firstbyte_time.",
-    "visible" : false,
-    "unfold" : false,
-    "deprecated" : false,
-    "type" : "Number"
-  }, {
-    "fieldName" : "page_load_dns_count",
-    "title" : "PageLoadDnsCount",
-    "unit" : "count",
-    "objectMerge" : "avg",
-    "timeMerge" : "avg",
-    "description" : "It is the number of samples used to calculate the page_load_dns_time.",
-    "visible" : false,
-    "unfold" : false,
-    "deprecated" : false,
-    "type" : "Number"
-  }, {
-    "fieldName" : "page_load_connect_time",
-    "title" : "PageLoadConnectTime",
-    "unit" : "ms",
-    "objectMerge" : "avg",
-    "timeMerge" : "avg",
-    "description" : "Average time for the network connection with the server (time from connectStart to connectEnd)",
-    "visible" : false,
-    "unfold" : false,
-    "deprecated" : false,
-    "type" : "Number"
-  }, {
-    "fieldName" : "page_load_duration",
-    "title" : "PageLoadDuration",
-    "unit" : "ms",
-    "objectMerge" : "avg",
-    "timeMerge" : "avg",
-    "description" : "Average time taken for the browser to load a web page (time from loadEventEnd to additional interactions, as measured by the browser agent)",
-    "visible" : false,
-    "unfold" : false,
-    "deprecated" : false,
-    "type" : "Number"
-  }, {
-    "fieldName" : "page_load_connect_count",
-    "title" : "PageLoadConnectCount",
-    "unit" : "count",
-    "objectMerge" : "avg",
-    "timeMerge" : "avg",
-    "description" : "It is the number of samples used to calculate the page_load_connect_time.",
-    "visible" : false,
-    "unfold" : false,
-    "deprecated" : false,
-    "type" : "Number"
-  }, {
-    "fieldName" : "page_load_firstbyte_time",
-    "title" : "PageLoadFirstbyteTime",
-    "unit" : "ms",
-    "objectMerge" : "avg",
-    "timeMerge" : "avg",
-    "description" : "Average time taken for the browser to load a web page after sending a network request until the first byte is received from the server\n(time from requestStart to responseStart)",
-    "visible" : false,
-    "unfold" : false,
-    "deprecated" : false,
-    "type" : "Number"
-  }, {
-    "fieldName" : "page_load_ssl_count",
-    "title" : "PageLoadSslCount",
-    "unit" : "count",
-    "objectMerge" : "avg",
-    "timeMerge" : "avg",
-    "description" : "It is the number of samples used to calculate the page_load_ssl_time.",
-    "visible" : false,
-    "unfold" : false,
-    "deprecated" : false,
-    "type" : "Number"
-  }, {
-    "fieldName" : "page_load_render_time",
-    "title" : "PageLoadRenderTime",
-    "unit" : "ms",
-    "objectMerge" : "avg",
-    "timeMerge" : "avg",
-    "description" : "Average time to render resources downloaded from the server and complete the page load\n(time from domInteractive to domComplete)",
-    "visible" : false,
-    "unfold" : false,
-    "deprecated" : false,
-    "type" : "Number"
-  }, {
-    "fieldName" : "page_load_count",
-    "title" : "PageLoadCount",
-    "unit" : "count",
-    "objectMerge" : "avg",
-    "timeMerge" : "avg",
-    "description" : "Number of page loads",
-    "visible" : false,
-    "unfold" : false,
-    "deprecated" : false,
-    "type" : "Number"
-  }, {
-    "fieldName" : "page_load_backend_time",
-    "title" : "PageLoadBackendTime",
-    "unit" : "ms",
-    "objectMerge" : "avg",
-    "timeMerge" : "avg",
-    "description" : "Average processing time in the backend during page loading\n(time from startTime to responseEnd)",
-    "visible" : false,
-    "unfold" : false,
-    "deprecated" : false,
-    "type" : "Number"
-  }, {
-    "fieldName" : "page_load_domcontentloaded_time",
-    "title" : "PageLoadDomContentLoadedTime",
-    "unit" : "ms",
-    "objectMerge" : "avg",
-    "timeMerge" : "avg",
-    "description" : "Average time taken for a web page to render its initial content and become interactive (time from domContentLoadedEventStart to domContentLoadedEventEnd)",
-    "visible" : false,
-    "unfold" : false,
-    "deprecated" : false,
-    "type" : "Number"
-  }, {
-    "fieldName" : "page_load_ssl_time",
-    "title" : "PageLoadSslTime",
-    "unit" : "ms",
-    "objectMerge" : "avg",
-    "timeMerge" : "avg",
-    "description" : "Average time taken for the browser to complete the TCP handshake when loading a web page\n(time from secureConnectionStart to connectEnd)",
-    "visible" : false,
-    "unfold" : false,
-    "deprecated" : false,
-    "type" : "Number"
-  }, {
-    "fieldName" : "page_load_dns_time",
-    "title" : "PageLoadDnsTime",
-    "unit" : "ms",
-    "objectMerge" : "avg",
-    "timeMerge" : "avg",
-    "description" : "Average time taken for the browser to retrieve a website domain while loading a web page",
-    "visible" : false,
-    "unfold" : false,
-    "deprecated" : false,
-    "type" : "Number"
-  }, {
-    "fieldName" : "page_load_redirect_count",
-    "title" : "PageLoadRedirectCount",
-    "unit" : "count",
-    "objectMerge" : "avg",
-    "timeMerge" : "avg",
-    "description" : "It is the number of samples used to calculate the page_load_redirect_time.",
-    "visible" : false,
-    "unfold" : false,
-    "deprecated" : false,
-    "type" : "Number"
-  }, {
-    "fieldName" : "page_load_render_count",
-    "title" : "PageLoadRenderCount",
-    "unit" : "count",
-    "objectMerge" : "avg",
-    "timeMerge" : "avg",
-    "description" : "The number of samples used to calculate page_load_render_time.",
-    "visible" : false,
-    "unfold" : false,
-    "deprecated" : false,
-    "type" : "Number"
-  }, {
-    "fieldName" : "page_load_download_count",
-    "title" : "PageLoadDownloadCount",
-    "unit" : "count",
-    "objectMerge" : "avg",
-    "timeMerge" : "avg",
-    "description" : "It is the number of samples used to calculate the page_load_download_time.",
-    "visible" : false,
-    "unfold" : false,
-    "deprecated" : false,
-    "type" : "Number"
-  }, {
-    "fieldName" : "page_load_event_time",
-    "title" : "PageLoadEventTime",
-    "unit" : "ms",
-    "objectMerge" : "avg",
-    "timeMerge" : "avg",
-    "description" : "Average time for the load event measured by the browser to complete\n(time from start to loadEventEnd)",
-    "visible" : false,
-    "unfold" : false,
-    "deprecated" : false,
-    "type" : "Number"
-  }, {
-    "fieldName" : "page_load_domload_time",
-    "title" : "PageLoadDomLoadTime",
-    "unit" : "ms",
-    "objectMerge" : "avg",
-    "timeMerge" : "avg",
-    "description" : "Average time taken for a web page to become interactive after all of its resources have been loaded and rendered (time from loadEventStart to loadEventEnd)",
-    "visible" : false,
-    "unfold" : false,
-    "deprecated" : false,
-    "type" : "Number"
-  }, {
-    "fieldName" : "page_load_cache_count",
-    "title" : "PageLoadCacheCount",
-    "unit" : "count",
-    "objectMerge" : "avg",
-    "timeMerge" : "avg",
-    "description" : "It is the number of samples used to calculate the page_load_cache_time.",
-    "visible" : false,
-    "unfold" : false,
-    "deprecated" : false,
-    "type" : "Number"
-  } ],
-  "platforms" : [ "RUM" ]
+  "categoryName": "rum_country_region_each_page",
+  "title": "Rum Country Region Each Page",
+  "pk": [
+    "env",
+    "version",
+    "page_group"
+  ],
+  "language": "EN",
+  "tags": [
+    {
+      "tagName": "region",
+      "title": "Region",
+      "unit": "string",
+      "description": "Region name (metropolitan city, province)",
+      "deprecated": false,
+      "type": "String"
+    },
+    {
+      "tagName": "env",
+      "title": "Env",
+      "unit": "string",
+      "description": "Metric indicating the release environment (development, staging, operation, etc) of the web application",
+      "deprecated": false,
+      "type": "String"
+    },
+    {
+      "tagName": "page_group",
+      "title": "PageGroup",
+      "unit": "string",
+      "description": "Page group\nIn order to have a meaningful statistical group in the browser monitoring service, it provides the normalized URL path with regular expressions under the page group name.\nNumbers, dates, and such that are deemed meaningless for URL path unit analysis, are replaced with question marks (?).",
+      "deprecated": false,
+      "type": "String"
+    },
+    {
+      "tagName": "version",
+      "title": "Version",
+      "unit": "string",
+      "description": "Metric indicating the released version of the web application",
+      "deprecated": false,
+      "type": "String"
+    },
+    {
+      "tagName": "country",
+      "title": "Country",
+      "unit": "string",
+      "description": "Country code",
+      "deprecated": false,
+      "type": "String"
+    }
+  ],
+  "fields": [
+    {
+      "fieldName": "page_load_frontend_time",
+      "title": "PageLoadFrontendTime",
+      "unit": "ms",
+      "objectMerge": "avg",
+      "timeMerge": "avg",
+      "description": "Average processing time in the frontend during page loading\n(time from domInteractive to loadEventEnd)",
+      "visible": false,
+      "unfold": false,
+      "deprecated": false,
+      "type": "Number"
+    },
+    {
+      "fieldName": "page_load_redirect_time",
+      "title": "PageLoadRedirectTime",
+      "unit": "ms",
+      "objectMerge": "avg",
+      "timeMerge": "avg",
+      "description": "Average time for redirections when the browser loads a web page\n(time from redirectStart to redirectEnd)",
+      "visible": false,
+      "unfold": false,
+      "deprecated": false,
+      "type": "Number"
+    },
+    {
+      "fieldName": "page_load_download_time",
+      "title": "PageLoadDownloadTime",
+      "unit": "ms",
+      "objectMerge": "avg",
+      "timeMerge": "avg",
+      "description": "Average time taken for the browser to download resources from the server while loading a web page (time from responseStart to responseEnd)",
+      "visible": false,
+      "unfold": false,
+      "deprecated": false,
+      "type": "Number"
+    },
+    {
+      "fieldName": "page_load_cache_time",
+      "title": "PageLoadCacheTime",
+      "unit": "ms",
+      "objectMerge": "avg",
+      "timeMerge": "avg",
+      "description": "Average time taken for the browser to fetch cached resources while loading a web page\n(time from fetchStart to domainLookupStart)",
+      "visible": false,
+      "unfold": false,
+      "deprecated": false,
+      "type": "Number"
+    },
+    {
+      "fieldName": "page_load_domcontentloaded_count",
+      "title": "PageLoadDomContentLoadedCount",
+      "unit": "count",
+      "objectMerge": "avg",
+      "timeMerge": "avg",
+      "description": "It is the number of samples used to calculate the page_load_domcontentloaded_time.",
+      "visible": false,
+      "unfold": false,
+      "deprecated": false,
+      "type": "Number"
+    },
+    {
+      "fieldName": "page_load_domload_count",
+      "title": "PageLoadDomLoadCount",
+      "unit": "count",
+      "objectMerge": "avg",
+      "timeMerge": "avg",
+      "description": "It is the number of samples used to calculate the page_load_domload_time.",
+      "visible": false,
+      "unfold": false,
+      "deprecated": false,
+      "type": "Number"
+    },
+    {
+      "fieldName": "page_load_firstbyte_count",
+      "title": "PageLoadFirstbyteCount",
+      "unit": "count",
+      "objectMerge": "avg",
+      "timeMerge": "avg",
+      "description": "It is the number of samples used to calculate the page_load_firstbyte_time.",
+      "visible": false,
+      "unfold": false,
+      "deprecated": false,
+      "type": "Number"
+    },
+    {
+      "fieldName": "page_load_dns_count",
+      "title": "PageLoadDnsCount",
+      "unit": "count",
+      "objectMerge": "avg",
+      "timeMerge": "avg",
+      "description": "It is the number of samples used to calculate the page_load_dns_time.",
+      "visible": false,
+      "unfold": false,
+      "deprecated": false,
+      "type": "Number"
+    },
+    {
+      "fieldName": "page_load_connect_time",
+      "title": "PageLoadConnectTime",
+      "unit": "ms",
+      "objectMerge": "avg",
+      "timeMerge": "avg",
+      "description": "Average time for the network connection with the server (time from connectStart to connectEnd)",
+      "visible": false,
+      "unfold": false,
+      "deprecated": false,
+      "type": "Number"
+    },
+    {
+      "fieldName": "page_load_duration",
+      "title": "PageLoadDuration",
+      "unit": "ms",
+      "objectMerge": "avg",
+      "timeMerge": "avg",
+      "description": "Average time taken for the browser to load a web page (time from loadEventEnd to additional interactions, as measured by the browser agent)",
+      "visible": false,
+      "unfold": false,
+      "deprecated": false,
+      "type": "Number"
+    },
+    {
+      "fieldName": "page_load_connect_count",
+      "title": "PageLoadConnectCount",
+      "unit": "count",
+      "objectMerge": "avg",
+      "timeMerge": "avg",
+      "description": "It is the number of samples used to calculate the page_load_connect_time.",
+      "visible": false,
+      "unfold": false,
+      "deprecated": false,
+      "type": "Number"
+    },
+    {
+      "fieldName": "page_load_firstbyte_time",
+      "title": "PageLoadFirstbyteTime",
+      "unit": "ms",
+      "objectMerge": "avg",
+      "timeMerge": "avg",
+      "description": "Average time taken for the browser to load a web page after sending a network request until the first byte is received from the server\n(time from requestStart to responseStart)",
+      "visible": false,
+      "unfold": false,
+      "deprecated": false,
+      "type": "Number"
+    },
+    {
+      "fieldName": "page_load_ssl_count",
+      "title": "PageLoadSslCount",
+      "unit": "count",
+      "objectMerge": "avg",
+      "timeMerge": "avg",
+      "description": "It is the number of samples used to calculate the page_load_ssl_time.",
+      "visible": false,
+      "unfold": false,
+      "deprecated": false,
+      "type": "Number"
+    },
+    {
+      "fieldName": "page_load_render_time",
+      "title": "PageLoadRenderTime",
+      "unit": "ms",
+      "objectMerge": "avg",
+      "timeMerge": "avg",
+      "description": "Average time to render resources downloaded from the server and complete the page load\n(time from domInteractive to domComplete)",
+      "visible": false,
+      "unfold": false,
+      "deprecated": false,
+      "type": "Number"
+    },
+    {
+      "fieldName": "page_load_count",
+      "title": "PageLoadCount",
+      "unit": "count",
+      "objectMerge": "avg",
+      "timeMerge": "avg",
+      "description": "Number of page loads",
+      "visible": false,
+      "unfold": false,
+      "deprecated": false,
+      "type": "Number"
+    },
+    {
+      "fieldName": "page_load_backend_time",
+      "title": "PageLoadBackendTime",
+      "unit": "ms",
+      "objectMerge": "avg",
+      "timeMerge": "avg",
+      "description": "Average processing time in the backend during page loading\n(time from startTime to responseEnd)",
+      "visible": false,
+      "unfold": false,
+      "deprecated": false,
+      "type": "Number"
+    },
+    {
+      "fieldName": "page_load_domcontentloaded_time",
+      "title": "PageLoadDomContentLoadedTime",
+      "unit": "ms",
+      "objectMerge": "avg",
+      "timeMerge": "avg",
+      "description": "Average time taken for a web page to render its initial content and become interactive (time from domContentLoadedEventStart to domContentLoadedEventEnd)",
+      "visible": false,
+      "unfold": false,
+      "deprecated": false,
+      "type": "Number"
+    },
+    {
+      "fieldName": "page_load_ssl_time",
+      "title": "PageLoadSslTime",
+      "unit": "ms",
+      "objectMerge": "avg",
+      "timeMerge": "avg",
+      "description": "Average time taken for the browser to complete the TCP handshake when loading a web page\n(time from secureConnectionStart to connectEnd)",
+      "visible": false,
+      "unfold": false,
+      "deprecated": false,
+      "type": "Number"
+    },
+    {
+      "fieldName": "page_load_dns_time",
+      "title": "PageLoadDnsTime",
+      "unit": "ms",
+      "objectMerge": "avg",
+      "timeMerge": "avg",
+      "description": "Average time taken for the browser to retrieve a website domain while loading a web page",
+      "visible": false,
+      "unfold": false,
+      "deprecated": false,
+      "type": "Number"
+    },
+    {
+      "fieldName": "page_load_redirect_count",
+      "title": "PageLoadRedirectCount",
+      "unit": "count",
+      "objectMerge": "avg",
+      "timeMerge": "avg",
+      "description": "It is the number of samples used to calculate the page_load_redirect_time.",
+      "visible": false,
+      "unfold": false,
+      "deprecated": false,
+      "type": "Number"
+    },
+    {
+      "fieldName": "page_load_render_count",
+      "title": "PageLoadRenderCount",
+      "unit": "count",
+      "objectMerge": "avg",
+      "timeMerge": "avg",
+      "description": "The number of samples used to calculate page_load_render_time.",
+      "visible": false,
+      "unfold": false,
+      "deprecated": false,
+      "type": "Number"
+    },
+    {
+      "fieldName": "page_load_download_count",
+      "title": "PageLoadDownloadCount",
+      "unit": "count",
+      "objectMerge": "avg",
+      "timeMerge": "avg",
+      "description": "It is the number of samples used to calculate the page_load_download_time.",
+      "visible": false,
+      "unfold": false,
+      "deprecated": false,
+      "type": "Number"
+    },
+    {
+      "fieldName": "page_load_event_time",
+      "title": "PageLoadEventTime",
+      "unit": "ms",
+      "objectMerge": "avg",
+      "timeMerge": "avg",
+      "description": "Average time for the load event measured by the browser to complete\n(time from start to loadEventEnd)",
+      "visible": false,
+      "unfold": false,
+      "deprecated": false,
+      "type": "Number"
+    },
+    {
+      "fieldName": "page_load_domload_time",
+      "title": "PageLoadDomLoadTime",
+      "unit": "ms",
+      "objectMerge": "avg",
+      "timeMerge": "avg",
+      "description": "Average time taken for a web page to become interactive after all of its resources have been loaded and rendered (time from loadEventStart to loadEventEnd)",
+      "visible": false,
+      "unfold": false,
+      "deprecated": false,
+      "type": "Number"
+    },
+    {
+      "fieldName": "page_load_cache_count",
+      "title": "PageLoadCacheCount",
+      "unit": "count",
+      "objectMerge": "avg",
+      "timeMerge": "avg",
+      "description": "It is the number of samples used to calculate the page_load_cache_time.",
+      "visible": false,
+      "unfold": false,
+      "deprecated": false,
+      "type": "Number"
+    }
+  ],
+  "platforms": [
+    "RUM"
+  ],
+  "productTypes": [
+    "BROWSER",
+    "MOBILE"
+  ]
 }
